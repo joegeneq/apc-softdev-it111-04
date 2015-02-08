@@ -1,0 +1,77 @@
+1. What is your gender?
+-Male
+-Female
+
+2. What is your current age? 
+- Less than 18
+- 18 to 29
+- 30 to 39
+- 40 - 49
+- 50 or older
+
+3. What is your current profession?
+- Student
+- Employed
+- Self-Employed
+- Not Employed
+
+4. Why do you travel via MRT/LRT?
+- Affordable Fare
+- Quick way to travel from one place to another
+- The train stations are near to the places I usually go
+- Safety & Security Reasons
+
+5. How often do you travel via MRT/LRT in a week?
+- Daily
+- One to three times a week
+- Every Weekdays
+- Every Weekends
+- If I only wanted to
+- If there's a heavy traffic on the road
+
+6. Do you use your mobile phone BEFORE going to the MRT/LRT station?
+- Yes
+- No
+
+
+7. Do you use your mobile phone WHILE travelling via MRT/LRT?
+- Yes
+- No
+	If yes, how often?
+	- Most of the time
+	- Once in a while
+	- Only if necessary (to answer calls and text)
+
+
+8. What are the problems you usually encounter while travelling via MRT/LRT? (Please select/check all the applicable items)
+- Technical Difficulties
+- Overcrowded Train and Train Stations
+- Long Interval of Train Arrivals
+- Extremely Long Waiting Line (at the cashier or entrance/exit points)
+- Other (Please specify): ______________
+
+
+9. What do you think needs improvement in the LRT/MRT operations? (Please select/check all the applicable items)
+- Fast intervals of train arrivals
+- Frequent Station Announcements
+- More Entrance/Exit Machines
+- More Tellers during Rush Hours
+- Newer Trains
+- Other (Please specify):________________
+
+
+11. If there is a mobile application will give you information about the MRT/LRT daily operation, do you think It will help you in your transportation experience? 
+- Yes
+- No
+
+
+12. If yes, how do you think it will help you?  (Please select/check all the applicable items)
+- By helping me choose whether to ride a train or ride another transport vehicle to reach my destination
+- To be able to share reports and pictures that could notify the other commuters about the train's status
+- To be aware of the situation at every Train station
+- To easily post suggestions or comments for further improvement of the stations or of train management
+- Others (Please specify): _____________________
+
+
+
+
