@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2015 at 01:48 PM
+-- Generation Time: Feb 17, 2015 at 02:35 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -32,7 +32,27 @@ CREATE TABLE IF NOT EXISTS `airlines` (
   `AirlinesID` int(11) NOT NULL AUTO_INCREMENT,
   `AirlineName` varchar(45) NOT NULL,
   PRIMARY KEY (`AirlinesID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `airlines`
+--
+
+INSERT INTO `airlines` (`AirlinesID`, `AirlineName`) VALUES
+(1, 'Philippine Airlines'),
+(2, 'Cebu Pacific'),
+(3, 'Air Philippines'),
+(4, 'Zest Air'),
+(5, 'British Airways'),
+(6, 'Japan Airlines'),
+(7, 'Malaysia Airlines'),
+(8, 'Thai Airways'),
+(9, 'Garuda Indonesia Airlines'),
+(10, 'Air Canada'),
+(11, 'Emirates'),
+(12, 'Delta Airlines'),
+(13, 'Qantas Airways'),
+(14, 'Continental Airlines');
 
 -- --------------------------------------------------------
 
@@ -110,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
   `RoleName` varchar(25) NOT NULL,
   `Description` text NOT NULL,
   PRIMARY KEY (`RoleID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `roles`
@@ -119,7 +139,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
 INSERT INTO `roles` (`RoleID`, `RoleName`, `Description`) VALUES
 (1, 'Superadmin', 'Can access all system modules and processes'),
 (2, 'Travel Agent', 'Confirms and Updates travel requests and appointments'),
-(3, 'Client Account', 'Registered Client / User account');
+(3, 'Client Account', 'Registered Client / User account'),
+(4, 'Guest', 'Unregistered User ');
 
 -- --------------------------------------------------------
 
