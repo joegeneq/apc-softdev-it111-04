@@ -13,7 +13,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="site-login">
     
-    <?php $form = ActiveForm::begin([
+    
+         <?php $form = ActiveForm::begin([
         'id' => 'login-form',
         'options' => ['class' => 'form-horizontal'],
         'fieldConfig' => [
@@ -25,8 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
     
         <?= $form->field($model, 'username') ?>
         <?= $form->field($model, 'password')->passwordInput() ?>
-   
 
+  
     <?= $form->field($model, 'rememberMe', [
         'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
     ])->checkbox() ?>
