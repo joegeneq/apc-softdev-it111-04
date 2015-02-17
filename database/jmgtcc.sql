@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2
+-- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Feb 11, 2015 at 11:58 AM
--- Server version: 5.5.25a
--- PHP Version: 5.4.4
+-- Host: 127.0.0.1
+-- Generation Time: Feb 17, 2015 at 01:48 PM
+-- Server version: 5.5.32
+-- PHP Version: 5.4.16
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `jmgtcc`
 --
+CREATE DATABASE IF NOT EXISTS `jmgtcc` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `jmgtcc`;
 
 -- --------------------------------------------------------
 
@@ -27,9 +29,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `airlines` (
-  `AirlineID` int(11) NOT NULL AUTO_INCREMENT,
-  `AirlineName` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`AirlineID`)
+  `AirlinesID` int(11) NOT NULL AUTO_INCREMENT,
+  `AirlineName` varchar(45) NOT NULL,
+  PRIMARY KEY (`AirlinesID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -39,24 +41,22 @@ CREATE TABLE IF NOT EXISTS `airlines` (
 --
 
 CREATE TABLE IF NOT EXISTS `appointment` (
-  `AppointmentID` varchar(15) NOT NULL,
-  `ClientName` varchar(45) DEFAULT NULL,
-  `ClientUsername` varchar(15) DEFAULT NULL,
-  `City` varchar(45) DEFAULT NULL,
-  `ContactNumber` varchar(20) DEFAULT NULL,
-  `EmailAddress` varchar(45) DEFAULT NULL,
-  `AppointmentDate` date DEFAULT NULL,
-  `AppointmentTime` time DEFAULT NULL,
-  `VisaType` varchar(15) DEFAULT NULL,
-  `DateCreated` date DEFAULT NULL,
-  `ConfirmedBy` varchar(15) DEFAULT NULL,
-  `Status` varchar(15) DEFAULT NULL,
-  `PaymentRate` double DEFAULT NULL,
-  `Message` text,
-  `User_UserID` int(11) NOT NULL,
-  PRIMARY KEY (`AppointmentID`),
-  KEY `fk_Appointment_User1_idx` (`User_UserID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `AppointmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientName` varchar(45) NOT NULL,
+  `ClientUsername` varchar(15) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `ContactNumber` varchar(20) NOT NULL,
+  `EmailAddress` varchar(45) NOT NULL,
+  `AppointmentDate` date NOT NULL,
+  `AppointmentTime` time NOT NULL,
+  `VisaType` varchar(15) NOT NULL,
+  `DateCreated` date NOT NULL,
+  `ConfirmedBy` varchar(15) NOT NULL,
+  `Status` varchar(15) NOT NULL,
+  `PaymentRate` double NOT NULL,
+  `Message` text NOT NULL,
+  PRIMARY KEY (`AppointmentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -66,23 +66,10 @@ CREATE TABLE IF NOT EXISTS `appointment` (
 
 CREATE TABLE IF NOT EXISTS `appointmenthistory` (
   `HistoryID` int(11) NOT NULL AUTO_INCREMENT,
-  `PrevAppointmenttDate` date DEFAULT NULL,
-  `PrevAppointmentTime` time DEFAULT NULL,
-  `Appointment_AppointmentID` varchar(15) NOT NULL,
-  PRIMARY KEY (`HistoryID`),
-  KEY `fk_AppointmentHistory_Appointment1_idx` (`Appointment_AppointmentID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `appointmenttime`
---
-
-CREATE TABLE IF NOT EXISTS `appointmenttime` (
-  `TimeID` int(11) NOT NULL AUTO_INCREMENT,
-  `Time` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`TimeID`)
+  `AppointmentID` varchar(15) NOT NULL,
+  `PrevAppointmentDate` date NOT NULL,
+  `PrevAppointmentTime` time NOT NULL,
+  PRIMARY KEY (`HistoryID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -93,9 +80,9 @@ CREATE TABLE IF NOT EXISTS `appointmenttime` (
 
 CREATE TABLE IF NOT EXISTS `contactnumber` (
   `NumberID` int(11) NOT NULL AUTO_INCREMENT,
-  `Country` varchar(45) DEFAULT NULL,
-  `Prefix` varchar(5) DEFAULT NULL,
-  `Digits` int(11) DEFAULT NULL,
+  `Country` varchar(45) NOT NULL,
+  `Prefix` varchar(5) NOT NULL,
+  `Digits` int(11) NOT NULL,
   PRIMARY KEY (`NumberID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -106,10 +93,10 @@ CREATE TABLE IF NOT EXISTS `contactnumber` (
 --
 
 CREATE TABLE IF NOT EXISTS `deals` (
-  `DealID` int(11) NOT NULL AUTO_INCREMENT,
-  `Deal` varchar(45) DEFAULT NULL,
-  `Description` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`DealID`)
+  `DealsID` int(11) NOT NULL AUTO_INCREMENT,
+  `Deal` varchar(45) NOT NULL,
+  `Description` varchar(45) NOT NULL,
+  PRIMARY KEY (`DealsID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -120,10 +107,19 @@ CREATE TABLE IF NOT EXISTS `deals` (
 
 CREATE TABLE IF NOT EXISTS `roles` (
   `RoleID` int(11) NOT NULL AUTO_INCREMENT,
-  `RoleName` varchar(25) DEFAULT NULL,
-  `RoleDescription` varchar(45) DEFAULT NULL,
+  `RoleName` varchar(25) NOT NULL,
+  `Description` text NOT NULL,
   PRIMARY KEY (`RoleID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`RoleID`, `RoleName`, `Description`) VALUES
+(1, 'Superadmin', 'Can access all system modules and processes'),
+(2, 'Travel Agent', 'Confirms and Updates travel requests and appointments'),
+(3, 'Client Account', 'Registered Client / User account');
 
 -- --------------------------------------------------------
 
@@ -132,86 +128,69 @@ CREATE TABLE IF NOT EXISTS `roles` (
 --
 
 CREATE TABLE IF NOT EXISTS `travelarrangement` (
-  `ArrangementID` varchar(15) NOT NULL,
-  `DepartureDate` date DEFAULT NULL,
-  `ReturnDate` date DEFAULT NULL,
-  `PlaceOfOrigin` varchar(45) DEFAULT NULL,
-  `Destination` varchar(45) DEFAULT NULL,
-  `NumberOfAdult` int(11) DEFAULT NULL,
-  `NumberOfChildren` int(11) DEFAULT NULL,
-  `NumberOfInfant` int(11) DEFAULT NULL,
-  `NumberOfRooms` int(11) DEFAULT NULL,
-  `HotelName` varchar(45) DEFAULT NULL,
-  `StarRating` varchar(20) DEFAULT NULL,
-  `Flight Type` varchar(20) DEFAULT NULL,
-  `CabinType` varchar(20) DEFAULT NULL,
-  `TravelDeals` text,
-  `TourType` varchar(45) DEFAULT NULL,
-  `DateCreated` date DEFAULT NULL,
-  `Status` varchar(20) DEFAULT NULL,
-  `DateConfirmed` date DEFAULT NULL,
-  `ConfirmedBy` varchar(20) DEFAULT NULL,
-  `DateUpdated` date DEFAULT NULL,
-  `UpdatedBy` varchar(20) DEFAULT NULL,
-  `Airlines_AirlineID` int(11) NOT NULL DEFAULT '0',
-  `User_UserID` int(11) NOT NULL,
-  PRIMARY KEY (`ArrangementID`,`Airlines_AirlineID`),
-  UNIQUE KEY `PlaceOfOrigin_UNIQUE` (`PlaceOfOrigin`),
-  KEY `fk_TravelArrangement_Airlines1_idx` (`Airlines_AirlineID`),
-  KEY `fk_TravelArrangement_User1_idx` (`User_UserID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ArrangementID` int(11) NOT NULL AUTO_INCREMENT,
+  `DepartureDate` date NOT NULL,
+  `ReturnDate` date NOT NULL,
+  `PlaceOfOrigin` varchar(45) NOT NULL,
+  `Destination` varchar(45) NOT NULL,
+  `NumberOfAdult` int(11) NOT NULL,
+  `NumberOfChildren` int(11) NOT NULL,
+  `NumberOfInfant` int(11) NOT NULL,
+  `NumberOfRooms` int(11) NOT NULL,
+  `HotelName` varchar(45) NOT NULL,
+  `StarRating` varchar(20) NOT NULL,
+  `AirlineID` int(11) NOT NULL,
+  `FlightType` varchar(20) NOT NULL,
+  `CabinType` varchar(20) NOT NULL,
+  `TravelDeals` text NOT NULL,
+  `TourType` varchar(45) NOT NULL,
+  `DateCreated` date NOT NULL,
+  `Status` varchar(20) NOT NULL,
+  `DateConfirmed` date NOT NULL,
+  `ConfirmedBy` varchar(20) NOT NULL,
+  `DateUpdated` date NOT NULL,
+  `UpdatedBy` varchar(20) NOT NULL,
+  PRIMARY KEY (`ArrangementID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `users` (
   `UserID` int(11) NOT NULL AUTO_INCREMENT,
-  `Username` varchar(15) DEFAULT NULL,
-  `Password` varchar(25) DEFAULT NULL,
-  `FirstName` varchar(45) DEFAULT NULL,
-  `LastName` varchar(45) DEFAULT NULL,
-  `Gender` varchar(1) DEFAULT NULL,
-  `City` varchar(45) DEFAULT NULL,
-  `ContactNumber` varchar(20) DEFAULT NULL,
-  `EmailAddress` varchar(45) DEFAULT NULL,
-  `LastLoggedIn` datetime DEFAULT NULL,
-  `LoggedIn` tinyint(1) DEFAULT NULL,
-  `Roles_RoleID` int(11) NOT NULL,
-  PRIMARY KEY (`UserID`,`Roles_RoleID`),
-  KEY `fk_User_Roles1_idx` (`Roles_RoleID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `Username` varchar(15) NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  `FirstName` varchar(45) NOT NULL,
+  `LastName` varchar(45) NOT NULL,
+  `Gender` varchar(1) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `ContactNumber` varchar(20) NOT NULL,
+  `EmailAddress` varchar(45) NOT NULL,
+  `LastLoggedIn` datetime NOT NULL,
+  `LoggedIn` tinyint(1) NOT NULL,
+  `RoleID` int(11) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`UserID`, `Username`, `Password`, `FirstName`, `LastName`, `Gender`, `City`, `ContactNumber`, `EmailAddress`, `LastLoggedIn`, `LoggedIn`, `RoleID`) VALUES
+(1, 'afpapna', 'jmgtcc', 'Arianne', 'Papna', 'F', 'Taguig City', '+639074443583', 'afpapna@student.apc.edu.ph', '2015-02-15 06:38:00', 1, 1);
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `appointment`
+-- Constraints for table `users`
 --
-ALTER TABLE `appointment`
-  ADD CONSTRAINT `fk_Appointment_User1` FOREIGN KEY (`User_UserID`) REFERENCES `user` (`UserID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Constraints for table `appointmenthistory`
---
-ALTER TABLE `appointmenthistory`
-  ADD CONSTRAINT `fk_AppointmentHistory_Appointment1` FOREIGN KEY (`Appointment_AppointmentID`) REFERENCES `appointment` (`AppointmentID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Constraints for table `travelarrangement`
---
-ALTER TABLE `travelarrangement`
-  ADD CONSTRAINT `fk_TravelArrangement_Airlines1` FOREIGN KEY (`Airlines_AirlineID`) REFERENCES `airlines` (`AirlineID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_TravelArrangement_User1` FOREIGN KEY (`User_UserID`) REFERENCES `user` (`UserID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Constraints for table `user`
---
-ALTER TABLE `user`
-  ADD CONSTRAINT `fk_User_Roles1` FOREIGN KEY (`Roles_RoleID`) REFERENCES `roles` (`RoleID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `users`
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `roles` (`RoleID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
