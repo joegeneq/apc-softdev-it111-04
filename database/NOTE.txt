@@ -1,0 +1,6 @@
+- Open JMGTCC.mwb in Workbench
+- Import jmgtccdb.sql into localhost/phpmyadmin
+- Disregard jmgtcc.sql
+
+
+That's all :)
