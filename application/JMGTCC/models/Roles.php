@@ -11,7 +11,7 @@ use Yii;
  * @property string $RoleName
  * @property string $Description
  *
- * @property Users $users
+ * @property User[] $users
  */
 class Roles extends \yii\db\ActiveRecord
 {
@@ -29,9 +29,8 @@ class Roles extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['RoleName', 'Description'], 'required'],
-            [['Description'], 'string'],
-            [['RoleName'], 'string', 'max' => 25]
+            [['RoleName'], 'string', 'max' => 25],
+            [['Description'], 'string', 'max' => 45]
         ];
     }
 
@@ -41,9 +40,9 @@ class Roles extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'RoleID' => 'Role ID',
-            'RoleName' => 'Role Name',
-            'Description' => 'Description',
+            'RoleID' => Yii::t('app', 'Role ID'),
+            'RoleName' => Yii::t('app', 'Role Name'),
+            'Description' => Yii::t('app', 'Description'),
         ];
     }
 
@@ -52,6 +51,6 @@ class Roles extends \yii\db\ActiveRecord
      */
     public function getUsers()
     {
-        return $this->hasOne(Users::className(), ['UserID' => 'RoleID']);
+        return $this->hasMany(User::className(), ['Roles_RoleID' => 'RoleID']);
     }
 }

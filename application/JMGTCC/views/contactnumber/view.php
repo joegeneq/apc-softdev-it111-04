@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Roles */
+/* @var $model app\models\ContactNumber */
 
-$this->title = $model->RoleID;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Roles'), 'url' => ['index']];
+$this->title = $model->NumberID;
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Contact Numbers'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="roles-view">
+<div class="contact-number-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->RoleID], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->RoleID], [
+        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->NumberID], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->NumberID], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
@@ -28,9 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'RoleID',
-            'RoleName',
-            'Description',
+            'NumberID',
+            'Country',
+            'Prefix',
+            'Digits',
         ],
     ]) ?>
 

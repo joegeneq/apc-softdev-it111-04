@@ -4,20 +4,22 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\AirlinesSearch */
+/* @var $model app\models\DealsSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="airlines-search">
+<div class="deals-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'AirlineID') ?>
+    <?= $form->field($model, 'DealID') ?>
 
-    <?= $form->field($model, 'AirlineName') ?>
+    <?= $form->field($model, 'Deal') ?>
+
+    <?= $form->field($model, 'Description') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

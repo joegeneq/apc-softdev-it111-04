@@ -38,8 +38,8 @@ class Airlines extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'AirlineID' => 'Airline ID',
-            'AirlineName' => 'Airline Name',
+            'AirlineID' => Yii::t('app', 'Airline ID'),
+            'AirlineName' => Yii::t('app', 'Airline Name'),
         ];
     }
 
