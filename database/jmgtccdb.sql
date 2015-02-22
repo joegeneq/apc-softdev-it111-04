@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2015 at 02:46 PM
+-- Generation Time: Feb 22, 2015 at 02:16 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -107,7 +107,21 @@ CREATE TABLE IF NOT EXISTS `contactnumber` (
   `Prefix` varchar(5) DEFAULT NULL,
   `Digits` int(11) DEFAULT NULL,
   PRIMARY KEY (`NumberID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `contactnumber`
+--
+
+INSERT INTO `contactnumber` (`NumberID`, `Country`, `Prefix`, `Digits`) VALUES
+(1, 'Philippines', '+63', 10),
+(2, 'Australia', '+61', 9),
+(3, 'Canada', '+1', 10),
+(4, 'Hong Kong', '+852', 8),
+(5, 'Russia', '+7', 10),
+(6, 'South Africa', '+27', 9),
+(7, 'United States', '+1', 10),
+(8, 'Wales', '+44', 10);
 
 -- --------------------------------------------------------
 
@@ -120,7 +134,19 @@ CREATE TABLE IF NOT EXISTS `deals` (
   `Deal` varchar(45) DEFAULT NULL,
   `Description` text,
   PRIMARY KEY (`DealID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `deals`
+--
+
+INSERT INTO `deals` (`DealID`, `Deal`, `Description`) VALUES
+(1, 'Breakfast', 'Travel accommodation will include Breakfast at the Hotel'),
+(2, 'Lunch', 'Travel accommodation will include Lunch at the Hotel or at any places included in the Travel Package'),
+(3, 'Dinner', 'Travel accommodation will include Dinner at the Hotel or at any places included in the Travel Package'),
+(4, 'Historical / Cultural Tour', 'Travel Package will include visiting Cultural centers and Historical Places'),
+(5, 'Leisure & Theme park Tour', 'Travel Package will include Leisure tour (Theme/Amusement park tour)'),
+(6, 'Adventure Travel', 'Travel Package will include Camping, Climbing, Cycling, Hiking, Mountaineering');
 
 -- --------------------------------------------------------
 
