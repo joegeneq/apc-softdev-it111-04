@@ -65,4 +65,10 @@ class Province extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Region::className(), ['id' => 'region_id']);
     }
+
+    public function getAllRegion()
+    {
+        $customers = Region::find()->all();
+        return $this->hasOne(Region::className(), ['id' => 'region_id']);
+    }
 }
