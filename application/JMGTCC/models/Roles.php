@@ -9,7 +9,7 @@ use Yii;
  *
  * @property integer $RoleID
  * @property string $RoleName
- * @property string $Description
+ * @property string $RoleDescription
  *
  * @property User[] $users
  */
@@ -30,7 +30,7 @@ class Roles extends \yii\db\ActiveRecord
     {
         return [
             [['RoleName'], 'string', 'max' => 25],
-            [['Description'], 'string', 'max' => 45]
+            [['RoleDescription'], 'string', 'max' => 45]
         ];
     }
 
@@ -42,7 +42,7 @@ class Roles extends \yii\db\ActiveRecord
         return [
             'RoleID' => Yii::t('app', 'Role ID'),
             'RoleName' => Yii::t('app', 'Role Name'),
-            'Description' => Yii::t('app', 'Description'),
+            'RoleDescription' => Yii::t('app', 'Role Description'),
         ];
     }
 

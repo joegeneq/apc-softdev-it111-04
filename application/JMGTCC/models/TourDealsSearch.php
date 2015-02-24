@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Roles;
+use app\models\TourDeals;
 
 /**
- * RolesSearch represents the model behind the search form about `app\models\Roles`.
+ * TourDealsSearch represents the model behind the search form about `app\models\TourDeals`.
  */
-class RolesSearch extends Roles
+class TourDealsSearch extends TourDeals
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class RolesSearch extends Roles
     public function rules()
     {
         return [
-            [['RoleID'], 'integer'],
-            [['RoleName', 'RoleDescription'], 'safe'],
+            [['DealID'], 'integer'],
+            [['DealName', 'DealDescription'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class RolesSearch extends Roles
      */
     public function search($params)
     {
-        $query = Roles::find();
+        $query = TourDeals::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,11 +56,11 @@ class RolesSearch extends Roles
         }
 
         $query->andFilterWhere([
-            'RoleID' => $this->RoleID,
+            'DealID' => $this->DealID,
         ]);
 
-        $query->andFilterWhere(['like', 'RoleName', $this->RoleName])
-            ->andFilterWhere(['like', 'RoleDescription', $this->RoleDescription]);
+        $query->andFilterWhere(['like', 'DealName', $this->DealName])
+            ->andFilterWhere(['like', 'DealDescription', $this->DealDescription]);
 
         return $dataProvider;
     }

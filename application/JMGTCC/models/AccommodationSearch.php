@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Roles;
+use app\models\Accommodation;
 
 /**
- * RolesSearch represents the model behind the search form about `app\models\Roles`.
+ * AccommodationSearch represents the model behind the search form about `app\models\Accommodation`.
  */
-class RolesSearch extends Roles
+class AccommodationSearch extends Accommodation
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class RolesSearch extends Roles
     public function rules()
     {
         return [
-            [['RoleID'], 'integer'],
-            [['RoleName', 'RoleDescription'], 'safe'],
+            [['AccommodationID'], 'integer'],
+            [['AccommodationName', 'AccommodationDesc'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class RolesSearch extends Roles
      */
     public function search($params)
     {
-        $query = Roles::find();
+        $query = Accommodation::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,11 +56,11 @@ class RolesSearch extends Roles
         }
 
         $query->andFilterWhere([
-            'RoleID' => $this->RoleID,
+            'AccommodationID' => $this->AccommodationID,
         ]);
 
-        $query->andFilterWhere(['like', 'RoleName', $this->RoleName])
-            ->andFilterWhere(['like', 'RoleDescription', $this->RoleDescription]);
+        $query->andFilterWhere(['like', 'AccommodationName', $this->AccommodationName])
+            ->andFilterWhere(['like', 'AccommodationDesc', $this->AccommodationDesc]);
 
         return $dataProvider;
     }
