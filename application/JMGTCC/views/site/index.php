@@ -31,8 +31,7 @@ $this->title = 'JMGTCC';
 <div class="site-index">
 
     <div class="jumbotron">
-
-        
+            
         <center>
             <div id="slideMain">           
                 <div class="slideDiv" u="slides">
@@ -83,18 +82,22 @@ $this->title = 'JMGTCC';
         <div class="row">
             
             <div class="col-lg-9">
-                <h3>Terms & Conditions</h3>
+                <h3>Journeys & More Global Tours</h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
+                    Journeys & More Global Tours and Consultancy Company (JMGTC) is a Philippine travel bureau engaged in the 
+                    wholesale distribution of local and international package tours: hotels, transfers, city tours, theme park 
+                    tickets and customized travel arrangement. It is the Hong Kong General Sales Agent (GSA) in the Philippines.
+                    <br><br>
+                    WE SPECIALIZE IN GROUP BOOKINGS INCLUSIVE OF COMPREHENSIVE TRAVEL ORIENTATION, AIRPORT ESCORT SERVICE AND FREE TRAVEL INSURANCE.
+                    <br><br>
+                    WE ARE THE COUNTRY’S REPUTABLE “METRO MANILA VISA ASSISTANCE CENTER” HANDLING ALL VISA DOCUMENTATION AND PROCESSING 
+                    REQUIREMENTS FOR YOUR CONVENIENCE, SERVING TOP CORPORATIONS, GOVERNMENT AGENCIES, SHOWBUSINESS PERSONALITIES AND THE 
+                    BUSINESS COMMUNITY.
+                    <br><br>
+                    WE ARE THE PHILIPPINES’ TRUSTED BOOKING PARTNER OF LAND ARRANGEMENT PACKAGES AROUND THE WORLD.
+                    <br><br>
+                    VISIT US AND ENJOY THE COMFORTS OF OUR OFFICE ENVIRONMENT AND EXPERIENCED TRAVEL STAFF!
                 </p>
                 
             </div>
