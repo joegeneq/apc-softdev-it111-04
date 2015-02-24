@@ -18,8 +18,8 @@ class ProvinceSearch extends province
     public function rules()
     {
         return [
-            [['id', 'region_id'], 'integer'],
-            [['province_code', 'province_description'], 'safe'],
+            [['id'], 'integer'],
+            [['province_code', 'province_description', 'region_id'], 'safe'],
         ];
     }
 
