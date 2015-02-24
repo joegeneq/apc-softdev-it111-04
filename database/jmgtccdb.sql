@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2015 at 02:16 PM
+-- Generation Time: Feb 24, 2015 at 06:10 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `jmgtccdb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `jmgtccdb`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `accommodation`
+--
+
+CREATE TABLE IF NOT EXISTS `accommodation` (
+  `AccommodationID` int(11) NOT NULL AUTO_INCREMENT,
+  `AccommodationName` varchar(60) DEFAULT NULL,
+  `AccommodationDesc` text,
+  PRIMARY KEY (`AccommodationID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `accommodation`
+--
+
+INSERT INTO `accommodation` (`AccommodationID`, `AccommodationName`, `AccommodationDesc`) VALUES
+(1, 'Breakfast', 'Accommodation will include Breakfast at the Hotel'),
+(2, 'Lunch', 'Accommodation will include Lunch at the Hotel or at any places included in the tour package'),
+(3, 'Dinner', 'Accommodation will include Dinner at the Hotel or at any places included in the tour package');
 
 -- --------------------------------------------------------
 
@@ -126,27 +148,24 @@ INSERT INTO `contactnumber` (`NumberID`, `Country`, `Prefix`, `Digits`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `deals`
+-- Table structure for table `hotels`
 --
 
-CREATE TABLE IF NOT EXISTS `deals` (
-  `DealID` int(11) NOT NULL AUTO_INCREMENT,
-  `Deal` varchar(45) DEFAULT NULL,
-  `Description` text,
-  PRIMARY KEY (`DealID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+CREATE TABLE IF NOT EXISTS `hotels` (
+  `HotelID` int(11) NOT NULL AUTO_INCREMENT,
+  `HotelName` varchar(60) DEFAULT NULL,
+  `Country` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`HotelID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `deals`
+-- Dumping data for table `hotels`
 --
 
-INSERT INTO `deals` (`DealID`, `Deal`, `Description`) VALUES
-(1, 'Breakfast', 'Travel accommodation will include Breakfast at the Hotel'),
-(2, 'Lunch', 'Travel accommodation will include Lunch at the Hotel or at any places included in the Travel Package'),
-(3, 'Dinner', 'Travel accommodation will include Dinner at the Hotel or at any places included in the Travel Package'),
-(4, 'Historical / Cultural Tour', 'Travel Package will include visiting Cultural centers and Historical Places'),
-(5, 'Leisure & Theme park Tour', 'Travel Package will include Leisure tour (Theme/Amusement park tour)'),
-(6, 'Adventure Travel', 'Travel Package will include Camping, Climbing, Cycling, Hiking, Mountaineering');
+INSERT INTO `hotels` (`HotelID`, `HotelName`, `Country`) VALUES
+(1, 'Rambler Garden-bf at Café de coral', 'Hong Kong'),
+(2, ' Silka Fareast / Silka West Kowloon', 'Hong Kong'),
+(3, 'Silka Seaview / Largos', 'Hong Kong');
 
 -- --------------------------------------------------------
 
@@ -157,7 +176,7 @@ INSERT INTO `deals` (`DealID`, `Deal`, `Description`) VALUES
 CREATE TABLE IF NOT EXISTS `roles` (
   `RoleID` int(11) NOT NULL AUTO_INCREMENT,
   `RoleName` varchar(25) DEFAULT NULL,
-  `Description` varchar(45) DEFAULT NULL,
+  `RoleDescription` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`RoleID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -165,11 +184,32 @@ CREATE TABLE IF NOT EXISTS `roles` (
 -- Dumping data for table `roles`
 --
 
-INSERT INTO `roles` (`RoleID`, `RoleName`, `Description`) VALUES
+INSERT INTO `roles` (`RoleID`, `RoleName`, `RoleDescription`) VALUES
 (1, 'Superadmin', 'Can access all system modules and processes'),
 (2, 'Travel Agent', 'Confirms and Updates travel requests and appo'),
 (3, 'Client Account', 'Registered Client / User account'),
 (4, 'Guest', 'Unregistered User ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tourdeals`
+--
+
+CREATE TABLE IF NOT EXISTS `tourdeals` (
+  `DealID` int(11) NOT NULL AUTO_INCREMENT,
+  `DealName` varchar(60) DEFAULT NULL,
+  `DealDescription` text,
+  PRIMARY KEY (`DealID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `tourdeals`
+--
+
+INSERT INTO `tourdeals` (`DealID`, `DealName`, `DealDescription`) VALUES
+(1, 'Historical / Cultural Tour', 'Includes visiting historical sites and cultural centers'),
+(2, 'Adventure Tour', 'Includes camping, cycling, climbing, hiking,  mountaineering ');
 
 -- --------------------------------------------------------
 
@@ -189,10 +229,12 @@ CREATE TABLE IF NOT EXISTS `travelarrangement` (
   `NumberOfRooms` int(11) DEFAULT NULL,
   `HotelName` varchar(45) DEFAULT NULL,
   `StarRating` varchar(20) DEFAULT NULL,
+  `Accommodation` text,
   `Flight Type` varchar(20) DEFAULT NULL,
   `CabinType` varchar(20) DEFAULT NULL,
-  `TravelDeals` text,
   `TourType` varchar(45) DEFAULT NULL,
+  `TourDeals` text,
+  `TransportService` varchar(45) DEFAULT NULL,
   `DateCreated` date DEFAULT NULL,
   `Status` varchar(20) DEFAULT NULL,
   `DateConfirmed` date DEFAULT NULL,
@@ -200,10 +242,12 @@ CREATE TABLE IF NOT EXISTS `travelarrangement` (
   `DateUpdated` date DEFAULT NULL,
   `UpdatedBy` varchar(20) DEFAULT NULL,
   `Airlines_AirlineID` int(11) NOT NULL DEFAULT '0',
+  `Hotels_HotelID` int(11) NOT NULL DEFAULT '0',
   `User_UserID` int(11) NOT NULL,
-  PRIMARY KEY (`ArrangementID`,`Airlines_AirlineID`),
+  PRIMARY KEY (`ArrangementID`,`Airlines_AirlineID`,`Hotels_HotelID`),
   KEY `fk_TravelArrangement_Airlines1_idx` (`Airlines_AirlineID`),
-  KEY `fk_TravelArrangement_User1_idx` (`User_UserID`)
+  KEY `fk_TravelArrangement_User1_idx` (`User_UserID`),
+  KEY `fk_TravelArrangement_Hotels1_idx` (`Hotels_HotelID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -214,6 +258,7 @@ CREATE TABLE IF NOT EXISTS `travelarrangement` (
 
 CREATE TABLE IF NOT EXISTS `user` (
   `UserID` int(11) NOT NULL AUTO_INCREMENT,
+  `Roles_RoleID` int(11) NOT NULL,
   `Username` varchar(15) DEFAULT NULL,
   `Password` varchar(45) DEFAULT NULL,
   `FirstName` varchar(45) DEFAULT NULL,
@@ -224,7 +269,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   `EmailAddress` varchar(45) DEFAULT NULL,
   `LastLoggedIn` datetime DEFAULT NULL,
   `LoggedIn` tinyint(1) DEFAULT NULL,
-  `Roles_RoleID` int(11) NOT NULL,
   PRIMARY KEY (`UserID`,`Roles_RoleID`),
   KEY `fk_User_Roles1_idx` (`Roles_RoleID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
@@ -250,7 +294,8 @@ ALTER TABLE `appointmenthistory`
 --
 ALTER TABLE `travelarrangement`
   ADD CONSTRAINT `fk_TravelArrangement_Airlines1` FOREIGN KEY (`Airlines_AirlineID`) REFERENCES `airlines` (`AirlineID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_TravelArrangement_User1` FOREIGN KEY (`User_UserID`) REFERENCES `user` (`UserID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_TravelArrangement_User1` FOREIGN KEY (`User_UserID`) REFERENCES `user` (`UserID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_TravelArrangement_Hotels1` FOREIGN KEY (`Hotels_HotelID`) REFERENCES `hotels` (`HotelID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `user`
