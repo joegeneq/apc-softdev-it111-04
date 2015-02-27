@@ -55,13 +55,17 @@ class ProvinceSearch extends province
             return $dataProvider;
         }
 
+        $query->joinwith('region');
+
         $query->andFilterWhere([
             'id' => $this->id,
-            'region_id' => $this->region_id,
+            // 'region_id' => $this->region_id,
         ]);
 
         $query->andFilterWhere(['like', 'province_code', $this->province_code])
-            ->andFilterWhere(['like', 'province_description', $this->province_description]);
+            ->andFilterWhere(['like', 'province_description', $this->province_description])
+            ->andFilterWhere(['like', 'region.region_code', $this->region_id])
+            ;
 
         return $dataProvider;
     }
