@@ -89,3 +89,35 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+/* AFPAPNA */
+
+.navbar-inverse {
+  background-color: aqua;
+  border-color: aqua;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: magenta;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: magenta;
+}
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.breadcrumb > .active {
+  color: white;
+}
