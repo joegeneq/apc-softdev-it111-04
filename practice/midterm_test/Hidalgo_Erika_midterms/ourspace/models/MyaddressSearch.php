@@ -18,8 +18,8 @@ class MyaddressSearch extends Myaddress
     public function rules()
     {
         return [
-            [['id'], 'integer'],
-            [['firstname', 'middlename', 'lastname', 'gender', 'created_at'], 'safe'],
+            [['id', 'home_address'], 'integer'],
+            [['firstname', 'middlename', 'lastname', 'gender', 'created_at', 'landline', 'cellphone'], 'safe'],
         ];
     }
 
@@ -58,12 +58,15 @@ class MyaddressSearch extends Myaddress
         $query->andFilterWhere([
             'id' => $this->id,
             'created_at' => $this->created_at,
+            'home_address' => $this->home_address,
         ]);
 
         $query->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'middlename', $this->middlename])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
-            ->andFilterWhere(['like', 'gender', $this->gender]);
+            ->andFilterWhere(['like', 'gender', $this->gender])
+            ->andFilterWhere(['like', 'landline', $this->landline])
+            ->andFilterWhere(['like', 'cellphone', $this->cellphone]);
 
         return $dataProvider;
     }
