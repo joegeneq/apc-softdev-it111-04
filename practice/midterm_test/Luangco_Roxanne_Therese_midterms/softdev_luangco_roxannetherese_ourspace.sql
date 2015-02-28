@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2015 at 04:14 AM
+-- Generation Time: Feb 28, 2015 at 04:24 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -39,6 +39,13 @@ CREATE TABLE IF NOT EXISTS `myaddress` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `myaddress`
+--
+
+INSERT INTO `myaddress` (`id`, `firstname`, `middlename`, `lastname`, `gender`, `created_at`, `home_address`, `landline`, `cellphone`) VALUES
+(1, 'Xanne ', 'Aldave', 'Luangco', 'F', '2015-02-28 03:21:55', '541 M. A. Felix St., Pasay City', '8546984', '09169649913');
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +61,13 @@ CREATE TABLE IF NOT EXISTS `mycomment` (
   PRIMARY KEY (`id`),
   KEY `mycomment_ibfk_1` (`myaddress_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mycomment`
+--
+
+INSERT INTO `mycomment` (`id`, `myaddress_id`, `author`, `body`, `created_at`) VALUES
+(1, 1, 'Roxanne Luangco', 'Hello!! :)', '2015-02-28 03:24:32');
 
 --
 -- Constraints for dumped tables
