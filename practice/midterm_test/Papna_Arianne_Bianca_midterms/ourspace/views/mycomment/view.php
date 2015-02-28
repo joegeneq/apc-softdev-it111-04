@@ -28,8 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'myaddress_id',
+            'id',            
+            'myaddress.lastname',
             'author',
             'body:ntext',
             'created_at',
