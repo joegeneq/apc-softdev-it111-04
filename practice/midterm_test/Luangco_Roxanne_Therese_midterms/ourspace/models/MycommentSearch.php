@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Mycomment;
+use app\models\Myaddress;
 
 /**
  * MycommentSearch represents the model behind the search form about `app\models\Mycomment`.
@@ -54,16 +55,17 @@ class MycommentSearch extends Mycomment
             // $query->where('0=1');
             return $dataProvider;
         }
-
+		
+		$query->joinWith('myaddress');
         $query->andFilterWhere([
             'id' => $this->id,
-            'myaddress_id' => $this->myaddress_id,
+            'lastname' => $this->myaddress_id,
             'created_at' => $this->created_at,
         ]);
 
         $query->andFilterWhere(['like', 'author', $this->author])
-            ->andFilterWhere(['like', 'body', $this->body]);
-
+            ->andFilterWhere(['like', 'body', $this->body])
+			->andFilterWhere(['like', 'myaddress.lastname', $this->myaddress_id]);
         return $dataProvider;
     }
 }
