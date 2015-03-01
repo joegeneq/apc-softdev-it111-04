@@ -47,10 +47,10 @@ class Myaddress extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'firstname' => Yii::t('app', 'Firstname'),
-            'middlename' => Yii::t('app', 'Middlename'),
-            'lastname' => Yii::t('app', 'Lastname'),
-            'gender' => Yii::t('app', 'Gender'),
+            'firstname' => Yii::t('app', 'First Name'),
+            'middlename' => Yii::t('app', 'Middle Name'),
+            'lastname' => Yii::t('app', 'Last Name'),
+            'gender' => Yii::t('app', 'Male/Female'),
             'created_at' => Yii::t('app', 'Created At'),
         ];
     }
