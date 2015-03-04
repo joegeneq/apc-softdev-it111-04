@@ -18,6 +18,11 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                 <?= $form->field($model, 'username') ?>
+                <?= $form->field($model, 'first_name') ?>
+                <?= $form->field($model, 'last_name') ?>
+                <?= $form->field($model, 'gender') ?>
+                <?= $form->field($model, 'city') ?>
+                <?= $form->field($model, 'contact_number') ?>
                 <?= $form->field($model, 'email') ?>
                 <?= $form->field($model, 'password')->passwordInput() ?>
                 <div class="form-group">

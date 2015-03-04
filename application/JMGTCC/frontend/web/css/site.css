@@ -89,3 +89,224 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+/*START ADDED BY: AFPAPNA 02082015*/
+.navbar {
+  position: absolute;
+  min-height: 85px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar-brand {  
+  float: left;
+  height: 70px; 
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 20px; 
+}
+  .navbar-brand > img {  
+  display: block;
+  height: 120%; 
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand > img {
+  display: block;
+  height: 80%; 
+  }
+}
+
+.navbar-inverse {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A9DE91), to(#3B8215));
+  background: -moz-linear-gradient(top, #A9DE91, #3B8215);
+  background: -o-linear-gradient(top, #A9DE91,  #3B8215);
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-text {
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF; 
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #F9FF89;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #F9FF89;
+  background-color: transparent;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+}
+
+.breadcrumb {
+  padding: 25px 15px 13px;
+  margin-bottom: 30px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* @@@@@@@@@@@@@@ B @@@@@@@@@@@@@@ O @@@@@@@@@@@@@@ D @@@@@@@@@@@@@@ Y @@@@@@@@@@@@@@ */
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #F0F8FF;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #F0F8FF;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 48px 0;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SLIDE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#slideMain {
+    position: relative; 
+    margin-top: -20px;
+    top: 0px;
+    left: 0px;
+}
+
+.slideDiv {
+    cursor: move; 
+    position: absolute; 
+    overflow: hidden;
+    left: 0px; 
+    top: 0px;    
+}
+
+.slideImg, .slideDiv, #slideMain {
+    width: 100%; 
+    height: 350px;
+}
+
+.slideBullet { 
+    position: absolute;   
+    bottom: 300px;
+    left: 432px; 
+    width: 96px; 
+    height: 18px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SERVICES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.servicesImg {
+    width: 300px;
+    height: 120px;
+}
+
+.accountT {
+    margin-left: 20%;
+}
+.accountF {
+    margin-left: 1%;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ LOG IN @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.site-login {
+  padding: 30px 15px;
+  margin-bottom: 30px;  
+  text-align: center;
+}
+
+.btn, .btn-primary {
+    background-color: #3B8215;
+    border-color: #A9DE91;
+}
+
+.btn:hover, .btn-primary:hover {
+    background-color: #3B8215;
+    border-color: #3B8215;
+    color: #F9FF89;
+}
+
+@media screen and (min-width: 768px) {
+  .site-login {
+    padding: 48px 0;
+  }
+  .container .site-login,
+  .container-fluid .site-login {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .site-login h1,
+  .site-login .h1 {
+    font-size: 63px;
+  }
+}
+/*END ADDED BY: AFPAPNA 02082015*/
+
+/* START ADDED BY: AFPAPNA 02152015 */
+.login-form-main{
+  text-align: center; 
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.login-form {
+  margin-right: 20%;
+  margin-left: 20%;
+  border: 2px solid #3B8215;
+  border-radius: 20px;
+}
+
+.login-form-form {
+  margin-right: 15%;
+  margin-left: 15%;  
+}
+/* END ADDED BY: AFPAPNA 02152015 */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
