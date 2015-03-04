@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'username') ?>
                 <?= $form->field($model, 'first_name') ?>
                 <?= $form->field($model, 'last_name') ?>
-                <?= $form->field($model, 'gender') ?>
+                <?= $form->field($model, 'gender')->radioList(array('M'=>'Male','F'=>'Female'));?>
                 <?= $form->field($model, 'city') ?>
                 <?= $form->field($model, 'contact_number') ?>
                 <?= $form->field($model, 'email') ?>
