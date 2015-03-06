@@ -57,7 +57,10 @@ use dosamigos\datepicker\DatePicker;
                     <p class="form-label">Email Address</p>
                  </div>
                 <div class="col-lg-6">                   
-                   <?= $form->field($model, 'email_address')->textInput(['maxlength' => 45])->label(false) ?>
+                   <?= $form->field($model, 'email_address')
+                    ->textInput(['maxlength' => 45])
+                    ->input('email')
+                    ->label(false) ?>
                 </div>
             </div>
 
@@ -96,19 +99,16 @@ use dosamigos\datepicker\DatePicker;
                     <p class="form-label">Appointment Time</p>
                  </div>
                 <div class="col-lg-2">                   
-                   <?= $form->field($model, 'appointment_time')->radioList(
+                   <?= $form->field($model, 'appointment_time')
+                    ->radioList(
                         array('10:00'=>'10:00 AM', 
                                 '11:00'=>'11:00 AM',
-                                '01:00'=>'01:00 PM'                                
-                           ))->label(false);
-                    ?>
-                </div>
-                <div class="col-lg-2">                   
-                   <?= $form->field($model, 'appointment_time')->radioList(
-                        array('02:00'=>'02:00 PM',
+                                '01:00'=>'01:00 PM',                               
+                                '02:00'=>'02:00 PM',
                                 '03:00'=>'03:00 PM',
                                 '04:00'=>'04:00 PM'
-                           ))->label(false);
+                           ))
+                   ->label(false);
                     ?>
                 </div>
             </div>
@@ -142,15 +142,15 @@ use dosamigos\datepicker\DatePicker;
         <!-- </div> -->
 
     </div>    
-
-    <!--<?= $form->field($model, 'appointment_code')->textInput(['maxlength' => 25]) ?> -->
-    <!-- <?= $form->field($model, 'client_username')->textInput(['maxlength' => 15]) ?> -->   
-    <!-- <?= $form->field($model, 'payment_rate')->textInput() ?> -->
-    <!-- <?= $form->field($model, 'date_created')->textInput() ?> -->
-    <!-- <?= $form->field($model, 'status')->textInput(['maxlength' => 15]) ?> -->
-    <!-- <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 15]) ?> -->    
-    <!-- <?= $form->field($model, 'user_id')->textInput() ?> -->
-    <!-- <?= $form->field($model, 'staff_id')->textInput() ?> -->
+     
+    <?= Html::activeHiddenInput($model, 'appointment_code',['value' => 'whatever value'])?>  
+    <?= Html::activeHiddenInput($model, 'client_username') ?>    
+    <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
+    <?= Html::activeHiddenInput($model, 'date_created') ?> 
+    <?= Html::activeHiddenInput($model, 'status', ['value' => 'For Approval']) ?> 
+    <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
+    <?= Html::activeHiddenInput($model, 'user_id') ?> 
+    <?= Html::activeHiddenInput($model, 'staff_id') ?> 
 
     <?php ActiveForm::end(); ?>
 
