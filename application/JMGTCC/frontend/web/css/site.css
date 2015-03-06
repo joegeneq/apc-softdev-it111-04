@@ -309,4 +309,40 @@ a.desc:after {
 /* END ADDED BY: AFPAPNA 02152015 */
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ APPOINTMENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START ADDED BY: AFPAPNA 03042015 */
+.form-container-main {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.btn-form-create {
+  text-align: center;
+}
+
+p.form-label {
+  font-style: normal;
+  font-weight: 600; 
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BUTTON DEFAULT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #E5E4E2;
+  border-color: #ccc;
+}
+/* END ADDED BY: AFPAPNA 03042015 */
