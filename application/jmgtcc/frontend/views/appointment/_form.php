@@ -20,6 +20,10 @@ use backend\models\Time;
         
         <div class="form-container-main">
 
+            <h3><?= Html::encode($this->title) ?></h3>
+            <p>Please fill out the following fields to set an appointment:</p>
+            <br>
+
             <!-- CLIENT NAME -->
             <div class="row">
                 <div class="col-lg-3">
