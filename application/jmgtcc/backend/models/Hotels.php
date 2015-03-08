@@ -29,6 +29,7 @@ class Hotels extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['hotel_name', 'country'], 'required'],
             [['hotel_name'], 'string', 'max' => 60],
             [['country'], 'string', 'max' => 45]
         ];
