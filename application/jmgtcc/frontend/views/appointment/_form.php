@@ -98,7 +98,7 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-2">                   
                    <?= $form->field($model, 'appointment_time')->radioList(                        
-                        ArrayHelper::map(Time::find()->all(),'id','time')
+                        ArrayHelper::map(Time::find()->all(),'time','description')
                         )
                    ->label(false);
                     ?>
