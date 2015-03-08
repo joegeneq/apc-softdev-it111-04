@@ -26,7 +26,7 @@ use Yii;
  * @property integer $staff_id
  *
  * @property Staff $staff
- * @property User1 $user
+ * @property User $user
  * @property AppointmentHistory[] $appointmentHistories
  */
 class Appointment extends \yii\db\ActiveRecord
@@ -45,16 +45,16 @@ class Appointment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
             [['appointment_date', 'appointment_time', 'date_created'], 'safe'],
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
-            [['user_id', 'staff_id'], 'required'],
             [['user_id', 'staff_id'], 'integer'],
             [['appointment_code'], 'string', 'max' => 25],
             [['client_name'], 'string', 'max' => 60],
-            [['client_username', 'visa_type', 'status', 'confirmed_by'], 'string', 'max' => 15],
+            [['client_username', 'visa_type', 'confirmed_by'], 'string', 'max' => 15],
             [['city', 'email_address'], 'string', 'max' => 45],
-            [['contact_number'], 'string', 'max' => 20]
+            [['contact_number', 'status'], 'string', 'max' => 20]
         ];
     }
 
@@ -97,7 +97,7 @@ class Appointment extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(User1::className(), ['id' => 'user_id']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
     /**
