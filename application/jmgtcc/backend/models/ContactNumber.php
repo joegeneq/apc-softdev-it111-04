@@ -28,6 +28,7 @@ class ContactNumber extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['country', 'prefix', 'digits'], 'required'],
             [['digits'], 'integer'],
             [['country'], 'string', 'max' => 45],
             [['prefix'], 'string', 'max' => 5]

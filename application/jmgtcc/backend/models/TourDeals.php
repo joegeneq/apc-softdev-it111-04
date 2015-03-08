@@ -27,6 +27,7 @@ class TourDeals extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['deal_name', 'deal_description'], 'required'],
             [['deal_description'], 'string'],
             [['deal_name'], 'string', 'max' => 60]
         ];
