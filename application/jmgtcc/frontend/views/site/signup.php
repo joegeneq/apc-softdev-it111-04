@@ -6,29 +6,96 @@ use yii\bootstrap\ActiveForm;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\SignupForm */
 
-$this->title = 'Signup';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Sign up';
 ?>
-<div class="site-signup">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to signup:</p>
+<div class="site-signup">    
 
     <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
-                <?= $form->field($model, 'username') ?>
-                <?= $form->field($model, 'first_name') ?>
-                <?= $form->field($model, 'last_name') ?>
-                <?= $form->field($model, 'gender')->radioList(array('M'=>'Male','F'=>'Female'));?>
-                <?= $form->field($model, 'city') ?>
-                <?= $form->field($model, 'contact_number') ?>
-                <?= $form->field($model, 'email') ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
-                <div class="form-group">
-                    <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+
+        <div class="signup-form-main">
+
+            <h3><?= Html::encode($this->title) ?></h3>
+            <p>Please fill out the following fields to signup:</p>
+            <br>
+
+            <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>                
+          
+            <div class="row">
+                 <div class="col-lg-5">
+                    <?= $form->field($model, 'first_name') 
+                            ->textinput(['placeholder'=>'First name']) 
+                            ->label(false) ?>                               
                 </div>
+                <div class="col-lg-5">
+                    <?= $form->field($model, 'last_name') 
+                            ->textinput(['placeholder'=>'Last name']) 
+                            ->label(false) ?>               
+                </div>  
+            </div>  
+                       
+            <div class="row">
+                 <div class="col-lg-5">
+                   <?= $form->field($model, 'username')
+                        ->textinput(['placeholder'=>'Username']) 
+                        ->label(false) ?>                         
+                </div>
+                <div class="col-lg-5">
+                   <?= $form->field($model, 'password')
+                        ->passwordInput(['placeholder'=>'Password']) 
+                        ->label(false) ?>            
+                </div>  
+            </div>  
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="hrz-radiobtn">
+                         <?= $form->field($model, 'gender')
+                            ->radioList(array('M'=>'Male','F'=>'Female'))
+                            ->label('Gender: ') ?>    
+                    </div>                  
+                </div>            
+            </div>  
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <?= $form->field($model, 'city') 
+                        ->textinput(['placeholder'=>'City']) 
+                        ->label(false) ?>                     
+                </div>               
+            </div>  
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <?= $form->field($model, 'contact_number') 
+                            ->textinput(['placeholder'=>'Contact number']) 
+                            ->label(false) ?>            
+                </div>
+            </div>  
+
+             <div class="row">
+                <div class="col-lg-5">
+                    <?= $form->field($model, 'email')
+                            ->input('email')
+                            ->textinput(['placeholder'=>'Email']) 
+                            ->label(false) ?> 
+                </div>     
+            </div>  
+         
+             <div class="row">
+                <div class="col-lg-5">
+                    <div >
+                        <?= Html::submitButton('Create Account', 
+                            ['class' => 'btn btn-primary', 
+                                'name' => 'signup-button']) ?>
+                    </div>
+                </div>     
+            </div> 
+
+        </div>
+
+        <div class="col-lg-5">                
             <?php ActiveForm::end(); ?>
         </div>
+
     </div>
 </div>

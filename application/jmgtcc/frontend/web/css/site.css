@@ -293,19 +293,23 @@ a.desc:after {
   text-align: center; 
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 6%;
 }
 
 .login-form {
   margin-right: 20%;
   margin-left: 20%;
-  border: 2px solid #3B8215;
   border-radius: 20px;
+
+ /* border: 1px solid #3B8215;*/
 }
 
 .login-form-form {
-  margin-right: 15%;
-  margin-left: 15%;  
+  margin-right: 5%;
+  margin-left: 5%;
 }
+
+
 /* END ADDED BY: AFPAPNA 02152015 */
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -345,4 +349,24 @@ p.form-label {
   background-color: #E5E4E2;
   border-color: #ccc;
 }
+/* END ADDED BY: AFPAPNA 03042015 */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SIGN UP @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START ADDED BY: AFPAPNA 03082015 */
+.signup-form-main{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.hrz-radiobtn label {
+  float:left;
+  text-align: center;
+  width:100px;
+  margin-bottom: 5%;
+}
+
 /* END ADDED BY: AFPAPNA 03042015 */
