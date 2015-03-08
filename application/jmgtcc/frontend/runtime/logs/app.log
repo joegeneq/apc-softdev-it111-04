@@ -1952,3 +1952,60 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425698055.532
     'REQUEST_TIME' => 1425698055
 ]
+2015-03-08 13:16:23 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\Time' not found' in C:\apc-softdev-it111-04\application\jmgtcc\frontend\views\appointment\_form.php:101
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-08 13:16:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'hg70nm68v9121uqpjlkdkmpd94'
+    '_csrf' => '564cb9d05e83e4765db88f2bdc94b633ac1cdeb851753edd08771d0f2fa33422s:32:\"oBduc7TOuncLdm6se8nSWQ8kY9vGbjjm\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=hg70nm68v9121uqpjlkdkmpd94; _csrf=564cb9d05e83e4765db88f2bdc94b633ac1cdeb851753edd08771d0f2fa33422s%3A32%3A%22oBduc7TOuncLdm6se8nSWQ8kY9vGbjjm%22%3B'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58444'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425816982.237
+    'REQUEST_TIME' => 1425816982
+]
