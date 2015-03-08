@@ -13,9 +13,16 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+	 'db'=>[
+            'class'=>'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_brs',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8'            
+        ],
         'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+            'identityClass' => 'app\models\Staff',
+            'enableAutoLogin' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
