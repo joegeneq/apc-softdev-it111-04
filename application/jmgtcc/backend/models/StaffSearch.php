@@ -10,7 +10,7 @@ use backend\models\Staff;
 /**
  * StaffSearch represents the model behind the search form about `backend\models\Staff`.
  */
-class StaffSearch extends Staff
+class StaffSearch extends Staff 
 {
     /**
      * @inheritdoc

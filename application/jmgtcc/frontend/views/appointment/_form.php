@@ -20,10 +20,14 @@ use backend\models\Time;
         
         <div class="form-container-main">
 
+            <h3><?= Html::encode($this->title) ?></h3>
+            <p>Please fill out the following fields to set an appointment:</p>
+            <br>
+
             <!-- CLIENT NAME -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Client Name</p>
+                    <p class="form-label">Complete Name</p>
                  </div>
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'client_name')->textInput(['maxlength' => 60])->label(false) ?>

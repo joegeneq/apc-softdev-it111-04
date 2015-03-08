@@ -39,11 +39,11 @@ AppAsset::register($this);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Customized Tours', 'url' => ['/site/about']], 
-                ['label' => 'Visa Assistance', 'url' => ['/site/about']],    
+                ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],    
                 ['label' => 'Help & Support', 'url' => ['/site/about']],
             ];
             if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+                $menuItems[] = ['label' => 'Sign up', 'url' => ['/site/signup']];
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
                 $menuItems[] = [
