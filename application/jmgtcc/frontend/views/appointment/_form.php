@@ -23,7 +23,7 @@ use backend\models\Time;
             <!-- CLIENT NAME -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Client Name</p>
+                    <p class="form-label">Complete Name</p>
                  </div>
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'client_name')->textInput(['maxlength' => 60])->label(false) ?>
