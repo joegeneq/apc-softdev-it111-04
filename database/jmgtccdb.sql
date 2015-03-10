@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2015 at 12:14 PM
+-- Generation Time: Mar 10, 2015 at 12:52 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -243,7 +243,10 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `room_type` varchar(80) DEFAULT NULL,
   `inclusion` text,
   `remarks` text,
-  PRIMARY KEY (`id`)
+  `hotels_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `hotels_id` (`hotels_id`),
+  UNIQUE KEY `hotels_id_2` (`hotels_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -327,6 +330,12 @@ ALTER TABLE `appointment_history`
 --
 ALTER TABLE `staff`
   ADD CONSTRAINT `fk_staff_roles1` FOREIGN KEY (`roles_id`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `tour_arrangement`
+--
+ALTER TABLE `tour_arrangement`
+  ADD CONSTRAINT `tour_arrangement_ibfk_1` FOREIGN KEY (`id`) REFERENCES `hotels` (`id`);
 
 --
 -- Constraints for table `travel_tour_arrangement`
