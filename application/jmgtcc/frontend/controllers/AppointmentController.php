@@ -3,14 +3,14 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\appointment;
+use frontend\models\Appointment;
 use frontend\models\AppointmentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * AppointmentController implements the CRUD actions for appointment model.
+ * AppointmentController implements the CRUD actions for Appointment model.
  */
 class AppointmentController extends Controller
 {
@@ -27,7 +27,7 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Lists all appointment models.
+     * Lists all Appointment models.
      * @return mixed
      */
     public function actionIndex()
@@ -42,7 +42,7 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Displays a single appointment model.
+     * Displays a single Appointment model.
      * @param integer $id
      * @return mixed
      */
@@ -54,13 +54,13 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Creates a new appointment model.
+     * Creates a new Appointment model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new appointment();
+        $model = new Appointment();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,7 +72,7 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Updates an existing appointment model.
+     * Updates an existing Appointment model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -91,7 +91,7 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Deletes an existing appointment model.
+     * Deletes an existing Appointment model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,15 +104,15 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Finds the appointment model based on its primary key value.
+     * Finds the Appointment model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return appointment the loaded model
+     * @return Appointment the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = appointment::findOne($id)) !== null) {
+        if (($model = Appointment::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

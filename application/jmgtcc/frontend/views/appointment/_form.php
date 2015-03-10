@@ -27,80 +27,104 @@ use backend\models\Time;
             <!-- CLIENT NAME -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Complete Name</p>
+                    <p class="form-label required-field">Complete Name</p>
                  </div>
                 <div class="col-lg-6">                   
-                    <?= $form->field($model, 'client_name')->textInput(['maxlength' => 60])->label(false) ?>
+                    <?= $form->field($model, 'client_name')
+                            ->textInput(['maxlength' => 60])
+                            ->label(false) ?>
                 </div>
             </div>
 
             <!-- CITY -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">City</p>
+                    <p class="form-label required-field">City</p>
                 </div>
                 <div class="col-lg-6">                   
-                        <?= $form->field($model, 'city')->textInput(['maxlength' => 45])->label(false) ?>
+                        <?= $form->field($model, 'city')
+                                ->textInput(['maxlength' => 45])
+                                ->label(false) ?>
                 </div>
             </div>
             
             <!-- CONTACT NUMBER -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Contact Number</p>
+                    <p class="form-label required-field">Contact Number</p>
                  </div>
                 <div class="col-lg-6">                   
-                    <?= $form->field($model, 'contact_number')->textInput(['maxlength' => 20])->label(false) ?>
+                    <?= $form->field($model, 'contact_number')
+                            ->textInput(['maxlength' => 20])
+                            ->label(false) ?>
                 </div>
             </div>
 
             <!-- EMAIL ADDRESS -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Email Address</p>
+                    <p class="form-label required-field">Email Address</p>
                  </div>
                 <div class="col-lg-6">                   
-                   <?= $form->field($model, 'email_address')->textInput(['maxlength' => 45])
-                   ->input(email)
-                   ->label(false) ?>
+                    <?= $form->field($model, 'email_address')
+                            ->textInput(['maxlength' => 45])
+                            ->input(email)
+                            ->label(false) ?>
                 </div>
             </div>
 
-            <?= $form->field($model, 'country')->textInput(['maxlength' => 60]) ?>
+            <hr class="faded">
 
+            <!-- COUNTRY -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="form-label">Country</p>
+                 </div>
+                <div class="col-lg-6">                   
+                    <?= $form->field($model, 'country')
+                            ->textInput(['maxlength' => 60])
+                            ->label(false)  ?>
+                </div>
+            </div>
+           
             <!-- VISA TYPE -->
             <div class="row">
                 <div class="col-lg-3">
                     <p class="form-label">Visa Type</p>
                  </div>
                 <div class="col-lg-6">                   
-                    <?= $form->field($model, 'visa_type')->textInput(['maxlength' => 15])->label(false) ?>
+                    <?= $form->field($model, 'visa_type')
+                            ->dropdownList([ null => ' - ',
+                                            'Immigrant Visa' => 'Immigrant Visa',
+                                            'Non-Immigrant Visa' => 'Non-Immigrant Visa'])
+                            ->label(false) ?>
                 </div>
             </div>
 
             <!-- APPOINTMENT DATE -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Appointment Date</p>
+                    <p class="form-label required-field">Appointment Date</p>
                  </div>
                 <div class="col-lg-6">                   
-                     <?= $form->field($model, 'appointment_date')->widget(
-                        DatePicker::className(), [
-                            'inline' => false, 
-                            'clientOptions' => [
-                                'autoclose' => true,
-                                'format' => 'MM-dd-yyyy',
-                                'daysOfWeekDisabled' => [0,6],
-                                'startDate' => '+1d'
-                            ]
-                    ])->label(false);?>
+                     <?= $form->field($model, 'appointment_date')
+                            ->widget(
+                                DatePicker::className(), [
+                                    'inline' => false, 
+                                    'clientOptions' => [
+                                        'autoclose' => true,
+                                        'format' => 'yyyy-mm-dd',
+                                        'daysOfWeekDisabled' => [0,6],
+                                        'startDate' => '+1d'
+                                    ]])
+                            ->label(false);?>
                 </div>
             </div>
 
             <!-- APPOINTMENT TIME -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Appointment Time</p>
+                    <p class="form-label required-field">Appointment Time</p>
                  </div>
                 <div class="col-lg-3">                   
                    <?= $form->field($model, 'appointment_time')->radioList(                        
@@ -117,7 +141,8 @@ use backend\models\Time;
                     <p class="form-label">Notes</p>
                  </div>
                 <div class="col-lg-6">                   
-                    <?= $form->field($model, 'notes')->textarea(['rows' => 6])->label(false) ?>
+                    <?= $form->field($model, 'notes')->textarea(['rows' => 6])
+                            ->label(false) ?>
                 </div>
             </div>
 
@@ -127,13 +152,9 @@ use backend\models\Time;
             <div class="form-group">
                 <div class="btn-form-create">
                     <?= Html::submitButton($model->isNewRecord ? 
-                        Yii::t('app', 'Create') : Yii::t('app', 'Update'), 
+                        Yii::t('app', 'Set an Appointment') : Yii::t('app', 'Update'), 
                         ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-
-                    <a href="frontend/web/index.php?r=site%2Findex">
-                        <button class="btn btn-default">Cancel</button>
-                    </a>
-                </div>
+                </div>                
             </div>
 
     </div>    

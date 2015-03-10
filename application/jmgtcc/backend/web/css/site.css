@@ -300,13 +300,13 @@ a.desc:after {
   margin-right: 20%;
   margin-left: 20%;
   border-radius: 20px;
-
- /* border: 1px solid #3B8215;*/
+  border: 1px solid #3B8215;
 }
 
 .login-form-form {
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 

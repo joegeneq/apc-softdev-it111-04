@@ -5,12 +5,12 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\appointment;
+use frontend\models\Appointment;
 
 /**
- * AppointmentSearch represents the model behind the search form about `frontend\models\appointment`.
+ * AppointmentSearch represents the model behind the search form about `frontend\models\Appointment`.
  */
-class AppointmentSearch extends appointment
+class AppointmentSearch extends Appointment
 {
     /**
      * @inheritdoc
@@ -42,7 +42,7 @@ class AppointmentSearch extends appointment
      */
     public function search($params)
     {
-        $query = appointment::find();
+        $query = Appointment::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

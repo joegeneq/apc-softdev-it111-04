@@ -261,16 +261,117 @@ a.desc:after {
   text-align: center;
 }
 
-.btn, .btn-primary {
+/*.btn, .btn-primary {
     background-color: #3B8215;
     border-color: #A9DE91;
 }
+*/
 
-.btn:hover, .btn-primary:hover {
+.btn:hover, .btn-primary:hover, .btn-success:hover {
     background-color: #3B8215;
     border-color: #3B8215;
     color: #F9FF89;
 }
+
+
+/* START ADDED BY: AFPAPNA 03102015 */
+.btn, .btn-primary {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #3B8215;
+  border-color: #3B8215;
+  color: #F9FF89;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+.btn-primary .badge {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-color: #3B8215;
+  border-color: #3B8215;
+  color: #F9FF89;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+.btn-success .badge {
+  color: #fff;
+  background-color: #3B8215;
+  border-color: #A9DE91;
+}
+
+/* END ADDED BY: AFPAPNA 03102015 */
 
 @media screen and (min-width: 768px) {
   .site-login {
@@ -293,20 +394,20 @@ a.desc:after {
   text-align: center; 
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 6%;
+  margin-top: 6%;  
 }
 
 .login-form {
   margin-right: 20%;
   margin-left: 20%;
   border-radius: 20px;
-
- /* border: 1px solid #3B8215;*/
+  border: 1px solid #3B8215;
 }
 
 .login-form-form {
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 
@@ -370,3 +471,66 @@ p.form-label {
 }
 
 /* END ADDED BY: AFPAPNA 03042015 */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTENT BREAK @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START ADDED BY: AFPAPNA 03102015 */
+hr.faded { 
+     clear: both; 
+  float: none; 
+  width: 100%; 
+  height: 1px;
+  margin-top:  0.5em;
+  margin-bottom: 1.5em;
+  border: none; 
+  background: #ddd;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right bottom,
+      color-stop(0, rgb(255,255,255)),
+      color-stop(0.1, rgb(221,221,221)),
+      color-stop(0.9, rgb(221,221,221)),
+      color-stop(1, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      left center,
+      rgb(255,255,255) 0%,
+      rgb(221,221,221) 10%,
+      rgb(221,221,221) 90%,
+      rgb(255,255,255) 100%
+  );
+}
+
+hr.carved {
+  clear: both; 
+  float: none; 
+  width: 100%; 
+  height: 2px;
+  margin: 1.4em 0;
+  border: none; 
+  background: #ddd;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0.5, rgb(221,221,221)),
+      color-stop(0.5, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      center top,
+      rgb(221,221,221) 50%,
+      rgb(255,255,255) 50%
+  );
+}
+
+p.required-field {
+    font-weight: bold;
+}
+p.required-field:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+/* END ADDED BY: AFPAPNA 03102015 */

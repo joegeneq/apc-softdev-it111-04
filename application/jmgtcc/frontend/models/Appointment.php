@@ -53,9 +53,10 @@ class Appointment extends \yii\db\ActiveRecord
             [['user_id', 'staff_id'], 'integer'],
             [['appointment_code'], 'string', 'max' => 25],
             [['client_name', 'country'], 'string', 'max' => 60],
-            [['client_username', 'visa_type', 'confirmed_by'], 'string', 'max' => 15],
+            [['client_username', 'confirmed_by'], 'string', 'max' => 15],
             [['city', 'email_address'], 'string', 'max' => 45],
-            [['contact_number', 'status'], 'string', 'max' => 20]
+            [['contact_number', 'status'], 'string', 'max' => 20],
+            [['visa_type'], 'string', 'max' => 30]
         ];
     }
 
