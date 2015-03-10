@@ -18,6 +18,7 @@ class SignupForm extends Model
     public $contact_number;
     public $email;
     public $password;
+    public $confirmpassword;
 
     /**
      * @inheritdoc
@@ -42,6 +43,7 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+        	['confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>"Passwords don't match. Try again."],
         ];
     }
 
@@ -71,3 +73,4 @@ class SignupForm extends Model
         return null;
     }
 }
+

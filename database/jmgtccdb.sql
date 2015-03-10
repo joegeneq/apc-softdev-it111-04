@@ -200,6 +200,16 @@ CREATE TABLE IF NOT EXISTS `roles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `role_name`, `role_description`) VALUES
+(1, 'Superadmin', 'Can access all system modules and processes'),
+(2, 'Travel Agent', 'Confirms and Updates travel requests and appo'),
+(3, 'Client Account', 'Registered Client / User account'),
+(4, 'Guest', 'Unregistered User ');
+
 -- --------------------------------------------------------
 
 --
@@ -215,6 +225,14 @@ CREATE TABLE IF NOT EXISTS `staff` (
   KEY `fk_staff_roles1_idx` (`roles_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`id`, `username`, `password`, `roles_id`) VALUES
+(1, 'staff1', '123456', 1),
+(2, 'staff2', '123456', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -226,7 +244,19 @@ CREATE TABLE IF NOT EXISTS `time` (
   `time` time NOT NULL,
   `description` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `time`
+--
+
+INSERT INTO `time` (`id`, `time`, `description`) VALUES
+(1, '10:00:00', '10:00 - 11:00 AM'),
+(2, '11:00:00', '11:00 - 12:00 NN'),
+(3, '01:00:00', '1:00 - 2:00 PM'),
+(4, '02:00:00', '2:00 - 3:00 PM'),
+(5, '03:00:00', '3:00 - 4:00 PM'),
+(6, '04:00:00', '4:00 - 5:00 PM');
 
 -- --------------------------------------------------------
 
