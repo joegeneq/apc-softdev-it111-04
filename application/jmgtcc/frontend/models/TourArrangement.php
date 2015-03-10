@@ -9,8 +9,8 @@ use Yii;
  *
  * @property integer $id
  * @property string $destination
- * @property integer $number_of_days
- * @property integer $number_of_nights
+ * @property string $arrival_date
+ * @property string $departure_date
  * @property integer $number_of_pax
  * @property string $hotel_name
  * @property string $room_type
@@ -36,7 +36,8 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['number_of_days', 'number_of_nights', 'number_of_pax', 'hotels_id'], 'integer'],
+            [['arrival_date', 'departure_date'], 'safe'],
+            [['number_of_pax', 'hotels_id'], 'integer'],
             [['inclusion', 'remarks'], 'string'],
             [['hotels_id'], 'required'],
             [['destination'], 'string', 'max' => 90],
@@ -53,8 +54,8 @@ class TourArrangement extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'destination' => Yii::t('app', 'Destination'),
-            'number_of_days' => Yii::t('app', 'Number Of Days'),
-            'number_of_nights' => Yii::t('app', 'Number Of Nights'),
+            'arrival_date' => Yii::t('app', 'Arrival Date'),
+            'departure_date' => Yii::t('app', 'Departure Date'),
             'number_of_pax' => Yii::t('app', 'Number Of Pax'),
             'hotel_name' => Yii::t('app', 'Hotel Name'),
             'room_type' => Yii::t('app', 'Room Type'),

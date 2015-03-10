@@ -14,9 +14,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'destination')->textInput(['maxlength' => 90]) ?>
 
-    <?= $form->field($model, 'number_of_days')->textInput() ?>
+    <?= $form->field($model, 'arrival_date')->textInput() ?>
 
-    <?= $form->field($model, 'number_of_nights')->textInput() ?>
+    <?= $form->field($model, 'departure_date')->textInput() ?>
 
     <?= $form->field($model, 'number_of_pax')->textInput() ?>
 

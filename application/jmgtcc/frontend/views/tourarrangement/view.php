@@ -30,8 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'destination',
-            'number_of_days',
-            'number_of_nights',
+            'arrival_date',
+            'departure_date',
             'number_of_pax',
             'hotel_name',
             'room_type',

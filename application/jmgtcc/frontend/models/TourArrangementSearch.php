@@ -18,8 +18,8 @@ class TourArrangementSearch extends TourArrangement
     public function rules()
     {
         return [
-            [['id', 'number_of_days', 'number_of_nights', 'number_of_pax', 'hotels_id'], 'integer'],
-            [['destination', 'hotel_name', 'room_type', 'inclusion', 'remarks'], 'safe'],
+            [['id', 'number_of_pax', 'hotels_id'], 'integer'],
+            [['destination', 'arrival_date', 'departure_date', 'hotel_name', 'room_type', 'inclusion', 'remarks'], 'safe'],
         ];
     }
 
@@ -57,8 +57,8 @@ class TourArrangementSearch extends TourArrangement
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'number_of_days' => $this->number_of_days,
-            'number_of_nights' => $this->number_of_nights,
+            'arrival_date' => $this->arrival_date,
+            'departure_date' => $this->departure_date,
             'number_of_pax' => $this->number_of_pax,
             'hotels_id' => $this->hotels_id,
         ]);
