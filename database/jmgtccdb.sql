@@ -231,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `staff` (
 
 INSERT INTO `staff` (`id`, `username`, `password`, `roles_id`) VALUES
 (1, 'staff1', '123456', 1),
-(2, 'staff2', '123456', 1)
+(2, 'staff2', '123456', 1);
 
 -- --------------------------------------------------------
 
