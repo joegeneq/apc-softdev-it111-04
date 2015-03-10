@@ -12,7 +12,54 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'destination')->textInput(['maxlength' => 90]) ?>
+      <br><br>  
+    <!-- Destination -->
+    <div class="row">
+        <div class="col-lg-2">
+            <p class="form-label">Destination</p>
+        </div>
+        <div class="col-lg-4">
+            <?= $form->field($model, 'destination')->textInput(['maxlength' => 90])->label(false) ?>
+        </div>
+    </div>
+
+    <!-- Arrival and Departure Date -->
+    <div class="row">
+        <div class="col-lg-2">
+            <p class="form-label">Arrival Date</p>     
+        </div>
+        <div class="col-lg-2">         
+            <?= $form->field($model, 'arrival_date')->textInput()->label(false) ?>         
+        </div>
+        <!--Night -->
+        <div class="col-lg-2">
+            <p class="form-label">Departure Date</p>             
+        </div>
+        <div class="col-lg-2">         
+            <?= $form->field($model, 'departure_date')->textInput()->label(false) ?>    
+        </div>
+    </div>
+
+    <!-- Number of Pax -->
+    <div class="row">
+        <div class="col-lg-2">
+            <p class="form-label">Number of Pax</p>
+        </div>
+        <div class="col-lg-4">
+            <?= $form->field($model, 'number_of_pax')->textInput()->label(false) ?>
+        </div>
+    </div>
+   
+    <!-- Hotel Name -->
+    <div class="row">
+        <div class="col-lg-2">
+            <p class="form-label">Hotel Name</p>
+        </div>
+        <div class="col-lg-4">
+            <?= $form->field($model, 'hotel_name')->textInput(['maxlength' => 60])->label(false) ?>
+        </div>
+    </div>
+
 
     <?= $form->field($model, 'arrival_date')->textInput() ?>
 
