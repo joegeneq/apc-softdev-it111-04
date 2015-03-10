@@ -10,7 +10,7 @@ use Yii;
  * @property integer $id
  * @property string $airline_name
  *
- * @property TravelArrangement[] $travelArrangements
+ * @property TravelTourArrangement[] $travelTourArrangements
  */
 class Airlines extends \yii\db\ActiveRecord
 {
@@ -46,8 +46,8 @@ class Airlines extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getTravelArrangements()
+    public function getTravelTourArrangements()
     {
-        return $this->hasMany(TravelArrangement::className(), ['airlines_id' => 'id']);
+        return $this->hasMany(TravelTourArrangement::className(), ['airlines_id' => 'id']);
     }
 }

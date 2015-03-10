@@ -19,7 +19,7 @@ class HotelsSearch extends Hotels
     {
         return [
             [['id'], 'integer'],
-            [['hotel_name', 'country'], 'safe'],
+            [['hotel_name', 'country', 'star_rating'], 'safe'],
         ];
     }
 
@@ -60,7 +60,8 @@ class HotelsSearch extends Hotels
         ]);
 
         $query->andFilterWhere(['like', 'hotel_name', $this->hotel_name])
-            ->andFilterWhere(['like', 'country', $this->country]);
+            ->andFilterWhere(['like', 'country', $this->country])
+            ->andFilterWhere(['like', 'star_rating', $this->star_rating]);
 
         return $dataProvider;
     }

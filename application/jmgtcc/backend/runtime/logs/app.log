@@ -3804,3 +3804,141 @@ $_SERVER = [
     'REQUEST_TIME' => 1425889798
 >>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
+2015-03-10 12:26:36 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: accommodation' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php:301
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#2 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#4 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(backend\models\AccommodationSearch), Array)
+#5 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\models\AccommodationSearch.php(52): yii\base\Model->validate()
+#6 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AccommodationController.php(36): backend\models\AccommodationSearch->search(Array)
+#7 [internal function]: backend\controllers\AccommodationController->actionIndex()
+#8 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('accommodation', Array)
+#12 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-10 12:26:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'accommodation'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1rmka8nrs25lsksf6qpn8v0ak1'
+    '_csrf' => '7b6a724c1cc68066e69479ccb09a6b6f4cfd7c6bff13af93b62b9af03f43204ds:32:\"7ztTzxRAxHeSfNLXnJVSAFHw1bbsFk9p\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=1rmka8nrs25lsksf6qpn8v0ak1; _csrf=7b6a724c1cc68066e69479ccb09a6b6f4cfd7c6bff13af93b62b9af03f43204ds%3A32%3A%227ztTzxRAxHeSfNLXnJVSAFHw1bbsFk9p%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;Ca:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51061'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=accommodation'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=accommodation'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425986796.77
+    'REQUEST_TIME' => 1425986796
+]
+2015-03-10 12:27:21 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: tour_deals' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php:301
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#2 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#4 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(backend\models\TourDealsSearch), Array)
+#5 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\models\TourDealsSearch.php(52): yii\base\Model->validate()
+#6 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\controllers\TourDealsController.php(36): backend\models\TourDealsSearch->search(Array)
+#7 [internal function]: backend\controllers\TourDealsController->actionIndex()
+#8 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('tourdeals', Array)
+#12 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-10 12:27:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourdeals'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1rmka8nrs25lsksf6qpn8v0ak1'
+    '_csrf' => 'c58825c73875c7a92f276e1608e2072259479edd7e03b5f4467727876a98aec6s:32:\"rRhjHQEOrmSCs9GES_ooLiCvBhkQfwwE\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=1rmka8nrs25lsksf6qpn8v0ak1; _csrf=c58825c73875c7a92f276e1608e2072259479edd7e03b5f4467727876a98aec6s%3A32%3A%22rRhjHQEOrmSCs9GES_ooLiCvBhkQfwwE%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;Ca:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51071'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourdeals'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=tourdeals'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425986840.882
+    'REQUEST_TIME' => 1425986840
+]

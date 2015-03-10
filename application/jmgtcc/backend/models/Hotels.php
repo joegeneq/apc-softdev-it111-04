@@ -10,8 +10,10 @@ use Yii;
  * @property integer $id
  * @property string $hotel_name
  * @property string $country
+ * @property string $star_rating
  *
- * @property TravelArrangement[] $travelArrangements
+ * @property TourArrangement $tourArrangement
+ * @property TravelTourArrangement[] $travelTourArrangements
  */
 class Hotels extends \yii\db\ActiveRecord
 {
@@ -31,7 +33,7 @@ class Hotels extends \yii\db\ActiveRecord
         return [
             [['hotel_name', 'country'], 'required'],
             [['hotel_name'], 'string', 'max' => 60],
-            [['country'], 'string', 'max' => 45]
+            [['country', 'star_rating'], 'string', 'max' => 45]
         ];
     }
 
@@ -44,14 +46,23 @@ class Hotels extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'hotel_name' => Yii::t('app', 'Hotel Name'),
             'country' => Yii::t('app', 'Country'),
+            'star_rating' => Yii::t('app', 'Star Rating'),
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getTravelArrangements()
+    public function getTourArrangement()
     {
-        return $this->hasMany(TravelArrangement::className(), ['hotels_id' => 'id']);
+        return $this->hasOne(TourArrangement::className(), ['id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTravelTourArrangements()
+    {
+        return $this->hasMany(TravelTourArrangement::className(), ['hotels_id' => 'id']);
     }
 }
