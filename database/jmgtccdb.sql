@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2015 at 01:27 PM
+-- Generation Time: Mar 10, 2015 at 02:06 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -236,8 +236,8 @@ CREATE TABLE IF NOT EXISTS `time` (
 CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `destination` varchar(90) DEFAULT NULL,
-  `number_of_days` int(11) DEFAULT NULL,
-  `number_of_nights` int(11) DEFAULT NULL,
+  `arrival_date` date DEFAULT NULL,
+  `departure_date` date DEFAULT NULL,
   `number_of_pax` int(11) DEFAULT NULL,
   `hotel_name` varchar(60) DEFAULT NULL,
   `room_type` varchar(80) DEFAULT NULL,
