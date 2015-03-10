@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
     <?= $form->field($model, 'destination')->textInput(['maxlength' => 90]) ?>
 
     <?= $form->field($model, 'number_of_days')->textInput() ?>

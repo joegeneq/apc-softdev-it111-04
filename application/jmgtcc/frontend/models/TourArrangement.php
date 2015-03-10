@@ -18,7 +18,7 @@ use Yii;
  * @property string $remarks
  * @property integer $hotels_id
  *
- * @property Hotels $id0
+ * @property Hotels $hotels
  */
 class TourArrangement extends \yii\db\ActiveRecord
 {
@@ -36,14 +36,12 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'hotels_id'], 'required'],
-            [['id', 'number_of_days', 'number_of_nights', 'number_of_pax', 'hotels_id'], 'integer'],
+            [['number_of_days', 'number_of_nights', 'number_of_pax', 'hotels_id'], 'integer'],
             [['inclusion', 'remarks'], 'string'],
+            [['hotels_id'], 'required'],
             [['destination'], 'string', 'max' => 90],
             [['hotel_name'], 'string', 'max' => 60],
-            [['room_type'], 'string', 'max' => 80],
-            [['hotels_id'], 'unique'],
-            [['hotels_id'], 'unique']
+            [['room_type'], 'string', 'max' => 80]
         ];
     }
 
@@ -69,8 +67,8 @@ class TourArrangement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getId0()
+    public function getHotels()
     {
-        return $this->hasOne(Hotels::className(), ['id' => 'id']);
+        return $this->hasOne(Hotels::className(), ['id' => 'hotels_id']);
     }
 }
