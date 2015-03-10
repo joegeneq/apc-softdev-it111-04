@@ -84,8 +84,8 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             'confirmed_by' => Yii::t('app', 'Confirmed By'),
             'date_updated' => Yii::t('app', 'Date Updated'),
             'updated_by' => Yii::t('app', 'Updated By'),
-            'hotels_id' => Yii::t('app', 'Hotels ID'),
-            'airlines_id' => Yii::t('app', 'Airlines ID'),
+            'hotels_id' => Yii::t('app', 'Hotel Name'),
+            'airlines_id' => Yii::t('app', 'Airline Name'),
             'user_id' => Yii::t('app', 'User ID'),
         ];
     }

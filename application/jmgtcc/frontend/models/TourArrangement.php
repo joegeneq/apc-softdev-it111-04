@@ -36,10 +36,10 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['destination', 'arrival_date', 'departure_date', 'number_of_pax', 'room_type', 'inclusion', 'hotels_id'], 'required'],
             [['arrival_date', 'departure_date'], 'safe'],
             [['number_of_pax', 'hotels_id'], 'integer'],
             [['inclusion', 'remarks'], 'string'],
-            [['hotels_id'], 'required'],
             [['destination'], 'string', 'max' => 90],
             [['hotel_name'], 'string', 'max' => 60],
             [['room_type'], 'string', 'max' => 80]
