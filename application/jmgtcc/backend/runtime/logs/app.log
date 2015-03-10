@@ -3942,3 +3942,71 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425986840.882
     'REQUEST_TIME' => 1425986840
 ]
+2015-03-10 13:18:36 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "traveltourarrangement/create".' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('traveltourarran...', Array)
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-10 13:18:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1rmka8nrs25lsksf6qpn8v0ak1'
+    '_csrf' => 'c58825c73875c7a92f276e1608e2072259479edd7e03b5f4467727876a98aec6s:32:\"rRhjHQEOrmSCs9GES_ooLiCvBhkQfwwE\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=1rmka8nrs25lsksf6qpn8v0ak1; _csrf=c58825c73875c7a92f276e1608e2072259479edd7e03b5f4467727876a98aec6s%3A32%3A%22rRhjHQEOrmSCs9GES_ooLiCvBhkQfwwE%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;Ca:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=traveltourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425989916.498
+    'REQUEST_TIME' => 1425989916
+]

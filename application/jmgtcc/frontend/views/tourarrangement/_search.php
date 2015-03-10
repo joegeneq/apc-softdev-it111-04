@@ -19,9 +19,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'destination') ?>
 
-    <?= $form->field($model, 'number_of_days') ?>
+    <?= $form->field($model, 'arrival_date') ?>
 
-    <?= $form->field($model, 'number_of_nights') ?>
+    <?= $form->field($model, 'departure_date') ?>
 
     <?= $form->field($model, 'number_of_pax') ?>
 

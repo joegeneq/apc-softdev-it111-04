@@ -9,8 +9,8 @@ use Yii;
  *
  * @property integer $id
  * @property string $destination
- * @property integer $number_of_days
- * @property integer $number_of_nights
+ * @property string $arrival_date
+ * @property string $departure_date
  * @property integer $number_of_pax
  * @property string $hotel_name
  * @property string $room_type
@@ -18,7 +18,7 @@ use Yii;
  * @property string $remarks
  * @property integer $hotels_id
  *
- * @property Hotels $id0
+ * @property Hotels $hotels
  */
 class TourArrangement extends \yii\db\ActiveRecord
 {
@@ -36,14 +36,13 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'hotels_id'], 'required'],
-            [['id', 'number_of_days', 'number_of_nights', 'number_of_pax', 'hotels_id'], 'integer'],
+            [['arrival_date', 'departure_date'], 'safe'],
+            [['number_of_pax', 'hotels_id'], 'integer'],
             [['inclusion', 'remarks'], 'string'],
+            [['hotels_id'], 'required'],
             [['destination'], 'string', 'max' => 90],
             [['hotel_name'], 'string', 'max' => 60],
-            [['room_type'], 'string', 'max' => 80],
-            [['hotels_id'], 'unique'],
-            [['hotels_id'], 'unique']
+            [['room_type'], 'string', 'max' => 80]
         ];
     }
 
@@ -55,8 +54,8 @@ class TourArrangement extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'destination' => Yii::t('app', 'Destination'),
-            'number_of_days' => Yii::t('app', 'Number Of Days'),
-            'number_of_nights' => Yii::t('app', 'Number Of Nights'),
+            'arrival_date' => Yii::t('app', 'Arrival Date'),
+            'departure_date' => Yii::t('app', 'Departure Date'),
             'number_of_pax' => Yii::t('app', 'Number Of Pax'),
             'hotel_name' => Yii::t('app', 'Hotel Name'),
             'room_type' => Yii::t('app', 'Room Type'),
@@ -69,8 +68,8 @@ class TourArrangement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getId0()
+    public function getHotels()
     {
-        return $this->hasOne(Hotels::className(), ['id' => 'id']);
+        return $this->hasOne(Hotels::className(), ['id' => 'hotels_id']);
     }
 }

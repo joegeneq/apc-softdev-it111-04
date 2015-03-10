@@ -12,13 +12,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
     <?= $form->field($model, 'destination')->textInput(['maxlength' => 90]) ?>
 
-    <?= $form->field($model, 'number_of_days')->textInput() ?>
+    <?= $form->field($model, 'arrival_date')->textInput() ?>
 
-    <?= $form->field($model, 'number_of_nights')->textInput() ?>
+    <?= $form->field($model, 'departure_date')->textInput() ?>
 
     <?= $form->field($model, 'number_of_pax')->textInput() ?>
 
