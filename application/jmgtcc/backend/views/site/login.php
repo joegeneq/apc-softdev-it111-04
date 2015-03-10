@@ -17,13 +17,11 @@ $this->title = 'Login';
             <div class="login-form-form">               
 
                 <?= $form->field($model, 'username')
-                        ->label(false) 
-                        ->textInput(['placeholder' => 'Username'])
                     ?>
 
                 <?= $form->field($model, 'password')
-                        ->passwordInput(['placeholder' => 'Password'])
-                        ->label(false) ?> 
+                        ->passwordInput()
+                    ?> 
                 
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>               
                 <div class="form-group">

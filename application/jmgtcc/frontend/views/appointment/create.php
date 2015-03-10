@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\appointment */
+/* @var $model frontend\models\Appointment */
 
 $this->title = Yii::t('app', 'Create {modelClass}', [
     'modelClass' => 'Appointment',
