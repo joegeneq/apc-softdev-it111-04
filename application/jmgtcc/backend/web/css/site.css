@@ -293,20 +293,39 @@ a.desc:after {
   text-align: center; 
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 10%;
 }
 
 .login-form {
   margin-right: 20%;
   margin-left: 20%;
-  border: 2px solid #3B8215;
   border-radius: 20px;
+
+ /* border: 1px solid #3B8215;*/
 }
 
 .login-form-form {
-  margin-right: 15%;
-  margin-left: 15%;  
+  margin-right: 5%;
+  margin-left: 5%;
 }
-/* END ADDED BY: AFPAPNA 02152015 */
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ CALENDAR - APPOINTMENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+.cal-appointment {
+  border: 2px solid red;
+   margin-top: 3%;
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SIDE NAVIGATOR @@@@@@@22@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+.side-navigator {
+  border: 2px solid blue;
+  margin-top: 3%;
+}
+
+/* END ADDED BY: AFPAPNA 02152015 */
