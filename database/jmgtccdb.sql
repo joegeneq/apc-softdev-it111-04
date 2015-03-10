@@ -215,6 +215,14 @@ CREATE TABLE IF NOT EXISTS `staff` (
   KEY `fk_staff_roles1_idx` (`roles_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`id`, `username`, `password`, `roles_id`) VALUES
+(1, 'staff1', '123456', 1),
+(2, 'staff2', '123456', 1)
+
 -- --------------------------------------------------------
 
 --
