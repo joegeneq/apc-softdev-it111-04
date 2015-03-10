@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 
+
 use dosamigos\datepicker\DatePicker;
 use backend\models\Inclusion;
 use backend\models\Hotels;
@@ -41,7 +42,6 @@ use backend\models\Hotels;
                             'clientOptions' => [
                                 'autoclose' => true,
                                 'format' => 'yyyy-mm-dd',
-                                'daysOfWeekDisabled' => [0,6],
                                 'startDate' => '+1d'
                             ]])
                     ->label(false) ?>         
@@ -58,7 +58,6 @@ use backend\models\Hotels;
                             'clientOptions' => [
                                 'autoclose' => true,
                                 'format' => 'yyyy-mm-dd',
-                                'daysOfWeekDisabled' => [0,6],
                                 'startDate' => '+1d'
                             ]])
                     ->label(false) ?>      

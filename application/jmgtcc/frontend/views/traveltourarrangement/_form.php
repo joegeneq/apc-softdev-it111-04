@@ -53,7 +53,6 @@ use yii\helpers\ArrayHelper;
                                     'clientOptions' => [
                                         'autoclose' => true,
                                         'format' => 'yyyy-mm-dd',
-                                        'daysOfWeekDisabled' => [0,6],
                                         'startDate' => '+1d'
                                     ]])
                             ->label(false) ?>         
@@ -70,7 +69,6 @@ use yii\helpers\ArrayHelper;
                                     'clientOptions' => [
                                         'autoclose' => true,
                                         'format' => 'yyyy-mm-dd',
-                                        'daysOfWeekDisabled' => [0,6],
                                         'startDate' => '+1d'
                                     ]])
                             ->label(false) ?>      
