@@ -38,7 +38,7 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-                ['label' => 'Customized Tours', 'url' => ['/site/about']], 
+                ['label' => 'Customized Tours', 'url' => ['/travelarrangement/create']], 
                 ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],    
                 ['label' => 'Help & Support', 'url' => ['/site/about']],
             ];
