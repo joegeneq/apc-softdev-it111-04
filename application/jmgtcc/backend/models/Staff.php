@@ -196,9 +196,5 @@ class Staff extends \yii\db\ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
-    }
-    /** EXTENSION MOVIE **/
-	
-	
-	
+    }	
 }
