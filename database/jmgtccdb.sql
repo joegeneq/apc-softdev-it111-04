@@ -228,6 +228,18 @@ CREATE TABLE IF NOT EXISTS `time` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Dumping data for table `time`
+--
+
+INSERT INTO `time` (`id`, `time`, `description`) VALUES
+(1, '10:00:00', '10:00 - 11:00 AM'),
+(2, '11:00:00', '11:00 - 12:00 NN'),
+(3, '01:00:00', '1:00 - 2:00 PM'),
+(4, '02:00:00', '2:00 - 3:00 PM'),
+(5, '03:00:00', '3:00 - 4:00 PM'),
+(6, '04:00:00', '4:00 - 5:00 PM');
+
 -- --------------------------------------------------------
 
 --
