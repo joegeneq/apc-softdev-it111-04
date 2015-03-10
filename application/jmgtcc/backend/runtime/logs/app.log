@@ -3523,6 +3523,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425821759.66
     'REQUEST_TIME' => 1425821759
 ]
+<<<<<<< HEAD
 2015-03-09 09:29:21 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php:110
 Stack trace:
 #0 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
@@ -3532,26 +3533,64 @@ Stack trace:
 #4 C:\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
 #5 {main}
 2015-03-09 09:29:21 [::1][-][-][info][application] $_GET = [
+=======
+2015-03-09 09:28:11 [::1][Array][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php:240
+Stack trace:
+#0 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php(240): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\xannethei\pr...', 240, Array)
+#1 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\backend\models\LoginForm.php(59): yii\web\User->login(Object(app\models\Staff), 0)
+#2 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(68): app\models\LoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#7 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#8 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2015-03-09 09:28:11 [::1][Array][-][info][application] $_GET = [
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     'r' => 'site/login'
 ]
 
 $_POST = [
+<<<<<<< HEAD
     '_csrf' => 'dEowVUkuTUsmPWolM1wBDxt7RgY/dBckI39YBz9CDDwXHEMXE2EAEg=='
     'LoginForm' => [
         'username' => 'staff1'
         'password' => '123456'
         'rememberMe' => '1'
+=======
+    '_csrf' => 'MTJCemxjMEZBaxAqJyRgCnlxKzRYJ3d/QFQkFzQ8HQ5hdRsSQS5pBw=='
+    'LoginForm' => [
+        'username' => 'staff1'
+        'password' => '123456'
+        'rememberMe' => '0'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     ]
     'login-button' => ''
 ]
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_csrf' => 'cdf81416648d36d76cf11f5197b40ceff51abdf9cfdaf3677a25dc7ce932f774s:32:\"J9z6r2lb_wK_fooce-ZFEYzC7G4Y9bdZ\";'
     'PHPSESSID' => '5ag0qb584re6ri002hgcg07327'
+=======
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'sm3akk5b9udsj4eg3ctlp99nq1'
+    '_csrf' => 'cf0552b4e1b9fc36badc70799172c69d7598aab57953a0f5837a2ab859d7724ds:32:\"pYRPKGPLHCiN4DG9qffmX_-HPGYh-MYA\";'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
+    '__returnUrl' => '/jmgtcc/backend/web/'
+    '__id' => [
+        'id' => 1
+        'roles_id' => 1
+    ]
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
 
 $_SERVER = [
@@ -3562,6 +3601,7 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_CONNECTION' => 'keep-alive'
     'CONTENT_LENGTH' => '200'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
@@ -3581,6 +3621,25 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+=======
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=sm3akk5b9udsj4eg3ctlp99nq1; _csrf=cf0552b4e1b9fc36badc70799172c69d7598aab57953a0f5837a2ab859d7724ds%3A32%3A%22pYRPKGPLHCiN4DG9qffmX_-HPGYh-MYA%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '172'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -3591,7 +3650,11 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '49213'
+=======
+    'REMOTE_PORT' => '49188'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
@@ -3599,6 +3662,7 @@ $_SERVER = [
     'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
     'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
     'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1425889761.104
     'REQUEST_TIME' => 1425889761
 ]
@@ -3622,12 +3686,45 @@ $_COOKIE = [
     '_csrf' => 'dbfaada51104ab775a07e0cb9542430f88931a9418808a627c3dec5d13b5155cs:32:\"ncUHPwhA6t3joWN4-g_rVGGHKU4H77Dl\";'
     '_identity' => '6ad5b5bba3f6634800b09f06f49805dc86e1f7efb9c0f7253662288fe3ddba57s:46:\"[1,\"oO4UQ0xCXKZBzqCGAm_y4qJl-EY65MnI\",2592000]\";'
     'PHPSESSID' => '915v90m7h8ort3dnqib2ag7hp7'
+=======
+    'REQUEST_TIME_FLOAT' => 1425889690.954
+    'REQUEST_TIME' => 1425889690
+]
+2015-03-09 09:29:58 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php:329
+Stack trace:
+#0 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php(329): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\xannethei\pr...', 329, Array)
+#1 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(79): yii\web\User->logout()
+#2 [internal function]: backend\controllers\SiteController->actionLogout()
+#3 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#6 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xannethei\project\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-09 09:29:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'LVlLSERaeGddABkYDx0oK2UaIgZwHj9eXD8tJRwFVS99HhIgaRchJg=='
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 't6qd2uhn6pfa58ki0hfejcdfi6'
+    '_csrf' => 'cf0552b4e1b9fc36badc70799172c69d7598aab57953a0f5837a2ab859d7724ds:32:\"pYRPKGPLHCiN4DG9qffmX_-HPGYh-MYA\";'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/index.php?r=site%2Flogout'
     '__id' => 1
+=======
+    '__returnUrl' => '/jmgtcc/backend/web/'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
 
 $_SERVER = [
@@ -3638,6 +3735,7 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
@@ -3654,6 +3752,25 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+=======
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=t6qd2uhn6pfa58ki0hfejcdfi6; _csrf=cf0552b4e1b9fc36badc70799172c69d7598aab57953a0f5837a2ab859d7724ds%3A32%3A%22pYRPKGPLHCiN4DG9qffmX_-HPGYh-MYA%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -3664,14 +3781,26 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '49256'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
+=======
+    'REMOTE_PORT' => '49210'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
     'QUERY_STRING' => 'r=site%2Flogout'
     'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogout'
     'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
     'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1425889873.651
     'REQUEST_TIME' => 1425889873
+=======
+    'REQUEST_TIME_FLOAT' => 1425889798.768
+    'REQUEST_TIME' => 1425889798
+>>>>>>> a0930899ac7fb2cdf84a38986e2159d9cff8802b
 ]
