@@ -33,6 +33,8 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'appointment_time') ?>
 
+    <?php // echo $form->field($model, 'country') ?>
+
     <?php // echo $form->field($model, 'visa_type') ?>
 
     <?php // echo $form->field($model, 'payment_rate') ?>

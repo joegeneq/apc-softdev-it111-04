@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\Appointment */
+/* @var $model frontend\models\appointment */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
@@ -37,6 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'email_address:email',
             'appointment_date',
             'appointment_time',
+            'country',
             'visa_type',
             'payment_rate',
             'date_created',

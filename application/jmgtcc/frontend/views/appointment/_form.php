@@ -66,6 +66,8 @@ use backend\models\Time;
                 </div>
             </div>
 
+            <?= $form->field($model, 'country')->textInput(['maxlength' => 60]) ?>
+
             <!-- VISA TYPE -->
             <div class="row">
                 <div class="col-lg-3">
@@ -100,7 +102,7 @@ use backend\models\Time;
                 <div class="col-lg-3">
                     <p class="form-label">Appointment Time</p>
                  </div>
-                <div class="col-lg-2">                   
+                <div class="col-lg-3">                   
                    <?= $form->field($model, 'appointment_time')->radioList(                        
                         ArrayHelper::map(Time::find()->all(),'time','description')
                         )
