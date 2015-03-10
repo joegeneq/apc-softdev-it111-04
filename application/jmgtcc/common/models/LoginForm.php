@@ -27,7 +27,8 @@ class LoginForm extends Model
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
-            ['password', 'validatePassword'],
+            //['password', 'validatePassword'],
+        	[['passwordConfirm'], 'compare', 'compareAttribute' => 'password'],
         ];
     }
 

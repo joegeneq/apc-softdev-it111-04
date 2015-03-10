@@ -38,13 +38,24 @@ $this->title = 'Sign up';
                    <?= $form->field($model, 'username')
                         ->textinput(['placeholder'=>'Username']) 
                         ->label(false) ?>                         
-                </div>
-                <div class="col-lg-5">
+                </div>   
+            </div>  
+            
+             <div class="row">
+             	<div class="col-lg-5">
                    <?= $form->field($model, 'password')
                         ->passwordInput(['placeholder'=>'Password']) 
-                        ->label(false) ?>            
-                </div>  
-            </div>  
+                        ->label(false) ?>   
+                </div>           
+             </div>  
+                
+             <div class="row">
+             	<div class="col-lg-5">
+                  <?= $form->field($model, 'confirmpassword')
+                  		->passwordInput(['placeholder'=>'Confirm Password'])  
+                  		->label(false)?>     
+                 </div>  
+             </div>  
 
             <div class="row">
                 <div class="col-lg-5">
