@@ -70,7 +70,8 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   `email_address` varchar(45) NOT NULL,
   `appointment_date` date NOT NULL,
   `appointment_time` time NOT NULL,
-  `visa_type` varchar(15) DEFAULT NULL,
+  `country` varchar(60) DEFAULT NULL,
+  `visa_type` varchar(30) DEFAULT NULL,
   `payment_rate` double DEFAULT NULL,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(20) DEFAULT NULL,
@@ -81,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   PRIMARY KEY (`id`),
   KEY `fk_appointment_user1_idx` (`user_id`),
   KEY `fk_appointment_staff1_idx` (`staff_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
