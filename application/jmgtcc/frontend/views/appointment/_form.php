@@ -94,7 +94,7 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'visa_type')
-                            ->dropdownList([ null => ' - ',
+                            ->dropdownList([ 'Not specified' => ' - ',
                                             'Immigrant Visa' => 'Immigrant Visa',
                                             'Non-Immigrant Visa' => 'Non-Immigrant Visa'])
                             ->label(false) ?>
