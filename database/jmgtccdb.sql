@@ -200,6 +200,16 @@ CREATE TABLE IF NOT EXISTS `roles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `role_name`, `role_description`) VALUES
+(1, 'Superadmin', 'Can access all system modules and processes'),
+(2, 'Travel Agent', 'Confirms and Updates travel requests and appo'),
+(3, 'Client Account', 'Registered Client / User account'),
+(4, 'Guest', 'Unregistered User ');
+
 -- --------------------------------------------------------
 
 --
