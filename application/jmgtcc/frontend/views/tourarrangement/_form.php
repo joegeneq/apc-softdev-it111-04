@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
+use dosamigos\datepicker\DatePicker;
+
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TourArrangement */
 /* @var $form yii\widgets\ActiveForm */
@@ -29,16 +31,39 @@ use yii\widgets\ActiveForm;
             <p class="form-label">Arrival Date</p>     
         </div>
         <div class="col-lg-2">         
-            <?= $form->field($model, 'arrival_date')->textInput()->label(false) ?>         
+            <?= $form->field($model, 'arrival_date')
+                    ->widget(
+                        DatePicker::className(), [
+                            'inline' => false, 
+                            'clientOptions' => [
+                                'autoclose' => true,
+                                'format' => 'yyyy-mm-dd',
+                                'daysOfWeekDisabled' => [0,6],
+                                'startDate' => '+1d'
+                            ]])
+                    ->label(false) ?>         
         </div>
-        <!--Night -->
+        <!-- -->
         <div class="col-lg-2">
             <p class="form-label">Departure Date</p>             
         </div>
         <div class="col-lg-2">         
-            <?= $form->field($model, 'departure_date')->textInput()->label(false) ?>    
+            <?= $form->field($model, 'departure_date')
+             ->widget(
+                        DatePicker::className(), [
+                            'inline' => false, 
+                            'clientOptions' => [
+                                'autoclose' => true,
+                                'format' => 'yyyy-mm-dd',
+                                'daysOfWeekDisabled' => [0,6],
+                                'startDate' => '+1d'
+                            ]])
+                    ->label(false) ?>      
         </div>
     </div>
+
+
+
 
     <!-- Number of Pax -->
     <div class="row">
