@@ -3,16 +3,16 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\TravelArrangement;
-use frontend\models\TravelArrangementSearch;
+use frontend\models\TravelTourArrangement;
+use frontend\models\TravelTourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * TravelArrangementController implements the CRUD actions for TravelArrangement model.
+ * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
  */
-class TravelArrangementController extends Controller
+class TravelTourArrangementController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Lists all TravelArrangement models.
+     * Lists all TravelTourArrangement models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new TravelArrangementSearch();
+        $searchModel = new TravelTourArrangementSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Displays a single TravelArrangement model.
+     * Displays a single TravelTourArrangement model.
      * @param integer $id
      * @param integer $hotels_id
      * @param integer $airlines_id
@@ -56,13 +56,13 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Creates a new TravelArrangement model.
+     * Creates a new TravelTourArrangement model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new TravelArrangement();
+        $model = new TravelTourArrangement();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id, 'hotels_id' => $model->hotels_id, 'airlines_id' => $model->airlines_id]);
@@ -74,7 +74,7 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Updates an existing TravelArrangement model.
+     * Updates an existing TravelTourArrangement model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @param integer $hotels_id
@@ -95,7 +95,7 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Deletes an existing TravelArrangement model.
+     * Deletes an existing TravelTourArrangement model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @param integer $hotels_id
@@ -110,17 +110,17 @@ class TravelArrangementController extends Controller
     }
 
     /**
-     * Finds the TravelArrangement model based on its primary key value.
+     * Finds the TravelTourArrangement model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
      * @param integer $hotels_id
      * @param integer $airlines_id
-     * @return TravelArrangement the loaded model
+     * @return TravelTourArrangement the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id, $hotels_id, $airlines_id)
     {
-        if (($model = TravelArrangement::findOne(['id' => $id, 'hotels_id' => $hotels_id, 'airlines_id' => $airlines_id])) !== null) {
+        if (($model = TravelTourArrangement::findOne(['id' => $id, 'hotels_id' => $hotels_id, 'airlines_id' => $airlines_id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

@@ -5,12 +5,12 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\TravelArrangement;
+use frontend\models\TravelTourArrangement;
 
 /**
- * TravelArrangementSearch represents the model behind the search form about `frontend\models\TravelArrangement`.
+ * TravelTourArrangementSearch represents the model behind the search form about `frontend\models\TravelTourArrangement`.
  */
-class TravelArrangementSearch extends TravelArrangement
+class TravelTourArrangementSearch extends TravelTourArrangement
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class TravelArrangementSearch extends TravelArrangement
     public function rules()
     {
         return [
-            [['id', 'number_of_adult', 'numbrt_of_children', 'number_of_infant', 'number_of_rooms', 'hotels_id', 'airlines_id', 'user_id'], 'integer'],
-            [['arrangement_code', 'departure_date', 'return_date', 'place_of_origin', 'destination', 'hotel_name', 'star_rating', 'accommodation', 'flight_type', 'cabin_type', 'tour_type', 'tour_deals', 'transport_service', 'date_created', 'status', 'date_confirmed', 'confirmed_by', 'date_updated', 'updated_by', 'notes'], 'safe'],
+            [['id', 'number_of_pax', 'hotels_id', 'airlines_id', 'user_id'], 'integer'],
+            [['arrangement_code', 'destination', 'departure_date', 'return_date', 'flight_type', 'class_type', 'hotel_name', 'room_type', 'inclusion', 'remarks', 'date_created', 'status', 'date_confirmed', 'confirmed_by', 'date_updated', 'updated_by'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class TravelArrangementSearch extends TravelArrangement
      */
     public function search($params)
     {
-        $query = TravelArrangement::find();
+        $query = TravelTourArrangement::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -59,10 +59,7 @@ class TravelArrangementSearch extends TravelArrangement
             'id' => $this->id,
             'departure_date' => $this->departure_date,
             'return_date' => $this->return_date,
-            'number_of_adult' => $this->number_of_adult,
-            'numbrt_of_children' => $this->numbrt_of_children,
-            'number_of_infant' => $this->number_of_infant,
-            'number_of_rooms' => $this->number_of_rooms,
+            'number_of_pax' => $this->number_of_pax,
             'date_created' => $this->date_created,
             'date_confirmed' => $this->date_confirmed,
             'date_updated' => $this->date_updated,
@@ -72,20 +69,16 @@ class TravelArrangementSearch extends TravelArrangement
         ]);
 
         $query->andFilterWhere(['like', 'arrangement_code', $this->arrangement_code])
-            ->andFilterWhere(['like', 'place_of_origin', $this->place_of_origin])
             ->andFilterWhere(['like', 'destination', $this->destination])
-            ->andFilterWhere(['like', 'hotel_name', $this->hotel_name])
-            ->andFilterWhere(['like', 'star_rating', $this->star_rating])
-            ->andFilterWhere(['like', 'accommodation', $this->accommodation])
             ->andFilterWhere(['like', 'flight_type', $this->flight_type])
-            ->andFilterWhere(['like', 'cabin_type', $this->cabin_type])
-            ->andFilterWhere(['like', 'tour_type', $this->tour_type])
-            ->andFilterWhere(['like', 'tour_deals', $this->tour_deals])
-            ->andFilterWhere(['like', 'transport_service', $this->transport_service])
+            ->andFilterWhere(['like', 'class_type', $this->class_type])
+            ->andFilterWhere(['like', 'hotel_name', $this->hotel_name])
+            ->andFilterWhere(['like', 'room_type', $this->room_type])
+            ->andFilterWhere(['like', 'inclusion', $this->inclusion])
+            ->andFilterWhere(['like', 'remarks', $this->remarks])
             ->andFilterWhere(['like', 'status', $this->status])
             ->andFilterWhere(['like', 'confirmed_by', $this->confirmed_by])
-            ->andFilterWhere(['like', 'updated_by', $this->updated_by])
-            ->andFilterWhere(['like', 'notes', $this->notes]);
+            ->andFilterWhere(['like', 'updated_by', $this->updated_by]);
 
         return $dataProvider;
     }

@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TravelArrangement */
+/* @var $model frontend\models\TravelTourArrangement */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Travel Arrangements'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Travel Tour Arrangements'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="travel-arrangement-view">
+<div class="travel-tour-arrangement-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -30,29 +30,22 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'arrangement_code',
+            'destination',
             'departure_date',
             'return_date',
-            'place_of_origin',
-            'destination',
-            'number_of_adult',
-            'numbrt_of_children',
-            'number_of_infant',
-            'number_of_rooms',
-            'hotel_name',
-            'star_rating',
-            'accommodation:ntext',
             'flight_type',
-            'cabin_type',
-            'tour_type',
-            'tour_deals:ntext',
-            'transport_service',
+            'class_type',
+            'number_of_pax',
+            'hotel_name',
+            'room_type',
+            'inclusion:ntext',
+            'remarks:ntext',
             'date_created',
             'status',
             'date_confirmed',
             'confirmed_by',
             'date_updated',
             'updated_by',
-            'notes:ntext',
             'hotels_id',
             'airlines_id',
             'user_id',

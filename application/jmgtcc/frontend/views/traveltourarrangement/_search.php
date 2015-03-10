@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TravelArrangementSearch */
+/* @var $model frontend\models\TravelTourArrangementSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="travel-arrangement-search">
+<div class="travel-tour-arrangement-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -19,37 +19,25 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'arrangement_code') ?>
 
+    <?= $form->field($model, 'destination') ?>
+
     <?= $form->field($model, 'departure_date') ?>
 
     <?= $form->field($model, 'return_date') ?>
 
-    <?= $form->field($model, 'place_of_origin') ?>
+    <?php // echo $form->field($model, 'flight_type') ?>
 
-    <?php // echo $form->field($model, 'destination') ?>
+    <?php // echo $form->field($model, 'class_type') ?>
 
-    <?php // echo $form->field($model, 'number_of_adult') ?>
-
-    <?php // echo $form->field($model, 'numbrt_of_children') ?>
-
-    <?php // echo $form->field($model, 'number_of_infant') ?>
-
-    <?php // echo $form->field($model, 'number_of_rooms') ?>
+    <?php // echo $form->field($model, 'number_of_pax') ?>
 
     <?php // echo $form->field($model, 'hotel_name') ?>
 
-    <?php // echo $form->field($model, 'star_rating') ?>
+    <?php // echo $form->field($model, 'room_type') ?>
 
-    <?php // echo $form->field($model, 'accommodation') ?>
+    <?php // echo $form->field($model, 'inclusion') ?>
 
-    <?php // echo $form->field($model, 'flight_type') ?>
-
-    <?php // echo $form->field($model, 'cabin_type') ?>
-
-    <?php // echo $form->field($model, 'tour_type') ?>
-
-    <?php // echo $form->field($model, 'tour_deals') ?>
-
-    <?php // echo $form->field($model, 'transport_service') ?>
+    <?php // echo $form->field($model, 'remarks') ?>
 
     <?php // echo $form->field($model, 'date_created') ?>
 
@@ -62,8 +50,6 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'date_updated') ?>
 
     <?php // echo $form->field($model, 'updated_by') ?>
-
-    <?php // echo $form->field($model, 'notes') ?>
 
     <?php // echo $form->field($model, 'hotels_id') ?>
 
