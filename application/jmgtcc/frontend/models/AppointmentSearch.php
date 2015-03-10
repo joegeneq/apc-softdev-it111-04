@@ -19,7 +19,7 @@ class AppointmentSearch extends Appointment
     {
         return [
             [['id', 'user_id', 'staff_id'], 'integer'],
-            [['appointment_code', 'client_name', 'client_username', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time', 'visa_type', 'date_created', 'status', 'confirmed_by', 'notes'], 'safe'],
+            [['appointment_code', 'client_name', 'client_username', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time', 'country', 'visa_type', 'date_created', 'status', 'confirmed_by', 'notes'], 'safe'],
             [['payment_rate'], 'number'],
         ];
     }
@@ -72,6 +72,7 @@ class AppointmentSearch extends Appointment
             ->andFilterWhere(['like', 'city', $this->city])
             ->andFilterWhere(['like', 'contact_number', $this->contact_number])
             ->andFilterWhere(['like', 'email_address', $this->email_address])
+            ->andFilterWhere(['like', 'country', $this->country])
             ->andFilterWhere(['like', 'visa_type', $this->visa_type])
             ->andFilterWhere(['like', 'status', $this->status])
             ->andFilterWhere(['like', 'confirmed_by', $this->confirmed_by])

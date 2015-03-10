@@ -37,6 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'email_address:email',
             'appointment_date',
             'appointment_time',
+            'country',
             'visa_type',
             'payment_rate',
             'date_created',

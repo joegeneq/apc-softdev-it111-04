@@ -16,6 +16,7 @@ use Yii;
  * @property string $email_address
  * @property string $appointment_date
  * @property string $appointment_time
+ * @property string $country
  * @property string $visa_type
  * @property double $payment_rate
  * @property string $date_created
@@ -51,10 +52,11 @@ class Appointment extends \yii\db\ActiveRecord
             [['notes'], 'string'],
             [['user_id', 'staff_id'], 'integer'],
             [['appointment_code'], 'string', 'max' => 25],
-            [['client_name'], 'string', 'max' => 60],
-            [['client_username', 'visa_type', 'confirmed_by'], 'string', 'max' => 15],
+            [['client_name', 'country'], 'string', 'max' => 60],
+            [['client_username', 'confirmed_by'], 'string', 'max' => 15],
             [['city', 'email_address'], 'string', 'max' => 45],
-            [['contact_number', 'status'], 'string', 'max' => 20]
+            [['contact_number', 'status'], 'string', 'max' => 20],
+            [['visa_type'], 'string', 'max' => 30]
         ];
     }
 
@@ -73,6 +75,7 @@ class Appointment extends \yii\db\ActiveRecord
             'email_address' => Yii::t('app', 'Email Address'),
             'appointment_date' => Yii::t('app', 'Appointment Date'),
             'appointment_time' => Yii::t('app', 'Appointment Time'),
+            'country' => Yii::t('app', 'Country'),
             'visa_type' => Yii::t('app', 'Visa Type'),
             'payment_rate' => Yii::t('app', 'Payment Rate'),
             'date_created' => Yii::t('app', 'Date Created'),

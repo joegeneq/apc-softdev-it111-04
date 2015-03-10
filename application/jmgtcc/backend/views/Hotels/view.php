@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'hotel_name',
             'country',
+            'star_rating',
         ],
     ]) ?>
 
