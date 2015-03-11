@@ -192,7 +192,7 @@ CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`hotels` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `hotel_name` VARCHAR(60) NOT NULL ,
   `country` VARCHAR(45) NOT NULL ,
-  `star rating` INT NULL ,
+  `star_rating` INT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
