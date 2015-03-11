@@ -3,6 +3,10 @@
 namespace frontend\models;
 
 use Yii;
+use yii\base\Model;
+
+use yii\db\Query;
+
 
 /**
  * This is the model class for table "appointment".
@@ -31,15 +35,13 @@ use Yii;
  * @property AppointmentHistory[] $appointmentHistories
  */
 class Appointment extends \yii\db\ActiveRecord
-{
-
+{  
     // public $appointment_code;
     // public $client_username;
     // public $client_name;
     // public $city;
     // public $contact_number;
-    // public $email_address;
-
+    // public $email_address;  
 
     /**
      * @inheritdoc
@@ -51,8 +53,15 @@ class Appointment extends \yii\db\ActiveRecord
 
     public function generateAppointmentCode()
     {
+        $cmd = new Query;
+        $sql = ("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(4)), '-', 
+                                            RIGHT( CONCAT('00000', MAX(id)+1 ) , 6)) AS appointment_code
+                            FROM appointment");
 
-    }
+        $cmd->queryColumn($sql);
+
+        return $this->$appointment_code=$cmd;      
+   }
 
     /**
      * @inheritdoc
