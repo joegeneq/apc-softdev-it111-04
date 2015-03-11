@@ -203,7 +203,7 @@ ENGINE = InnoDB;
 CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`inclusion` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `tour_type` VARCHAR(60) NOT NULL ,
-  `food_deals` TEXT NOT NULL ,
+  `food_deals` VARCHAR(45) NOT NULL ,
   `transport_service` VARCHAR(45) NOT NULL ,
   `freebies` VARCHAR(45) NOT NULL ,
   `remarks` VARCHAR(45) NULL ,
@@ -250,7 +250,7 @@ ENGINE = InnoDB;
 -- Table `jmgtcc_brs`.`transport_service`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`transport_service` (
-  `id` INT NOT NULL ,
+  `id` INT NOT NULL AUTO_INCREMENT ,
   `transport_type` VARCHAR(25) NOT NULL ,
   `transport_description` TEXT NULL ,
   PRIMARY KEY (`id`) )
