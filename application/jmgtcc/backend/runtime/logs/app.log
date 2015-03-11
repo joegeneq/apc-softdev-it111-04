@@ -4185,3 +4185,534 @@ $_SERVER = [
     'REQUEST_TIME' => 1425989916
 >>>>>>> e30d0d35377be70e7dc6f1c98cb2417acd04e46e
 ]
+2015-03-10 16:03:09 [::1][Array][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-03-10 16:03:09 [::1][Array][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'MGJjdFZLY1QDUw03JHhWLgAyKg05eQEcShdVBRoPATVgVw4tDgMAbQ=='
+    'LoginForm' => [
+        'username' => 'staff1'
+        'password' => '123456'
+        'rememberMe' => '0'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '53qr7264g1s7aope7bue3mgbd5'
+    '_csrf' => '6db9c6f8c39bec2ac942e8a39dbda85cf56aed0de36d514431388873fff87bb8s:32:\"yIwYsAVA5Tmst1WSVs0qWPBmUlvVpGNO\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/'
+    '__id' => [
+        'id' => 1
+        'roles_id' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '170'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=53qr7264g1s7aope7bue3mgbd5; _csrf=6db9c6f8c39bec2ac942e8a39dbda85cf56aed0de36d514431388873fff87bb8s%3A32%3A%22yIwYsAVA5Tmst1WSVs0qWPBmUlvVpGNO%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51315'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425999789.329
+    'REQUEST_TIME' => 1425999789
+]
+2015-03-10 16:19:02 [::1][Array][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Airlines/index".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('Airlines/index', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-10 16:19:02 [::1][Array][-][info][application] $_GET = [
+    'r' => 'Airlines/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s:32:\"mdH11EXSluvqBfeCUEReL3JMkGQssRjR\";'
+    'PHPSESSID' => 'qinvet4n0c80j27051fitmu713'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => [
+        'id' => 1
+        'roles_id' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s%3A32%3A%22mdH11EXSluvqBfeCUEReL3JMkGQssRjR%22%3B; PHPSESSID=qinvet4n0c80j27051fitmu713'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51356'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Airlines%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=Airlines%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426000742.381
+    'REQUEST_TIME' => 1426000742
+]
+2015-03-10 16:19:06 [::1][Array][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Hotels/index".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('Hotels/index', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-10 16:19:06 [::1][Array][-][info][application] $_GET = [
+    'r' => 'Hotels/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s:32:\"mdH11EXSluvqBfeCUEReL3JMkGQssRjR\";'
+    'PHPSESSID' => 'qinvet4n0c80j27051fitmu713'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => [
+        'id' => 1
+        'roles_id' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=Airlines%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s%3A32%3A%22mdH11EXSluvqBfeCUEReL3JMkGQssRjR%22%3B; PHPSESSID=qinvet4n0c80j27051fitmu713'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51356'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Hotels%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=Hotels%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426000746.694
+    'REQUEST_TIME' => 1426000746
+]
+2015-03-10 16:20:48 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\models\Staff' in file: C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc/backend/models/Staff.php. Namespace missing?' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\models\...')
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\models\StaffSearch.php(14): spl_autoload_call('backend\models\...')
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(288): include('C:\SOFTDEV\apc-...')
+#3 [internal function]: yii\BaseYii::autoload('backend\models\...')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\controllers\StaffController.php(35): spl_autoload_call('backend\models\...')
+#5 [internal function]: backend\controllers\StaffController->actionIndex()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('staff/index', Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-10 16:20:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'staff/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s:32:\"mdH11EXSluvqBfeCUEReL3JMkGQssRjR\";'
+    'PHPSESSID' => 'qinvet4n0c80j27051fitmu713'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=airlines%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s%3A32%3A%22mdH11EXSluvqBfeCUEReL3JMkGQssRjR%22%3B; PHPSESSID=qinvet4n0c80j27051fitmu713'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=staff%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=staff%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426000847.948
+    'REQUEST_TIME' => 1426000847
+]
+2015-03-10 16:28:49 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\models\Staff' in file: C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc/backend/models/Staff.php. Namespace missing?' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\models\...')
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\models\StaffSearch.php(14): spl_autoload_call('backend\models\...')
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(288): include('C:\SOFTDEV\apc-...')
+#3 [internal function]: yii\BaseYii::autoload('backend\models\...')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\controllers\StaffController.php(35): spl_autoload_call('backend\models\...')
+#5 [internal function]: backend\controllers\StaffController->actionIndex()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('staff/index', Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-10 16:28:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'staff/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s:32:\"mdH11EXSluvqBfeCUEReL3JMkGQssRjR\";'
+    'PHPSESSID' => 'qinvet4n0c80j27051fitmu713'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=inclusion%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ab59a4cc6ba3e5e685642c42118f13785c24e51f1fa2ef1353d5e2e8d9b42d96s%3A32%3A%22mdH11EXSluvqBfeCUEReL3JMkGQssRjR%22%3B; PHPSESSID=qinvet4n0c80j27051fitmu713'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '51423'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=staff%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=staff%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426001329.184
+    'REQUEST_TIME' => 1426001329
+]
+2015-03-10 17:02:43 [::1][Array][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php:240
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php(240): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\xanne\apc-so...', 240, Array)
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\models\LoginForm.php(59): yii\web\User->login(Object(app\models\Staff), 2592000)
+#2 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(68): app\models\LoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#7 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#8 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2015-03-10 17:02:43 [::1][Array][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'bmVHc2FlcHoEUggRUhZFKT0ADiRTFkIPGwwTGwQRAzAAKn9eEB8BTg=='
+    'LoginForm' => [
+        'username' => 'staff1'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1rmka8nrs25lsksf6qpn8v0ak1'
+    '_csrf' => '1209c7522cab23140c1c3dd59a4928645b7de7388ef178243cc81fa8ded778ees:32:\"j7Ob3s5SSeIW2s2uuiThetsJnO8-qzq4\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php?'
+    '__id' => [
+        'id' => 1
+        'roles_id' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=1rmka8nrs25lsksf6qpn8v0ak1; _csrf=1209c7522cab23140c1c3dd59a4928645b7de7388ef178243cc81fa8ded778ees%3A32%3A%22j7Ob3s5SSeIW2s2uuiThetsJnO8-qzq4%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '198'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;Ca:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '53764'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426003363.832
+    'REQUEST_TIME' => 1426003363
+]
+2015-03-10 17:06:12 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php:329
+Stack trace:
+#0 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\User.php(329): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\xanne\apc-so...', 329, Array)
+#1 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(79): yii\web\User->logout()
+#2 [internal function]: backend\controllers\SiteController->actionLogout()
+#3 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#6 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xanne\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xanne\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-10 17:06:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'MG15bU9UbHhaWjYPfCdZK2MIMDp9J14NRQQtBSogHzJeIkFAPi4dTA=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'hu0fihruch3deo9pvfookfrdh0'
+    '_csrf' => '1209c7522cab23140c1c3dd59a4928645b7de7388ef178243cc81fa8ded778ees:32:\"j7Ob3s5SSeIW2s2uuiThetsJnO8-qzq4\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php?'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=hu0fihruch3deo9pvfookfrdh0; _csrf=1209c7522cab23140c1c3dd59a4928645b7de7388ef178243cc81fa8ded778ees%3A32%3A%22j7Ob3s5SSeIW2s2uuiThetsJnO8-qzq4%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;Ca:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '53798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426003572.796
+    'REQUEST_TIME' => 1426003572
+]
