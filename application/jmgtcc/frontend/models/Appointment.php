@@ -33,12 +33,12 @@ use Yii;
 class Appointment extends \yii\db\ActiveRecord
 {
 
-    public $appointment_code;
-    public $client_username;
-    public $client_name;
-    public $city;
-    public $contact_number;
-    public $email_address;
+    // public $appointment_code;
+    // public $client_username;
+    // public $client_name;
+    // public $city;
+    // public $contact_number;
+    // public $email_address;
 
 
     /**
@@ -47,6 +47,11 @@ class Appointment extends \yii\db\ActiveRecord
     public static function tableName()
     {
         return 'appointment';
+    }
+
+    public function generateAppointmentCode()
+    {
+
     }
 
     /**
