@@ -9,8 +9,6 @@ use Yii;
  *
  * @property integer $id
  * @property string $airline_name
- *
- * @property TravelTourArrangement[] $travelTourArrangements
  */
 class Airlines extends \yii\db\ActiveRecord
 {
@@ -41,13 +39,5 @@ class Airlines extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'airline_name' => Yii::t('app', 'Airline Name'),
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTravelTourArrangements()
-    {
-        return $this->hasMany(TravelTourArrangement::className(), ['airlines_id' => 'id']);
     }
 }
