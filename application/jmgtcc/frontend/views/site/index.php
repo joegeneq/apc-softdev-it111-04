@@ -69,7 +69,7 @@ $this->title = 'JMGTCC';
             </div>
         </center>
 
-        <br><br>
+        <br>
 
         <a href="#" title="Create a Travel Arrangement"><img class="servicesImg" src="images/customised-travel-arrangements-journeys.jpg" /></a>
         <a href="http://travelmall.ph/asia-travel-deals/philippine-tour-packages-and-prices" title="Choose a Tour Package" target="_blank">
@@ -83,7 +83,7 @@ $this->title = 'JMGTCC';
         <div class="row">
             
             <div class="col-lg-9">
-                <h3>Journeys & More Global Tours</h3>
+                <h4>Journeys & More Global Tours</h4>
 
                 <p>
                     Journeys & More Global Tours and Consultancy Company (JMGTC) is a Philippine travel bureau engaged in the 
@@ -103,7 +103,7 @@ $this->title = 'JMGTCC';
                 
             </div>
             <div class="col-lg-3">
-                <h3>Official Accounts</h3>
+                <h4>Official Accounts</h4>
                 <p>                    
                     <br><b>Website:</b><a href="http://journeysglobaltours.com/" target="_blank"> journeysglobaltours.com</a>
                     <br>                   
