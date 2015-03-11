@@ -2,14 +2,14 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
-CREATE SCHEMA IF NOT EXISTS `jmgtccdb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+CREATE SCHEMA IF NOT EXISTS `jmgtcc_brs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
 CREATE SCHEMA IF NOT EXISTS `new_schema1` ;
-USE `jmgtccdb` ;
+USE `jmgtcc_brs` ;
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`roles`
+-- Table `jmgtcc_brs`.`roles`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`roles` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`roles` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `role_name` VARCHAR(45) NULL ,
   `role_description` TEXT NULL ,
@@ -18,9 +18,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`user`
+-- Table `jmgtcc_brs`.`user`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`user` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `username` VARCHAR(15) NULL ,
   `password` VARCHAR(45) NULL ,
@@ -37,16 +37,16 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`user` (
   INDEX `fk_user_roles1_idx` (`roles_id` ASC) ,
   CONSTRAINT `fk_user_roles1`
     FOREIGN KEY (`roles_id` )
-    REFERENCES `jmgtccdb`.`roles` (`id` )
+    REFERENCES `jmgtcc_brs`.`roles` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`staff`
+-- Table `jmgtcc_brs`.`staff`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`staff` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`staff` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `username` VARCHAR(15) NULL ,
   `password` VARCHAR(45) NULL ,
@@ -55,16 +55,16 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`staff` (
   INDEX `fk_staff_roles1_idx` (`roles_id` ASC) ,
   CONSTRAINT `fk_staff_roles1`
     FOREIGN KEY (`roles_id` )
-    REFERENCES `jmgtccdb`.`roles` (`id` )
+    REFERENCES `jmgtcc_brs`.`roles` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`appointment`
+-- Table `jmgtcc_brs`.`appointment`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`appointment` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`appointment` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `appointment_code` VARCHAR(25) NULL ,
   `client_name` VARCHAR(60) NOT NULL ,
@@ -88,21 +88,21 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`appointment` (
   INDEX `fk_appointment_staff1_idx` (`staff_id` ASC) ,
   CONSTRAINT `fk_appointment_user1`
     FOREIGN KEY (`user_id` )
-    REFERENCES `jmgtccdb`.`user` (`id` )
+    REFERENCES `jmgtcc_brs`.`user` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_appointment_staff1`
     FOREIGN KEY (`staff_id` )
-    REFERENCES `jmgtccdb`.`staff` (`id` )
+    REFERENCES `jmgtcc_brs`.`staff` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`contact_number`
+-- Table `jmgtcc_brs`.`contact_number`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`contact_number` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`contact_number` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `country` VARCHAR(45) NULL ,
   `prefix` VARCHAR(5) NULL ,
@@ -112,9 +112,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`airlines`
+-- Table `jmgtcc_brs`.`airlines`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`airlines` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`airlines` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `airline_name` VARCHAR(45) NULL ,
   PRIMARY KEY (`id`) )
@@ -122,9 +122,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`tour_type`
+-- Table `jmgtcc_brs`.`tour_type`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`tour_type` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`tour_type` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `tour_name` VARCHAR(45) NOT NULL ,
   `tour_description` TEXT NULL ,
@@ -133,9 +133,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`appointment_history`
+-- Table `jmgtcc_brs`.`appointment_history`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`appointment_history` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`appointment_history` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `history_code` VARCHAR(25) NULL ,
   `prev_appointment_time` TIME NULL ,
@@ -145,16 +145,16 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`appointment_history` (
   INDEX `fk_appointment_history_appointment1_idx` (`appointment_id` ASC) ,
   CONSTRAINT `fk_appointment_history_appointment1`
     FOREIGN KEY (`appointment_id` )
-    REFERENCES `jmgtccdb`.`appointment` (`id` )
+    REFERENCES `jmgtcc_brs`.`appointment` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`travel_tour_arrangement`
+-- Table `jmgtcc_brs`.`travel_tour_arrangement`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`travel_tour_arrangement` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`travel_tour_arrangement` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `arrangement_code` VARCHAR(25) NULL ,
   `destination` VARCHAR(60) NOT NULL ,
@@ -179,16 +179,16 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`travel_tour_arrangement` (
   INDEX `fk_travel_arrangement_user1_idx` (`user_id` ASC) ,
   CONSTRAINT `fk_travel_arrangement_user1`
     FOREIGN KEY (`user_id` )
-    REFERENCES `jmgtccdb`.`user` (`id` )
+    REFERENCES `jmgtcc_brs`.`user` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`hotels`
+-- Table `jmgtcc_brs`.`hotels`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`hotels` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`hotels` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `hotel_name` VARCHAR(60) NOT NULL ,
   `country` VARCHAR(45) NOT NULL ,
@@ -198,9 +198,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`inclusion`
+-- Table `jmgtcc_brs`.`inclusion`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`inclusion` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`inclusion` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `tour_type` VARCHAR(60) NOT NULL ,
   `food_deals` TEXT NOT NULL ,
@@ -212,9 +212,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`tour_arrangement`
+-- Table `jmgtcc_brs`.`tour_arrangement`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`tour_arrangement` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`tour_arrangement` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `destination` VARCHAR(60) NOT NULL ,
   `departure_date` DATE NOT NULL ,
@@ -229,16 +229,16 @@ CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`tour_arrangement` (
   INDEX `fk_tour_arrangement_user1_idx` (`user_id` ASC) ,
   CONSTRAINT `fk_tour_arrangement_user1`
     FOREIGN KEY (`user_id` )
-    REFERENCES `jmgtccdb`.`user` (`id` )
+    REFERENCES `jmgtcc_brs`.`user` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`food_deals`
+-- Table `jmgtcc_brs`.`food_deals`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`food_deals` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`food_deals` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `food_deal_name` VARCHAR(45) NOT NULL ,
   `food_deal_description` TEXT NULL ,
@@ -247,9 +247,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`transport_service`
+-- Table `jmgtcc_brs`.`transport_service`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`transport_service` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`transport_service` (
   `id` INT NOT NULL ,
   `transport_type` VARCHAR(25) NOT NULL ,
   `transport_description` TEXT NULL ,
@@ -258,9 +258,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`freebies`
+-- Table `jmgtcc_brs`.`freebies`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`freebies` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`freebies` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `freebies_name` VARCHAR(45) NOT NULL ,
   `freebies_description` TEXT NULL ,
@@ -269,9 +269,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `jmgtccdb`.`time`
+-- Table `jmgtcc_brs`.`time`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `jmgtccdb`.`time` (
+CREATE  TABLE IF NOT EXISTS `jmgtcc_brs`.`time` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `time` TIME NOT NULL ,
   `description` VARCHAR(45) NOT NULL ,
