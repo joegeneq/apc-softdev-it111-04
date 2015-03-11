@@ -159,7 +159,7 @@ use backend\models\Time;
 
     </div>    
 
-     <?= Html::activeHiddenInput($model, 'appointment_code', ['value' => 'Appntmnt Code']) ?> 
+     <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
      <?= Html::activeHiddenInput($model, 'client_username') ?>    
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
