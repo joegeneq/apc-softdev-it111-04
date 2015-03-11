@@ -29,9 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'inclusion_name',
-            'inclusion_description:ntext',
-            'price',
+            'tour_type',
+            'food_deals',
+            'transport_service',
+            'freebies',
+            'remarks',
         ],
     ]) ?>
 

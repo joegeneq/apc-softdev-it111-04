@@ -19,8 +19,7 @@ class InclusionSearch extends Inclusion
     {
         return [
             [['id'], 'integer'],
-            [['inclusion_name', 'inclusion_description'], 'safe'],
-            [['price'], 'number'],
+            [['tour_type', 'food_deals', 'transport_service', 'freebies', 'remarks'], 'safe'],
         ];
     }
 
@@ -58,11 +57,13 @@ class InclusionSearch extends Inclusion
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'price' => $this->price,
         ]);
 
-        $query->andFilterWhere(['like', 'inclusion_name', $this->inclusion_name])
-            ->andFilterWhere(['like', 'inclusion_description', $this->inclusion_description]);
+        $query->andFilterWhere(['like', 'tour_type', $this->tour_type])
+            ->andFilterWhere(['like', 'food_deals', $this->food_deals])
+            ->andFilterWhere(['like', 'transport_service', $this->transport_service])
+            ->andFilterWhere(['like', 'freebies', $this->freebies])
+            ->andFilterWhere(['like', 'remarks', $this->remarks]);
 
         return $dataProvider;
     }

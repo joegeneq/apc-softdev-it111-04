@@ -15,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id, 'hotels_id' => $model->hotels_id, 'airlines_id' => $model->airlines_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id, 'hotels_id' => $model->hotels_id, 'airlines_id' => $model->airlines_id], [
+        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'destination',
             'departure_date',
             'return_date',
+            'airline_name',
             'flight_type',
             'class_type',
             'number_of_pax',
@@ -46,8 +47,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'confirmed_by',
             'date_updated',
             'updated_by',
-            'hotels_id',
-            'airlines_id',
             'user_id',
         ],
     ]) ?>

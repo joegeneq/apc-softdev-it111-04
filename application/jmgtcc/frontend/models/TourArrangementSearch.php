@@ -18,8 +18,8 @@ class TourArrangementSearch extends TourArrangement
     public function rules()
     {
         return [
-            [['id', 'number_of_pax', 'hotels_id'], 'integer'],
-            [['destination', 'arrival_date', 'departure_date', 'hotel_name', 'room_type', 'inclusion', 'remarks'], 'safe'],
+            [['id', 'number_of_pax', 'user_id'], 'integer'],
+            [['destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'remarks'], 'safe'],
         ];
     }
 
@@ -57,16 +57,16 @@ class TourArrangementSearch extends TourArrangement
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'arrival_date' => $this->arrival_date,
             'departure_date' => $this->departure_date,
+            'return_date' => $this->return_date,
             'number_of_pax' => $this->number_of_pax,
-            'hotels_id' => $this->hotels_id,
+            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'destination', $this->destination])
-            ->andFilterWhere(['like', 'hotel_name', $this->hotel_name])
-            ->andFilterWhere(['like', 'room_type', $this->room_type])
-            ->andFilterWhere(['like', 'inclusion', $this->inclusion])
+            ->andFilterWhere(['like', 'airline_name', $this->airline_name])
+            ->andFilterWhere(['like', 'flight_type', $this->flight_type])
+            ->andFilterWhere(['like', 'class_type', $this->class_type])
             ->andFilterWhere(['like', 'remarks', $this->remarks]);
 
         return $dataProvider;

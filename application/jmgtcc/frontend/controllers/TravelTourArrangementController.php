@@ -44,14 +44,12 @@ class TravelTourArrangementController extends Controller
     /**
      * Displays a single TravelTourArrangement model.
      * @param integer $id
-     * @param integer $hotels_id
-     * @param integer $airlines_id
      * @return mixed
      */
-    public function actionView($id, $hotels_id, $airlines_id)
+    public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id, $hotels_id, $airlines_id),
+            'model' => $this->findModel($id),
         ]);
     }
 
@@ -65,7 +63,7 @@ class TravelTourArrangementController extends Controller
         $model = new TravelTourArrangement();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'hotels_id' => $model->hotels_id, 'airlines_id' => $model->airlines_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -77,16 +75,14 @@ class TravelTourArrangementController extends Controller
      * Updates an existing TravelTourArrangement model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
-     * @param integer $hotels_id
-     * @param integer $airlines_id
      * @return mixed
      */
-    public function actionUpdate($id, $hotels_id, $airlines_id)
+    public function actionUpdate($id)
     {
-        $model = $this->findModel($id, $hotels_id, $airlines_id);
+        $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'hotels_id' => $model->hotels_id, 'airlines_id' => $model->airlines_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -98,13 +94,11 @@ class TravelTourArrangementController extends Controller
      * Deletes an existing TravelTourArrangement model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
-     * @param integer $hotels_id
-     * @param integer $airlines_id
      * @return mixed
      */
-    public function actionDelete($id, $hotels_id, $airlines_id)
+    public function actionDelete($id)
     {
-        $this->findModel($id, $hotels_id, $airlines_id)->delete();
+        $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -113,14 +107,12 @@ class TravelTourArrangementController extends Controller
      * Finds the TravelTourArrangement model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @param integer $hotels_id
-     * @param integer $airlines_id
      * @return TravelTourArrangement the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id, $hotels_id, $airlines_id)
+    protected function findModel($id)
     {
-        if (($model = TravelTourArrangement::findOne(['id' => $id, 'hotels_id' => $hotels_id, 'airlines_id' => $airlines_id])) !== null) {
+        if (($model = TravelTourArrangement::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
