@@ -32,6 +32,15 @@ use Yii;
  */
 class Appointment extends \yii\db\ActiveRecord
 {
+
+    public $appointment_code;
+    public $client_username;
+    public $client_name;
+    public $city;
+    public $contact_number;
+    public $email_address;
+
+
     /**
      * @inheritdoc
      */
