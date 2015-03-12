@@ -28,9 +28,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'inclusion_name',
-            'inclusion_description:ntext',
-            'price',
+            'tour_type',
+            'food_deals',
+            'transport_service',
+            'freebies',
+            // 'remarks',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

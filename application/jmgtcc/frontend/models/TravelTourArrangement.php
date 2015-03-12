@@ -12,6 +12,7 @@ use Yii;
  * @property string $destination
  * @property string $departure_date
  * @property string $return_date
+ * @property string $airline_name
  * @property string $flight_type
  * @property string $class_type
  * @property integer $number_of_pax
@@ -25,12 +26,8 @@ use Yii;
  * @property string $confirmed_by
  * @property string $date_updated
  * @property string $updated_by
- * @property integer $hotels_id
- * @property integer $airlines_id
  * @property integer $user_id
  *
- * @property Airlines $airlines
- * @property Hotels $hotels
  * @property User $user
  */
 class TravelTourArrangement extends \yii\db\ActiveRecord
@@ -49,12 +46,12 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'departure_date', 'return_date', 'flight_type', 'class_type', 'hotels_id', 'airlines_id', 'user_id'], 'required'],
+            [['destination', 'departure_date', 'return_date', 'number_of_pax', 'room_type', 'user_id'], 'required'],
             [['departure_date', 'return_date', 'date_created', 'date_confirmed', 'date_updated'], 'safe'],
-            [['number_of_pax', 'hotels_id', 'airlines_id', 'user_id'], 'integer'],
+            [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion', 'remarks'], 'string'],
             [['arrangement_code'], 'string', 'max' => 25],
-            [['destination', 'room_type'], 'string', 'max' => 60],
+            [['destination', 'airline_name', 'room_type'], 'string', 'max' => 60],
             [['flight_type', 'class_type', 'status', 'confirmed_by', 'updated_by'], 'string', 'max' => 20],
             [['hotel_name'], 'string', 'max' => 100]
         ];
@@ -71,6 +68,7 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             'destination' => Yii::t('app', 'Destination'),
             'departure_date' => Yii::t('app', 'Departure Date'),
             'return_date' => Yii::t('app', 'Return Date'),
+            'airline_name' => Yii::t('app', 'Airline Name'),
             'flight_type' => Yii::t('app', 'Flight Type'),
             'class_type' => Yii::t('app', 'Class Type'),
             'number_of_pax' => Yii::t('app', 'Number Of Pax'),
@@ -84,26 +82,8 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             'confirmed_by' => Yii::t('app', 'Confirmed By'),
             'date_updated' => Yii::t('app', 'Date Updated'),
             'updated_by' => Yii::t('app', 'Updated By'),
-            'hotels_id' => Yii::t('app', 'Hotel Name'),
-            'airlines_id' => Yii::t('app', 'Airline Name'),
             'user_id' => Yii::t('app', 'User ID'),
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getAirlines()
-    {
-        return $this->hasOne(Airlines::className(), ['id' => 'airlines_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getHotels()
-    {
-        return $this->hasOne(Hotels::className(), ['id' => 'hotels_id']);
     }
 
     /**

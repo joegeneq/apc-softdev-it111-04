@@ -19,21 +19,21 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'destination') ?>
 
-    <?= $form->field($model, 'arrival_date') ?>
-
     <?= $form->field($model, 'departure_date') ?>
 
-    <?= $form->field($model, 'number_of_pax') ?>
+    <?= $form->field($model, 'return_date') ?>
 
-    <?php // echo $form->field($model, 'hotel_name') ?>
+    <?= $form->field($model, 'airline_name') ?>
 
-    <?php // echo $form->field($model, 'room_type') ?>
+    <?php // echo $form->field($model, 'flight_type') ?>
 
-    <?php // echo $form->field($model, 'inclusion') ?>
+    <?php // echo $form->field($model, 'class_type') ?>
+
+    <?php // echo $form->field($model, 'number_of_pax') ?>
 
     <?php // echo $form->field($model, 'remarks') ?>
 
-    <?php // echo $form->field($model, 'hotels_id') ?>
+    <?php // echo $form->field($model, 'user_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

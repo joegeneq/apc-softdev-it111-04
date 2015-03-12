@@ -12,11 +12,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'inclusion_name')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'tour_type')->textInput(['maxlength' => 60]) ?>
 
-    <?= $form->field($model, 'inclusion_description')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'food_deals')->textInput(['maxlength' => 45]) ?>
 
-    <?= $form->field($model, 'price')->textInput(['maxlength' => 10]) ?>
+    <?= $form->field($model, 'transport_service')->textInput(['maxlength' => 45]) ?>
+
+    <?= $form->field($model, 'freebies')->textInput(['maxlength' => 45]) ?>
+
+    <?= $form->field($model, 'remarks')->textInput(['maxlength' => 45]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

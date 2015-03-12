@@ -17,11 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'inclusion_name') ?>
+    <?= $form->field($model, 'tour_type') ?>
 
-    <?= $form->field($model, 'inclusion_description') ?>
+    <?= $form->field($model, 'food_deals') ?>
 
-    <?= $form->field($model, 'price') ?>
+    <?= $form->field($model, 'transport_service') ?>
+
+    <?= $form->field($model, 'freebies') ?>
+
+    <?php // echo $form->field($model, 'remarks') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'destination',
             'departure_date',
             'return_date',
+            // 'airline_name',
             // 'flight_type',
             // 'class_type',
             // 'number_of_pax',
@@ -45,8 +46,6 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'confirmed_by',
             // 'date_updated',
             // 'updated_by',
-            // 'hotels_id',
-            // 'airlines_id',
             // 'user_id',
 
             ['class' => 'yii\grid\ActionColumn'],

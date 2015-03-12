@@ -25,6 +25,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'return_date') ?>
 
+    <?php // echo $form->field($model, 'airline_name') ?>
+
     <?php // echo $form->field($model, 'flight_type') ?>
 
     <?php // echo $form->field($model, 'class_type') ?>
@@ -50,10 +52,6 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'date_updated') ?>
 
     <?php // echo $form->field($model, 'updated_by') ?>
-
-    <?php // echo $form->field($model, 'hotels_id') ?>
-
-    <?php // echo $form->field($model, 'airlines_id') ?>
 
     <?php // echo $form->field($model, 'user_id') ?>
 

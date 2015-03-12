@@ -9,16 +9,16 @@ use Yii;
  *
  * @property integer $id
  * @property string $destination
- * @property string $arrival_date
  * @property string $departure_date
+ * @property string $return_date
+ * @property string $airline_name
+ * @property string $flight_type
+ * @property string $class_type
  * @property integer $number_of_pax
- * @property string $hotel_name
- * @property string $room_type
- * @property string $inclusion
  * @property string $remarks
- * @property integer $hotels_id
+ * @property integer $user_id
  *
- * @property Hotels $hotels
+ * @property User $user
  */
 class TourArrangement extends \yii\db\ActiveRecord
 {
@@ -36,13 +36,12 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'arrival_date', 'departure_date', 'number_of_pax', 'room_type', 'inclusion', 'hotels_id'], 'required'],
-            [['arrival_date', 'departure_date'], 'safe'],
-            [['number_of_pax', 'hotels_id'], 'integer'],
-            [['inclusion', 'remarks'], 'string'],
-            [['destination'], 'string', 'max' => 90],
-            [['hotel_name'], 'string', 'max' => 60],
-            [['room_type'], 'string', 'max' => 80]
+            [['destination', 'departure_date', 'return_date', 'number_of_pax', 'user_id'], 'required'],
+            [['departure_date', 'return_date'], 'safe'],
+            [['number_of_pax', 'user_id'], 'integer'],
+            [['remarks'], 'string'],
+            [['destination', 'airline_name'], 'string', 'max' => 60],
+            [['flight_type', 'class_type'], 'string', 'max' => 20]
         ];
     }
 
@@ -54,22 +53,22 @@ class TourArrangement extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'destination' => Yii::t('app', 'Destination'),
-            'arrival_date' => Yii::t('app', 'Arrival Date'),
             'departure_date' => Yii::t('app', 'Departure Date'),
+            'return_date' => Yii::t('app', 'Return Date'),
+            'airline_name' => Yii::t('app', 'Airline Name'),
+            'flight_type' => Yii::t('app', 'Flight Type'),
+            'class_type' => Yii::t('app', 'Class Type'),
             'number_of_pax' => Yii::t('app', 'Number Of Pax'),
-            'hotel_name' => Yii::t('app', 'Hotel Name'),
-            'room_type' => Yii::t('app', 'Room Type'),
-            'inclusion' => Yii::t('app', 'Inclusion'),
             'remarks' => Yii::t('app', 'Remarks'),
-            'hotels_id' => Yii::t('app', 'Hotels ID'),
+            'user_id' => Yii::t('app', 'User ID'),
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getHotels()
+    public function getUser()
     {
-        return $this->hasOne(Hotels::className(), ['id' => 'hotels_id']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 }
