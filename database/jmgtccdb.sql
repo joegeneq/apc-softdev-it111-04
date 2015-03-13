@@ -77,8 +77,8 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   `status` varchar(20) DEFAULT NULL,
   `confirmed_by` varchar(15) DEFAULT NULL,
   `notes` text,
-  `user_id` int(11) NOT NULL,
-  `staff_id` int(11) NOT NULL,
+  `user_id` int(11) NULL,
+  `staff_id` int(11) NULL,
   PRIMARY KEY (`id`),
   KEY `fk_appointment_user1_idx` (`user_id`),
   KEY `fk_appointment_staff1_idx` (`staff_id`)
