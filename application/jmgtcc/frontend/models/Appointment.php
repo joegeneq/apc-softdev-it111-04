@@ -3,10 +3,6 @@
 namespace frontend\models;
 
 use Yii;
-use yii\base\Model;
-
-use yii\db\Query;
-
 
 /**
  * This is the model class for table "appointment".
@@ -30,19 +26,12 @@ use yii\db\Query;
  * @property integer $user_id
  * @property integer $staff_id
  *
- * @property Staff $staff
  * @property User $user
+ * @property Staff $staff
  * @property AppointmentHistory[] $appointmentHistories
  */
 class Appointment extends \yii\db\ActiveRecord
-{  
-    // public $appointment_code;
-    // public $client_username;
-    // public $client_name;
-    // public $city;
-    // public $contact_number;
-    // public $email_address;  
-
+{
     /**
      * @inheritdoc
      */
@@ -51,25 +40,13 @@ class Appointment extends \yii\db\ActiveRecord
         return 'appointment';
     }
 
-    public function generateAppointmentCode()
-    {
-        $cmd = new Query;
-        $sql = ("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(4)), '-', 
-                                            RIGHT( CONCAT('00000', MAX(id)+1 ) , 6)) AS appointment_code
-                            FROM appointment");
-
-        $cmd->queryColumn($sql);
-
-        return $this->$appointment_code=$cmd;      
-   }
-
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
+            [['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time', 'user_id', 'staff_id'], 'required'],
             [['appointment_date', 'appointment_time', 'date_created'], 'safe'],
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
@@ -113,17 +90,17 @@ class Appointment extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getStaff()
+    public function getUser()
     {
-        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUser()
+    public function getStaff()
     {
-        return $this->hasOne(User::className(), ['id' => 'user_id']);
+        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
     }
 
     /**
