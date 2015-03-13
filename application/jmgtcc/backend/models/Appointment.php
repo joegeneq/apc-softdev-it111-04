@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models;
+namespace backend\models;
 
 use Yii;
 
@@ -57,8 +57,6 @@ class Appointment extends \yii\db\ActiveRecord
             [['city', 'email_address'], 'string', 'max' => 45],
             [['contact_number', 'status'], 'string', 'max' => 20],
             [['visa_type'], 'string', 'max' => 30]
-
-            [['country', 'visa_type'], 'default', 'value' => 'Not specified']
         ];
     }
 
