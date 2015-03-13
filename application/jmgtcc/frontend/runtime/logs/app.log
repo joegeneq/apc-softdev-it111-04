@@ -11383,6 +11383,7 @@ $_SERVER = [
 >>>>>>> 2feb4b0786939d786097b0dab9cb40e5cbe64392
 >>>>>>> 2d41a1480de57163c128acf84ba937e1c062bf56
 ]
+<<<<<<< HEAD
 2015-03-13 06:48:44 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement".' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
 Stack trace:
 #0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
@@ -11694,6 +11695,78 @@ $_COOKIE = [
     '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
     'PHPSESSID' => '4vk3daprokjscbj8kpirkm5df3'
     '_csrf' => '7f3777adb51a014263cde6617ca01ff598678a7e367f75c4a4d52f626c3e2b92s:32:\"ins0yl5enlke8bwisyFQE9N-MTWeBC-j\";'
+=======
+2015-03-13 07:26:53 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(462): yii\db\Command->execute()
+#2 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 C:\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(65): yii\db\BaseActiveRecord->save()
+#5 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#6 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#9 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#10 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+The SQL being executed was: INSERT INTO `appointment` (`client_name`, `city`, `contact_number`, `email_address`, `country`, `visa_type`, `appointment_date`, `appointment_time`, `notes`, `appointment_code`, `client_username`, `payment_rate`, `date_created`, `status`, `confirmed_by`, `user_id`, `staff_id`) VALUES ('Arianne Bianca Papna', 'Taguig City', '+639999999999', 'abby@abby.com', 'Canada', 'Immigrant Visa', '2015-03-25', '11:00:00', '', '', '', NULL, NULL, 'For Approval', '', NULL, NULL)' in C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ap...')
+#1 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(462): yii\db\Command->execute()
+#2 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 C:\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(65): yii\db\BaseActiveRecord->save()
+#5 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#6 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#9 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#10 C:\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'user_id' cannot be null
+)
+
+2015-03-13 07:26:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'Yk1iY2pLbGcpJlINJCk1Fwx0ECgkPlhTMAguEg4HNjYhORZSLwxcUA=='
+    'Appointment' => [
+        'client_name' => 'Arianne Bianca Papna'
+        'city' => 'Taguig City'
+        'contact_number' => '+639999999999'
+        'email_address' => 'abby@abby.com'
+        'country' => 'Canada'
+        'visa_type' => 'Immigrant Visa'
+        'appointment_date' => '2015-03-25'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => ''
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => 'For Approval'
+        'confirmed_by' => ''
+        'user_id' => ''
+        'staff_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tsb8oss96jqk08ubkv5pn8vgg1'
+    '_csrf' => '5635b9d4e2a6d8484cb3577ceba25280a7b00a5c33431ef67dda2f92d2383719s:32:\"Kk0nNbYpn9rKNu44RELqdLZQCtt1EG07\";'
+>>>>>>> 958bdcf67a36a8c0031feb3ddf24d3fe1e6ab520
 ]
 
 $_SERVER = [
@@ -11704,6 +11777,7 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -11719,6 +11793,27 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '722'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=tsb8oss96jqk08ubkv5pn8vgg1; _csrf=5635b9d4e2a6d8484cb3577ceba25280a7b00a5c33431ef67dda2f92d2383719s%3A32%3A%22Kk0nNbYpn9rKNu44RELqdLZQCtt1EG07%22%3B'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> 958bdcf67a36a8c0031feb3ddf24d3fe1e6ab520
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -11729,14 +11824,26 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '52054'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
+=======
+    'REMOTE_PORT' => '54287'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+>>>>>>> 958bdcf67a36a8c0031feb3ddf24d3fe1e6ab520
     'QUERY_STRING' => 'r=appointment%2Fcreate'
     'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
     'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
     'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1426226830.806
     'REQUEST_TIME' => 1426226830
+=======
+    'REQUEST_TIME_FLOAT' => 1426228012.04
+    'REQUEST_TIME' => 1426228012
+>>>>>>> 958bdcf67a36a8c0031feb3ddf24d3fe1e6ab520
 ]
