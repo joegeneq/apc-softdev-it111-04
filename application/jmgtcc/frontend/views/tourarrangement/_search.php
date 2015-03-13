@@ -17,19 +17,39 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
+    <?= $form->field($model, 'place_of_origin') ?>
+
     <?= $form->field($model, 'destination') ?>
 
-    <?= $form->field($model, 'departure_date') ?>
+    <?= $form->field($model, 'arrival_date') ?>
 
     <?= $form->field($model, 'return_date') ?>
 
-    <?= $form->field($model, 'airline_name') ?>
-
-    <?php // echo $form->field($model, 'flight_type') ?>
-
-    <?php // echo $form->field($model, 'class_type') ?>
-
     <?php // echo $form->field($model, 'number_of_pax') ?>
+
+    <?php // echo $form->field($model, 'hotel_name') ?>
+
+    <?php // echo $form->field($model, 'room_type') ?>
+
+    <?php // echo $form->field($model, 'inclusion_food_deals') ?>
+
+    <?php // echo $form->field($model, 'inclusion_freebies') ?>
+
+    <?php // echo $form->field($model, 'inclusion_tour_type') ?>
+
+    <?php // echo $form->field($model, 'inclusion_transport_service') ?>
+
+    <?php // echo $form->field($model, 'date_created') ?>
+
+    <?php // echo $form->field($model, 'status') ?>
+
+    <?php // echo $form->field($model, 'date_confirmed') ?>
+
+    <?php // echo $form->field($model, 'confirmed_by') ?>
+
+    <?php // echo $form->field($model, 'date_updated') ?>
+
+    <?php // echo $form->field($model, 'updated_by') ?>
 
     <?php // echo $form->field($model, 'remarks') ?>
 

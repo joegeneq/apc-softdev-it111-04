@@ -19,7 +19,7 @@ class TourArrangementSearch extends TourArrangement
     {
         return [
             [['id', 'number_of_pax', 'user_id'], 'integer'],
-            [['destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'remarks'], 'safe'],
+            [['place_of_origin', 'destination', 'arrival_date', 'return_date', 'hotel_name', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service', 'date_created', 'status', 'date_confirmed', 'confirmed_by', 'date_updated', 'updated_by', 'remarks'], 'safe'],
         ];
     }
 
@@ -57,16 +57,26 @@ class TourArrangementSearch extends TourArrangement
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'departure_date' => $this->departure_date,
+            'arrival_date' => $this->arrival_date,
             'return_date' => $this->return_date,
             'number_of_pax' => $this->number_of_pax,
+            'date_created' => $this->date_created,
+            'date_confirmed' => $this->date_confirmed,
+            'date_updated' => $this->date_updated,
             'user_id' => $this->user_id,
         ]);
 
-        $query->andFilterWhere(['like', 'destination', $this->destination])
-            ->andFilterWhere(['like', 'airline_name', $this->airline_name])
-            ->andFilterWhere(['like', 'flight_type', $this->flight_type])
-            ->andFilterWhere(['like', 'class_type', $this->class_type])
+        $query->andFilterWhere(['like', 'place_of_origin', $this->place_of_origin])
+            ->andFilterWhere(['like', 'destination', $this->destination])
+            ->andFilterWhere(['like', 'hotel_name', $this->hotel_name])
+            ->andFilterWhere(['like', 'room_type', $this->room_type])
+            ->andFilterWhere(['like', 'inclusion_food_deals', $this->inclusion_food_deals])
+            ->andFilterWhere(['like', 'inclusion_freebies', $this->inclusion_freebies])
+            ->andFilterWhere(['like', 'inclusion_tour_type', $this->inclusion_tour_type])
+            ->andFilterWhere(['like', 'inclusion_transport_service', $this->inclusion_transport_service])
+            ->andFilterWhere(['like', 'status', $this->status])
+            ->andFilterWhere(['like', 'confirmed_by', $this->confirmed_by])
+            ->andFilterWhere(['like', 'updated_by', $this->updated_by])
             ->andFilterWhere(['like', 'remarks', $this->remarks]);
 
         return $dataProvider;
