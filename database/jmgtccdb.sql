@@ -291,6 +291,7 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `place_of_origin` varchar(60) DEFAULT NULL,
   `destination` varchar(60) NOT NULL,
   `arrival_date` date NOT NULL, 
+  `return_date` date NOT NULL, 
   `number_of_pax` varchar(80) NOT NULL,
   `hotel_name` varchar(100) DEFAULT NULL,
   `room_type` varchar(80) NOT NULL,
