@@ -19,11 +19,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'arrangement_code') ?>
 
+    <?= $form->field($model, 'place_of_origin') ?>
+
     <?= $form->field($model, 'destination') ?>
 
     <?= $form->field($model, 'departure_date') ?>
 
-    <?= $form->field($model, 'return_date') ?>
+    <?php // echo $form->field($model, 'return_date') ?>
 
     <?php // echo $form->field($model, 'airline_name') ?>
 
@@ -37,7 +39,13 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'room_type') ?>
 
-    <?php // echo $form->field($model, 'inclusion') ?>
+    <?php // echo $form->field($model, 'inclusion_food_deals') ?>
+
+    <?php // echo $form->field($model, 'inclusion_freebies') ?>
+
+    <?php // echo $form->field($model, 'inclusion_tour_type') ?>
+
+    <?php // echo $form->field($model, 'inclusion_transport_service') ?>
 
     <?php // echo $form->field($model, 'remarks') ?>
 

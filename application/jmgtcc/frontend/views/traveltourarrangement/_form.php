@@ -14,6 +14,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25]) ?>
 
+    <?= $form->field($model, 'place_of_origin')->textInput(['maxlength' => 60]) ?>
+
     <?= $form->field($model, 'destination')->textInput(['maxlength' => 60]) ?>
 
     <?= $form->field($model, 'departure_date')->textInput() ?>
@@ -22,17 +24,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'airline_name')->textInput(['maxlength' => 60]) ?>
 
-    <?= $form->field($model, 'flight_type')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'flight_type')->textInput(['maxlength' => 45]) ?>
 
-    <?= $form->field($model, 'class_type')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'class_type')->textInput(['maxlength' => 60]) ?>
 
     <?= $form->field($model, 'number_of_pax')->textInput() ?>
 
     <?= $form->field($model, 'hotel_name')->textInput(['maxlength' => 100]) ?>
 
-    <?= $form->field($model, 'room_type')->textInput(['maxlength' => 60]) ?>
+    <?= $form->field($model, 'room_type')->textInput(['maxlength' => 80]) ?>
 
-    <?= $form->field($model, 'inclusion')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'inclusion_food_deals')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'inclusion_freebies')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'inclusion_tour_type')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'inclusion_transport_service')->textInput(['maxlength' => 60]) ?>
 
     <?= $form->field($model, 'remarks')->textarea(['rows' => 6]) ?>
 

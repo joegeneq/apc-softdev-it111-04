@@ -9,6 +9,7 @@ use Yii;
  *
  * @property integer $id
  * @property string $arrangement_code
+ * @property string $place_of_origin
  * @property string $destination
  * @property string $departure_date
  * @property string $return_date
@@ -18,7 +19,10 @@ use Yii;
  * @property integer $number_of_pax
  * @property string $hotel_name
  * @property string $room_type
- * @property string $inclusion
+ * @property string $inclusion_food_deals
+ * @property string $inclusion_freebies
+ * @property string $inclusion_tour_type
+ * @property string $inclusion_transport_service
  * @property string $remarks
  * @property string $date_created
  * @property string $status
@@ -49,11 +53,13 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             [['destination', 'departure_date', 'return_date', 'number_of_pax', 'room_type', 'user_id'], 'required'],
             [['departure_date', 'return_date', 'date_created', 'date_confirmed', 'date_updated'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
-            [['inclusion', 'remarks'], 'string'],
+            [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],
             [['arrangement_code'], 'string', 'max' => 25],
-            [['destination', 'airline_name', 'room_type'], 'string', 'max' => 60],
-            [['flight_type', 'class_type', 'status', 'confirmed_by', 'updated_by'], 'string', 'max' => 20],
-            [['hotel_name'], 'string', 'max' => 100]
+            [['place_of_origin', 'destination', 'airline_name', 'class_type', 'inclusion_transport_service'], 'string', 'max' => 60],
+            [['flight_type'], 'string', 'max' => 45],
+            [['hotel_name'], 'string', 'max' => 100],
+            [['room_type'], 'string', 'max' => 80],
+            [['status', 'confirmed_by', 'updated_by'], 'string', 'max' => 20]
         ];
     }
 
@@ -65,6 +71,7 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'arrangement_code' => Yii::t('app', 'Arrangement Code'),
+            'place_of_origin' => Yii::t('app', 'Place Of Origin'),
             'destination' => Yii::t('app', 'Destination'),
             'departure_date' => Yii::t('app', 'Departure Date'),
             'return_date' => Yii::t('app', 'Return Date'),
@@ -74,7 +81,10 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             'number_of_pax' => Yii::t('app', 'Number Of Pax'),
             'hotel_name' => Yii::t('app', 'Hotel Name'),
             'room_type' => Yii::t('app', 'Room Type'),
-            'inclusion' => Yii::t('app', 'Inclusion'),
+            'inclusion_food_deals' => Yii::t('app', 'Inclusion Food Deals'),
+            'inclusion_freebies' => Yii::t('app', 'Inclusion Freebies'),
+            'inclusion_tour_type' => Yii::t('app', 'Inclusion Tour Type'),
+            'inclusion_transport_service' => Yii::t('app', 'Inclusion Transport Service'),
             'remarks' => Yii::t('app', 'Remarks'),
             'date_created' => Yii::t('app', 'Date Created'),
             'status' => Yii::t('app', 'Status'),
