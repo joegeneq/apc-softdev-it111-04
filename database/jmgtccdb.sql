@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 13, 2015 at 06:04 AM
+-- Generation Time: Mar 13, 2015 at 07:20 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -266,7 +266,19 @@ CREATE TABLE IF NOT EXISTS `time` (
   `time` time NOT NULL,
   `description` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `time`
+--
+
+INSERT INTO `time` (`id`, `time`, `description`) VALUES
+(1, '10:00:00', '10:00 - 11:00 AM'),
+(2, '11:00:00', '11:00 - 12:00 NN'),
+(3, '01:00:00', '1:00 - 2:00 PM'),
+(4, '02:00:00', '2:00 - 3:00 PM'),
+(5, '03:00:00', '3:00 - 4:00 PM'),
+(6, '04:00:00', '4:00 - 5:00 PM');
 
 -- --------------------------------------------------------
 
@@ -284,11 +296,17 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `flight_type` varchar(45) DEFAULT NULL,
   `class_type` varchar(60) DEFAULT NULL,
   `number_of_pax` varchar(80) NOT NULL,
+  `hotel_name` varchar(100) DEFAULT NULL,
+  `room_type` varchar(80) NOT NULL,
+  `inclusion_food_deals` text,
+  `inclusion_freebies` text,
+  `inclusion_tour_type` text,
+  `inclusion_transport_service` varchar(60) DEFAULT NULL,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(20) DEFAULT NULL,
   `date_confirmed` date DEFAULT NULL,
   `confirmed_by` varchar(20) DEFAULT NULL,
-  `date_updated` timestamp NULL DEFAULT NULL,
+  `date_updated` date DEFAULT NULL,
   `updated_by` varchar(20) DEFAULT NULL,
   `remarks` text,
   `user_id` int(11) NOT NULL,
@@ -368,7 +386,7 @@ CREATE TABLE IF NOT EXISTS `travel_tour_arrangement` (
   `status` varchar(20) DEFAULT NULL,
   `date_confirmed` date DEFAULT NULL,
   `confirmed_by` varchar(20) DEFAULT NULL,
-  `date_updated` timestamp NULL DEFAULT NULL,
+  `date_updated` date DEFAULT NULL,
   `updated_by` varchar(20) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
