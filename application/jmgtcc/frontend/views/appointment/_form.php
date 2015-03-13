@@ -163,7 +163,7 @@ use backend\models\Time;
      <?= Html::activeHiddenInput($model, 'client_username') ?>    
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
-     <?= Html::activeHiddenInput($model, 'status',['value' => 'For Approval']) ?> 
+     <?= Html::activeHiddenInput($model, 'status') ?> 
      <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
      <?= Html::activeHiddenInput($model, 'user_id') ?> 
      <?= Html::activeHiddenInput($model, 'staff_id') ?> 
