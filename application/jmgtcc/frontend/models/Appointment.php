@@ -40,13 +40,16 @@ class Appointment extends \yii\db\ActiveRecord
         return 'appointment';
     }
 
+   
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
+            //[['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
+            [['city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
+            
             [['appointment_date', 'appointment_time', 'date_created'], 'safe'],
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
@@ -56,9 +59,11 @@ class Appointment extends \yii\db\ActiveRecord
             [['client_username', 'confirmed_by'], 'string', 'max' => 15],
             [['city', 'email_address'], 'string', 'max' => 45],
             [['contact_number', 'status'], 'string', 'max' => 20],
-            [['visa_type'], 'string', 'max' => 30]
+            [['visa_type'], 'string', 'max' => 30],
 
             [['country', 'visa_type'], 'default', 'value' => 'Not specified']
+
+           
         ];
     }
 

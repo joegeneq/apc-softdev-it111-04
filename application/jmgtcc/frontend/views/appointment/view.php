@@ -7,10 +7,12 @@ use yii\widgets\DetailView;
 /* @var $model frontend\models\Appointment */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="appointment-view">
+
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -23,8 +25,33 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-    </p>
+    </p> 
 
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'appointment_code',
+            'client_name',
+            'client_username',
+            'city',
+            'contact_number',
+            'email_address:email',
+            'appointment_date',
+            'appointment_time',
+            'country',
+            'visa_type',
+            'date_created',
+            'notes:ntext'
+
+        ],
+    ]) ?>
+
+    <div>
+
+    </div>
+
+
+    <!--
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -47,6 +74,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'user_id',
             'staff_id',
         ],
-    ]) ?>
+    ]) ?> -->
 
 </div>
