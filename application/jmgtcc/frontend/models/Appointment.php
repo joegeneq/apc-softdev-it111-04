@@ -46,24 +46,47 @@ class Appointment extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        return [
-            //[['client_name', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
-            [['city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time'], 'required'],
-            
-            [['appointment_date', 'appointment_time', 'date_created'], 'safe'],
+        return [            
+            [['client_name'], 'required'],
+            [['client_name'], 'string', 'max' => 60],
+            [['client_name'], 'filter', 'filter' => 'trim'],
+
+            [['city'], 'required'],
+            [['city'], 'string', 'max' => 45],
+            [['city'], 'filter', 'filter' => 'trim'],
+
+            [['contact_number'], 'required'],
+            [['contact_number'], 'string', 'max' => 20],
+            [['contact_number'], 'filter', 'filter' => 'trim'],
+
+            [['email_address'], 'required'],
+            [['email_address'], 'string', 'max' => 45],
+            [['email_address'], 'filter', 'filter' => 'trim'],
+            [['email_address'], 'email'],
+
+            [['appointment_date'], 'required'],
+            [['appointment_date'], 'filter', 'filter' => 'trim'],
+            [['appointment_date'], 'safe'],
+
+            [['appointment_time'], 'required'],
+            [['appointment_time'], 'filter', 'filter' => 'trim'],
+            [['appointment_time'], 'safe'],
+
+            [['country'], 'string', 'max' => 60],
+            [['country'], 'filter', 'filter' => 'trim'],
+            [['visa_type'], 'string', 'max' => 30],
+            [['country', 'visa_type'], 'default', 'value' => 'Not specified'],    
+
+            [['status'], 'string', 'max' => 20],
+
+            [['client_username', 'confirmed_by'], 'string', 'max' => 15],            
+            [['date_created'], 'safe'],
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
+
             [['user_id', 'staff_id'], 'integer'],
-            [['appointment_code'], 'string', 'max' => 25],
-            [['client_name', 'country'], 'string', 'max' => 60],
-            [['client_username', 'confirmed_by'], 'string', 'max' => 15],
-            [['city', 'email_address'], 'string', 'max' => 45],
-            [['contact_number', 'status'], 'string', 'max' => 20],
-            [['visa_type'], 'string', 'max' => 30],
-
-            [['country', 'visa_type'], 'default', 'value' => 'Not specified']
-
-           
+            [['appointment_code'], 'string', 'max' => 25]
+                  
         ];
     }
 
@@ -117,4 +140,20 @@ class Appointment extends \yii\db\ActiveRecord
     {
         return $this->hasMany(AppointmentHistory::className(), ['appointment_id' => 'id']);
     }
+
+
+    //Generate Appointment Code
+    public static function getAppointmentCode($data)
+    {
+        $connection = \Yii::$app->db;
+        $model = $connection
+            ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
+                                '-', 
+                                RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
+                                FROM appointment
+                                WHERE YEAR(date_created) = YEAR(NOW())");
+        $data = $model->queryScalar();
+        return $data;
+    }
+
 }

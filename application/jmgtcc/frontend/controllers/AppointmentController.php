@@ -62,6 +62,8 @@ class AppointmentController extends Controller
     {
         $model = new Appointment();
 
+        $model->appointment_code = $model->getAppointmentCode($appointment_code);
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
