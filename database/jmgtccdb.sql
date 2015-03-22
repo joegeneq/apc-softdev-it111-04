@@ -288,6 +288,7 @@ INSERT INTO `time` (`id`, `time`, `description`) VALUES
 
 CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `arrangement_code` VARCHAR(25) NULL ,
   `place_of_origin` varchar(60) DEFAULT NULL,
   `destination` varchar(60) NOT NULL,
   `arrival_date` date NOT NULL, 
@@ -299,17 +300,30 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `inclusion_freebies` text,
   `inclusion_tour_type` text,
   `inclusion_transport_service` varchar(60) DEFAULT NULL,
+  `remarks` text,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `status` varchar(20) DEFAULT NULL,
   `date_confirmed` date DEFAULT NULL,
-  `confirmed_by` varchar(20) DEFAULT NULL,
+  `confirmed_by` varchar(15) DEFAULT NULL,
   `date_updated` date DEFAULT NULL,
   `updated_by` varchar(20) DEFAULT NULL,
-  `remarks` text,
+  `status` varchar(20) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_tour_arrangement_user1_idx` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `staff_id` INT NOT NULL ,
+  `staff_roles_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_tour_arrangement_user1_idx` (`user_id` ASC) ,
+  INDEX `fk_tour_arrangement_staff1_idx` (`staff_id` ASC, `staff_roles_id` ASC) ,
+  CONSTRAINT `fk_tour_arrangement_user1`
+    FOREIGN KEY (`user_id` )
+    REFERENCES `jmgtccdb`.`user` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_tour_arrangement_staff1`
+    FOREIGN KEY (`staff_id` , `staff_roles_id` )
+    REFERENCES `jmgtccdb`.`staff` (`id` , `roles_id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 -- --------------------------------------------------------
 
@@ -382,13 +396,26 @@ CREATE TABLE IF NOT EXISTS `travel_tour_arrangement` (
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(20) DEFAULT NULL,
   `date_confirmed` date DEFAULT NULL,
-  `confirmed_by` varchar(20) DEFAULT NULL,
+  `confirmed_by` varchar(15) DEFAULT NULL,
   `date_updated` date DEFAULT NULL,
   `updated_by` varchar(20) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_travel_arrangement_user1_idx` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `staff_id` INT NOT NULL ,
+  `staff_roles_id` INT NOT NULL ,
+ PRIMARY KEY (`id`) ,
+  INDEX `fk_travel_arrangement_user1_idx` (`user_id` ASC) ,
+  INDEX `fk_travel_tour_arrangement_staff1_idx` (`staff_id` ASC, `staff_roles_id` ASC) ,
+  CONSTRAINT `fk_travel_arrangement_user1`
+    FOREIGN KEY (`user_id` )
+    REFERENCES `jmgtccdb`.`user` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_travel_tour_arrangement_staff1`
+    FOREIGN KEY (`staff_id` , `staff_roles_id` )
+    REFERENCES `jmgtccdb`.`staff` (`id` , `roles_id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 -- --------------------------------------------------------
 
