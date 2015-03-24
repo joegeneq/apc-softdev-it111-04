@@ -78,10 +78,8 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   `confirmed_by` varchar(15) DEFAULT NULL,
   `notes` text,
   `user_id` int(11) DEFAULT NULL,
-  `staff_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_appointment_user1_idx` (`user_id`),
-  KEY `fk_appointment_staff1_idx` (`staff_id`)
+  KEY `fk_appointment_user1_idx` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -219,43 +217,6 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `roles`
---
-
-CREATE TABLE IF NOT EXISTS `roles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `role_name` varchar(45) NOT NULL,
-  `role_description` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `roles`
---
-
-INSERT INTO `roles` (`id`, `role_name`, `role_description`) VALUES
-(1, 'Superadmin', 'Can access all system modules and processes'),
-(2, 'Travel Agent', 'Confirms and Updates travel requests and appo'),
-(3, 'Client Account', 'Registered Client / User account'),
-(4, 'Guest', 'Unregistered User ');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `staff`
---
-
-CREATE TABLE IF NOT EXISTS `staff` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(15) DEFAULT NULL,
-  `password` varchar(45) DEFAULT NULL,
-  `roles_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`,`roles_id`),
-  KEY `fk_staff_roles1_idx` (`roles_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `time`
@@ -308,10 +269,8 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `updated_by` varchar(20) DEFAULT NULL,
   `status` varchar(20) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `staff_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_tour_arrangement_user1_idx` (`user_id`),
-  KEY `fk_tour_arrangement_staff1_idx` (`staff_id`)
+  KEY `fk_tour_arrangement_user1_idx` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -389,10 +348,8 @@ CREATE TABLE IF NOT EXISTS `travel_tour_arrangement` (
   `date_updated` date DEFAULT NULL,
   `updated_by` varchar(20) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `staff_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_travel_arrangement_user1_idx` (`user_id`),
-  KEY `fk_travel_tour_arrangement_staff1_idx` (`staff_id`)
+  KEY `fk_travel_arrangement_user1_idx` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -428,34 +385,19 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Constraints for table `appointment`
 --
 ALTER TABLE `appointment`
-  ADD CONSTRAINT `fk_appointment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_appointment_staff1` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
+  ADD CONSTRAINT `fk_appointment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 --
 -- Constraints for table `appointment_history`
 --
 ALTER TABLE `appointment_history`
   ADD CONSTRAINT `fk_appointment_history_appointment1` FOREIGN KEY (`appointment_id`) REFERENCES `appointment` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
---
--- Constraints for table `staff`
---
-ALTER TABLE `staff`
-  ADD CONSTRAINT `fk_staff_roles1` FOREIGN KEY (`roles_id`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Constraints for table `tour_arrangement`
---
-ALTER TABLE `tour_arrangement`
-  ADD CONSTRAINT `fk_tour_arrangement_staff1` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_tour_arrangement_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `travel_tour_arrangement`
 --
 ALTER TABLE `travel_tour_arrangement`
-  ADD CONSTRAINT `fk_travel_tour_arrangement_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_travel_tour_arrangement_staff1` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_travel_tour_arrangement_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
