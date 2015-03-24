@@ -27,8 +27,7 @@ class LoginForm extends Model
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
-            //['password', 'validatePassword'],
-        	[['passwordConfirm'], 'compare', 'compareAttribute' => 'password'],
+            ['password', 'validatePassword'],
         ];
     }
 
@@ -57,6 +56,17 @@ class LoginForm extends Model
     public function login()
     {
         if ($this->validate()) {
+		
+			$session = Yii::$app->session;
+			$session->open();
+			// close a session
+			$session->close();
+			// destroys all data registered to a session.
+			$session->destroy();
+			
+			$session = Yii::$app->session;
+			$session->set('username', $username);
+		
             return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         } else {
             return false;

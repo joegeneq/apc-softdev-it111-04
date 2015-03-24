@@ -13,16 +13,13 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-	 'db'=>[
-            'class'=>'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_brs',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8'            
-        ],
         'user' => [
-            'identityClass' => 'app\models\Staff',
-            'enableAutoLogin' => false,
+            'identityClass' => 'common\models\User',
+            'enableAutoLogin' => true,
+			//'identityCookie' => [
+			//'name' => '_backendUser', // unique for backend
+			//'path'=>'/advanced/backend/web'  // correct path for the backend app.
+				//]
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
