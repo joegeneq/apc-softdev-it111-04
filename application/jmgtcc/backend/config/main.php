@@ -15,7 +15,7 @@ return [
     'components' => [
 	 'db'=>[
             'class'=>'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_brs',
+            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_tas',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8'            
