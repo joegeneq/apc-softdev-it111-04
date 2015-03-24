@@ -44,7 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'confirmed_by',
             // 'notes:ntext',
             // 'user_id',
-            // 'staff_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
