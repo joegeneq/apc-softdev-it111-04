@@ -10,6 +10,7 @@ use backend\models\Freebies;
 use backend\models\TourType;
 use backend\models\TransportService;
 use backend\models\Airlines;
+use backend\models\Hotels;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TravelTourArrangement */
@@ -22,16 +23,6 @@ use backend\models\Airlines;
     
     <div class="form-container-main">
         <br><br>
-
-        <!-- ARRANGEMENT CODE -->
-        <div class="row">
-            <div class="col-lg-2">
-                <p class="form-label">Arrangement Code</p>
-            </div>
-            <div class="col-lg-3">                   
-                <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25])->label(false) ?>
-            </div>
-        </div>
 
         <!-- DESTINATION -->
         <div class="row">
@@ -129,10 +120,19 @@ use backend\models\Airlines;
             </div>
         </div>
 
-        <!-- HOTEL NAME -->
+         <!-- HOTEL NAME -->
         <div class="row">
             <div class="col-lg-2">
                 <p class="form-label">Hotel Name</p>
+            </div>
+            <div class="col-lg-3">                   
+                <?= $form->field($model, 'hotel_name')
+                         ->dropDownList(
+                            ArrayHelper::map(Hotels::find()->all(),'id', 'hotel_name'),
+                            ['prompt'=>'Select Hotel'])->label(false)   ?>
+            </div>
+            <div class="col-lg-1">
+                <p class="form-label">Others:</p>
             </div>
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'hotel_name')->textInput(['maxlength' => 100]) ->label(false) ?>
@@ -168,7 +168,7 @@ use backend\models\Airlines;
             <div class="col-lg-2">  
                 <br><br>              
                 <?= $form->field($model, 'inclusion_tour_type')
-                         ->checkboxList(ArrayHelper::map(TourType::find()->all(), 'id', 'tour_name'))
+                         ->checkboxList(ArrayHelper::map(TourType::find()->all(), 'tour_name', 'tour_name'))
                          ->label(false) ?>
             </div>
 
@@ -181,7 +181,7 @@ use backend\models\Airlines;
             <div class="col-lg-2">  
                 <br><br>              
                 <?= $form->field($model, 'inclusion_transport_service')
-                         ->checkboxList(ArrayHelper::map(TransportService::find()->all(), 'id', 'transport_type'))
+                         ->checkboxList(ArrayHelper::map(TransportService::find()->all(), 'transport_type', 'transport_type'))
                          ->label(false) ?>
             </div>
         </div>
@@ -198,7 +198,7 @@ use backend\models\Airlines;
             <div class="col-lg-2">  
                 <br><br>              
                 <?= $form->field($model, 'inclusion_food_deals')
-                         ->checkboxList(ArrayHelper::map(FoodDeals::find()->all(), 'id', 'food_deal_name'))
+                         ->checkboxList(ArrayHelper::map(FoodDeals::find()->all(), 'food_deal_name', 'food_deal_name'))
                          ->label(false) ?>
             </div>
 
@@ -211,7 +211,7 @@ use backend\models\Airlines;
             <div class="col-lg-3">  
                 <br><br>              
                 <?= $form->field($model, 'inclusion_freebies')
-                         ->checkboxList(ArrayHelper::map(Freebies::find()->all(), 'id', 'freebies_name'))
+                         ->checkboxList(ArrayHelper::map(Freebies::find()->all(), 'freebies_name', 'freebies_name'))
                          ->label(false) ?>
             </div>
         </div>
@@ -263,7 +263,20 @@ use backend\models\Airlines;
 
     <?= $form->field($model, 'updated_by')->textInput(['maxlength' => 20]) ?>
 
+    <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25])->label(false) ?>
     -->
     <?php ActiveForm::end(); ?>
+</div>
+<!--
+<?php
+$script = <<< JS
+//ALL JAVASCRIPT CODES
+$('#traveltourarrangement-hotel_name').change(function(){
+  alert();
+});
 
+JS;
+$this -> registerJS($script);
+?>
+-->
 </div>
