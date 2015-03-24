@@ -165,8 +165,7 @@ use backend\models\Time;
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
      <?= Html::activeHiddenInput($model, 'status') ?> 
      <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
-     <?= Html::activeHiddenInput($model, 'user_id') ?> 
-     <?= Html::activeHiddenInput($model, 'staff_id') ?> 
+     <?= Html::activeHiddenInput($model, 'user_id') ?>  
 
     <?php ActiveForm::end(); ?>
 

@@ -18,7 +18,7 @@ class AppointmentSearch extends Appointment
     public function rules()
     {
         return [
-            [['id', 'user_id', 'staff_id'], 'integer'],
+            [['id', 'user_id'], 'integer'],
             [['appointment_code', 'client_name', 'client_username', 'city', 'contact_number', 'email_address', 'appointment_date', 'appointment_time', 'country', 'visa_type', 'date_created', 'status', 'confirmed_by', 'notes'], 'safe'],
             [['payment_rate'], 'number'],
         ];
@@ -63,7 +63,6 @@ class AppointmentSearch extends Appointment
             'payment_rate' => $this->payment_rate,
             'date_created' => $this->date_created,
             'user_id' => $this->user_id,
-            'staff_id' => $this->staff_id,
         ]);
 
         $query->andFilterWhere(['like', 'appointment_code', $this->appointment_code])

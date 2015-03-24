@@ -46,17 +46,14 @@ $this->title = 'Sign up';
                    <?= $form->field($model, 'password')
                         ->passwordInput(['placeholder'=>'Password']) 
                         ->label(false) ?>   
-                </div>           
-             </div>  
-                
-             <div class="row">
-             	<div class="col-lg-5">
+                </div>       
+                <div class="col-lg-5">
                   <?= $form->field($model, 'confirmpassword')
-                  		->passwordInput(['placeholder'=>'Confirm Password'])  
-                  		->label(false)?>     
-                 </div>  
+                      ->passwordInput(['placeholder'=>'Confirm Password'])  
+                      ->label(false)?>     
+                 </div>      
              </div>  
-
+        
             <div class="row">
                 <div class="col-lg-5">
                     <div class="hrz-radiobtn">
@@ -94,7 +91,7 @@ $this->title = 'Sign up';
          
              <div class="row">
                 <div class="col-lg-5">
-                    <div >
+                    <div class="btn-right" style="padding-right:0%">
                         <?= Html::submitButton('Create Account', 
                             ['class' => 'btn btn-primary', 
                                 'name' => 'signup-button']) ?>
