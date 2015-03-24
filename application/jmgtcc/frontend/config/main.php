@@ -15,6 +15,10 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+			'identityCookie' => [
+			'name' => '_frontendUser', // unique for frontend
+			'path'=>'/advanced/frontend'  // correct path for the frontend app.
+			]
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

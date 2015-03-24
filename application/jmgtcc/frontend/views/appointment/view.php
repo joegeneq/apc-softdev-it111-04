@@ -32,7 +32,6 @@ $this->title = $model->id;
         'attributes' => [
             'appointment_code',
             'client_name',
-            'client_username',
             'city',
             'contact_number',
             'email_address:email',
@@ -58,7 +57,6 @@ $this->title = $model->id;
             'id',
             'appointment_code',
             'client_name',
-            'client_username',
             'city',
             'contact_number',
             'email_address:email',

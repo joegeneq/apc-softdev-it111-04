@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Appointment */
@@ -10,46 +11,130 @@ use yii\widgets\ActiveForm;
 
 <div class="appointment-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <div class="row">
+        <div class="col-lg-6">
+            <?= DetailView::widget([
+                'model' => $model,
+                'attributes' => [           
+                    'appointment_code',
+                    'client_name',
+                    'city',
+                    'contact_number',
+                    'email_address:email',
+                    'appointment_date',
+                    'appointment_time',
+                    'country',
+                    'visa_type',
+                    'date_created',
+                    'notes:ntext'
+                ],
+            ]) ?>
+        </div>
 
-    <?= $form->field($model, 'appointment_code')->textInput(['maxlength' => 25]) ?>
+         <div class="col-lg-6">
+             <?php $form = ActiveForm::begin(); ?>  
 
-    <?= $form->field($model, 'client_name')->textInput(['maxlength' => 60]) ?>
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="form-label">Status:</p>
+                </div>
 
-    <?= $form->field($model, 'client_username')->textInput(['maxlength' => 15]) ?>
+                <?php 
+                    if (($model->status) == 'Confirmed') 
+                    { 
+                        print('<div class="col-lg-4">Confirmed</div>');
+                    }
+                    else
+                    {
+                        print('<div class="col-lg-4"></div>');
+                    }
+                ?>
+                
+            </div>
 
-    <?= $form->field($model, 'city')->textInput(['maxlength' => 45]) ?>
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="form-label">Confirmed by:</p>
+                 </div>
 
-    <?= $form->field($model, 'contact_number')->textInput(['maxlength' => 20]) ?>
+                 <?php 
+                    if (($model->status) == 'Confirmed') 
+                    { 
+                        print('<div class="col-lg-3">Staff username</div>'); //Session
+                    }
+                    else
+                    {
+                        print('<div class="col-lg-3"></div>');
+                    }
+                ?>
 
-    <?= $form->field($model, 'email_address')->textInput(['maxlength' => 45]) ?>
+            </div>
 
-    <?= $form->field($model, 'appointment_date')->textInput() ?>
+            <br>
 
-    <?= $form->field($model, 'appointment_time')->textInput() ?>
+            <hr class="faded">
 
-    <?= $form->field($model, 'country')->textInput(['maxlength' => 60]) ?>
+            <br>
 
-    <?= $form->field($model, 'visa_type')->textInput(['maxlength' => 30]) ?>
+            <div class="row">
 
-    <?= $form->field($model, 'payment_rate')->textInput() ?>
+                <?php
+                    if (($model->status) != 'Confirmed') 
+                    {
+                        print('
+                                <div class="col-lg-3">
+                                    <p class="form-label required-field">Payment:</p>
+                                 </div>
+                                <div class="col-lg-8">
+                            '); ?>
 
-    <?= $form->field($model, 'date_created')->textInput() ?>
+                        <?= $form->field($model, 'payment_rate')->textInput()
+                            ->label(false) ?>
+                <?php 
+                        print('</div>');
+                    }     
+                    else
+                    {
+                        print('
+                                <div class="col-lg-3">
+                                    <p class="form-label required-field">Payment:</p>
+                                 </div>
+                                <div class="col-lg-8">
+                            '); ?>
+                        <?= $form->field($model, 'payment_rate')->textInput(['readonly'=>'true'])
+                            ->label(false)
+                             ?>
+                <?php 
+                        print('</div>');
+                    } 
+                ?>
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => 20]) ?>
+            </div>
+            
 
-    <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 15]) ?>
+            <br>
 
-    <?= $form->field($model, 'notes')->textarea(['rows' => 6]) ?>
+            <div class="form-group">
+                    
+                
+                <div class="btn-right ">
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+                    <?php if (($model->status) != 'Confirmed') { ?>
+                    <?= Html::submitButton($model->isNewRecord ? 
+                            Yii::t('app', 'Create') : Yii::t('app', 'Submit payment'), 
+                            ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                    <?php } ?>    
+                    
+                </div> 
+       
 
-    <?= $form->field($model, 'staff_id')->textInput() ?>
+            </div>
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+            <?php ActiveForm::end(); ?>
+
+        </div>
+
     </div>
 
-    <?php ActiveForm::end(); ?>
 
 </div>
