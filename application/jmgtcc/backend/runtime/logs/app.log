@@ -9419,3 +9419,1789 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427198128.821
     'REQUEST_TIME' => 1427198128
 ]
+2015-03-24 13:21:42 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\AppointmentSearch::staff_id' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('staff_id')
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('staff_id')
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(backend\models\AppointmentSearch), Array)
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\models\AppointmentSearch.php(54): yii\base\Model->validate()
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(36): backend\models\AppointmentSearch->search(Array)
+#5 [internal function]: backend\controllers\AppointmentController->actionIndex()
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment', Array)
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-24 13:21:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '53538'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427199701.44
+    'REQUEST_TIME' => 1427199701
+]
+2015-03-24 14:01:23 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ''/jobs/view?id='' (T_CONSTANT_ENCAPSED_STRING)' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:01:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202082.819
+    'REQUEST_TIME' => 1427202082
+]
+2015-03-24 14:01:46 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:01:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202105.181
+    'REQUEST_TIME' => 1427202105
+]
+2015-03-24 14:02:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:02:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202146.667
+    'REQUEST_TIME' => 1427202146
+]
+2015-03-24 14:04:47 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:04:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54189'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202286.204
+    'REQUEST_TIME' => 1427202286
+]
+2015-03-24 14:05:06 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:05:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202305.584
+    'REQUEST_TIME' => 1427202305
+]
+2015-03-24 14:05:35 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::a()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:05:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202333.882
+    'REQUEST_TIME' => 1427202333
+]
+2015-03-24 14:06:11 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::url()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:06:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202370.43
+    'REQUEST_TIME' => 1427202370
+]
+2015-03-24 14:10:58 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::a()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:10:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54321'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202657.048
+    'REQUEST_TIME' => 1427202657
+]
+2015-03-24 14:13:19 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:13:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54338'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202798.34
+    'REQUEST_TIME' => 1427202798
+]
+2015-03-24 14:14:10 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:14:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54356'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202849.5
+    'REQUEST_TIME' => 1427202849
+]
+2015-03-24 14:14:45 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:14:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54370'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202884.769
+    'REQUEST_TIME' => 1427202884
+]
+2015-03-24 14:15:40 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:15:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54383'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202939.497
+    'REQUEST_TIME' => 1427202939
+]
+2015-03-24 14:15:56 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:15:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54389'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202955.572
+    'REQUEST_TIME' => 1427202955
+]
+2015-03-24 14:16:10 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '['' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:16:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54390'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202969.097
+    'REQUEST_TIME' => 1427202969
+]
+2015-03-24 14:16:23 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:16:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427202982.43
+    'REQUEST_TIME' => 1427202982
+]
+2015-03-24 14:18:50 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:18:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54447'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203128.934
+    'REQUEST_TIME' => 1427203128
+]
+2015-03-24 14:18:57 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::url()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:18:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203136.306
+    'REQUEST_TIME' => 1427203136
+]
+2015-03-24 14:20:09 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::url()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:20:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203208.468
+    'REQUEST_TIME' => 1427203208
+]
+2015-03-24 14:21:23 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'htmlspecialchars() expects parameter 4 to be boolean, array given' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php:96
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'htmlspecialchar...', 'C:\apc-softdev\...', 96, Array)
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(96): htmlspecialchars('Update', 11, 'UTF-8', Array)
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php(46): yii\helpers\BaseHtml::encode('Update', Array)
+#3 [internal function]: yii\base\View->{closure}('view', Object(backend\models\Appointment), 1, 0)
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(146): call_user_func(Object(Closure), 'view', Object(backend\models\Appointment), 1, 0)
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(163): yii\grid\ActionColumn->createUrl('view', Object(backend\models\Appointment), 1, 0)
+#6 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(169): preg_replace_callback('/\{([\w\-\/]+)\...', Object(Closure), '{view} {delete}')
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\ActionColumn->renderDataCellContent(Object(backend\models\Appointment), 1, 0)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(455): yii\grid\Column->renderDataCell(Object(backend\models\Appointment), 1, 0)
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(424): yii\grid\GridView->renderTableRow(Object(backend\models\Appointment), 1, 0)
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(295): yii\grid\GridView->renderTableBody()
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\grid\GridView->renderItems()
+#13 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(264): yii\widgets\BaseListView->renderSection('{items}')
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#15 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(239): yii\widgets\BaseListView->run()
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Widget.php(96): yii\grid\GridView->run()
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php(55): yii\base\Widget::widget(Array)
+#20 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#21 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#22 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#23 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\AppointmentController))
+#24 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(41): yii\base\Controller->render('index', Array)
+#25 [internal function]: backend\controllers\AppointmentController->actionIndex()
+#26 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#27 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#29 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment', Array)
+#30 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+2015-03-24 14:21:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54484'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203282.746
+    'REQUEST_TIME' => 1427203282
+]
+2015-03-24 14:23:27 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::url()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:23:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54497'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203406.371
+    'REQUEST_TIME' => 1427203406
+]
+2015-03-24 14:23:42 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method yii\helpers\Html::url()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:23:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54501'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203421.208
+    'REQUEST_TIME' => 1427203421
+]
+2015-03-24 14:23:55 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 5 for yii\base\View::{closure}()' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php:44
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php(44): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'C:\apc-softdev\...', 44, Array)
+#1 [internal function]: yii\base\View->{closure}('view', Object(backend\models\Appointment), 1, 0)
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(146): call_user_func(Object(Closure), 'view', Object(backend\models\Appointment), 1, 0)
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(163): yii\grid\ActionColumn->createUrl('view', Object(backend\models\Appointment), 1, 0)
+#4 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\ActionColumn.php(169): preg_replace_callback('/\{([\w\-\/]+)\...', Object(Closure), '{view} {delete}')
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\ActionColumn->renderDataCellContent(Object(backend\models\Appointment), 1, 0)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(455): yii\grid\Column->renderDataCell(Object(backend\models\Appointment), 1, 0)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(424): yii\grid\GridView->renderTableRow(Object(backend\models\Appointment), 1, 0)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(295): yii\grid\GridView->renderTableBody()
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\grid\GridView->renderItems()
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(264): yii\widgets\BaseListView->renderSection('{items}')
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(239): yii\widgets\BaseListView->run()
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Widget.php(96): yii\grid\GridView->run()
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\index.php(55): yii\base\Widget::widget(Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#20 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#21 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\AppointmentController))
+#22 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(41): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\AppointmentController->actionIndex()
+#24 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#27 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment', Array)
+#28 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}
+2015-03-24 14:23:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '54511'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427203433.886
+    'REQUEST_TIME' => 1427203433
+]
+2015-03-24 14:57:42 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\models\Appointment.php:62
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 14:57:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '55319'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427205462.53
+    'REQUEST_TIME' => 1427205462
+]
+2015-03-24 14:58:46 [::1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception 'ReflectionException' with message 'Class numerical does not exist' 
+
+in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php:411
+
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->__construct('numerical')
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('numerical')
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('numerical', Array, Array)
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('numerical', Array, Array)
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(204): yii\BaseYii::createObject(Array)
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(422): yii\validators\Validator::createValidator('numerical', Object(backend\models\Appointment), Array, Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(386): yii\base\Model->createValidators()
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(184): yii\base\Model->getValidators()
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(736): yii\base\Model->scenarios()
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(740): yii\base\Model->activeAttributes()
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(200): yii\widgets\ActiveField->begin()
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(156): yii\widgets\ActiveField->render()
+#13 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#20 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#21 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#22 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#23 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#24 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#27 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#28 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php:233
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'Refl...', 'C:\apc-softdev\...', 233, Array)
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php(233): trigger_error('Exception 'Refl...', 256)
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(ReflectionException))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#13 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:92
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php:22
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php:89
+2015-03-24 14:58:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '55338'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427205525.761
+    'REQUEST_TIME' => 1427205525
+]
+2015-03-24 14:58:57 [::1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception 'ReflectionException' with message 'Class numeric does not exist' 
+
+in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php:411
+
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->__construct('numeric')
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('numeric')
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('numeric', Array, Array)
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('numeric', Array, Array)
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(204): yii\BaseYii::createObject(Array)
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(422): yii\validators\Validator::createValidator('numeric', Object(backend\models\Appointment), Array, Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(386): yii\base\Model->createValidators()
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(184): yii\base\Model->getValidators()
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(736): yii\base\Model->scenarios()
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(740): yii\base\Model->activeAttributes()
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(200): yii\widgets\ActiveField->begin()
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(156): yii\widgets\ActiveField->render()
+#13 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#20 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#21 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#22 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#23 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#24 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#27 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#28 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php:233
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'Refl...', 'C:\apc-softdev\...', 233, Array)
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php(233): trigger_error('Exception 'Refl...', 256)
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(ReflectionException))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#13 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:92
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php:22
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php:89
+2015-03-24 14:58:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '55351'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427205536
+    'REQUEST_TIME' => 1427205536
+]
+2015-03-24 15:06:47 [::1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception 'ReflectionException' with message 'Class min(0) does not exist' 
+
+in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php:411
+
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->__construct('min(0)')
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('min(0)')
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('min(0)', Array, Array)
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('min(0)', Array, Array)
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(204): yii\BaseYii::createObject(Array)
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(422): yii\validators\Validator::createValidator('min(0)', Object(backend\models\Appointment), Array, Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(386): yii\base\Model->createValidators()
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(184): yii\base\Model->getValidators()
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(736): yii\base\Model->scenarios()
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(740): yii\base\Model->activeAttributes()
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(200): yii\widgets\ActiveField->begin()
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(156): yii\widgets\ActiveField->render()
+#13 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#20 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#21 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#22 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#23 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#24 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#27 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#28 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php:233
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'Refl...', 'C:\apc-softdev\...', 233, Array)
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ErrorHandler.php(233): trigger_error('Exception 'Refl...', 256)
+#2 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(ReflectionException))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php(92): yii\widgets\ActiveField->__toString()
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, NULL)
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php(22): yii\base\View->render('_form', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\apc-softdev\...')
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\apc-softdev\...', Array)
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\apc-softdev\...', Array, Object(backend\controllers\AppointmentController))
+#11 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('update', Array, Object(backend\controllers\AppointmentController))
+#12 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php(89): yii\base\Controller->render('update', Array)
+#13 [internal function]: backend\controllers\AppointmentController->actionUpdate('1')
+#14 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#17 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/upd...', Array)
+#18 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:92
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\update.php:22
+    in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\controllers\AppointmentController.php:89
+2015-03-24 15:06:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs:32:\"mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W\";'
+    'PHPSESSID' => '1d7l5lbhi09h8ibccg91vi5dq6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2c5738c94902aa3de68b81d2a5c399dda601d65cd8266beeccc7ed32520f088cs%3A32%3A%22mdRFzVDcJ_OotL_LJiXMoRHq-hIZjG-W%22%3B; PHPSESSID=1d7l5lbhi09h8ibccg91vi5dq6'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '55529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427206006.383
+    'REQUEST_TIME' => 1427206006
+]

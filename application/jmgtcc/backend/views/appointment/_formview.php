@@ -83,21 +83,15 @@ use yii\widgets\DetailView;
                     {
                         print('
                                 <div class="col-lg-3">
-                                    <p class="form-label required-field">Payment:</p>
+                                    <p class="form-label"><b>Payment:</b></p>
                                  </div>
-                                <div class="col-lg-8">
-                            '); ?>
-
-                        <?= $form->field($model, 'payment_rate')->textInput()
-                            ->label(false) ?>
-                <?php 
-                        print('</div>');
+                                <div class="col-lg-8"> - </div>');
                     }     
                     else
                     {
                         print('
                                 <div class="col-lg-3">
-                                    <p class="form-label"><b>Payment:</b></p>
+                                    <p class="form-label">Payment:</p>
                                  </div>
                                 <div class="col-lg-8">
                             '); ?>
@@ -120,9 +114,9 @@ use yii\widgets\DetailView;
                 <div class="btn-right ">
 
                     <?php if (($model->status) != 'Confirmed') { ?>
-                    <?= Html::submitButton($model->isNewRecord ? 
-                            Yii::t('app', 'Create') : Yii::t('app', 'Submit payment'), 
-                            ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                    <?= Html::a('Set payment', ['update', 'id' => $model->id, 
+                                'id' => $model->id], 
+                                ['class' => 'btn btn-primary']) ?>
                     <?php } ?>    
                     
                 </div> 
