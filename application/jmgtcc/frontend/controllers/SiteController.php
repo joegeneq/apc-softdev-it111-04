@@ -12,6 +12,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\User;
 
 /**
  * Site controller
@@ -26,7 +27,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
+               'only' => ['logout', 'signup', 'about'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -38,6 +39,14 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+					[
+					   'actions' => ['about'],
+					   'allow' => true,
+					   'roles' => ['@'],
+					   'matchCallback' => function ($rule, $action) {
+						   return User::isUserAdmin(Yii::$app->user->identity->username);
+					   }
+					],
                 ],
             ],
             'verbs' => [

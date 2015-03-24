@@ -16,8 +16,8 @@ return [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
 			'identityCookie' => [
-			'name' => '_frontendUser', // unique for frontend
-			'path'=>'/advanced/frontend'  // correct path for the frontend app.
+			'name' => '_frontendUser', 
+			'path'=>'/advanced/frontend' 
 			]
         ],
         'log' => [

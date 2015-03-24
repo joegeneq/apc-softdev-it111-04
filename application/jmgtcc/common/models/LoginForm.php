@@ -59,11 +59,8 @@ class LoginForm extends Model
 		
 			$session = Yii::$app->session;
 			$session->open();
-			// close a session
 			$session->close();
-			// destroys all data registered to a session.
 			$session->destroy();
-			
 			$session = Yii::$app->session;
 			$session->set('username', $username);
 		
@@ -72,6 +69,16 @@ class LoginForm extends Model
             return false;
         }
     }
+	
+	public function loginAdmin()
+	{
+		if ($this->validate() && User::isUserAdmin($this->username)) {
+			return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+		} else {
+		$this->addError('password', 'Access Denied');
+		return false;
+		}
+	}
 
     /**
      * Finds user by [[username]]
@@ -86,4 +93,6 @@ class LoginForm extends Model
 
         return $this->_user;
     }
+	
+	
 }
