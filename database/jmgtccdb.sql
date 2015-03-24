@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `jmgtcc_brs`
+-- Database: `jmgtcc_tas`
 --
-CREATE DATABASE IF NOT EXISTS `jmgtcc_brs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `jmgtcc_brs`;
+CREATE DATABASE IF NOT EXISTS `jmgtcc_tas` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `jmgtcc_tas`;
 
 -- --------------------------------------------------------
 

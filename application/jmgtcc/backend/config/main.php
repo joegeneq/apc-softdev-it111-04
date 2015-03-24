@@ -13,6 +13,16 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+<<<<<<< HEAD
+=======
+	 'db'=>[
+            'class'=>'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_tas',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8'            
+        ],
+>>>>>>> 095ef49243b24b8f60bab00b882c29f0c1c253bf
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

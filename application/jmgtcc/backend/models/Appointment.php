@@ -4,6 +4,7 @@ namespace backend\models;
 
 use Yii;
 
+
 /**
  * This is the model class for table "appointment".
  *
@@ -26,8 +27,8 @@ use Yii;
  * @property integer $user_id
  * @property integer $staff_id
  *
- * @property Staff $staff
  * @property User $user
+ * @property Staff $staff
  * @property AppointmentHistory[] $appointmentHistories
  */
 class Appointment extends \yii\db\ActiveRecord
@@ -56,7 +57,10 @@ class Appointment extends \yii\db\ActiveRecord
             [['client_username', 'confirmed_by'], 'string', 'max' => 15],
             [['city', 'email_address'], 'string', 'max' => 45],
             [['contact_number', 'status'], 'string', 'max' => 20],
-            [['visa_type'], 'string', 'max' => 30]
+            [['visa_type'], 'string', 'max' => 30],
+
+            [['status'], 'default', 'value'=>'Confirmed'],
+            [['payment_rate'], 'required']
         ];
     }
 
@@ -90,17 +94,17 @@ class Appointment extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getStaff()
+    public function getUser()
     {
-        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUser()
+    public function getStaff()
     {
-        return $this->hasOne(User::className(), ['id' => 'user_id']);
+        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
     }
 
     /**
@@ -110,4 +114,10 @@ class Appointment extends \yii\db\ActiveRecord
     {
         return $this->hasMany(AppointmentHistory::className(), ['appointment_id' => 'id']);
     }
+
+    public function getTime()
+    {
+        return $this->hasOne(time::className(), ['time' => 'appointment_time']);
+    }
+
 }
