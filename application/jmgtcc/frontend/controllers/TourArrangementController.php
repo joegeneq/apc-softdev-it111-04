@@ -62,9 +62,22 @@ class TourArrangementController extends Controller
     {
         $model = new TourArrangement();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+         if ($model->load(Yii::$app->request->post())) {
+            //Accepts the value of array from the checkbox
+            $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
+            $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
+            $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
+            $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
+             if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+             }
+            
+           
         } else {
+            $model->inclusion_freebies = explode(', ',$model->inclusion_freebies);
+            $model->inclusion_tour_type = explode(', ', $model->inclusion_tour_type);
+            $model->inclusion_transport_service = explode(', ', $model->inclusion_transport_service);
+            $model->inclusion_food_deals = explode(', ', $model->inclusion_food_deals);
             return $this->render('create', [
                 'model' => $model,
             ]);
@@ -81,9 +94,20 @@ class TourArrangementController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+         if ($model->load(Yii::$app->request->post())) {
+                $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
+                $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
+                $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
+                $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+                         
         } else {
+            $model->inclusion_freebies = explode(', ',$model->inclusion_freebies);
+            $model->inclusion_tour_type = explode(', ', $model->inclusion_tour_type);
+            $model->inclusion_transport_service = explode(', ', $model->inclusion_transport_service);
+            $model->inclusion_food_deals = explode(', ', $model->inclusion_food_deals);
             return $this->render('update', [
                 'model' => $model,
             ]);

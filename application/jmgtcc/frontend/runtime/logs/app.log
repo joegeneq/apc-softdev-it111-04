@@ -22660,3 +22660,324 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1426254341.808
     'REQUEST_TIME' => 1426254341
 ]
+2015-03-24 10:42:53 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'jmgtcc_brs'' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('tour_arrangemen...')
+#10 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('tour_arrangemen...')
+#11 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#13 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('destination')
+#14 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1838): yii\db\BaseActiveRecord->__get('destination')
+#15 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1139): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\TourArrangement), 'destination')
+#16 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1160): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\TourArrangement), 'destination', Array)
+#17 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(352): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\TourArrangement), 'destination', Array)
+#18 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\views\tourarrangement\_form.php(31): yii\widgets\ActiveField->textInput(Array)
+#19 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\gi...')
+#20 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\gi...', Array)
+#21 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\gi...', Array, NULL)
+#22 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\views\tourarrangement\create.php(21): yii\base\View->render('_form', Array)
+#23 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\gi...')
+#24 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\gi...', Array)
+#25 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\gi...', Array, Object(frontend\controllers\TourArrangementController))
+#26 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\TourArrangementController))
+#27 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TourArrangementController.php(70): yii\base\Controller->render('create', Array)
+#28 [internal function]: frontend\controllers\TourArrangementController->actionCreate()
+#29 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#30 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#31 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#32 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('tourarrangement...', Array)
+#33 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#34 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#35 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'jmgtcc_brs'' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('tour_arrangemen...')
+#8 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('tour_arrangemen...')
+#9 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#11 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('destination')
+#12 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1838): yii\db\BaseActiveRecord->__get('destination')
+#13 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1139): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\TourArrangement), 'destination')
+#14 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php(1160): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\TourArrangement), 'destination', Array)
+#15 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\ActiveField.php(352): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\TourArrangement), 'destination', Array)
+#16 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\views\tourarrangement\_form.php(31): yii\widgets\ActiveField->textInput(Array)
+#17 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\gi...')
+#18 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\gi...', Array)
+#19 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\gi...', Array, NULL)
+#20 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\views\tourarrangement\create.php(21): yii\base\View->render('_form', Array)
+#21 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\gi...')
+#22 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\gi...', Array)
+#23 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\gi...', Array, Object(frontend\controllers\TourArrangementController))
+#24 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\TourArrangementController))
+#25 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TourArrangementController.php(70): yii\base\Controller->render('create', Array)
+#26 [internal function]: frontend\controllers\TourArrangementController->actionCreate()
+#27 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#28 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#29 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#30 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('tourarrangement...', Array)
+#31 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#33 {main}
+Additional Information:
+
+2015-03-24 10:42:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'mfgmj3kut8ouf40pe9cav2kck0'
+    '_csrf' => '23f4e3db26c5533db713f8d47df7bcf02c25eaf7a2f9bf77948ec814309e5305s:32:\"iX-Qq3cS3R3t02qwh9yycXC8yXmUdfHK\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=mfgmj3kut8ouf40pe9cav2kck0; _csrf=23f4e3db26c5533db713f8d47df7bcf02c25eaf7a2f9bf77948ec814309e5305s%3A32%3A%22iX-Qq3cS3R3t02qwh9yycXC8yXmUdfHK%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '54107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427190172.565
+    'REQUEST_TIME' => 1427190172
+]
+2015-03-24 10:45:24 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: appointment_code' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php:65
+Stack trace:
+#0 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(65): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\xannethei\gi...', 65, Array)
+#1 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#2 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#6 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-03-24 10:45:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'mfgmj3kut8ouf40pe9cav2kck0'
+    '_csrf' => '3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s:32:\"MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=mfgmj3kut8ouf40pe9cav2kck0; _csrf=3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s%3A32%3A%22MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '54149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427190324.268
+    'REQUEST_TIME' => 1427190324
+]
+2015-03-24 10:47:58 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement/create".' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
+#1 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-24 10:47:58 [::1][1][-][info][application] $_GET = [
+    'r' => 'travelarrangement/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s:32:\"MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV\";'
+    'PHPSESSID' => 'si8emn1mjvoj009mfahdrr62n4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s%3A32%3A%22MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV%22%3B; PHPSESSID=si8emn1mjvoj009mfahdrr62n4'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '54188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=travelarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427190478.55
+    'REQUEST_TIME' => 1427190478
+]
+2015-03-24 10:52:33 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Hotels' not found' in C:\xannethei\gitHub Proj\apc-softdev-it111-04\application\jmgtcc\frontend\views\tourarrangement\_form.php:87
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-24 10:52:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourarrangement/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s:32:\"MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV\";'
+    'PHPSESSID' => 'si8emn1mjvoj009mfahdrr62n4'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=3c68ce66dcdbd510bb4fd05d720b97f2c3d0a12b0fb2caa5ac0a5c12e50b99c3s%3A32%3A%22MetJKdi52ZlWiKIdGWZ10glHrLmNcIJV%22%3B; PHPSESSID=si8emn1mjvoj009mfahdrr62n4'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '54210'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427190753.017
+    'REQUEST_TIME' => 1427190753
+]
