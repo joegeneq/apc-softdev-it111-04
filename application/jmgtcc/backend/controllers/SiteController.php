@@ -6,6 +6,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
+use common\models\User;
 
 /**
  * Site controller
@@ -29,6 +30,9 @@ class SiteController extends Controller
                         'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
+						'matchCallback' => function ($rule, $action) {
+						   return User::isUserAdmin(Yii::$app->user->identity->username);
+					   }
                     ],
                 ],
             ],

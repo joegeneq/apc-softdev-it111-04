@@ -394,7 +394,7 @@ fieldset[disabled] .btn-success.active {
   text-align: center; 
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 6%;  
+  margin-top: 2%;  
 }
 
 .login-form {
@@ -468,6 +468,15 @@ p.form-label {
   text-align: center;
   width:100px;
   margin-bottom: 5%;
+}
+
+.btn-right {
+  float: right;
+  padding-right: 9%;
+}
+
+.btn-left {
+  float: left;
 }
 
 /* END ADDED BY: AFPAPNA 03042015 */

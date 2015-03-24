@@ -24,9 +24,7 @@ use Yii;
  * @property string $confirmed_by
  * @property string $notes
  * @property integer $user_id
- * @property integer $staff_id
  *
- * @property Staff $staff
  * @property User $user
  * @property AppointmentHistory[] $appointmentHistories
  */
@@ -40,13 +38,12 @@ class Appointment extends \yii\db\ActiveRecord
         return 'appointment';
     }
 
-   
     /**
      * @inheritdoc
      */
     public function rules()
     {
-        return [            
+        return [
             [['client_name'], 'required'],
             [['client_name'], 'string', 'max' => 60],
             [['client_name'], 'filter', 'filter' => 'trim'],
@@ -56,7 +53,8 @@ class Appointment extends \yii\db\ActiveRecord
             [['city'], 'filter', 'filter' => 'trim'],
 
             [['contact_number'], 'required'],
-            [['contact_number'], 'string', 'max' => 20],
+            //[['contact_number'], 'string', 'max' => 20],
+            [['contact_number'], 'number'],
             [['contact_number'], 'filter', 'filter' => 'trim'],
 
             [['email_address'], 'required'],
@@ -84,9 +82,8 @@ class Appointment extends \yii\db\ActiveRecord
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
 
-            [['user_id', 'staff_id'], 'integer'],
+            [['user_id'], 'integer'],
             [['appointment_code'], 'string', 'max' => 25]
-                  
         ];
     }
 
@@ -113,16 +110,7 @@ class Appointment extends \yii\db\ActiveRecord
             'confirmed_by' => Yii::t('app', 'Confirmed By'),
             'notes' => Yii::t('app', 'Notes'),
             'user_id' => Yii::t('app', 'User ID'),
-            'staff_id' => Yii::t('app', 'Staff ID'),
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getStaff()
-    {
-        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
     }
 
     /**
@@ -141,7 +129,6 @@ class Appointment extends \yii\db\ActiveRecord
         return $this->hasMany(AppointmentHistory::className(), ['appointment_id' => 'id']);
     }
 
-
     //Generate Appointment Code
     public static function getAppointmentCode($data)
     {
@@ -155,5 +142,4 @@ class Appointment extends \yii\db\ActiveRecord
         $data = $model->queryScalar();
         return $data;
     }
-
 }
