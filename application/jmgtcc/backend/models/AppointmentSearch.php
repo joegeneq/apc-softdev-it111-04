@@ -7,6 +7,7 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use backend\models\Appointment;
 
+
 /**
  * AppointmentSearch represents the model behind the search form about `backend\models\Appointment`.
  */
@@ -56,27 +57,18 @@ class AppointmentSearch extends Appointment
             return $dataProvider;
         }
 
+        $query->joinwith('time');
+
         $query->andFilterWhere([
-            'id' => $this->id,
-            'appointment_date' => $this->appointment_date,
-            'appointment_time' => $this->appointment_time,
-            'payment_rate' => $this->payment_rate,
-            'date_created' => $this->date_created,
-            'user_id' => $this->user_id,
-            'staff_id' => $this->staff_id,
+            'id' => $this->appointment_code
         ]);
 
         $query->andFilterWhere(['like', 'appointment_code', $this->appointment_code])
             ->andFilterWhere(['like', 'client_name', $this->client_name])
-            ->andFilterWhere(['like', 'client_username', $this->client_username])
-            ->andFilterWhere(['like', 'city', $this->city])
-            ->andFilterWhere(['like', 'contact_number', $this->contact_number])
-            ->andFilterWhere(['like', 'email_address', $this->email_address])
-            ->andFilterWhere(['like', 'country', $this->country])
-            ->andFilterWhere(['like', 'visa_type', $this->visa_type])
             ->andFilterWhere(['like', 'status', $this->status])
-            ->andFilterWhere(['like', 'confirmed_by', $this->confirmed_by])
-            ->andFilterWhere(['like', 'notes', $this->notes]);
+
+            ->andFilterWhere(['like', 'appointment_date', $this->appointment_date])
+            ->andFilterWhere(['like', 'time.time', $this->appointment_time]);
 
         return $dataProvider;
     }
