@@ -224,7 +224,7 @@ use backend\models\Hotels;
 <?php
 $script = <<< JS
 //ALL JAVASCRIPT CODES
-$('#tourarrangement-hotel_name').change(function(){
+$('#tourarrangement-hotel_name').click(function(){
   alert();
 });
 

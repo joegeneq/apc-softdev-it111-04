@@ -127,9 +127,9 @@ use backend\models\Hotels;
             </div>
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'hotel_name')
-                         ->dropDownList(
-                            ArrayHelper::map(Hotels::find()->all(),'id', 'hotel_name'),
-                            ['prompt'=>'Select Hotel'])->label(false)   ?>
+                         ->radio('' => 'Choose From List')
+                                       -> label (false) ?>
+                     
             </div>
             <div class="col-lg-1">
                 <p class="form-label">Others:</p>
