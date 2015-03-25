@@ -79,26 +79,29 @@ use backend\models\Hotels;
       </div>
 
      <!-- HOTEL NAME -->
-      <div class="row">
-        <div class="col-lg-2">
-          <p class="form-label">Hotel Name</p>
-        </div>
-        <div class="col-lg-3">                   
-          <?= $form->field($model, 'hotel_name')
-                   ->dropdownList(ArrayHelper::map(Hotels::find()->all(),'id', 'hotel_name'),
-                            ['prompt'=>'Select Hotel',
-                              'options' => ['id' => 'hotel_name' ]
+        <div class="row">
+            <div class="col-lg-2">
+                <p class="form-label">Hotel Name</p>
+            </div>
+            <div class="col-lg-3">                   
+                <?= $form->field($model, 'hotel_name')
+                         ->radioList(['droppy' => 'Choose from Hotels List',
+                                      'textty' => 'Input Hotel Name'])
+                                       -> label (false) ?>
+            </div>
+            <div class="col-lg-3">         
+                <?= $form->field($model, 'hotel_name')
+                         ->dropDownList(['' => 'Choose Hotel Name',
+                                         'Xanne Hotel' => 'Xanne Hotel',
+                                         'Bia Hotel' => 'Bia Hotel',
+                                         'Echi Hotel' => 'Echi Hotel']) 
+                         ->label(false) ?>
 
-                            ])
-                   ->label(false) ?>
-        </div>
-         <div class="col-lg-2">
-          <p class="form-label">Others:</p>
-        </div>
-        <div class="col-lg-3">                   
-          <?= $form->field($model, 'hotel_name')->textInput(['maxlength' => 100])->label(false) ?>
-        </div>
-      </div>
+                <?= $form->field($model, 'hotel_name')->textInput() ->label(false) ?>
+
+            </div>
+           </div> 
+
    
       <!-- ROOM TYPE -->
         <div class="row">
@@ -224,9 +227,16 @@ use backend\models\Hotels;
 <?php
 $script = <<< JS
 //ALL JAVASCRIPT CODES
-$('#tourarrangement-hotel_name').click(function(){
-  alert();
-});
+//$('#tourarrangement-hotel_name').click(function(){
+  //alert();
+//});
+
+ $('#tourarrangement-hotel_name').click(function(){
+            var radioValue = $("input[name='hotel_name']:checked").val();
+           
+                alert("Your are a - " + radioValue);
+            
+        });
 
 JS;
 $this -> registerJS($script);

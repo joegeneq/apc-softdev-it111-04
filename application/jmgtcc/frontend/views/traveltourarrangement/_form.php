@@ -127,16 +127,21 @@ use backend\models\Hotels;
             </div>
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'hotel_name')
-                         ->radioList(array('dropDown'=>'Choose from Hotels List',
-                                           'textBox'=>'Input Hotel Name'))
+                         ->radioList(['droppy' => 'Choose from Hotels List',
+                                      'textty' => 'Input Hotel Name'])
                                        -> label (false) ?>
                      
-            </div>
-            <div class="col-lg-1">
-                <p class="form-label">Others:</p>
-            </div>
-            <div class="col-lg-3">                   
-                <?= $form->field($model, 'hotel_name')->textInput(['maxlength' => 100]) ->label(false) ?>
+            </div>   
+            <div class="col-lg-3">         
+                <?= $form->field($model, 'hotel_name')
+                         ->dropDownList(['' => 'Choose Hotel Name',
+                                         'Xanne Hotel' => 'Xanne Hotel',
+                                         'Bia Hotel' => 'Bia Hotel',
+                                         'Echi Hotel' => 'Echi Hotel']) 
+                         ->label(false) ?>
+
+                <?= $form->field($model, 'hotel_name')->textInput() ->label(false) ?>
+
             </div>
         </div>
 
@@ -272,9 +277,21 @@ use backend\models\Hotels;
 <?php
 $script = <<< JS
 //ALL JAVASCRIPT CODES
-$('#traveltourarrangement-hotel_name').change(function(){
-  alert();
-});
+//$('#traveltourarrangement-hotel_name').change(function(){
+  
+  
+   // $('#traveltourarrangement-hotel_name').click(function(){
+     // alert($('input [name=hotel_name]:checked').val());
+    //});
+ 
+  $('#traveltourarrangement-hotel_name').click(function(){
+            var radioValue = $("input[name='hotel_name']:checked").val();
+           
+                alert("Your are a - " + radioValue);
+            
+        });
+ 
+ 
 
 JS;
 $this -> registerJS($script);
