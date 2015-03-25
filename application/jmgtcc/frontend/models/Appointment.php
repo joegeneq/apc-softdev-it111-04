@@ -136,7 +136,7 @@ class Appointment extends \yii\db\ActiveRecord
         $model = $connection
             ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
                                 '-', 
-                                RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
+                                RIGHT( CONCAT('JMGTCC', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
                                 FROM appointment
                                 WHERE YEAR(date_created) = YEAR(NOW())");
         $data = $model->queryScalar();
