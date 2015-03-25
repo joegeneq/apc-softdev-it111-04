@@ -37,8 +37,14 @@ $this->title = Yii::t('app', 'Appointments');
             'status',
 
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+            'class' => 'yii\grid\ActionColumn',
+            'template' => '{view} {update} {delete}',
+
+            ],
         ],
     ]); ?>
 
 </div>
+
+

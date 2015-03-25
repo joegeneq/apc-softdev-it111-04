@@ -36,7 +36,7 @@ use yii\widgets\DetailView;
 
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Status:</p>
+                    <p class="form-label"><b>Status:</b></p>
                 </div>
 
                 <?php 
@@ -46,7 +46,7 @@ use yii\widgets\DetailView;
                     }
                     else
                     {
-                        print('<div class="col-lg-4"></div>');
+                        print('<div class="col-lg-4"> - </div>');
                     }
                 ?>
                 
@@ -54,7 +54,7 @@ use yii\widgets\DetailView;
 
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label">Confirmed by:</p>
+                    <p class="form-label"><b>Confirmed by:</b></p>
                  </div>
 
                  <?php 
@@ -64,7 +64,7 @@ use yii\widgets\DetailView;
                     }
                     else
                     {
-                        print('<div class="col-lg-3"></div>');
+                        print('<div class="col-lg-3"> - </div>');
                     }
                 ?>
 
@@ -97,7 +97,7 @@ use yii\widgets\DetailView;
                     {
                         print('
                                 <div class="col-lg-3">
-                                    <p class="form-label required-field">Payment:</p>
+                                    <p class="form-label"><b>Payment:</b></p>
                                  </div>
                                 <div class="col-lg-8">
                             '); ?>

@@ -4,7 +4,6 @@ namespace backend\models;
 
 use Yii;
 
-
 /**
  * This is the model class for table "appointment".
  *
@@ -25,14 +24,13 @@ use Yii;
  * @property string $confirmed_by
  * @property string $notes
  * @property integer $user_id
- * @property integer $staff_id
  *
  * @property User $user
- * @property Staff $staff
  * @property AppointmentHistory[] $appointmentHistories
  */
 class Appointment extends \yii\db\ActiveRecord
 {
+    public $minimum_payment = 0;
     /**
      * @inheritdoc
      */
@@ -51,7 +49,7 @@ class Appointment extends \yii\db\ActiveRecord
             [['appointment_date', 'appointment_time', 'date_created'], 'safe'],
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
-            [['user_id', 'staff_id'], 'integer'],
+            [['user_id'], 'integer'],
             [['appointment_code'], 'string', 'max' => 25],
             [['client_name', 'country'], 'string', 'max' => 60],
             [['client_username', 'confirmed_by'], 'string', 'max' => 15],
@@ -60,7 +58,9 @@ class Appointment extends \yii\db\ActiveRecord
             [['visa_type'], 'string', 'max' => 30],
 
             [['status'], 'default', 'value'=>'Confirmed'],
-            [['payment_rate'], 'required']
+            [['payment_rate'], 'required'],
+            [['payment_rate'], 'number', 'min'=>1]
+
         ];
     }
 
@@ -87,7 +87,6 @@ class Appointment extends \yii\db\ActiveRecord
             'confirmed_by' => Yii::t('app', 'Confirmed By'),
             'notes' => Yii::t('app', 'Notes'),
             'user_id' => Yii::t('app', 'User ID'),
-            'staff_id' => Yii::t('app', 'Staff ID'),
         ];
     }
 
@@ -102,22 +101,13 @@ class Appointment extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getStaff()
-    {
-        return $this->hasOne(Staff::className(), ['id' => 'staff_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getAppointmentHistories()
     {
         return $this->hasMany(AppointmentHistory::className(), ['appointment_id' => 'id']);
     }
 
-    public function getTime()
+     public function getTime()
     {
         return $this->hasOne(time::className(), ['time' => 'appointment_time']);
     }
-
 }

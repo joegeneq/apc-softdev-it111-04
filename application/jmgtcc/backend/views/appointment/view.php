@@ -17,9 +17,10 @@ $this->params['breadcrumbs'][] = ['label' => $model->appointment_code];
 
    <div class="appointment-update">
 
-        <?= $this->render('_form', [
+        <?= $this->render('_formview', [
             'model' => $model,
         ]) ?>
+
 
     </div>
 
