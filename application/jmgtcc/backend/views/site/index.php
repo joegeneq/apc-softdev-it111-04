@@ -9,7 +9,7 @@ $this->title = 'My Yii Application';
 
         <div class="row">
 
-            <div class="side-navigator col-lg-3">
+            <div class="side-navigator col-lg-z3">
                 
                 <ul>
                     <li>Appointments</li>
