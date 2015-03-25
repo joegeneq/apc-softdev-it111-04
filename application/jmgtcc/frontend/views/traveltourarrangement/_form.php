@@ -277,12 +277,10 @@ use backend\models\Hotels;
 <?php
 $script = <<< JS
 //ALL JAVASCRIPT CODES
-//$('#traveltourarrangement-hotel_name').change(function(){
-  
-  
-   // $('#traveltourarrangement-hotel_name').click(function(){
-     // alert($('input [name=hotel_name]:checked').val());
-    //});
+$('#traveltourarrangement-hotel_name').change(function(){
+   $('#traveltourarrangement-hotel_name').click(function(){
+       alert($('input [name=hotel_name]:checked').val());
+  });
  
   $('#traveltourarrangement-hotel_name').click(function(){
             var radioValue = $("input[name='hotel_name']:checked").val();
@@ -292,7 +290,6 @@ $script = <<< JS
         });
  
  
-
 JS;
 $this -> registerJS($script);
 ?>
