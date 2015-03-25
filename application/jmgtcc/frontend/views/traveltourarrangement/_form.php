@@ -127,7 +127,8 @@ use backend\models\Hotels;
             </div>
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'hotel_name')
-                         ->radio('' => 'Choose From List')
+                         ->radioList(array('dropDown'=>'Choose from Hotels List',
+                                           'textBox'=>'Input Hotel Name'))
                                        -> label (false) ?>
                      
             </div>
