@@ -9,8 +9,11 @@ use yii\helpers\Html;
 $this->title = Yii::t('app', 'Create {modelClass}', [
     'modelClass' => 'Appointment',
 ]);
+// if session
+//{
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+//}
 ?>
 <div class="appointment-create">
 

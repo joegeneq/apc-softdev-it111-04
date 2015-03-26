@@ -29,6 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+            'arrangement_code',
             'place_of_origin',
             'destination',
             'arrival_date',
@@ -40,13 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_freebies:ntext',
             'inclusion_tour_type:ntext',
             'inclusion_transport_service',
-            'date_created',
-            'status',
-            'date_confirmed',
-            'confirmed_by',
-            'date_updated',
-            'updated_by',
             'remarks:ntext',
+            'date_created',
             'user_id',
         ],
     ]) ?>

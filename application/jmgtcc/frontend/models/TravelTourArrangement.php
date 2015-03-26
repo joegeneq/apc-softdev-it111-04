@@ -25,11 +25,6 @@ use Yii;
  * @property string $inclusion_transport_service
  * @property string $remarks
  * @property string $date_created
- * @property string $status
- * @property string $date_confirmed
- * @property string $confirmed_by
- * @property string $date_updated
- * @property string $updated_by
  * @property integer $user_id
  *
  * @property User $user
@@ -50,16 +45,15 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'departure_date', 'return_date', 'number_of_pax', 'room_type', 'user_id'], 'required'],
-            [['departure_date', 'return_date', 'date_created', 'date_confirmed', 'date_updated'], 'safe'],
+            [['destination', 'departure_date', 'return_date', 'number_of_pax', 'room_type'], 'required'],
+            [['departure_date', 'return_date', 'date_created'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],
             [['arrangement_code'], 'string', 'max' => 25],
             [['place_of_origin', 'destination', 'airline_name', 'class_type', 'inclusion_transport_service'], 'string', 'max' => 60],
             [['flight_type'], 'string', 'max' => 45],
             [['hotel_name'], 'string', 'max' => 100],
-            [['room_type'], 'string', 'max' => 80],
-            [['status', 'confirmed_by', 'updated_by'], 'string', 'max' => 20]
+            [['room_type'], 'string', 'max' => 80]
         ];
     }
 
@@ -87,11 +81,6 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             'inclusion_transport_service' => Yii::t('app', 'Inclusion Transport Service'),
             'remarks' => Yii::t('app', 'Remarks'),
             'date_created' => Yii::t('app', 'Date Created'),
-            'status' => Yii::t('app', 'Status'),
-            'date_confirmed' => Yii::t('app', 'Date Confirmed'),
-            'confirmed_by' => Yii::t('app', 'Confirmed By'),
-            'date_updated' => Yii::t('app', 'Date Updated'),
-            'updated_by' => Yii::t('app', 'Updated By'),
             'user_id' => Yii::t('app', 'User ID'),
         ];
     }

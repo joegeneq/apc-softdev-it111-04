@@ -134,11 +134,20 @@ class Appointment extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
         $model = $connection
-            ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
+            // ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
+            //                     '-', 
+            //                     RIGHT( CONCAT('JMGTCC', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
+            //                     FROM appointment
+            //                     WHERE YEAR(date_created) = YEAR(NOW())");
+
+            ->createCommand("SELECT CONCAT('VA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
+                                RIGHT(CONCAT('00', MONTH(NOW())), 2), 
                                 '-', 
-                                RIGHT( CONCAT('JMGTCC', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
+                                RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
                                 FROM appointment
-                                WHERE YEAR(date_created) = YEAR(NOW())");
+                                WHERE YEAR(date_created) = YEAR(NOW())
+                            ");
+
         $data = $model->queryScalar();
         return $data;
     }

@@ -8,18 +8,19 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'Appointments');
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="appointment-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <br>
+    <h3> Appointment History </h3>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Appointment',
-]), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Set new appointment', [
+            'modelClass' => 'Appointment',
+        ]), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <br>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -27,25 +28,28 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'appointment_code',
-            'client_name',
-            'client_username',
-            'city',
+            // 'client_name',
+            // 'client_username',
+            // 'city',
             // 'contact_number',
             // 'email_address:email',
-            // 'appointment_date',
-            // 'appointment_time',
-            // 'country',
-            // 'visa_type',
+             'appointment_date',
+             'appointment_time',
+             'country',
+             'visa_type',
             // 'payment_rate',
             // 'date_created',
-            // 'status',
+             'status',
             // 'confirmed_by',
             // 'notes:ntext',
             // 'user_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view}'
+            ],
         ],
     ]); ?>
 

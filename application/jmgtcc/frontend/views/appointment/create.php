@@ -10,6 +10,11 @@ $this->title = Yii::t('app', 'Create {modelClass}', [
     'modelClass' => 'Appointment',
 ]);
 
+if (Yii::$app->user->identity->username != null)
+{
+	$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
+}
+	
 ?>
 <div class="appointment-create">
     
@@ -18,3 +23,5 @@ $this->title = Yii::t('app', 'Create {modelClass}', [
     ]) ?>
 
 </div>
+
+<br>

@@ -16,7 +16,12 @@ use backend\models\Time;
 
     <?php $form = ActiveForm::begin(); ?>
       
-    <br>
+    <?php 
+        if (Yii::$app->user->identity->username == null)
+        {
+            print('<br>');
+        }
+    ?>
         
         <div class="form-container-main">
 

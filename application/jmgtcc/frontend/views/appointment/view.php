@@ -8,37 +8,77 @@ use yii\widgets\DetailView;
 
 $this->title = $model->appointment_code;
 
+if (Yii::$app->user->identity->username != null)
+{
+    $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
+    $this->params['breadcrumbs'][] = ['label' => $model->appointment_code];
+}
+
 ?>
 <div class="appointment-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <br><br>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
+    <div class="row">
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'appointment_code',
-            'client_name',
-            'city',
-            'contact_number',
-            'email_address:email',
-            'appointment_date',
-            'appointment_time',
-            'country',
-            'visa_type',
-            'notes:ntext'
-        ],
-    ]) ?>
+        <div class="col-lg-6">
+            <div class="va-main">
+                <div class="va-form">
+                    <div class="va-header">
+                        <img class="va-img"src="images\logo.png">
+                        <b class="va-hdr-label">
+                            <?= $model->appointment_code ?>
+                        </b>
+                    </div>
+                    <div class="va-hdr-address">
+                        Upper Ground 12 Cityland Pioneer Condominium 128 Pioneer St., <br>
+                        Mandaluyong City, Philippines
+                    </div>
+                    <div class="va-details">
+                        <?= DetailView::widget([
+                            'model' => $model,
+                            'attributes' => [
+                                'appointment_date',
+                                'appointment_time',
+                                'country',
+                                'visa_type',
+                                'client_name',
+                                'city',
+                                'contact_number',
+                                'email_address:email',                                
+                                'notes:ntext'
+                            ],
+                        ]) ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="va-main">
+                <div class="policy-hdr">Important Reminders:</div>
+                <hr class="carved">
+                <br>
+
+                <ul>
+                    <li class="policy-details">Please be at the JMGTCC Office <b>15 minutes</b> before your appointment time.</li>
+                    <li class="policy-details">An email will be sent to your email address for reference.</li>
+                    <li class="policy-details">Please print this page or the document attanched on the email.</li>
+                    <li class="policy-details">Clients without the printed appointment form will not be entertained.</li>
+                <br>
+                    <li class="policy-details">For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                </ul>
+
+                <br>
+
+                <div class="policy-ftr">Thank you for using JMGTCC Travel Arrangement & Appointment System!</div>
+
+            </div>
+        </div>
+    
+
+    </div>
+
+    <br>
 
 </div>

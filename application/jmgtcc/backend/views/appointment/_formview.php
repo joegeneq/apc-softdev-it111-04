@@ -42,7 +42,7 @@ use yii\widgets\DetailView;
                 <?php 
                     if (($model->status) == 'Confirmed') 
                     { 
-                        print('<div class="col-lg-4">Confirmed</div>');
+                        print('<div class="col-lg-4">' . $model->status . '</div>');
                     }
                     else
                     {
@@ -60,7 +60,7 @@ use yii\widgets\DetailView;
                  <?php 
                     if (($model->status) == 'Confirmed') 
                     { 
-                        print('<div class="col-lg-3">Staff username</div>'); //Session
+                        print('<div class="col-lg-3">' . $model->confirmed_by . '</div>'); //Session
                     }
                     else
                     {
