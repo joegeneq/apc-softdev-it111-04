@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Hotels */
+/* @var $model backend\models\TourArrangement */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Hotels'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Tour Arrangements'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="hotels-view">
+<div class="tour-arrangement-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -29,9 +29,26 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+            'arrangement_code',
+            'place_of_origin',
+            'destination',
+            'arrival_date',
+            'return_date',
+            'number_of_pax',
             'hotel_name',
-            'country',
-            'star_rating',
+            'room_type',
+            'inclusion_food_deals:ntext',
+            'inclusion_freebies:ntext',
+            'inclusion_tour_type:ntext',
+            'inclusion_transport_service',
+            'remarks:ntext',
+            'date_created',
+            'date_confirmed',
+            'confirmed_by',
+            'date_updated',
+            'updated_by',
+            'status',
+            'user_id',
         ],
     ]) ?>
 

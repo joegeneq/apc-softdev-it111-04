@@ -1,18 +1,18 @@
 <?php
 
-namespace frontend\controllers;
+namespace backend\controllers;
 
 use Yii;
-use frontend\models\TravelTourArrangement;
-use frontend\models\TravelTourArrangementSearch;
+use backend\models\TourArrangement;
+use backend\models\TourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
+ * TourArrangementController implements the CRUD actions for TourArrangement model.
  */
-class TravelTourArrangementController extends Controller
+class TourArrangementController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Lists all TravelTourArrangement models.
+     * Lists all TourArrangement models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new TravelTourArrangementSearch();
+        $searchModel = new TourArrangementSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Displays a single TravelTourArrangement model.
+     * Displays a single TourArrangement model.
      * @param integer $id
      * @return mixed
      */
@@ -54,29 +54,17 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Creates a new TravelTourArrangement model.
+     * Creates a new TourArrangement model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new TravelTourArrangement();
-        
-        if ($model->load(Yii::$app->request->post())) {
-        //Accepts the value of array from the checkbox 
-            $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
-            $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
-            $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
-            $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
-            if ($model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
-            }
-        
+        $model = new TourArrangement();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            $model->inclusion_freebies = explode(', ',$model->inclusion_freebies);
-            $model->inclusion_tour_type = explode(', ', $model->inclusion_tour_type);
-            $model->inclusion_transport_service = explode(', ', $model->inclusion_transport_service);
-            $model->inclusion_food_deals = explode(', ', $model->inclusion_food_deals);
             return $this->render('create', [
                 'model' => $model,
             ]);
@@ -84,7 +72,7 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Updates an existing TravelTourArrangement model.
+     * Updates an existing TourArrangement model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -103,7 +91,7 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Deletes an existing TravelTourArrangement model.
+     * Deletes an existing TourArrangement model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -116,15 +104,15 @@ class TravelTourArrangementController extends Controller
     }
 
     /**
-     * Finds the TravelTourArrangement model based on its primary key value.
+     * Finds the TourArrangement model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return TravelTourArrangement the loaded model
+     * @return TourArrangement the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = TravelTourArrangement::findOne($id)) !== null) {
+        if (($model = TourArrangement::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

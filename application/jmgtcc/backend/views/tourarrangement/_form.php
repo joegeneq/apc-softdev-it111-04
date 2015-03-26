@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TourArrangement */
+/* @var $model backend\models\TourArrangement */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -39,6 +39,16 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'remarks')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'date_created')->textInput() ?>
+
+    <?= $form->field($model, 'date_confirmed')->textInput() ?>
+
+    <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 15]) ?>
+
+    <?= $form->field($model, 'date_updated')->textInput() ?>
+
+    <?= $form->field($model, 'updated_by')->textInput(['maxlength' => 20]) ?>
+
+    <?= $form->field($model, 'status')->textInput(['maxlength' => 20]) ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 

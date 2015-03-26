@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TravelTourArrangementSearch */
+/* @var $model backend\models\TourArrangementSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="travel-tour-arrangement-search">
+<div class="tour-arrangement-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -23,15 +23,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'destination') ?>
 
-    <?= $form->field($model, 'departure_date') ?>
+    <?= $form->field($model, 'arrival_date') ?>
 
     <?php // echo $form->field($model, 'return_date') ?>
-
-    <?php // echo $form->field($model, 'airline_name') ?>
-
-    <?php // echo $form->field($model, 'flight_type') ?>
-
-    <?php // echo $form->field($model, 'class_type') ?>
 
     <?php // echo $form->field($model, 'number_of_pax') ?>
 
@@ -50,6 +44,16 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'remarks') ?>
 
     <?php // echo $form->field($model, 'date_created') ?>
+
+    <?php // echo $form->field($model, 'date_confirmed') ?>
+
+    <?php // echo $form->field($model, 'confirmed_by') ?>
+
+    <?php // echo $form->field($model, 'date_updated') ?>
+
+    <?php // echo $form->field($model, 'updated_by') ?>
+
+    <?php // echo $form->field($model, 'status') ?>
 
     <?php // echo $form->field($model, 'user_id') ?>
 

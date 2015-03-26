@@ -45,11 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'inclusion_transport_service',
             // 'remarks:ntext',
             // 'date_created',
-            // 'status',
-            // 'date_confirmed',
-            // 'confirmed_by',
-            // 'date_updated',
-            // 'updated_by',
             // 'user_id',
 
             ['class' => 'yii\grid\ActionColumn'],

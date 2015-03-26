@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+
 use yii\helpers\ArrayHelper;
 
 use dosamigos\datepicker\DatePicker;
@@ -10,7 +11,6 @@ use backend\models\Freebies;
 use backend\models\TourType;
 use backend\models\TransportService;
 use backend\models\Airlines;
-use backend\models\Hotels;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TravelTourArrangement */
@@ -18,14 +18,20 @@ use backend\models\Hotels;
 ?>
 
 <div class="travel-tour-arrangement-form">
+  <?php $form = ActiveForm::begin(); ?>
+  <div class="form-container-main">
+  <br><br>
 
-    <?php $form = ActiveForm::begin(); ?>
-    
-    <div class="form-container-main">
-        <br><br>
-
-        <!-- DESTINATION -->
+    <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25]) ?>  
         <div class="row">
+            <!-- PLACE OF ORIGIN -->
+            <div class="col-lg-2">
+                <p class="form-label">Place of Origin</p>
+            </div>
+            <div class="col-lg-3">                   
+                <?= $form->field($model, 'place_of_origin')->textInput(['maxlength' => 60])->label(false) ?>
+            </div>
+            <!-- DESTINATION -->
             <div class="col-lg-2">
                 <p class="form-label">Destination</p>
             </div>
@@ -77,7 +83,7 @@ use backend\models\Hotels;
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'airline_name')
                          ->dropDownList(
-                            ArrayHelper::map(Airlines::find()->all(),'id', 'airline_name'),
+                            ArrayHelper::map(Airlines::find()->all(),'airline_name', 'airline_name'),
                             ['prompt'=>'Select Airline'])->label(false)   ?>
             </div>
         </div>
@@ -125,25 +131,41 @@ use backend\models\Hotels;
             <div class="col-lg-2">
                 <p class="form-label">Hotel Name</p>
             </div>
-            <div class="col-lg-3">                   
+            <div class="col-lg-2">                   
                 <?= $form->field($model, 'hotel_name')
-                         ->radioList(['droppy' => 'Choose from Hotels List',
-                                      'textty' => 'Input Hotel Name'])
+                         ->radioList(array('textBox' => 'Chosen Hotel: ',
+                                      'Any Hotel' => 'Any Hotel'),['name'=>'hotel_name'])
                                        -> label (false) ?>
-                     
+                            
             </div>   
             <div class="col-lg-3">         
-                <?= $form->field($model, 'hotel_name')
-                         ->dropDownList(['' => 'Choose Hotel Name',
-                                         'Xanne Hotel' => 'Xanne Hotel',
-                                         'Bia Hotel' => 'Bia Hotel',
-                                         'Echi Hotel' => 'Echi Hotel']) 
-                         ->label(false) ?>
-
-                <?= $form->field($model, 'hotel_name')->textInput() ->label(false) ?>
+                <?= $form->field($model, 'hotel_name')->textInput(['id'=>'textBox_hotel','style' => "display:none"])->label(false) ?>
 
             </div>
         </div>
+
+        <?php
+        $script = <<< JS
+         //ALL JAVASCRIPT CODES
+          $("input[name='hotel_name']").change(function(){
+              if($(this).val() == "textBox")
+              {
+                $("#textBox_hotel").show();
+                
+             } else {
+             
+                 $("#textBox_hotel").hide(); 
+             }
+          
+
+          });
+        
+JS;
+        $this -> registerJS($script);
+        ?>
+
+
+        <script type="text/javascript"></script>
 
         <!-- ROOM TYPE -->
         <div class="row">
@@ -251,47 +273,6 @@ use backend\models\Hotels;
             </div>                
         </div>
         
-
-    
-    
-    <!--
-     <?= $form->field($model, 'place_of_origin')->textInput(['maxlength' => 60]) ?>
-
-     <?= $form->field($model, 'date_created')->textInput() ?>
-
-    <?= $form->field($model, 'status')->textInput(['maxlength' => 20]) ?>
-
-    <?= $form->field($model, 'date_confirmed')->textInput() ?>
-
-    <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 20]) ?>
-
-    <?= $form->field($model, 'date_updated')->textInput() ?>
-
-    <?= $form->field($model, 'updated_by')->textInput(['maxlength' => 20]) ?>
-
-    <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25])->label(false) ?>
-    -->
     <?php ActiveForm::end(); ?>
-</div>
-<!--
-<?php
-$script = <<< JS
-//ALL JAVASCRIPT CODES
-$('#traveltourarrangement-hotel_name').change(function(){
-   $('#traveltourarrangement-hotel_name').click(function(){
-       alert($('input [name=hotel_name]:checked').val());
-  });
- 
-  $('#traveltourarrangement-hotel_name').click(function(){
-            var radioValue = $("input[name='hotel_name']:checked").val();
-           
-                alert("Your are a - " + radioValue);
-            
-        });
- 
- 
-JS;
-$this -> registerJS($script);
-?>
--->
+  </div>
 </div>

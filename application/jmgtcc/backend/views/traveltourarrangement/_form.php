@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TourArrangement */
+/* @var $model backend\models\TravelTourArrangement */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="tour-arrangement-form">
+<div class="travel-tour-arrangement-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
@@ -18,9 +18,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'destination')->textInput(['maxlength' => 60]) ?>
 
-    <?= $form->field($model, 'arrival_date')->textInput() ?>
+    <?= $form->field($model, 'departure_date')->textInput() ?>
 
     <?= $form->field($model, 'return_date')->textInput() ?>
+
+    <?= $form->field($model, 'airline_name')->textInput(['maxlength' => 60]) ?>
+
+    <?= $form->field($model, 'flight_type')->textInput(['maxlength' => 45]) ?>
+
+    <?= $form->field($model, 'class_type')->textInput(['maxlength' => 60]) ?>
 
     <?= $form->field($model, 'number_of_pax')->textInput() ?>
 
@@ -39,6 +45,16 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'remarks')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'date_created')->textInput() ?>
+
+    <?= $form->field($model, 'status')->textInput(['maxlength' => 20]) ?>
+
+    <?= $form->field($model, 'date_confirmed')->textInput() ?>
+
+    <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 15]) ?>
+
+    <?= $form->field($model, 'date_updated')->textInput() ?>
+
+    <?= $form->field($model, 'updated_by')->textInput(['maxlength' => 20]) ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 

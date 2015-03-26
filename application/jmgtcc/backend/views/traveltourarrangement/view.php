@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\TravelTourArrangement */
+/* @var $model backend\models\TravelTourArrangement */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Travel Tour Arrangements'), 'url' => ['index']];
@@ -46,6 +46,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_transport_service',
             'remarks:ntext',
             'date_created',
+            'status',
+            'date_confirmed',
+            'confirmed_by',
+            'date_updated',
+            'updated_by',
             'user_id',
         ],
     ]) ?>
