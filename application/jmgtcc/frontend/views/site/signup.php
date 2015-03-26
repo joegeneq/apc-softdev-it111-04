@@ -105,5 +105,7 @@ $this->title = 'Sign up';
             <?php ActiveForm::end(); ?>
         </div>
 
+        <br>
+
     </div>
 </div>
