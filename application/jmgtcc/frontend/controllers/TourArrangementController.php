@@ -63,6 +63,12 @@ class TourArrangementController extends Controller
         $model = new TourArrangement();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        	Yii::$app->mailer->compose()
+        	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+        	->setTo('dummyreceiver1@gmail.com')
+        	->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT ' )
+        	->setTextBody($model->destination)
+        	->send();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
