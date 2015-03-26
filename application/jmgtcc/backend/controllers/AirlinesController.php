@@ -8,6 +8,8 @@ use backend\models\AirlinesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+use common\models\User;
 
 /**
  * AirlinesController implements the CRUD actions for Airlines model.
@@ -17,6 +19,23 @@ class AirlinesController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+        				'class' => AccessControl::className(),
+        				'rules' => [
+        						[
+        								'actions' => ['login', 'error'],
+        								'allow' => true,
+        						],
+        						[
+        								'actions' => ['logout', 'index'],
+        								'allow' => true,
+        								'roles' => ['@'],
+        								'matchCallback' => function ($rule, $action) {
+        									return User::isUserAdmin(Yii::$app->user->identity->username);
+        								}
+        						],
+        						],
+        						],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

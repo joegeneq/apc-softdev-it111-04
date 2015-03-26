@@ -29,6 +29,7 @@ class TransportService extends \yii\db\ActiveRecord
         return [
             [['transport_type'], 'required'],
             [['transport_description'], 'string'],
+        	[['transport_type'], 'unique', 'message' => 'This transport service has already been taken.'],
             [['transport_type'], 'string', 'max' => 25]
         ];
     }
