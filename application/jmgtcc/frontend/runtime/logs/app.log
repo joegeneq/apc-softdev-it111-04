@@ -30603,3 +30603,324 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427388670.818
     'REQUEST_TIME' => 1427388670
 ]
+2015-03-26 18:02:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement/create".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-26 18:02:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'travelarrangement/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+    'PHPSESSID' => 'u6ac2ui3s69lomdl5td6a5qcg7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B; PHPSESSID=u6ac2ui3s69lomdl5td6a5qcg7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=travelarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427389347.424
+    'REQUEST_TIME' => 1427389347
+]
+2015-03-26 18:03:00 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\AccessControl' not found' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 18:03:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement'
+]
+
+$_COOKIE = [
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+    'PHPSESSID' => 'u6ac2ui3s69lomdl5td6a5qcg7'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B; PHPSESSID=u6ac2ui3s69lomdl5td6a5qcg7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427389380.258
+    'REQUEST_TIME' => 1427389380
+]
+2015-03-26 18:03:26 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement/create".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-26 18:03:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'travelarrangement/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+    'PHPSESSID' => 'u6ac2ui3s69lomdl5td6a5qcg7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B; PHPSESSID=u6ac2ui3s69lomdl5td6a5qcg7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=travelarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427389406.59
+    'REQUEST_TIME' => 1427389406
+]
+2015-03-26 18:03:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement/create".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-26 18:03:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'travelarrangement/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+    'PHPSESSID' => 'u6ac2ui3s69lomdl5td6a5qcg7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B; PHPSESSID=u6ac2ui3s69lomdl5td6a5qcg7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=travelarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427389425.472
+    'REQUEST_TIME' => 1427389425
+]
+2015-03-26 18:05:36 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\AccessControl' not found' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TourArrangementController.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 18:05:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourarrangement'
+]
+
+$_COOKIE = [
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+    'PHPSESSID' => 'u6ac2ui3s69lomdl5td6a5qcg7'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B; PHPSESSID=u6ac2ui3s69lomdl5td6a5qcg7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '58741'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427389536.902
+    'REQUEST_TIME' => 1427389536
+]
