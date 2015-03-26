@@ -125,12 +125,13 @@ use backend\models\Hotels;
             <div class="col-lg-2">
                 <p class="form-label">Hotel Name</p>
             </div>
-            <div class="col-lg-3">                   
+            <div class="col-lg-2">                   
                 <?= $form->field($model, 'hotel_name')
-                         ->radioList(['droppy' => 'Choose from Hotels List',
-                                      'textty' => 'Input Hotel Name'])
+                         ->radioList(array('droppy' => 'Choose from Hotels List',
+                                      'textty' => 'Input Hotel Name',
+                                      'none' => 'Any Hotel'  ),['name'=>'hotel_name'])
                                        -> label (false) ?>
-                     
+                            
             </div>   
             <div class="col-lg-3">         
                 <?= $form->field($model, 'hotel_name')
@@ -140,10 +141,36 @@ use backend\models\Hotels;
                                          'Echi Hotel' => 'Echi Hotel']) 
                          ->label(false) ?>
 
-                <?= $form->field($model, 'hotel_name')->textInput() ->label(false) ?>
+                <?= $form->field($model, 'hotel_name')->textInput(['name'=>'textBox_hotel'])->label(false) ?>
 
             </div>
         </div>
+
+        <?php
+        $script = <<< JS
+         //ALL JAVASCRIPT CODES
+ 
+             $('#traveltourarrangement-hotel_name').click(
+            function(){
+                var radioValue = $("input[name='hotel_name']:checked").val();  
+                 if (radioValue == 'droppy') {
+                    alert(radioValue);
+                } 
+                else if (radioValue == 'textty') {
+                    alert(radioValue);
+                }
+                else {
+                    alert(radioValue);
+                }        
+            }
+         );
+        
+JS;
+        $this -> registerJS($script);
+        ?>
+
+
+        <script type="text/javascript"></script>
 
         <!-- ROOM TYPE -->
         <div class="row">
@@ -273,25 +300,7 @@ use backend\models\Hotels;
     -->
     <?php ActiveForm::end(); ?>
 </div>
-<!--
-<?php
-$script = <<< JS
-//ALL JAVASCRIPT CODES
-$('#traveltourarrangement-hotel_name').change(function(){
-   $('#traveltourarrangement-hotel_name').click(function(){
-       alert($('input [name=hotel_name]:checked').val());
-  });
- 
-  $('#traveltourarrangement-hotel_name').click(function(){
-            var radioValue = $("input[name='hotel_name']:checked").val();
-           
-                alert("Your are a - " + radioValue);
-            
-        });
- 
- 
-JS;
-$this -> registerJS($script);
-?>
--->
+
+
+
 </div>

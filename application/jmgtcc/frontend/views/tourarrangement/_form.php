@@ -223,7 +223,7 @@ use backend\models\Hotels;
     <?php ActiveForm::end(); ?>
 
 </div>
-<!--
+
 <?php
 $script = <<< JS
 //ALL JAVASCRIPT CODES
@@ -241,4 +241,3 @@ $script = <<< JS
 JS;
 $this -> registerJS($script);
 ?>
--->
