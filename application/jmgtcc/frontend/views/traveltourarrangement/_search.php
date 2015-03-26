@@ -51,16 +51,6 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'date_created') ?>
 
-    <?php // echo $form->field($model, 'status') ?>
-
-    <?php // echo $form->field($model, 'date_confirmed') ?>
-
-    <?php // echo $form->field($model, 'confirmed_by') ?>
-
-    <?php // echo $form->field($model, 'date_updated') ?>
-
-    <?php // echo $form->field($model, 'updated_by') ?>
-
     <?php // echo $form->field($model, 'user_id') ?>
 
     <div class="form-group">
