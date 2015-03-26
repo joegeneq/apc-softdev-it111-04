@@ -28111,3 +28111,1577 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427366277.647
     'REQUEST_TIME' => 1427366277
 ]
+2015-03-26 13:08:24 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\Application::mail' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\base\Component->__get('mail')
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(69): yii\di\ServiceLocator->__get('mail')
+#2 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-26 13:08:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'QThfOTNUdGQiAC1WXRxBHRlTAHgCMhNRC1YmAGAiBFcLcg4JQQEcLQ=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-03-30'
+        'appointment_time' => '02:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000004'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4asm66l7djiu096da8ebiki0t7'
+    '_csrf' => 'a62364a897ea0294c3f4e6b7b18f4aaaeaef0e7ff8b7dd14ab237f598ad718e1s:32:\"c8ronH5yXk_A1fg5Jny9Svp3JJQ0rUhI\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4asm66l7djiu096da8ebiki0t7; _csrf=a62364a897ea0294c3f4e6b7b18f4aaaeaef0e7ff8b7dd14ab237f598ad718e1s%3A32%3A%22c8ronH5yXk_A1fg5Jny9Svp3JJQ0rUhI%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61389'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427371703.267
+    'REQUEST_TIME' => 1427371703
+]
+2015-03-26 13:12:00 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\Application::mail' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\base\Component->__get('mail')
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(69): yii\di\ServiceLocator->__get('mail')
+#2 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-26 13:11:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'QThfOTNUdGQiAC1WXRxBHRlTAHgCMhNRC1YmAGAiBFcLcg4JQQEcLQ=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-03-30'
+        'appointment_time' => '02:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000004'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4asm66l7djiu096da8ebiki0t7'
+    '_csrf' => 'a62364a897ea0294c3f4e6b7b18f4aaaeaef0e7ff8b7dd14ab237f598ad718e1s:32:\"c8ronH5yXk_A1fg5Jny9Svp3JJQ0rUhI\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4asm66l7djiu096da8ebiki0t7; _csrf=a62364a897ea0294c3f4e6b7b18f4aaaeaef0e7ff8b7dd14ab237f598ad718e1s%3A32%3A%22c8ronH5yXk_A1fg5Jny9Svp3JJQ0rUhI%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61408'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427371919.386
+    'REQUEST_TIME' => 1427371919
+]
+2015-03-26 15:10:17 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\common/mail\contact/html.php' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(299): yii\base\View->render('contact/html', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(192): yii\mail\BaseMailer->render('contact/html', Array, 'layouts/html')
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(69): yii\mail\BaseMailer->compose('contact/html', Array)
+#4 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-26 15:10:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '55040'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427379016.014
+    'REQUEST_TIME' => 1427379016
+]
+2015-03-26 15:22:32 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\common/mail\contact/html.php' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(299): yii\base\View->render('contact/html', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(192): yii\mail\BaseMailer->render('contact/html', Array, 'layouts/html')
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(69): yii\mail\BaseMailer->compose('contact/html', Array)
+#4 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-26 15:22:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '55777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427379751.742
+    'REQUEST_TIME' => 1427379751
+]
+2015-03-26 15:29:24 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\Application::mail' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\base\Component->__get('mail')
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(70): yii\di\ServiceLocator->__get('mail')
+#2 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-26 15:29:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '55840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427380163.098
+    'REQUEST_TIME' => 1427380163
+]
+2015-03-26 15:34:04 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class name must be a valid object or a string' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 15:34:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '55939'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427380443.514
+    'REQUEST_TIME' => 1427380443
+]
+2015-03-26 15:35:42 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class name must be a valid object or a string' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 15:35:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '55968'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427380541.302
+    'REQUEST_TIME' => 1427380541
+]
+2015-03-26 15:38:48 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class name must be a valid object or a string' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 15:38:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '56007'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427380726.86
+    'REQUEST_TIME' => 1427380726
+]
+2015-03-26 15:39:25 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\common/mail\contact/html.php' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(299): yii\base\View->render('contact/html', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(192): yii\mail\BaseMailer->render('contact/html', Array, 'layouts/html')
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(69): yii\mail\BaseMailer->compose('contact/html')
+#4 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-26 15:39:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'MzRjNWpWRGRpelB.PicLHVhyKlMEPSUsQ0cqeB4ZLUlrZDBAWWMAIA=='
+    'Appointment' => [
+        'client_name' => 'LA Logronio'
+        'city' => 'Taguig City'
+        'contact_number' => '09176789006'
+        'email_address' => 'logs@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '11:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000009'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '56012'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427380764.243
+    'REQUEST_TIME' => 1427380764
+]
+2015-03-26 15:57:53 [::1][3][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "travelarrangement/create".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('travelarrangeme...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-26 15:57:53 [::1][3][-][info][application] $_GET = [
+    'r' => 'travelarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fview&id=18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '56668'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=travelarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427381873.453
+    'REQUEST_TIME' => 1427381873
+]
+2015-03-26 16:24:46 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 m12sm5922681pdj.88 - gsmtp
+"' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:383
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET??', Array, Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php(54): Swift_Transport_EsmtpTransport->executeCommand('RSET??', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'rekhidalgo23@gm...', '//erika23')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#11 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2015-03-26 16:24:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'Nk1UcVFGRVhsA2c6BTcKIV0LHRc/LSQQRj4dPCUJLHVuHQcEYnMBHA=='
+    'Appointment' => [
+        'client_name' => 'Baklush Mardoush'
+        'city' => 'Pasay City'
+        'contact_number' => '09154355673'
+        'email_address' => 'bakmar@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000021'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '685'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57330'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427383473.108
+    'REQUEST_TIME' => 1427383473
+]
+2015-03-26 16:26:28 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 dk3sm5883490pbb.91 - gsmtp
+"' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:383
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET??', Array, Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php(54): Swift_Transport_EsmtpTransport->executeCommand('RSET??', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'rekhidalgo23@gm...', '//erika23')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#11 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2015-03-26 16:26:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57406'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427383577.511
+    'REQUEST_TIME' => 1427383577
+]
+2015-03-26 16:27:26 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 m5sm5948553pdr.39 - gsmtp
+"' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:383
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET??', Array, Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php(54): Swift_Transport_EsmtpTransport->executeCommand('RSET??', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'dummysender1@gm...', '//dummy12')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#11 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2015-03-26 16:27:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57412'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427383637.037
+    'REQUEST_TIME' => 1427383637
+]
+2015-03-26 16:30:58 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 hb6sm5894365pbd.88 - gsmtp
+"' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:383
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET??', Array, Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php(54): Swift_Transport_EsmtpTransport->executeCommand('RSET??', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'dummysender1@gm...', '//dummy12')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#11 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2015-03-26 16:30:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57559'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427383846.111
+    'REQUEST_TIME' => 1427383846
+]
+2015-03-26 16:33:09 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 v7sm5949602pds.72 - gsmtp
+"' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:383
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET??', Array, Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php(54): Swift_Transport_EsmtpTransport->executeCommand('RSET??', Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'dummysender1@gm...', '//dummy12')
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#11 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2015-03-26 16:32:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427383979.492
+    'REQUEST_TIME' => 1427383979
+]
+2015-03-26 16:36:50 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Connection to tcp://smtp.mail.yahoo.com:465 Timed Out' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:404
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(289): Swift_Transport_AbstractSmtpTransport->_getFullResponse(0)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(117): Swift_Transport_AbstractSmtpTransport->_readGreeting()
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#7 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-26 16:36:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427384176.877
+    'REQUEST_TIME' => 1427384176
+]
+2015-03-26 16:37:43 [::1][-][-][error][Swift_TransportException] exception 'Swift_TransportException' with message 'Connection to tcp://smtp.mail.yahoo.com:465 Timed Out' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:404
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(289): Swift_Transport_AbstractSmtpTransport->_getFullResponse(0)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(117): Swift_Transport_AbstractSmtpTransport->_readGreeting()
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-swiftmailer\Mailer.php(140): Swift_Mailer->send(Object(Swift_Message))
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\mail\BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\AppointmentController.php(73): yii\mail\BaseMessage->send()
+#7 [internal function]: frontend\controllers\AppointmentController->actionCreate()
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/cre...', Array)
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-26 16:37:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = [
+    '_csrf' => 'NlNuT19LbGhsHV0ECzojEV0VJykxIA0gRiAnAisEBUVuAz06bH4oLA=='
+    'Appointment' => [
+        'client_name' => 'Mary Hidalgo'
+        'city' => 'Makati City'
+        'contact_number' => '09173500026'
+        'email_address' => 'mary@gmail.com'
+        'country' => ''
+        'visa_type' => 'Not specified'
+        'appointment_date' => '2015-04-15'
+        'appointment_time' => '03:00:00'
+        'notes' => ''
+        'appointment_code' => 'VA1503-000022'
+        'client_username' => ''
+        'payment_rate' => ''
+        'date_created' => ''
+        'status' => ''
+        'confirmed_by' => ''
+        'user_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ml0u8nqqmadoemf2v8drc7bqs7'
+    '_csrf' => '2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s:32:\"ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '678'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ml0u8nqqmadoemf2v8drc7bqs7; _csrf=2797341e5c553b1f79d159cef6b96afec94cf7aa09f3d392d57099ab9ebdd394s%3A32%3A%22ZN3KTqOykFIfnkaHpsIMtOi-XPSu35DD%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427384231.814
+    'REQUEST_TIME' => 1427384231
+]
