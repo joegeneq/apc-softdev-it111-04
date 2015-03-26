@@ -13794,3 +13794,661 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427296735.492
     'REQUEST_TIME' => 1427296735
 ]
+2015-03-26 05:21:49 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:21:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49689'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427343708.104
+    'REQUEST_TIME' => 1427343708
+]
+2015-03-26 05:22:14 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:22:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49703'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427343732.944
+    'REQUEST_TIME' => 1427343732
+]
+2015-03-26 05:22:29 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:22:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427343748.375
+    'REQUEST_TIME' => 1427343748
+]
+2015-03-26 05:23:44 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:23:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427343823.506
+    'REQUEST_TIME' => 1427343823
+]
+2015-03-26 05:34:52 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:34:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344491.574
+    'REQUEST_TIME' => 1427344491
+]
+2015-03-26 05:35:33 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:35:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344532.38
+    'REQUEST_TIME' => 1427344532
+]
+2015-03-26 05:35:35 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:35:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344534.81
+    'REQUEST_TIME' => 1427344534
+]
+2015-03-26 05:36:01 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:36:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49951'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344560.765
+    'REQUEST_TIME' => 1427344560
+]
+2015-03-26 05:37:02 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:37:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344621.434
+    'REQUEST_TIME' => 1427344621
+]
+2015-03-26 05:37:12 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\views\appointment\_form.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 05:37:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'appointment/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s:32:\"VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp\";'
+    'PHPSESSID' => '28rnj0jeir5ho99f98evhjg1r0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a1ea7089d19a3e2d796ee906f74cb6202312d5c583628f5d41f63b84d9d40dd8s%3A32%3A%22VeSTgO3-qx6Z-rwAQ-fXyG8m4JbLG7vp%22%3B; PHPSESSID=28rnj0jeir5ho99f98evhjg1r0'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '49961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fupdate&id=1'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344630.913
+    'REQUEST_TIME' => 1427344630
+]
+2015-03-26 05:40:12 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-26 05:40:11 [::1][2][-][info][application] $_COOKIE = [
+    '_csrf' => 'a7f34260b40bec76da092685e7ee088fe3dbcf44e9ee4773f75ee06b29e8798es:32:\"3LqSl9iFEBfWMsXsvxD0h9cyEVv9XQGY\";'
+    'PHPSESSID' => 'nd9h9o00n3oerhhcf46o0jki02'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a7f34260b40bec76da092685e7ee088fe3dbcf44e9ee4773f75ee06b29e8798es%3A32%3A%223LqSl9iFEBfWMsXsvxD0h9cyEVv9XQGY%22%3B; PHPSESSID=nd9h9o00n3oerhhcf46o0jki02'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '50018'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427344811.293
+    'REQUEST_TIME' => 1427344811
+]

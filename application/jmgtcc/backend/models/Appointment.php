@@ -59,7 +59,9 @@ class Appointment extends \yii\db\ActiveRecord
 
             [['status'], 'default', 'value'=>'Confirmed'],
             [['payment_rate'], 'required'],
-            [['payment_rate'], 'number', 'min'=>1]
+            [['payment_rate'], 'number', 'min'=>1],
+
+            [['confirmed_by'], 'default',  'value'=>yii::$app->user->identity->username]
 
         ];
     }

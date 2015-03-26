@@ -544,9 +544,85 @@ p.required-field:after {
 }
 /* END ADDED BY: AFPAPNA 03102015 */
 
-/* BUTTON ADDED BY: RLUANGCO 03132015 */
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ TOUR ARRANGEMENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ APPOINTMENT VIEW @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-/* START ADDED BY: AFPAPNA 03042015 */
+/* START ADDED BY: AFPAPNA 03252015 */
+
+.va-main {
+  /*border: 2px solid red;*/
+}
+
+.va-form {
+  border: 1px solid black;
+  width: 85%;
+  margin: 0 10% 0 5%;
+}
+
+.va-header {
+  /*border: 1px solid black;*/ 
+}
+
+.va-img {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.va-hdr-label {
+  font-size: 30px;
+  float: right;
+  padding-right: 20px;
+  padding-top: 8px;
+}
+
+.va-hdr-address {
+  font-size: 11px;
+  float: left;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 20px;
+}
+
+.va-details {
+  width: 95%;
+  padding-left: 25px;
+}
+
+.policy-hdr{
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 18px;
+}
+
+li.policy-details{
+  color: black;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.policy-ftr{
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HOMEPAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.home-main{
+  /*border: 1px solid black;
+  border-radius: 5px;*/
+}
+
+.main-bdr-right{
+  border-right: 1px;
+  
+}
+
+
+/* END ADDED BY: AFPAPNA 03252015 */
