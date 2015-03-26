@@ -8,6 +8,8 @@ use backend\models\FreebiesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+use common\models\User;
 
 /**
  * FreebiesController implements the CRUD actions for Freebies model.
@@ -17,6 +19,23 @@ class FreebiesController extends Controller
     public function behaviors()
     {
         return [
+        	'access' => [
+        		'class' => AccessControl::className(),
+        		'rules' => [
+        					[
+        						'actions' => ['login', 'error'],
+        						'allow' => true,
+        					],
+        					[
+        						'actions' => ['logout', 'index', 'index'],
+        						'allow' => true,
+        						'roles' => ['@'],
+        						'matchCallback' => function ($rule, $action) {
+        						return User::isUserAdmin(Yii::$app->user->identity->username);
+        								}
+        					],
+        				],
+        		],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
