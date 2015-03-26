@@ -30,6 +30,7 @@ class Hotels extends \yii\db\ActiveRecord
         return [
             [['hotel_name', 'country'], 'required'],
             [['star_rating'], 'integer'],
+        	[['hotel_name'], 'unique', 'message' => 'This hotel has already been taken.'],
             [['hotel_name'], 'string', 'max' => 60],
             [['country'], 'string', 'max' => 45]
         ];

@@ -27,9 +27,10 @@ class Freebies extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['freebies_name'], 'required'],
-            [['freebies_description'], 'string'],
-            [['freebies_name'], 'string', 'max' => 45]
+            [['freebies_name', 'freebies_description'], 'required'],
+        	[['freebies_name'], 'unique', 'message' => 'This freebie has already been taken.'],
+            [['freebies_name'], 'string', 'max' => 45],
+        	[['freebies_description'], 'string']
         ];
     }
 

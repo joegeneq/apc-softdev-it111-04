@@ -27,9 +27,11 @@ class FoodDeals extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['food_deal_name'], 'required'],
+            [['food_deal_name', 'food_deal_description'], 'required'],
             [['food_deal_description'], 'string'],
+        	[['food_deal_name'], 'unique', 'message' => 'This food deal has already been taken.'],
             [['food_deal_name'], 'string', 'max' => 45]
+        		
         ];
     }
 

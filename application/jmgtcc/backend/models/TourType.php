@@ -29,6 +29,7 @@ class TourType extends \yii\db\ActiveRecord
         return [
             [['tour_name'], 'required'],
             [['tour_description'], 'string'],
+        	[['tour_name'], 'unique', 'message' => 'This tour name has already been taken.'],
             [['tour_name'], 'string', 'max' => 45]
         ];
     }
