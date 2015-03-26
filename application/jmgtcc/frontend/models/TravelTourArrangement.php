@@ -53,7 +53,8 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             [['place_of_origin', 'destination', 'airline_name', 'class_type', 'inclusion_transport_service'], 'string', 'max' => 60],
             [['flight_type'], 'string', 'max' => 45],
             [['hotel_name'], 'string', 'max' => 100],
-            [['room_type'], 'string', 'max' => 80]
+            [['room_type'], 'string', 'max' => 80],
+            [['hotel_name'], 'default', 'value' => 'Any Hotel'],
         ];
     }
 
