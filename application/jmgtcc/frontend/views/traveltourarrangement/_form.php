@@ -83,7 +83,7 @@ use backend\models\Airlines;
             <div class="col-lg-3">                   
                 <?= $form->field($model, 'airline_name')
                          ->dropDownList(
-                            ArrayHelper::map(Airlines::find()->all(),'id', 'airline_name'),
+                            ArrayHelper::map(Airlines::find()->all(),'airline_name', 'airline_name'),
                             ['prompt'=>'Select Airline'])->label(false)   ?>
             </div>
         </div>
