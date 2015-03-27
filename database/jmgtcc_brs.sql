@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   `contact_number` varchar(20) NOT NULL,
   `email_address` varchar(45) NOT NULL,
   `appointment_date` date NOT NULL,
-  `appointment_time` time NOT NULL,
+  `appointment_time` varchar(10) NOT NULL,
   `country` varchar(60) DEFAULT NULL,
   `visa_type` varchar(30) DEFAULT NULL,
   `payment_rate` double DEFAULT NULL,
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `appointment` (
 CREATE TABLE IF NOT EXISTS `appointment_history` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `history_code` varchar(25) DEFAULT NULL,
-  `prev_appointment_time` time DEFAULT NULL,
+  `prev_appointment_time` varchar(10) DEFAULT NULL,
   `prev_appointment_date` date DEFAULT NULL,
   `appointment_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -213,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `personnel` (
 
 CREATE TABLE IF NOT EXISTS `time` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `time` time NOT NULL,
+  `time` varchar(10) NOT NULL,
   `description` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
