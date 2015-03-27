@@ -17,7 +17,12 @@ if (Yii::$app->user->identity->username != null)
 ?>
 <div class="appointment-view">
 
-    <br><br>
+    <?php
+        if (Yii::$app->user->identity->username == null)
+        {
+            print('<br><br>');
+        }
+    ?>
 
     <div class="row">
 

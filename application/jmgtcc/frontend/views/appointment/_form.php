@@ -37,7 +37,8 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'client_name')
                             ->textInput(['maxlength' => 60])
-                            ->label(false) ?>
+                            ->label(false)
+                    ?>
                 </div>
             </div>
 
