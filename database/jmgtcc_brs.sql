@@ -25,38 +25,6 @@ USE `jmgtcc_brs`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `airlines`
---
-
-CREATE TABLE IF NOT EXISTS `airlines` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `airline_name` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
-
---
--- Dumping data for table `airlines`
---
-
-INSERT INTO `airlines` (`id`, `airline_name`) VALUES
-(1, 'Philippine Airlines'),
-(2, 'Cebu Pacific'),
-(3, 'Air Philippines'),
-(4, 'Zest Air'),
-(5, 'British Airways'),
-(6, 'Japan Airlines'),
-(7, 'Malaysia Airlines'),
-(8, 'Thai Airways'),
-(9, 'Garuda Indonesia Airlines'),
-(10, 'Air Canada'),
-(11, 'Emirates'),
-(12, 'Delta Airlines'),
-(13, 'Qantas Airways'),
-(14, 'Continental Airlines');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `appointment`
 --
 
@@ -246,17 +214,12 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `number_of_pax` int(11) NOT NULL,
   `hotel_name` varchar(100) DEFAULT NULL,
   `room_type` varchar(80) DEFAULT NULL,
-  `inclusion_food_deals` text,
-  `inclusion_freebies` text,
-  `inclusion_tour_type` text,
-  `inclusion_transport_service` varchar(60) DEFAULT NULL,
+  `inclusion_food_deals` text NOT NULL,
+  `inclusion_freebies` text NOT NULL,
+  `inclusion_tour_type` text NOT NULL,
+  `inclusion_transport_service` varchar(60) NOT NULL,
   `remarks` text,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `date_confirmed` date DEFAULT NULL,
-  `confirmed_by` varchar(15) DEFAULT NULL,
-  `date_updated` date DEFAULT NULL,
-  `updated_by` varchar(20) DEFAULT NULL,
-  `status` varchar(20) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_tour_arrangement_user1_idx` (`user_id`)
@@ -325,17 +288,12 @@ CREATE TABLE IF NOT EXISTS `travel_tour_arrangement` (
   `number_of_pax` int(11) NOT NULL,
   `hotel_name` varchar(100) DEFAULT NULL,
   `room_type` varchar(80) NOT NULL,
-  `inclusion_food_deals` text,
-  `inclusion_freebies` text,
-  `inclusion_tour_type` text,
-  `inclusion_transport_service` varchar(60) DEFAULT NULL,
+  `inclusion_food_deals` text NOT NULL,
+  `inclusion_freebies` text NOT NULL,
+  `inclusion_tour_type` text NOT NULL,
+  `inclusion_transport_service` varchar(60) NOT NULL,
   `remarks` text,
-  `date_created` timestamp NULL DEFAULT NULL,
-  `status` varchar(20) DEFAULT NULL,
-  `date_confirmed` date DEFAULT NULL,
-  `confirmed_by` varchar(15) DEFAULT NULL,
-  `date_updated` date DEFAULT NULL,
-  `updated_by` varchar(20) DEFAULT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_travel_arrangement_user1_idx` (`user_id`)
