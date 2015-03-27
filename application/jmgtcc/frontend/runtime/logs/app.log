@@ -30924,6 +30924,29 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427389536.902
     'REQUEST_TIME' => 1427389536
 ]
+<<<<<<< HEAD
+2015-03-27 07:32:08 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('tourarrangement...', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-27 07:32:06 [::1][1][-][info][application] $_GET = [
+    'r' => 'tourarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1or9ivl4e77m463bhpa3u9f674'
+    '_csrf' => '6ff5a559c76cca3932f380d18c0873285137bdadd04f5d3ab974c3cf743d4e99s:32:\"VcXqhPOxU951T4AMKhKe5WmcPNfV4YkC\";'
+=======
 2015-03-26 15:58:49 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=', expecting ']'' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\models\Appointment.php:86
 Stack trace:
 #0 [internal function]: yii\base\ErrorHandler->handleFatalError()
@@ -31416,10 +31439,16 @@ Stack trace:
 $_COOKIE = [
     '_csrf' => 'b0efbffd6e5aaff8c05274f3ecf54c4de84d4d40561c0b2587a6365347da974cs:32:\"vtZhbLJ2YyGJpmVHarUglKDiT5ovPqLj\";'
     'PHPSESSID' => '3bqled3vt49bti7s9g5pr2atu4'
+>>>>>>> d7dd21ea265f6539eb265a3b12ee49c348c43c6a
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 1
+=======
+>>>>>>> d7dd21ea265f6539eb265a3b12ee49c348c43c6a
 ]
 
 $_SERVER = [
@@ -31432,19 +31461,34 @@ $_SERVER = [
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=tourarrangement'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=1or9ivl4e77m463bhpa3u9f674; _csrf=6ff5a559c76cca3932f380d18c0873285137bdadd04f5d3ab974c3cf743d4e99s%3A32%3A%22VcXqhPOxU951T4AMKhKe5WmcPNfV4YkC%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
     'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => '_csrf=b0efbffd6e5aaff8c05274f3ecf54c4de84d4d40561c0b2587a6365347da974cs%3A32%3A%22vtZhbLJ2YyGJpmVHarUglKDiT5ovPqLj%22%3B; PHPSESSID=3bqled3vt49bti7s9g5pr2atu4'
     'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d7dd21ea265f6539eb265a3b12ee49c348c43c6a
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d7dd21ea265f6539eb265a3b12ee49c348c43c6a
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -31455,6 +31499,18 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '49810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427437926.841
+    'REQUEST_TIME' => 1427437926
+=======
     'REMOTE_PORT' => '51749'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -31465,6 +31521,7 @@ $_SERVER = [
     'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1427430706.922
     'REQUEST_TIME' => 1427430706
+>>>>>>> d7dd21ea265f6539eb265a3b12ee49c348c43c6a
 ]
 2015-03-27 07:23:02 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php:75
 Stack trace:
