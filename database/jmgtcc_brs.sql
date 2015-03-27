@@ -25,6 +25,38 @@ USE `jmgtcc_brs`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `airlines`
+--
+
+CREATE TABLE IF NOT EXISTS `airlines` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `airline_name` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `airlines`
+--
+
+INSERT INTO `airlines` (`id`, `airline_name`) VALUES
+(1, 'Philippine Airlines'),
+(2, 'Cebu Pacific'),
+(3, 'Air Philippines'),
+(4, 'Zest Air'),
+(5, 'British Airways'),
+(6, 'Japan Airlines'),
+(7, 'Malaysia Airlines'),
+(8, 'Thai Airways'),
+(9, 'Garuda Indonesia Airlines'),
+(10, 'Air Canada'),
+(11, 'Emirates'),
+(12, 'Delta Airlines'),
+(13, 'Qantas Airways'),
+(14, 'Continental Airlines');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `appointment`
 --
 
