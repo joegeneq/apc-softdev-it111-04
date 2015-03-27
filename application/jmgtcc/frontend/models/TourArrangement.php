@@ -40,14 +40,17 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'arrival_date', 'return_date', 'number_of_pax'], 'required'],
+            [['destination', 'arrival_date', 'return_date', 'number_of_pax', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service'], 'required'],
             [['arrival_date', 'return_date', 'date_created'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],
             [['arrangement_code'], 'string', 'max' => 25],
             [['place_of_origin', 'destination', 'inclusion_transport_service'], 'string', 'max' => 60],
             [['hotel_name'], 'string', 'max' => 100],
-            [['room_type'], 'string', 'max' => 80]
+            [['room_type'], 'string', 'max' => 80],
+            [['hotel_name'], 'default', 'value' => 'Any Hotel'],
+            
+            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],
         ];
     }
 
