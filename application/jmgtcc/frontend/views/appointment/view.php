@@ -68,7 +68,7 @@ if (Yii::$app->user->identity->username != null)
                 <ul>
                     <li class="policy-details">Please be at the JMGTCC Office <b>15 minutes</b> before your appointment time.</li>
                     <li class="policy-details">An email will be sent to your email address for reference.</li>
-                    <li class="policy-details">Please print this page or the document attanched on the email.</li>
+                    <li class="policy-details">Please print this page or the document attached on the email.</li>
                     <li class="policy-details">Clients without the printed appointment form will not be entertained.</li>
                 <br>
                     <li class="policy-details">For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
