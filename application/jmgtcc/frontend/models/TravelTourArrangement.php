@@ -56,8 +56,7 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             [['room_type'], 'string', 'max' => 80],
             [['hotel_name'], 'default', 'value' => 'Any Hotel'],
 
-
-            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],        
+            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],     
         ];
     }
 
