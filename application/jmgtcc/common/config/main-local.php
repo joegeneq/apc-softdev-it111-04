@@ -17,9 +17,5 @@ return [
             'useFileTransport' => true,
         ],
 
-        'create-appointmentcode' => [
-                              'class' => 'common\components\create-appointmentcode'
-        ],
-
     ],
 ];

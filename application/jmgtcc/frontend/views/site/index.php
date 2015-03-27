@@ -86,7 +86,7 @@ $this->title = 'JMGTCC';
                 }
             ?>
 
-        <img class="servicesImg" src="images/Philippine-tour-packages-journeys.jpg" />
+        <img class="servicesImg-mid" src="images/Philippine-tour-packages-journeys.jpg" />
         <a href="/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate" title="Create an Appointment">
             <img class="servicesImg" src="images/Visa-assistance-sevices-journeys-home.jpg" />
         </a>
@@ -128,11 +128,11 @@ $this->title = 'JMGTCC';
                 <center> 
                     <b>Connect with us!</b><br><br>
                     <a href="https://www.facebook.com/journeysandmore" target="_blank">
-                        <img class="" title="Follow us on facebook!" src="images/Facebook-icon.png" /></a>
+                        <img class="connectImg" title="Follow us on facebook!" src="images/Facebook-icon.png" /></a>
                     <a href="https://plus.google.com/117011679254822459730/" target="_blank">
-                        <img class="" title="Follow us on google+!" src="images/GooglePlus-icon.png" /></a>
+                        <img class="connectImg" title="Follow us on google+!" src="images/GooglePlus-icon.png" /></a>
                     <a href="https://twitter.com/journeysandmore" target="_blank">
-                        <img class="" title="Follow us on twitter!" src="images/Twitter-icon.png" /></a>
+                        <img class="connectImg" title="Follow us on twitter!" src="images/Twitter-icon.png" /></a>
                 </center>            
             </div>
 
