@@ -8,6 +8,7 @@ use frontend\models\AppointmentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\User;
 
 /**
  * AppointmentController implements the CRUD actions for Appointment model.
@@ -65,7 +66,13 @@ class AppointmentController extends Controller
         $model->appointment_code = $model->getAppointmentCode($appointment_code);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        Yii::$app->mailer->compose()
+    	 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+    	 ->setTo($model->email_address)
+    	 ->setSubject('JMGTCC VISA APPOINTMENT CLIENT REFERENCE ' )
+    	 ->setTextBody($model->appointment_code)
+         ->send();
+          return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,

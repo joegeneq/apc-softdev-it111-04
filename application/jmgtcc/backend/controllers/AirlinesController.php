@@ -19,9 +19,9 @@ class AirlinesController extends Controller
     public function behaviors()
     {
         return [
-        		'access' => [
-        				'class' => AccessControl::className(),
-        				'rules' => [
+        	'access' => [
+        		'class' => AccessControl::className(),
+        		'rules' => [
         						[
         								'actions' => ['login', 'error'],
         								'allow' => true,
@@ -34,8 +34,8 @@ class AirlinesController extends Controller
         									return User::isUserAdmin(Yii::$app->user->identity->username);
         								}
         						],
-        						],
-        						],
+        				],
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

@@ -9,30 +9,18 @@ $this->title = 'My Yii Application';
 
         <div class="row">
 
-            <div class="side-navigator col-lg-z3">
-                
+            <div class="side-navigator col-lg-3">
+            
+                <h3>Maintenance Menus</h3>
                 <ul>
-                    <li>Appointments</li>
-                    <li>Appointments
-                            <ul>
-                                <li>Appointments</li>
-                            </ul>
-                    </li>                   
+                    <li><a href="/airlines/index">Airlines</a></li>
+                    <li><a href="/fooddeals/index">Food Deals</a></li>   
+                    <li><a href="/freebies/index">Freebies</a></li>
+                    <li><a href="/hotels/index">Hotels</a></li>
+                    <li><a href="/time/index">Time</a></li>   
+                    <li><a href="/tourtype/index">Tour Type</a></li>    
+                    <li><a href="/transportservice/index">Transport Service</a></li>       
                 </ul>
-
-                <br>
-
-                <ul>
-                    <li>Travel Arrangement</li>
-                    <li>Travel Arrangement
-                            <ul>
-                                <li>Travel Arrangement</li>
-                            </ul>
-                    </li>
-                   
-                </ul>
-               
-
             </div>
            
            

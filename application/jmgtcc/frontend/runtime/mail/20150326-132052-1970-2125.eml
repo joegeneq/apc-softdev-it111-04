@@ -1,0 +1,23 @@
+Message-ID: <aff81792a1022f91ddc92fc46dd5348c@localhost>
+Date: Thu, 26 Mar 2015 13:20:52 +0100
+Subject: TEST MAIL
+From: dummysender1@gmail.com
+To: dummyreceiver1@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1427372452_7e6c9d826c0d2e713f84c19987e510e3_=_"
+
+
+--_=_swift_v4_1427372452_7e6c9d826c0d2e713f84c19987e510e3_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi there!
+
+--_=_swift_v4_1427372452_7e6c9d826c0d2e713f84c19987e510e3_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_v4_1427372452_7e6c9d826c0d2e713f84c19987e510e3_=_--

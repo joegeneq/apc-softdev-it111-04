@@ -36,12 +36,11 @@ AppAsset::register($this);
                 ],
             ]);
             $menuItems = [
-                 ['label' => 'Home', 'url' => ['/site/index']],
-            	['label' => 'Airlines', 'url' => ['/airlines/index']],
-           		['label' => 'Hotels', 'url' => ['/hotels/index']],
-            	['label' => 'Inclusion', 'url' => ['/inclusion/index']],
-            	['label' => 'User', 'url' => ['/user/index']],
-            	['label' => 'Contact Number', 'url' => ['/contactnumber/index']],	
+                ['label' => 'Appointment', 'url' => ['/appointment/index']],
+            	['label' => 'Travel & Tour', 'url' => ['/traveltourarrangement/index']],
+           		['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/index']],
+            	['label' => 'Users', 'url' => ['/user/index']],
+            	
             ];
 			
             if (Yii::$app->user->isGuest) {

@@ -8,6 +8,8 @@ use frontend\models\TravelTourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\User;
+use yii\filters\AccessControl;
 
 /**
  * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
@@ -17,6 +19,22 @@ class TravelTourArrangementController extends Controller
     public function behaviors()
     {
         return [
+        		'access' => [
+        			'class' => AccessControl::className(),
+        			'rules' => [
+        						[
+        								'actions' => ['login', 'error'],
+        								'allow' => true,
+        						],
+        						[
+        								'actions' => ['logout', 'index'],
+        								'allow' => true,
+        								'roles' => ['@'],
+        								
+        						],
+        			],
+        		],
+    
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -69,6 +87,12 @@ class TravelTourArrangementController extends Controller
             $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
             $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
             if ($model->save()) {
+            	Yii::$app->mailer->compose()
+            	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+            	->setTo('dummyreceiver1@gmail.com')
+            	->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
+            	->setTextBody($model->destination)
+            	->send();
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         
