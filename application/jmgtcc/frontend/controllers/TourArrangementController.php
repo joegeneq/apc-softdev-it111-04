@@ -70,9 +70,111 @@ class TourArrangementController extends Controller
             if($model->save()) {
                  Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                ->setTo('dummyreceiver1@gmail.com')
-                ->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT ' )
-                ->setTextBody($model->destination)
+                ->setTo('roxanneluangco@gmail.com')
+                ->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT' )
+                ->setHtmlBody("<br>
+                <div>
+                    <img style='padding-top: 10px; padding-left: 20px;' height='50' width='180'
+                    src='http://journeysglobaltours.com/wp-content/uploads/2012/11/main_logo.png' >
+                    <p style='font-size: 11px; font-family: arial; padding-bottom: 8px; padding-top: 8px; padding-left: 20px;'>
+                        Upper Ground 12 Cityland Pioneer Condominium 128 Pioneer St., <br>
+                        Mandaluyong City, Philippines
+                </p>     
+                <p style='font-family:arial; margin-left:5%;'>
+                    Listed below are the details of  ".$model->user_id."'s  Tours Arrangement:
+                </p>                
+                </div> 
+                <div style='width: 700px; margin-left:5%;'>
+                _______________________________________________________________________
+                </div>
+                <br>
+                <div style='width: 500px; margin-left:10%;'>    
+                    <b style='font-size: 30px; font-family: arial; float: right; padding-right: 0px; padding-top: 15px;'>
+                    SAMPLE".$model->arrangement_code."</b>    
+                    <br><br><br><br>
+                    <div style='width: 435px; margin-left:30px; '>
+                        
+                        <table style='font-family: arial'>
+                            <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Place of Origin:</b></td>
+                                <td>".$model->place_of_origin."</td>
+                            </tr>
+                            <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Destination:</b></td>
+                                <td>".$model->destination."</td>
+                            </tr>
+                             <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Arrival Date:</b></td>
+                                <td>".$model->arrival_date."</td>
+                            </tr>
+                            <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Return Date:</b></td>
+                                <td>".$model->return_date."</td>
+                            </tr>
+                            <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Number of PAX:</b></td>
+                                <td>".$model->number_of_pax."</td>
+                            </tr> <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Hotel Name:</b></td>
+                                <td>".$model->hotel_name."</td>
+                            </tr> <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Room Type:</b></td>
+                                <td>".$model->room_type."</td>
+                            </tr>
+                            </tr> <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Inclusions:</b></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>Food: </td>
+                                            <td>".$model->inclusion_food_deals."</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tour Type: </td>
+                                            <td>".$model->inclusion_tour_type."</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transport Services: </td>
+                                            <td>".$model->inclusion_transport_service."</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Others: </td>
+                                            <td>".$model->inclusion_freebies."</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td width='200px' style='padding-bottom: 5px; padding-top: 3px;'><b>Remarks:</b></td>
+                                <td>".$model->remarks."</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                </div>
+            <div style='width: 700px; margin-left:5%;'>
+            _______________________________________________________________________
+            </div>          
+            
+
+            <br><br>
+
+            <div style='margin-left: 5%;'>
+                <b style='color:red; font-family: arial; font-size: 18px'>Important Reminders:</b>
+                <br>
+                <br>
+                <ul style='font-family:arial'>
+                    <li>Please confirm the travel arrangement of the client as soon as possible</li>
+                    <br>
+                    <li>For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                </ul>
+
+            </div>
+
+            <br><br>
+
+            <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
+            <br><br>")
                 ->send();  
                 return $this->redirect(['view', 'id' => $model->id]);
             }
