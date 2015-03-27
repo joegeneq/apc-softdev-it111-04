@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'updated_at',
             // 'last_logged_in',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
         ],
     ]); ?>
 
