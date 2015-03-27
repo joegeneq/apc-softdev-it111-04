@@ -70,7 +70,7 @@ class Appointment extends \yii\db\ActiveRecord
 
             [['appointment_time'], 'required'],
             [['appointment_time'], 'filter', 'filter' => 'trim'],
-            [['appointment_time'], 'safe'],
+            [['appointment_time'], 'string', 'max' => 10],
 
             [['country'], 'string', 'max' => 60],
             [['country'], 'filter', 'filter' => 'trim'],
@@ -138,12 +138,6 @@ class Appointment extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
         $model = $connection
-            // ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
-            //                     '-', 
-            //                     RIGHT( CONCAT('JMGTCC', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
-            //                     FROM appointment
-            //                     WHERE YEAR(date_created) = YEAR(NOW())");
-
             ->createCommand("SELECT CONCAT('VA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
                                 RIGHT(CONCAT('00', MONTH(NOW())), 2), 
                                 '-', 
@@ -155,4 +149,5 @@ class Appointment extends \yii\db\ActiveRecord
         $data = $model->queryScalar();
         return $data;
     }
+
 }

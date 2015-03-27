@@ -132,9 +132,9 @@ use backend\models\Time;
                 <div class="col-lg-3">
                     <p class="form-label required-field">Appointment Time</p>
                  </div>
-                <div class="col-lg-3">                   
+                <div class="col-lg-2">                   
                    <?= $form->field($model, 'appointment_time')->radioList(                        
-                        ArrayHelper::map(Time::find()->all(),'time','description')
+                        ArrayHelper::map(Time::find()->all(),'time','time')
                         )
                    ->label(false);
                     ?>
