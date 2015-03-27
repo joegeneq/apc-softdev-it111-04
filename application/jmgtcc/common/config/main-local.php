@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_tas',
+            'dsn' => 'mysql:host=localhost;dbname=jmgtcc_brs',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
@@ -15,10 +15,6 @@ return [
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
             'useFileTransport' => true,
-        ],
-
-        'create-appointmentcode' => [
-                              'class' => 'common\components\create-appointmentcode'
         ],
 
     ],

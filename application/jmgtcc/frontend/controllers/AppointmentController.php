@@ -65,14 +65,15 @@ class AppointmentController extends Controller
 
         $model->appointment_code = $model->getAppointmentCode($appointment_code);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        Yii::$app->mailer->compose()
-    	 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-    	 ->setTo($model->email_address)
-    	 ->setSubject('JMGTCC VISA APPOINTMENT CLIENT REFERENCE ' )
-    	 ->setTextBody($model->appointment_code)
-         ->send();
-          return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
+        {
+            Yii::$app->mailer->compose()
+        	 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+        	 ->setTo($model->email_address)
+        	 ->setSubject('JMGTCC VISA APPOINTMENT CLIENT REFERENCE ' )
+        	 ->setTextBody($model->appointment_code)
+             ->send();
+              return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,

@@ -251,6 +251,16 @@ a.desc:after {
     border-radius: 8px;
 }
 
+.servicesImg-mid {
+    width: 300px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.servicesImg:hover{
+  opacity: 0.9;
+}
+
 .accountT {
     margin-left: 20%;
 }
@@ -637,6 +647,14 @@ li.policy-details{
 
 .home-right{
   padding-left: 13%;
+}
+
+.connectImg{
+  opacity: 1;
+}
+
+.connectImg:hover{
+  opacity: 0.8;
 }
 
 

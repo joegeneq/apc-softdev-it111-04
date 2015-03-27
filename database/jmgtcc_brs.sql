@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2015 at 04:38 PM
+-- Generation Time: Mar 27, 2015 at 05:20 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `jmgtcc_tas`
+-- Database: `jmgtcc_brs`
 --
-CREATE DATABASE IF NOT EXISTS `jmgtcc_tas` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `jmgtcc_tas`;
+CREATE DATABASE IF NOT EXISTS `jmgtcc_brs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `jmgtcc_brs`;
 
 -- --------------------------------------------------------
 
@@ -175,29 +175,6 @@ INSERT INTO `freebies` (`id`, `freebies_name`, `freebies_description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hotels`
---
-
-CREATE TABLE IF NOT EXISTS `hotels` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `hotel_name` varchar(60) NOT NULL,
-  `country` varchar(45) NOT NULL,
-  `star_rating` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `hotels`
---
-
-INSERT INTO `hotels` (`id`, `hotel_name`, `country`, `star_rating`) VALUES
-(1, 'Rambler Garden-bf at Café de coral', 'Hong Kong', NULL),
-(2, ' Silka Fareast / Silka West Kowloon', 'Hong Kong', NULL),
-(3, 'Silka Seaview / Largos', 'Hong Kong', NULL);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `migration`
 --
 
@@ -214,6 +191,19 @@ CREATE TABLE IF NOT EXISTS `migration` (
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
 ('m000000_000000_base', 1425449657),
 ('m130524_201442_init', 1425449658);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `personnel`
+--
+
+CREATE TABLE IF NOT EXISTS `personnel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `personnel_name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

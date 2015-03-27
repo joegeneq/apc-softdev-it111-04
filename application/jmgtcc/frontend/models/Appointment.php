@@ -48,6 +48,8 @@ class Appointment extends \yii\db\ActiveRecord
             [['client_name'], 'string', 'max' => 60],
             [['client_name'], 'filter', 'filter' => 'trim'],
 
+            [['client_username'], 'default', 'value' => yii::$app->user->identity->username],
+
             [['city'], 'required'],
             [['city'], 'string', 'max' => 45],
             [['city'], 'filter', 'filter' => 'trim'],
@@ -83,6 +85,8 @@ class Appointment extends \yii\db\ActiveRecord
             [['notes'], 'string'],
 
             [['user_id'], 'integer'],
+            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],            
+
             [['appointment_code'], 'string', 'max' => 25]
         ];
     }

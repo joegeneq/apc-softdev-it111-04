@@ -27,25 +27,14 @@ $this->title = Yii::t('app', 'Appointments');
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            //'id',
+            
             'appointment_code',
-            // 'client_name',
-            // 'client_username',
-            // 'city',
-            // 'contact_number',
-            // 'email_address:email',
              'appointment_date',
              'appointment_time',
              'country',
              'visa_type',
-            // 'payment_rate',
-            // 'date_created',
              'status',
-            // 'confirmed_by',
-            // 'notes:ntext',
-            // 'user_id',
-
+             
             [
                 'class' => 'yii\grid\ActionColumn',
                 'template' => '{view}'
