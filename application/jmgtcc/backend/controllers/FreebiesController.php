@@ -27,7 +27,7 @@ class FreebiesController extends Controller
         						'allow' => true,
         					],
         					[
-        						'actions' => ['logout', 'index', 'index'],
+        						'actions' => ['logout', 'index', 'index', 'create', 'update', 'delete'],
         						'allow' => true,
         						'roles' => ['@'],
         						'matchCallback' => function ($rule, $action) {
