@@ -8,8 +8,6 @@ use frontend\models\TravelTourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use common\models\User;
-use yii\filters\AccessControl;
 
 /**
  * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
@@ -19,22 +17,6 @@ class TravelTourArrangementController extends Controller
     public function behaviors()
     {
         return [
-        		'access' => [
-        			'class' => AccessControl::className(),
-        			'rules' => [
-        						[
-        								'actions' => ['login', 'error'],
-        								'allow' => true,
-        						],
-        						[
-        								'actions' => ['logout', 'index', 'create', 'update'],
-        								'allow' => true,
-        								'roles' => ['@'],
-        								
-        						],
-        			],
-        		],
-    
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -79,23 +61,23 @@ class TravelTourArrangementController extends Controller
     public function actionCreate()
     {
         $model = new TravelTourArrangement();
-        
+
         if ($model->load(Yii::$app->request->post())) {
-        //Accepts the value of array from the checkbox 
             $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
             $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
             $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
             $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
+
             if ($model->save()) {
-            	Yii::$app->mailer->compose()
-            	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-            	->setTo('dummyreceiver1@gmail.com')
-            	->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
-            	->setTextBody($model->destination)
-            	->send();
-                return $this->redirect(['view', 'id' => $model->id]);
+               Yii::$app->mailer->compose()
+               ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+               ->setTo('dummyreceiver1@gmail.com')
+               ->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
+               ->setTextBody($model->destination)
+               ->send();  
+               return $this->redirect(['view', 'id' => $model->id]); 
             }
-        
+            
         } else {
             $model->inclusion_freebies = explode(', ',$model->inclusion_freebies);
             $model->inclusion_tour_type = explode(', ', $model->inclusion_tour_type);

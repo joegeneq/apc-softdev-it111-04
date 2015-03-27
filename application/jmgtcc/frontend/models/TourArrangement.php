@@ -40,7 +40,7 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'arrival_date', 'return_date', 'number_of_pax'], 'required'],
+            [['destination', 'arrival_date', 'return_date', 'number_of_pax', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service'], 'required'],
             [['arrival_date', 'return_date', 'date_created'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],

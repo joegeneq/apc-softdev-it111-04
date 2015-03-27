@@ -21,8 +21,6 @@ use backend\models\Airlines;
   <?php $form = ActiveForm::begin(); ?>
   <div class="form-container-main">
   <br><br>
-
-    <?= $form->field($model, 'arrangement_code')->textInput(['maxlength' => 25]) ?>  
         <div class="row">
             <!-- PLACE OF ORIGIN -->
             <div class="col-lg-2">
@@ -153,9 +151,9 @@ use backend\models\Airlines;
                 $("#textBox_hotel").show();
                 
              } else {
-             
-                 $("#textBox_hotel").hide(); 
-             }
+                $("#textBox_hotel").val('');
+                $("#textBox_hotel").hide(); 
+            }
           
 
           });
@@ -254,15 +252,7 @@ JS;
             </div>
         </div>
     
-        <!-- USER -->
-        <div class="row">
-            <div class="col-lg-2">
-                <p class="form-label">USER</p>
-            </div>
-            <div class="col-lg-3">                   
-                <?= $form->field($model, 'user_id')->textInput()->label(false) ?>
-            </div>
-        </div>
+       
             
         <!-- SUBMIT BUTTON -->
         <div class="form-group">
@@ -272,7 +262,9 @@ JS;
                 ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
             </div>                
         </div>
-        
+    
+    <?= Html::activeHiddenInput($model, 'arrangement_code') ?>   
+    <?= Html::activeHiddenInput($model, 'user_id') ?>        
     <?php ActiveForm::end(); ?>
   </div>
 </div>
