@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'arrangement_code',
             'place_of_origin',
             'destination',
@@ -45,8 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_tour_type:ntext',
             'inclusion_transport_service',
             'remarks:ntext',
-            'date_created',
-            'user_id',
+            // 'date_created',
+            // 'user_id',
         ],
     ]) ?>
 

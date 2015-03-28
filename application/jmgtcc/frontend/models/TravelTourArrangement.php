@@ -53,10 +53,11 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             [['place_of_origin', 'destination', 'airline_name', 'class_type', 'inclusion_transport_service'], 'string', 'max' => 60],
             [['flight_type'], 'string', 'max' => 45],
             [['hotel_name'], 'string', 'max' => 100],
-            [['room_type'], 'string', 'max' => 80],
-            [['hotel_name'], 'default', 'value' => 'Any Hotel'],
+            [['room_type'], 'string', 'max' => 80],       
 
-            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],     
+            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],  
+            [['place_of_origin'], 'default', 'value'=>'Manila, Philippines'], 
+            [['hotel_name'], 'default', 'value' => 'Any Hotel'],  
         ];
     }
 
@@ -107,7 +108,7 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             //                     FROM appointment
             //                     WHERE YEAR(date_created) = YEAR(NOW())");
 
-            ->createCommand("SELECT CONCAT('TR', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
+            ->createCommand("SELECT CONCAT('TTA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
                                 RIGHT(CONCAT('00', MONTH(NOW())), 2), 
                                 '-', 
                                 RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS arrangement_code 
@@ -118,4 +119,5 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
         $data = $model->queryScalar();
         return $data;
     }
+
 }
