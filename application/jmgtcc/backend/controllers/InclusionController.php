@@ -27,7 +27,7 @@ class InclusionController extends Controller
         								'allow' => true,
         						],
         						[
-        								'actions' => ['logout', 'index'],
+        								'actions' => ['logout', 'index', 'create', 'update', 'delete'],
         								'allow' => true,
         								'roles' => ['@'],
         								'matchCallback' => function ($rule, $action) {

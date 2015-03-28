@@ -70,7 +70,7 @@ class TourArrangementController extends Controller
             if($model->save()) {
                  Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                ->setTo('roxanneluangco@gmail.com')
+                ->setTo('dummysender1@gmail.com')
                 ->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT' )
                 ->setHtmlBody("<br>
                 <div>
