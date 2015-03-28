@@ -13,12 +13,12 @@ $this->title = 'My Yii Application';
             
                 <h3>Maintenance Menus</h3>
                 <ul>
-                    <li><a href="/jmgtcc/backend/web/index.php?r=airlines">Airlines</a></li>
-                    <li><a href="/jmgtcc/backend/web/index.php?r=fooddeals">Food Deals</a></li>   
-                    <li><a href="/jmgtcc/backend/web/index.php?r=freebies">Freebies</a></li>
-                    <li><a href="/jmgtcc/backend/web/index.php?r=time">Time</a></li>   
-                    <li><a href="/jmgtcc/backend/web/index.php?r=tourtype">Tour Type</a></li>    
-                    <li><a href="/jmgtcc/backend/web/index.php?r=transportservice">Transport Service</a></li>       
+                    <li><a href="index.php?r=airlines">Airlines</a></li>
+                    <li><a href="index.php?r=fooddeals">Food Deals</a></li>   
+                    <li><a href="index.php?r=freebies">Freebies</a></li>
+                    <li><a href="index.php?r=time">Time</a></li>   
+                    <li><a href="index.php?r=tourtype">Tour Type</a></li>    
+                    <li><a href="index.php?r=transportservice">Transport Service</a></li>       
                 </ul>
             </div>
            
