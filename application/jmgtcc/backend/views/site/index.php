@@ -1,7 +1,17 @@
 <?php
 /* @var $this yii\web\View */
+/* @var $searchModel backend\models\AppointmentSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'My Yii Application';
+use yii\helpers\Html;
+use yii\grid\GridView;
+use backend\models\Appointment;
+use backend\models\AppointmentSearch;
+
+$this->title = 'JMGTCC Backend';
+$searchModel = new AppointmentSearch();
+$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
 ?>
 <div class="site-index">
 
@@ -25,17 +35,34 @@ $this->title = 'My Yii Application';
            
                 <div class="cal-appointment col-lg-9">
                     <h3>Scheduled Appointments</h3>
+                   
+                     <?= GridView::widget([
+       					 'dataProvider' => $dataProvider,
+       					 //'filterModel' => $searchModel,
+        				 'columns' => [
+            				['class' => 'yii\grid\SerialColumn'],
 
-                    <p> CALENDAR EXTENSION </p>
-                    
-                    
-                    
-                </div>
+            			 'appointment_code',
+            			 'client_name',
+            			 'appointment_date',
 
-           
-           
+			             [
+			                'attribute'=>'appointment_time',
+			                'value'=>'time.description'
+			             ],
 
+            			 'status',
+
+
+                        /*  [
+				            'class' => 'yii\grid\ActionColumn',
+				            'template' => '{view} {update} {delete}',
+				
+				            ], */
+				        ],
+    					]); ?>
+                     
+             </div>
         </div>
-
     </div>
 </div>
