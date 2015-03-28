@@ -19,6 +19,17 @@ class TravelTourArrangementController extends Controller
     public function behaviors()
     {
         return [
+        		'rules' => [
+        				[
+        						'actions' => ['login', 'error'],
+        						'allow' => true,
+        				],
+        				[
+        						'actions' => ['logout', 'index', 'create'],
+        						'allow' => true,
+        						'roles' => ['@'],
+        				],
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -74,7 +85,11 @@ class TravelTourArrangementController extends Controller
             if ($model->save()) {
                Yii::$app->mailer->compose()
                ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+<<<<<<< HEAD
                ->setTo('journeysglobaltours1@gmail.com')
+=======
+               ->setTo('dummysender1@gmail.com')
+>>>>>>> 0a4286d1b84713ba86d736cd9fc1059b8ee65095
                ->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
                ->setHtmlBody("<br>
                 <div>

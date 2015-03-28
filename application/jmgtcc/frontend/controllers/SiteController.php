@@ -38,15 +38,10 @@ class SiteController extends Controller
                         'actions' => ['logout'],
                         'allow' => true,
                         'roles' => ['@'],
+                    		'matchCallback' => function ($rule, $action) {
+                    			return User::isUserAdmin(Yii::$app->user->identity->username);
+                    		}
                     ],
-					[
-					   'actions' => ['about'],
-					   'allow' => true,
-					   'roles' => ['@'],
-					   'matchCallback' => function ($rule, $action) {
-						   return User::isUserAdmin(Yii::$app->user->identity->username);
-					   }
-					],
                 ],
             ],
             'verbs' => [

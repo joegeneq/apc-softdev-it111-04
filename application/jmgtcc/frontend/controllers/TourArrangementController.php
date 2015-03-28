@@ -17,6 +17,17 @@ class TourArrangementController extends Controller
     public function behaviors()
     {
         return [
+        		'rules' => [
+        				[
+        						'actions' => ['login', 'error'],
+        						'allow' => true,
+        				],
+        				[
+        						'actions' => ['logout', 'index', 'create'],
+        						'allow' => true,
+        						'roles' => ['@'],
+        				],
+        	],		
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -70,7 +81,7 @@ class TourArrangementController extends Controller
             if($model->save()) {
                  Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                ->setTo('roxanneluangco@gmail.com')
+                ->setTo('dummysender1@gmail.com')
                 ->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT' )
                 ->setHtmlBody("<br>
                 <div>

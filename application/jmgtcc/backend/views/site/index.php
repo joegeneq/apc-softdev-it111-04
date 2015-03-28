@@ -13,13 +13,12 @@ $this->title = 'My Yii Application';
             
                 <h3>Maintenance Menus</h3>
                 <ul>
-                    <li><a href="/airlines/index">Airlines</a></li>
-                    <li><a href="/fooddeals/index">Food Deals</a></li>   
-                    <li><a href="/freebies/index">Freebies</a></li>
-                    <li><a href="/hotels/index">Hotels</a></li>
-                    <li><a href="/time/index">Time</a></li>   
-                    <li><a href="/tourtype/index">Tour Type</a></li>    
-                    <li><a href="/transportservice/index">Transport Service</a></li>       
+                    <li><a href="index.php?r=airlines">Airlines</a></li>
+                    <li><a href="index.php?r=fooddeals">Food Deals</a></li>   
+                    <li><a href="index.php?r=freebies">Freebies</a></li>
+                    <li><a href="index.php?r=time">Time</a></li>   
+                    <li><a href="index.php?r=tourtype">Tour Type</a></li>    
+                    <li><a href="index.php?r=transportservice">Transport Service</a></li>       
                 </ul>
             </div>
            
@@ -28,6 +27,8 @@ $this->title = 'My Yii Application';
                     <h3>Scheduled Appointments</h3>
 
                     <p> CALENDAR EXTENSION </p>
+                    
+                    
                     
                 </div>
 
