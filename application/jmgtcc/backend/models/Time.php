@@ -29,8 +29,7 @@ class Time extends \yii\db\ActiveRecord
         return [
             [['time', 'description'], 'required'],
             [['time'], 'safe'],
-        	[['time'], 'unique', 'message' => 'This time has already been taken.'],
-        	[['description'], 'unique', 'message' => 'This time details is already available.'],
+        	[['time', 'description'], 'unique', 'message' => 'Duplicate records'],
             [['description'], 'string', 'max' => 45]
         ];
     }

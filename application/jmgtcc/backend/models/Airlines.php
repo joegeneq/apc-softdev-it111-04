@@ -26,7 +26,8 @@ class Airlines extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-        	[['airline_name'], 'unique', 'message' => 'This airline has already been taken.'],
+        	[['airline_name'], 'unique', 'message' => 'Duplicate records'],
+        	[['airline_name'], 'required'],
             [['airline_name'], 'string', 'max' => 45]
         		
         ];

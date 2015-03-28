@@ -29,7 +29,7 @@ class FoodDeals extends \yii\db\ActiveRecord
         return [
             [['food_deal_name', 'food_deal_description'], 'required'],
             [['food_deal_description'], 'string'],
-        	[['food_deal_name'], 'unique', 'message' => 'This food deal has already been taken.'],
+        	[['food_deal_name'], 'unique', 'message' => 'Duplicate records'],
             [['food_deal_name'], 'string', 'max' => 45]
         		
         ];

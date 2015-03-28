@@ -28,7 +28,7 @@ class Freebies extends \yii\db\ActiveRecord
     {
         return [
             [['freebies_name', 'freebies_description'], 'required'],
-        	[['freebies_name'], 'unique', 'message' => 'This freebie has already been taken.'],
+        	[['freebies_name', 'freebies_description'], 'unique', 'message' => 'Duplicate records'],
             [['freebies_name'], 'string', 'max' => 45],
         	[['freebies_description'], 'string']
         ];

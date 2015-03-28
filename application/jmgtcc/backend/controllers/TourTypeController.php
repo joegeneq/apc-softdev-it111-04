@@ -27,7 +27,7 @@ class TourTypeController extends Controller
         								'allow' => true,
         						],
         						[
-        								'actions' => ['logout', 'index', 'create', 'update', 'delete'],
+        								'actions' => ['logout', 'index', 'create', 'update', 'delete', 'view'],
         								'allow' => true,
         								'roles' => ['@'],
         								'matchCallback' => function ($rule, $action) {
