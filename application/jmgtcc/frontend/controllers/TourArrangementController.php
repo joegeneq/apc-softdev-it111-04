@@ -17,6 +17,17 @@ class TourArrangementController extends Controller
     public function behaviors()
     {
         return [
+        		'rules' => [
+        				[
+        						'actions' => ['login', 'error'],
+        						'allow' => true,
+        				],
+        				[
+        						'actions' => ['logout', 'index', 'create'],
+        						'allow' => true,
+        						'roles' => ['@'],
+        				],
+        	],		
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
