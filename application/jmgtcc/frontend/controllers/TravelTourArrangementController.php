@@ -9,6 +9,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use common\models\User;
+
 /**
  * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
  */
@@ -72,6 +74,7 @@ class TravelTourArrangementController extends Controller
     public function actionCreate()
     {
         $model = new TravelTourArrangement();
+        $model->arrangement_code = $model->getArrangementCode($model->arrangement_code);
 
         if ($model->load(Yii::$app->request->post())) {
             $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
@@ -93,7 +96,7 @@ class TravelTourArrangementController extends Controller
                         Mandaluyong City, Philippines
                 </p>     
                 <p style='font-family:arial; margin-left:5%;'>
-                    Listed below are the details of  ".$model->user_id." Travel and Tours Arrangement:
+                    Listed below are the details of  ".yii::$app->user->identity->first_name." ".yii::$app->user->identity->last_name."'s Travel and Tours Arrangement:
                 </p>                
                 </div> 
                 <div style='width: 700px; margin-left:5%;'>
@@ -102,7 +105,7 @@ class TravelTourArrangementController extends Controller
                 <br>
                 <div style='width: 500px; margin-left:10%;'>    
                     <b style='font-size: 30px; font-family: arial; float: right; padding-right: 0px; padding-top: 15px;'>
-                    SAMPLE".$model->arrangement_code."</b>    
+                    ".$model->arrangement_code."</b>    
                     <br><br><br><br>
                     <div style='width: 435px; margin-left:30px; '>
                         
@@ -212,38 +215,7 @@ class TravelTourArrangementController extends Controller
         }
     }
 
-    /**
-     * Updates an existing TravelTourArrangement model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
-    }
-
-    /**
-     * Deletes an existing TravelTourArrangement model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     */
-    public function actionDelete($id)
-    {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
-    }
-
+   
     /**
      * Finds the TravelTourArrangement model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
