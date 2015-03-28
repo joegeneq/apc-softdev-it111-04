@@ -40,16 +40,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'date_created')->textInput() ?>
 
-    <?= $form->field($model, 'date_confirmed')->textInput() ?>
-
-    <?= $form->field($model, 'confirmed_by')->textInput(['maxlength' => 15]) ?>
-
-    <?= $form->field($model, 'date_updated')->textInput() ?>
-
-    <?= $form->field($model, 'updated_by')->textInput(['maxlength' => 20]) ?>
-
-    <?= $form->field($model, 'status')->textInput(['maxlength' => 20]) ?>
-
     <?= $form->field($model, 'user_id')->textInput() ?>
 
     <div class="form-group">

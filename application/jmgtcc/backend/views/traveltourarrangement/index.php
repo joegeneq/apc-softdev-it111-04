@@ -15,6 +15,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <p>
+        <?= Html::a(Yii::t('app', 'Create {modelClass}', [
+    'modelClass' => 'Travel Tour Arrangement',
+]), ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -39,14 +45,9 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'inclusion_transport_service',
             // 'remarks:ntext',
             // 'date_created',
-            // 'status',
-            // 'date_confirmed',
-            // 'confirmed_by',
-            // 'date_updated',
-            // 'updated_by',
             // 'user_id',
 
-            ['class' => 'yii\grid\ActionColumn', 'template' => '{view} {delete}' ],
+            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 

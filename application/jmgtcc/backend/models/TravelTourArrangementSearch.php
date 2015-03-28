@@ -19,7 +19,7 @@ class TravelTourArrangementSearch extends TravelTourArrangement
     {
         return [
             [['id', 'number_of_pax', 'user_id'], 'integer'],
-            [['arrangement_code', 'place_of_origin', 'destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'hotel_name', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service', 'remarks', 'date_created', 'status', 'date_confirmed', 'confirmed_by', 'date_updated', 'updated_by'], 'safe'],
+            [['arrangement_code', 'place_of_origin', 'destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'hotel_name', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service', 'remarks', 'date_created'], 'safe'],
         ];
     }
 
@@ -61,8 +61,6 @@ class TravelTourArrangementSearch extends TravelTourArrangement
             'return_date' => $this->return_date,
             'number_of_pax' => $this->number_of_pax,
             'date_created' => $this->date_created,
-            'date_confirmed' => $this->date_confirmed,
-            'date_updated' => $this->date_updated,
             'user_id' => $this->user_id,
         ]);
 
@@ -78,10 +76,7 @@ class TravelTourArrangementSearch extends TravelTourArrangement
             ->andFilterWhere(['like', 'inclusion_freebies', $this->inclusion_freebies])
             ->andFilterWhere(['like', 'inclusion_tour_type', $this->inclusion_tour_type])
             ->andFilterWhere(['like', 'inclusion_transport_service', $this->inclusion_transport_service])
-            ->andFilterWhere(['like', 'remarks', $this->remarks])
-            ->andFilterWhere(['like', 'status', $this->status])
-            ->andFilterWhere(['like', 'confirmed_by', $this->confirmed_by])
-            ->andFilterWhere(['like', 'updated_by', $this->updated_by]);
+            ->andFilterWhere(['like', 'remarks', $this->remarks]);
 
         return $dataProvider;
     }

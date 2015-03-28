@@ -43,11 +43,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_transport_service',
             'remarks:ntext',
             'date_created',
-            'date_confirmed',
-            'confirmed_by',
-            'date_updated',
-            'updated_by',
-            'status',
             'user_id',
         ],
     ]) ?>
