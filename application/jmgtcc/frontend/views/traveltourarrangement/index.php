@@ -27,12 +27,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'arrangement_code',
             'place_of_origin',
             'destination',
             'departure_date',
-            // 'return_date',
+            'return_date',
             // 'airline_name',
             // 'flight_type',
             // 'class_type',
@@ -44,10 +44,13 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'inclusion_tour_type:ntext',
             // 'inclusion_transport_service',
             // 'remarks:ntext',
-            // 'date_created',
+             'date_created',
             // 'user_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view}'
+            ],
         ],
     ]); ?>
 
