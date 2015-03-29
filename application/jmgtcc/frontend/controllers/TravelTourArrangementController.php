@@ -113,15 +113,11 @@ class TravelTourArrangementController extends Controller
             }
 
             if ($model->save()) 
-            {               
-               return $this->redirect(['view', 'id' => $model->id]);
-
+            {                  
                // SEND EMAIL TO TRAVEL AGENT
                 Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                    //->setTo('journeysglobaltours1@gmail.com')
-                    //->setTo('dummysender1@gmail.com')
-                    ->setTo('biapapna@gmail.com')
+                    ->setTo('roxanneluangco@gmail.com')
                     ->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
                     ->setHtmlBody("<br>
                          <div>
@@ -233,6 +229,7 @@ class TravelTourArrangementController extends Controller
                          <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
                          <br><br>")
                     ->send(); 
+                    return $this->redirect(['view', 'id' => $model->id]);
             }
 
         } else {
