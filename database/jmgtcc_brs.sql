@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2015 at 05:20 AM
+-- Generation Time: Mar 29, 2015 at 12:23 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -80,7 +80,14 @@ CREATE TABLE IF NOT EXISTS `appointment` (
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_appointment_user1_idx` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`id`, `appointment_code`, `client_name`, `client_username`, `city`, `contact_number`, `email_address`, `appointment_date`, `appointment_time`, `country`, `visa_type`, `payment_rate`, `date_created`, `status`, `confirmed_by`, `notes`, `user_id`) VALUES
+(26, 'VA1503-000001', 'Arianne Bianca Papna', NULL, 'Taguig City', '+639999999999', 'biapapna@gmail.com', '2015-04-01', '10:00 AM', 'Canada', 'Non-Immigrant Visa', NULL, '2015-03-29 06:36:38', '', '', 'hi.', NULL);
 
 -- --------------------------------------------------------
 
@@ -91,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `appointment` (
 CREATE TABLE IF NOT EXISTS `appointment_history` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `history_code` varchar(25) DEFAULT NULL,
-  `prev_appointment_time` varchar(10) DEFAULT NULL,
+  `prev_appointment_time` time DEFAULT NULL,
   `prev_appointment_date` date DEFAULT NULL,
   `appointment_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -223,12 +230,12 @@ CREATE TABLE IF NOT EXISTS `time` (
 --
 
 INSERT INTO `time` (`id`, `time`, `description`) VALUES
-(1, '10:00:00', '10:00 - 11:00 AM'),
-(2, '11:00:00', '11:00 - 12:00 NN'),
-(3, '01:00:00', '1:00 - 2:00 PM'),
-(4, '02:00:00', '2:00 - 3:00 PM'),
-(5, '03:00:00', '3:00 - 4:00 PM'),
-(6, '04:00:00', '4:00 - 5:00 PM');
+(1, '10:00 AM', '10:00 - 11:00 AM'),
+(2, '11:00 AM', '11:00 - 12:00 NN'),
+(3, '01:00 PM', '1:00 - 2:00 PM'),
+(4, '02:00 PM', '2:00 - 3:00 PM'),
+(5, '03:00 PM', '3:00 - 4:00 PM'),
+(6, '04:00 PM', '4:00 - 5:00 PM');
 
 -- --------------------------------------------------------
 
@@ -246,10 +253,10 @@ CREATE TABLE IF NOT EXISTS `tour_arrangement` (
   `number_of_pax` int(11) NOT NULL,
   `hotel_name` varchar(100) DEFAULT NULL,
   `room_type` varchar(80) DEFAULT NULL,
-  `inclusion_food_deals` text NOT NULL,
-  `inclusion_freebies` text NOT NULL,
-  `inclusion_tour_type` text NOT NULL,
-  `inclusion_transport_service` varchar(60) NOT NULL,
+  `inclusion_food_deals` text,
+  `inclusion_freebies` text,
+  `inclusion_tour_type` text,
+  `inclusion_transport_service` varchar(60) DEFAULT NULL,
   `remarks` text,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) DEFAULT NULL,
@@ -315,21 +322,21 @@ CREATE TABLE IF NOT EXISTS `travel_tour_arrangement` (
   `departure_date` date NOT NULL,
   `return_date` date NOT NULL,
   `airline_name` varchar(60) DEFAULT NULL,
-  `flight_type` varchar(45) DEFAULT NULL,
+  `flight_type` varchar(45) NOT NULL,
   `class_type` varchar(60) DEFAULT NULL,
   `number_of_pax` int(11) NOT NULL,
   `hotel_name` varchar(100) DEFAULT NULL,
   `room_type` varchar(80) NOT NULL,
-  `inclusion_food_deals` text NOT NULL,
-  `inclusion_freebies` text NOT NULL,
-  `inclusion_tour_type` text NOT NULL,
-  `inclusion_transport_service` varchar(60) NOT NULL,
+  `inclusion_food_deals` text,
+  `inclusion_freebies` text,
+  `inclusion_tour_type` text,
+  `inclusion_transport_service` varchar(60) DEFAULT NULL,
   `remarks` text,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_travel_arrangement_user1_idx` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -355,15 +362,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `updated_at` int(11) NOT NULL,
   `last_logged_in` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `role`, `username`, `first_name`, `last_name`, `gender`, `city`, `contact_number`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `last_logged_in`) VALUES
-(1, 20, 'abby20', 'abby', 'abby', 'F', 'Taguig City', '+639999999', 'hQYW0jZSMtNkzUAqJ_42p7fgDiFmVmZ9', '$2y$13$WCOxuMS.G5FDbFM6iHHKp.cFGjhbki2YDtpjpVUK4Rr.EXaB2Di02', NULL, 'abby@abby.com', 10, 1427199313, 1427199313, '2015-03-24 14:55:54'),
-(2, 10, 'abby10', 'abby', 'abby', 'F', 'Taguig City', '+639999999', '6aGejgtcu4vKWDkyMdjpzKxE_WrDVjDX', '$2y$13$wdWjYC6dsT5vIqhArEtahupHS1DheZMwWrufmbRRia57lEXh2qQe2', NULL, 'abby123@abby.com', 10, 1427199557, 1427199557, '2015-03-24 14:56:02');
+(1, 20, 'admin', 'admin', 'admin', 'F', 'Taguig City', '+639999999', 'hQYW0jZSMtNkzUAqJ_42p7fgDiFmVmZ9', '$2y$13$WCOxuMS.G5FDbFM6iHHKp.cFGjhbki2YDtpjpVUK4Rr.EXaB2Di02', NULL, 'biapapna@gmail.com', 10, 1427199313, 1427199313, '2015-03-29 05:11:16'),
+(2, 10, 'client', 'client', 'client', 'F', 'Taguig City', '+639999999', '6aGejgtcu4vKWDkyMdjpzKxE_WrDVjDX', '$2y$13$wdWjYC6dsT5vIqhArEtahupHS1DheZMwWrufmbRRia57lEXh2qQe2', NULL, 'biapapna@gmail.com', 10, 1427199557, 1427199557, '2015-03-29 05:11:38');
 
 --
 -- Constraints for dumped tables
