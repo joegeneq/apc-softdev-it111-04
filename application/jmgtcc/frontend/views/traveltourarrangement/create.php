@@ -6,15 +6,14 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TravelTourArrangement */
 
-$this->title = Yii::t('app', 'Create {modelClass}', [
+$this->title = Yii::t('app', 'Create Arrangement', [
     'modelClass' => 'Travel Tour Arrangement',
 ]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Travel Tour Arrangements'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
-?>
-<div class="travel-tour-arrangement-create">
+$this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['index']];
 
-    <h3><?= Html::encode($this->title) ?></h3>
+?>
+
+<div class="travel-tour-arrangement-create">
 
     <?= $this->render('_form', [
         'model' => $model,

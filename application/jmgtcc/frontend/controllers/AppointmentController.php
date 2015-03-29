@@ -64,7 +64,7 @@ class AppointmentController extends Controller
     public function actionCreate()
     {
         $model = new Appointment();
-        $model->appointment_code = $model->getAppointmentCode($appointment_code);
+        $model->appointment_code = $model->getAppointmentCode($model->appointment_code);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) 
         {            
