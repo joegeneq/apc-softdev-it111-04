@@ -6,9 +6,9 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TravelTourArrangement */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Travel Tour Arrangements'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->arrangement_code;
+$this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->arrangement_code];
 ?>
 <div class="travel-tour-arrangement-view">
 
@@ -45,8 +45,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_tour_type:ntext',
             'inclusion_transport_service',
             'remarks:ntext',
-            // 'date_created',
-            // 'user_id',
+            //'date_created',
+            //'status',
+            //'user_id',
         ],
     ]) ?>
 

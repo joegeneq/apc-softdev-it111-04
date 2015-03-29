@@ -45,7 +45,7 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'departure_date', 'return_date', 'number_of_pax', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service'], 'required'],
+            [['destination', 'departure_date', 'return_date', 'flight_type', 'number_of_pax', 'room_type'], 'required'],
             [['departure_date', 'return_date', 'date_created'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],
@@ -53,11 +53,14 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
             [['place_of_origin', 'destination', 'airline_name', 'class_type', 'inclusion_transport_service'], 'string', 'max' => 60],
             [['flight_type'], 'string', 'max' => 45],
             [['hotel_name'], 'string', 'max' => 100],
-            [['room_type'], 'string', 'max' => 80],       
+            [['room_type'], 'string', 'max' => 80],
 
             [['user_id'], 'default', 'value' => yii::$app->user->identity->id],  
-            [['place_of_origin'], 'default', 'value'=>'Manila, Philippines'], 
+            [['place_of_origin'], 'default', 'value'=>'Manila, Philippines'],
+
             [['hotel_name'], 'default', 'value' => 'Any Hotel'],  
+            [['airline_name'], 'default', 'value' => 'Any Airline'],  
+            [['class_type'], 'default', 'value' => 'Any Class Type'], 
         ];
     }
 
@@ -102,12 +105,6 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
         $model = $connection
-            // ->createCommand("SELECT CONCAT('VA', CAST(YEAR(NOW()) AS CHAR(15)), 
-            //                     '-', 
-            //                     RIGHT( CONCAT('JMGTCC', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
-            //                     FROM appointment
-            //                     WHERE YEAR(date_created) = YEAR(NOW())");
-
             ->createCommand("SELECT CONCAT('TTA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
                                 RIGHT(CONCAT('00', MONTH(NOW())), 2), 
                                 '-', 
@@ -119,5 +116,4 @@ class TravelTourArrangement extends \yii\db\ActiveRecord
         $data = $model->queryScalar();
         return $data;
     }
-
 }
