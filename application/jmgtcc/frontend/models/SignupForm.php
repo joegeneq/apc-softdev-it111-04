@@ -43,6 +43,7 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+        	['contact_number', 'integer'],
         	['confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>"Passwords don't match. Try again."],
         ];
     }
