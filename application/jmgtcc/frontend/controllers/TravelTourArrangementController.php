@@ -236,18 +236,19 @@ class TravelTourArrangementController extends Controller
             }
 
         } else {
-        	/* if (Yii::$app->user->isGuest)
-        	{
-        		$this->redirect(Yii::$app->url('/site/login'));
-        	}else {
-	            return $this->render('create', [
-	                'model' => $model,
-	            ]);
-        	} */
         	
         	return $this->render('create', [
         			'model' => $model,
         			]);
+        	
+        	/* if (Yii::$app->user->isGuest)
+        	 {
+        	 $this->redirect(Yii::$app->url('/site/login'));
+        	 }else {
+        	 return $this->render('create', [
+        	 'model' => $model,
+        	 ]);
+        	 } */
         }
     }
 
