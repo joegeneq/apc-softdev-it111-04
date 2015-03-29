@@ -12,27 +12,32 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="food-deals-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <div class="index-hdr">
+        <h3> Food deals </h3>
+        <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Food Deals',
-]), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+        <p>
+            <?= Html::a(Yii::t('app', 'Create new record', [
+                'modelClass' => 'Food Deals',
+            ]), ['create'], ['class' => 'btn btn-success']) ?>
+        </p>
+    </div>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+    <div class="index-maintenance">   
 
-            'id',
-            'food_deal_name',
-            'food_deal_description:ntext',
+        <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+                //'id',
+                'food_deal_name',
+                'food_deal_description:ntext',
+
+                ['class' => 'yii\grid\ActionColumn'],
+            ],
+        ]); ?>
+        </div>
 
 </div>

@@ -19,26 +19,34 @@ $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         <div class="row">
 
-            <div class="side-navigator col-lg-3">
-            
-                <h3>Maintenance Menus</h3>
-                <ul>
-                    <li><a href="index.php?r=airlines">Airlines</a></li>
-                    <li><a href="index.php?r=fooddeals">Food Deals</a></li>   
-                    <li><a href="index.php?r=freebies">Freebies</a></li>
-                    <li><a href="index.php?r=time">Time</a></li>   
-                    <li><a href="index.php?r=tourtype">Tour Type</a></li>    
-                    <li><a href="index.php?r=transportservice">Transport Service</a></li>       
-                </ul>
+            <div class="col-lg-3">
+                <div class="side-navigator">
+
+                    <br>               
+                        <a href="index.php?r=airlines">
+                            <button class="side-nav">Airlines</button></a>
+                    <br><a href="index.php?r=fooddeals">
+                            <button class="side-nav">Food Deals</button></a>   
+                    <br><a href="index.php?r=freebies">
+                            <button class="side-nav">Freebies</button></a>
+                    <br><a href="index.php?r=time">
+                            <button class="side-nav">Time</button></a>   
+                    <br><a href="index.php?r=tourtype">
+                            <button class="side-nav">Tour Type</button></a>    
+                    <br><a href="index.php?r=transportservice">
+                            <button class="side-nav">Transport Service</button></a> 
+                    <br><br>     
+                
+                </div>                
             </div>
            
            
-                <div class="cal-appointment col-lg-9">
+                <div class="list-appointment col-lg-9">
                     <h3>Scheduled Appointments</h3>
                    
                      <?= GridView::widget([
        					 'dataProvider' => $dataProvider,
-       					 //'filterModel' => $searchModel,
+       					 'filterModel' => $searchModel,
         				 'columns' => [
             				['class' => 'yii\grid\SerialColumn'],
 
@@ -51,14 +59,13 @@ $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 			                'value'=>'time.description'
 			             ],
 
-            			 'status',
+            			 //'status',
 
-
-                        /*  [
-				            'class' => 'yii\grid\ActionColumn',
-				            'template' => '{view} {update} {delete}',
+                        //[
+				            // 'class' => 'yii\grid\ActionColumn',
+				            // 'template' => '{view}',
 				
-				            ], */
+				            // ], 
 				        ],
     					]); ?>
                      

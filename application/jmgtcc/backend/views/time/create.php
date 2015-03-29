@@ -6,18 +6,21 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Time */
 
-$this->title = Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Time',
-]);
+$this->title = 'Time';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Times'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="time-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="form-maintenance">
+	    <h2>Appointment Time</h2>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+	    <?= $this->render('_form', [
+	        'model' => $model,
+	    ]) ?>
+
+	    <br>
+
+	</div>
 
 </div>

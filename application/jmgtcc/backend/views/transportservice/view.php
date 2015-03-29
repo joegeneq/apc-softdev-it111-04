@@ -6,32 +6,36 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TransportService */
 
-$this->title = $model->id;
+$this->title = 'Transport Services';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Transport Services'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="transport-service-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+     <br>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-                'method' => 'post',
+    <div class="view-maintenance">
+        <?= DetailView::widget([
+            'model' => $model,
+            'attributes' => [
+                //'id',
+                'transport_type',
+                'transport_description:ntext',
             ],
         ]) ?>
-    </p>
+    </div>
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'transport_type',
-            'transport_description:ntext',
-        ],
-    ]) ?>
+    <div class="maintenance-btn">
+        <p>
+            <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+            <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
+                'class' => 'btn btn-danger',
+                'data' => [
+                    'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+                    'method' => 'post',
+                ],
+            ]) ?>
+        </p>
+    </div> 
 
 </div>

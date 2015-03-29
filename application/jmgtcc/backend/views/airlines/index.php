@@ -12,26 +12,31 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="airlines-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <div class="index-hdr">
+        <h3> Partner Airlines </h3>
+        <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Airlines',
-]), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+        <p>
+            <?= Html::a(Yii::t('app', 'Create new record', [
+                'modelClass' => 'Airlines',
+            ]), ['create'], ['class' => 'btn btn-success']) ?>
+        </p>
+    </div>
+   
+        <div class="index-maintenance">        
+            <?= GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+                    //'id',
+                    'airline_name',
 
-            'id',
-            'airline_name',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+                    ['class' => 'yii\grid\ActionColumn'],
+                ],
+            ]); ?>
+   
+        </div>
 
 </div>

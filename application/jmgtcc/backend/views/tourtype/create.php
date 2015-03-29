@@ -6,18 +6,21 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TourType */
 
-$this->title = Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Tour Type',
-]);
+$this->title = 'Tour Type';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Tour Types'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tour-type-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="form-maintenance">
+	    <h2>Tour Type</h2>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+	    <?= $this->render('_form', [
+	        'model' => $model,
+	    ]) ?>
+
+	    <br>
+
+	</div>
 
 </div>
