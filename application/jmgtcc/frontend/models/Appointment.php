@@ -56,7 +56,7 @@ class Appointment extends \yii\db\ActiveRecord
 
             [['contact_number'], 'required'],
             //[['contact_number'], 'string', 'max' => 20],
-            [['contact_number'], 'integer'],
+            [['contact_number'], 'integer', 'message' => 'Contact number must be valid.'],
             [['contact_number'], 'filter', 'filter' => 'trim'],
 
             [['email_address'], 'required'],
