@@ -21206,3 +21206,1085 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427641857.99
     'REQUEST_TIME' => 1427641857
 ]
+2015-03-29 17:59:26 [::1][-][l6bi1n6j4oc2s3q1gvi71opvq5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:26 [::1][-][l6bi1n6j4oc2s3q1gvi71opvq5][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s:32:\"zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g\";'
+    'PHPSESSID' => 'l6bi1n6j4oc2s3q1gvi71opvq5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s%3A32%3A%22zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g%22%3B; PHPSESSID=l6bi1n6j4oc2s3q1gvi71opvq5'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644766.009
+    'REQUEST_TIME' => 1427644766
+]
+2015-03-29 17:59:35 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:34 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'NmVrVU02NTNVIhMNEll/Sl4UKD4XX3MDUSNdEiF0VmNRMBovf1kEUg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'l6bi1n6j4oc2s3q1gvi71opvq5'
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '199'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=l6bi1n6j4oc2s3q1gvi71opvq5; _csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644774.047
+    'REQUEST_TIME' => 1427644774
+]
+2015-03-29 17:59:35 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:35 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644775.124
+    'REQUEST_TIME' => 1427644775
+]
+2015-03-29 17:59:45 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:44 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644784.927
+    'REQUEST_TIME' => 1427644784
+]
+2015-03-29 17:59:48 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:48 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'traveltourarrangement/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=traveltourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644788.096
+    'REQUEST_TIME' => 1427644788
+]
+2015-03-29 17:59:52 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:52 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'tourarrangement/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=traveltourarrangement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60767'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=tourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644792.68
+    'REQUEST_TIME' => 1427644792
+]
+2015-03-29 17:59:55 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 17:59:55 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'traveltourarrangement/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=tourarrangement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60765'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=traveltourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644795.161
+    'REQUEST_TIME' => 1427644795
+]
+2015-03-29 18:00:02 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 18:00:02 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=traveltourarrangement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644802.54
+    'REQUEST_TIME' => 1427644802
+]
+2015-03-29 18:00:03 [::1][1][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 18:00:03 [::1][1][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644803.544
+    'REQUEST_TIME' => 1427644803
+]
+2015-03-29 18:01:33 [::1][-][hnjj8umf170rh14u03rmj2l994][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 18:01:33 [::1][-][hnjj8umf170rh14u03rmj2l994][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'WlFTMzNFYXY5FitrbCorDzIgEFhpLCdGPRdldF8HAiY9BCJJASpQFw=='
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => 'hnjj8umf170rh14u03rmj2l994'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=hnjj8umf170rh14u03rmj2l994'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644893.676
+    'REQUEST_TIME' => 1427644893
+]
+2015-03-29 18:01:33 [::1][-][24ftv8s8mm3archnoaefa4m7d3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 18:01:33 [::1][-][24ftv8s8mm3archnoaefa4m7d3][info][application] $_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => '24ftv8s8mm3archnoaefa4m7d3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=24ftv8s8mm3archnoaefa4m7d3'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644893.798
+    'REQUEST_TIME' => 1427644893
+]
+2015-03-29 18:01:33 [::1][-][24ftv8s8mm3archnoaefa4m7d3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16817 bytes' 
+
+in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\xannethei\ap...', 86, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-29 18:01:33 [::1][-][24ftv8s8mm3archnoaefa4m7d3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s:32:\"cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a\";'
+    'PHPSESSID' => '24ftv8s8mm3archnoaefa4m7d3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=0fed1963a289c6037aa14bb5224f91dcb4db6d15264cdbccc5bf02093e741035s%3A32%3A%22cGxX_oJyhqCkZiF0gF6GlBcPgUqz2o1a%22%3B; PHPSESSID=24ftv8s8mm3archnoaefa4m7d3'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644893.869
+    'REQUEST_TIME' => 1427644893
+]
+2015-03-29 18:01:43 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 18:01:43 [::1][2][-][info][application] $_COOKIE = [
+    '_csrf' => '48f00250dc6b8cc7e2040dd7405d97896a79d1b245f1ae3458b0e5cededdfa95s:32:\"L9-Iy2In-DzKXlWzSHn-DQ6655e87ecK\";'
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=48f00250dc6b8cc7e2040dd7405d97896a79d1b245f1ae3458b0e5cededdfa95s%3A32%3A%22L9-Iy2In-DzKXlWzSHn-DQ6655e87ecK%22%3B; PHPSESSID=2t3dpp7blvlrrtjafh700tile0'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644903.547
+    'REQUEST_TIME' => 1427644903
+]
+2015-03-29 18:01:49 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('appointment/ind...', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 18:01:49 [::1][2][-][info][application] $_GET = [
+    'r' => 'appointment/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => 'e8d8cf3d59a7a383a13fd0f06f55cf53f4c7bc982d4de858b86df957657dd277s:32:\"BDCCeic_1QxKSjjJiMQAtauWl-4HwYVm\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=e8d8cf3d59a7a383a13fd0f06f55cf53f4c7bc982d4de858b86df957657dd277s%3A32%3A%22BDCCeic_1QxKSjjJiMQAtauWl-4HwYVm%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644909.323
+    'REQUEST_TIME' => 1427644909
+]
+2015-03-29 18:01:51 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 18:01:50 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => 'e8d8cf3d59a7a383a13fd0f06f55cf53f4c7bc982d4de858b86df957657dd277s:32:\"BDCCeic_1QxKSjjJiMQAtauWl-4HwYVm\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=appointment%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=e8d8cf3d59a7a383a13fd0f06f55cf53f4c7bc982d4de858b86df957657dd277s%3A32%3A%22BDCCeic_1QxKSjjJiMQAtauWl-4HwYVm%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '60799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644910.935
+    'REQUEST_TIME' => 1427644910
+]

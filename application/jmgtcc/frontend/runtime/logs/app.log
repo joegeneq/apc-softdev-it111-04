@@ -43971,3 +43971,601 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427634026.429
     'REQUEST_TIME' => 1427634026
 ]
+2015-03-29 17:59:03 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php:75
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php(75): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\xannethei\ap...', 75, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\ap...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\ap...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\SiteController.php(55): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-29 17:59:03 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s:32:\"zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g\";'
+    'PHPSESSID' => 'k28vesuq4idkf09htjsni4hvj1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s%3A32%3A%22zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g%22%3B; PHPSESSID=k28vesuq4idkf09htjsni4hvj1'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '60727'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644743.933
+    'REQUEST_TIME' => 1427644743
+]
+2015-03-29 17:59:20 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php:75
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php(75): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\xannethei\ap...', 75, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\ap...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\ap...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\SiteController.php(55): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-29 17:59:20 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s:32:\"zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g\";'
+    'PHPSESSID' => 'l6bi1n6j4oc2s3q1gvi71opvq5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=3c69e152f9709e890de1d6675f2ef31f900d661900e7aa3411553aa3039f8c37s%3A32%3A%22zIksnSPEZ6T_ZSJ4WzPu2nAFWXQLo_3g%22%3B; PHPSESSID=l6bi1n6j4oc2s3q1gvi71opvq5'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '60740'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644760.354
+    'REQUEST_TIME' => 1427644760
+]
+2015-03-29 18:02:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\TravelTourArrangementSearch::status' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('status')
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('status')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\TravelTourArrangementSearch), Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TravelTourArrangementSearch.php(52): yii\base\Model->validate()
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php(38): frontend\models\TravelTourArrangementSearch->search(Array)
+#5 [internal function]: frontend\controllers\TravelTourArrangementController->actionIndex()
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('traveltourarran...', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-29 18:02:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => '178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s:32:\"PQUUn5TiEvODbvfJABji5YE8cRuuf95x\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s%3A32%3A%22PQUUn5TiEvODbvfJABji5YE8cRuuf95x%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '60802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427644976.458
+    'REQUEST_TIME' => 1427644976
+]
+2015-03-29 18:25:13 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php:75
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\site\index.php(75): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\xannethei\ap...', 75, Array)
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\xannethei\ap...')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xannethei\ap...', Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xannethei\ap...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#5 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\SiteController.php(55): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-29 18:25:13 [::1][-][-][info][application] $_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'l6328s7ep289tq28ii12ngpgm5'
+    '_csrf' => '9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds:32:\"xvlsDHX7JJmcmHosJbtB3zFeerRldnvn\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=l6328s7ep289tq28ii12ngpgm5; _csrf=9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds%3A32%3A%22xvlsDHX7JJmcmHosJbtB3zFeerRldnvn%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61096'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427646313.41
+    'REQUEST_TIME' => 1427646313
+]
+2015-03-29 18:31:28 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\TravelTourArrangementSearch::status' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('status')
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('status')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\TravelTourArrangementSearch), Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TravelTourArrangementSearch.php(52): yii\base\Model->validate()
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php(38): frontend\models\TravelTourArrangementSearch->search(Array)
+#5 [internal function]: frontend\controllers\TravelTourArrangementController->actionIndex()
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('traveltourarran...', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-29 18:31:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => '178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s:32:\"PQUUn5TiEvODbvfJABji5YE8cRuuf95x\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s%3A32%3A%22PQUUn5TiEvODbvfJABji5YE8cRuuf95x%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427646688.114
+    'REQUEST_TIME' => 1427646688
+]
+2015-03-29 18:50:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TourArrangement.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-29 18:50:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => '178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s:32:\"PQUUn5TiEvODbvfJABji5YE8cRuuf95x\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s%3A32%3A%22PQUUn5TiEvODbvfJABji5YE8cRuuf95x%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61307'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427647827.259
+    'REQUEST_TIME' => 1427647827
+]
+2015-03-29 18:50:42 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TourArrangement.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-29 18:50:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'tourarrangement/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '2t3dpp7blvlrrtjafh700tile0'
+    '_csrf' => '178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s:32:\"PQUUn5TiEvODbvfJABji5YE8cRuuf95x\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=2t3dpp7blvlrrtjafh700tile0; _csrf=178e36dc9bb36a79f313a50632c86a21d47ac7ea93386f3f60b4aea65ec1b519s%3A32%3A%22PQUUn5TiEvODbvfJABji5YE8cRuuf95x%22%3B'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61310'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tourarrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tourarrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427647842.198
+    'REQUEST_TIME' => 1427647842
+]
+2015-03-29 19:02:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\TravelTourArrangementSearch::status' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('status')
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('status')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\TravelTourArrangementSearch), Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TravelTourArrangementSearch.php(52): yii\base\Model->validate()
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php(38): frontend\models\TravelTourArrangementSearch->search(Array)
+#5 [internal function]: frontend\controllers\TravelTourArrangementController->actionIndex()
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('traveltourarran...', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-29 19:02:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement/index'
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'dtd23jhlder4o5jjkvmhvk9lg0'
+    '_csrf' => '9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds:32:\"xvlsDHX7JJmcmHosJbtB3zFeerRldnvn\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Fcreate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=dtd23jhlder4o5jjkvmhvk9lg0; _csrf=9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds%3A32%3A%22xvlsDHX7JJmcmHosJbtB3zFeerRldnvn%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61407'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement%2Findex'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement%2Findex'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427648575.942
+    'REQUEST_TIME' => 1427648575
+]
+2015-03-29 19:03:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\TravelTourArrangementSearch::status' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('status')
+#1 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('status')
+#2 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\TravelTourArrangementSearch), Array)
+#3 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\models\TravelTourArrangementSearch.php(52): yii\base\Model->validate()
+#4 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php(38): frontend\models\TravelTourArrangementSearch->search(Array)
+#5 [internal function]: frontend\controllers\TravelTourArrangementController->actionIndex()
+#6 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('traveltourarran...', Array)
+#10 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-29 19:03:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'traveltourarrangement'
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'dtd23jhlder4o5jjkvmhvk9lg0'
+    '_csrf' => '9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds:32:\"xvlsDHX7JJmcmHosJbtB3zFeerRldnvn\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=dtd23jhlder4o5jjkvmhvk9lg0; _csrf=9e3cdd186dd6c200a20995e64b260425a81692c5b78d0b40d09614aa7183d31ds%3A32%3A%22xvlsDHX7JJmcmHosJbtB3zFeerRldnvn%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '61418'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=traveltourarrangement'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=traveltourarrangement'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427648595.719
+    'REQUEST_TIME' => 1427648595
+]
