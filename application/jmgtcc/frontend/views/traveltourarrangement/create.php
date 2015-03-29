@@ -10,8 +10,11 @@ use common\models\User;
 $this->title = Yii::t('app', 'Create Arrangement', [
     'modelClass' => 'Travel Tour Arrangement',
 ]);
-$this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['index']];
 
+if (Yii::$app->user->isGuest == false)
+{
+    $this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['index']];
+}
 ?>
 
 <div class="travel-tour-arrangement-create">
@@ -24,7 +27,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['i
     	if (Yii::$app->user->isGuest)
     	{
     		print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
-                            <img class="servicesImg" title="Create a Travel Arrangement"
+                            <img style="margin-top:5%;" class="servicesImg" title="Create a Travel Arrangement"
                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
     		
     	}
