@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use common\models\User;
 
 
 /* @var $this yii\web\View */
@@ -15,12 +16,12 @@ $this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['i
 
 <div class="travel-tour-arrangement-create">
 
-    <?php 
-    //$this->render('_form', [
-        //'model' => $model,
-    //]) 
+    <?=
+    $this->render('_form', [
+        'model' => $model,
+    ]) 
     
-    	if (Yii::$app->user->identity->username != null)
+    	/* if (Yii::$app->user->identity->username != null)
     	{
     		$this->render('_form', [
         		'model' => $model,
@@ -31,10 +32,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['i
     		print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
                             <img class="servicesImg" title="Create a Travel Arrangement"
                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
-    	}
-   
-    
-    
+    	} */
     
     ?>
 
