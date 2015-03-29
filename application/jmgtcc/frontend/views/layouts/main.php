@@ -38,20 +38,23 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-                ['label' => 'Travel and Tour', 'url' => ['/traveltourarrangement/create']], 
-            	['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/create']],
-                ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],    
-                ['label' => 'Help & Support', 'url' => ['/site/about']],
+                ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],
             ];
             if (Yii::$app->user->isGuest) {
+            	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/traveltourarrangement/create']];
+            	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
                 $menuItems[] = ['label' => 'Sign up', 'url' => ['/site/signup']];
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
+            	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/create']];
+            	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/traveltourarrangement/create']];
+            	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
                 $menuItems[] = [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ];
+                 
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
