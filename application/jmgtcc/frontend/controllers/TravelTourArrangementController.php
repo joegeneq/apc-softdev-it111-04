@@ -67,11 +67,6 @@ class TravelTourArrangementController extends Controller
 
         if ($model->load(Yii::$app->request->post())) 
         {
-            // $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
-            // $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
-            // $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
-            // $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
-
             // TOUR TYPE
             if ($model->inclusion_tour_type == null)
             {
@@ -126,11 +121,26 @@ class TravelTourArrangementController extends Controller
                              <p style='font-size: 11px; font-family: arial; padding-bottom: 8px; padding-top: 8px; padding-left: 20px;'>
                                  Upper Ground 12 Cityland Pioneer Condominium 128 Pioneer St., <br>
                                  Mandaluyong City, Philippines
-                             </p>     
-                             <p style='font-family:arial; margin-left:5%;'>
-                                 Listed below are the details of  ".yii::$app->user->identity->first_name." ".yii::$app->user->identity->last_name."'s Travel and Tours Arrangement:
-                             </p>                
+                            </p>     
+                            <p style='font-family:arial; margin-left:5%;'>
+                                Listed below are the details of a new Tours Arrangement:
+                            </p>                  
+                            <table style='margin-left:10%;font-family: arial;'>
+                                <tr>
+                                    <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Client Name:</b></td>
+                                    <td>".yii::$app->user->identity->first_name." ".yii::$app->user->identity->last_name."</td>
+                                </tr>
+                                <tr>
+                                    <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Contact Number:</b></td>
+                                    <td>".yii::$app->user->identity->contact_number."</td>
+                                </tr>
+                                <tr>
+                                    <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Email Address:</b></td>
+                                    <td>".yii::$app->user->identity->email."</td>
+                                </tr>
+                              </table>                 
                              </div> 
+
                              <div style='width: 700px; margin-left:5%;'>
                                  _______________________________________________________________________
                              </div>
@@ -223,10 +233,10 @@ class TravelTourArrangementController extends Controller
                                  <li>Please confirm the travel arrangement of the client as soon as possible</li>
                                  <br>
                                  <li>For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                                 <li>Any updates or revisions regarding travel and arrangements can be done through email negotiations. </li>
                              </ul>
                          </div>
                          <br><br>
-                         <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
                          <br><br>")
                     ->send(); 
                     return $this->redirect(['view', 'id' => $model->id]);
