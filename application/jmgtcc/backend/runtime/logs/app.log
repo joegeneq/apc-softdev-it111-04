@@ -19062,6 +19062,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427549848.733
     'REQUEST_TIME' => 1427549848
 ]
+<<<<<<< HEAD
 2015-03-29 14:43:23 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
 Stack trace:
 #0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
@@ -19079,12 +19080,44 @@ Stack trace:
 2015-03-29 14:43:22 [::1][2][-][info][application] $_COOKIE = [
     '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
     'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+=======
+2015-03-28 16:28:43 [::1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php:109
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(213): yii\widgets\BaseListView->init()
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\views\site\index.php(62): yii\base\Widget::widget(Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\SOFTDEV\apc-...')
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\SOFTDEV\apc-...', Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(backend\controllers\SiteController))
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(62): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#18 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-03-28 16:28:42 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s:32:\"TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL\";'
+    'PHPSESSID' => '6s2io2nndfd28d5rib75rvogk0'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
     '__id' => 2
+=======
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 1
 ]
 
 $_SERVER = [
@@ -19096,19 +19129,21 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
-    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'HTTP_COOKIE' => '_csrf=2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s%3A32%3A%22TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL%22%3B; PHPSESSID=6s2io2nndfd28d5rib75rvogk0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -19119,7 +19154,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
-    'REMOTE_PORT' => '57768'
+    'REMOTE_PORT' => '64103'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
@@ -19127,6 +19162,185 @@ $_SERVER = [
     'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
     'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
     'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427556522.656
+    'REQUEST_TIME' => 1427556522
+]
+2015-03-28 16:31:49 [::1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php:109
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(213): yii\widgets\BaseListView->init()
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\views\site\index.php(62): yii\base\Widget::widget(Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\SOFTDEV\apc-...')
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\SOFTDEV\apc-...', Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(backend\controllers\SiteController))
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(62): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#18 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-03-28 16:31:48 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s:32:\"TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL\";'
+    'PHPSESSID' => '6s2io2nndfd28d5rib75rvogk0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s%3A32%3A%22TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL%22%3B; PHPSESSID=6s2io2nndfd28d5rib75rvogk0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '64113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427556708.134
+    'REQUEST_TIME' => 1427556708
+]
+2015-03-28 16:32:37 [::1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\widgets\BaseListView.php:109
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\grid\GridView.php(213): yii\widgets\BaseListView->init()
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\views\site\index.php(60): yii\base\Widget::widget(Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(325): require('C:\SOFTDEV\apc-...')
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\SOFTDEV\apc-...', Array)
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\SOFTDEV\apc-...', Array, Object(backend\controllers\SiteController))
+#11 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\controllers\SiteController.php(62): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#18 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-03-28 16:32:36 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s:32:\"TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL\";'
+    'PHPSESSID' => '6s2io2nndfd28d5rib75rvogk0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 1
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s%3A32%3A%22TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL%22%3B; PHPSESSID=6s2io2nndfd28d5rib75rvogk0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '57768'
+=======
+    'REMOTE_PORT' => '64122'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1427633002.071
     'REQUEST_TIME' => 1427633002
 ]
@@ -19147,12 +19361,97 @@ Stack trace:
 2015-03-29 14:43:22 [::1][2][-][info][application] $_COOKIE = [
     '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
     'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+=======
+    'REQUEST_TIME_FLOAT' => 1427556756.339
+    'REQUEST_TIME' => 1427556756
+]
+2015-03-28 16:39:51 [::1][1][6s2io2nndfd28d5rib75rvogk0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AppointmentSearch' not found' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\views\site\index.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 16:39:50 [::1][1][6s2io2nndfd28d5rib75rvogk0][info][application] $_COOKIE = [
+    '_csrf' => '2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s:32:\"TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL\";'
+    'PHPSESSID' => '6s2io2nndfd28d5rib75rvogk0'
 ]
 
 $_SESSION = [
     '__flash' => []
-    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
-    '__id' => 2
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2482fe0c57ed23eeb2865590d1e86265162f9088da9256632754ee180ab32d80s%3A32%3A%22TR2r8qQn9fnCduw4FQQhQmYNSXqPRzaL%22%3B; PHPSESSID=6s2io2nndfd28d5rib75rvogk0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '64295'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427557190.015
+    'REQUEST_TIME' => 1427557190
+]
+2015-03-28 17:08:05 [::1][3][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/view' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/view', Array)
+#2 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-28 17:08:05 [::1][3][-][info][application] $_GET = [
+    'r' => 'site/view'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a69236faf6dd8d7346e9658680dc5572cc2d15e72c17a602d4d35ee09571154ds:32:\"3ZJdvsUi-zzcv9rKwQW5UZlG6sAhbiRk\";'
+    'PHPSESSID' => 'flch892b5fl089t29krstl35c4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 3
 ]
 
 $_SERVER = [
@@ -19165,18 +19464,19 @@ $_SERVER = [
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
-    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+    'HTTP_COOKIE' => '_csrf=a69236faf6dd8d7346e9658680dc5572cc2d15e72c17a602d4d35ee09571154ds%3A32%3A%223ZJdvsUi-zzcv9rKwQW5UZlG6sAhbiRk%22%3B; PHPSESSID=flch892b5fl089t29krstl35c4'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -19187,14 +19487,116 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+    'REMOTE_PORT' => '57084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fview&id=5'
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php?r=site%2Fview&id=5'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427558885.423
+    'REQUEST_TIME' => 1427558885
+]
+2015-03-29 13:34:03 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 13:34:02 [::1][2][-][info][application] $_COOKIE = [
+    '_csrf' => 'a185bbd92278feb60e39d22b1471ebc0ec59f83c2941b5cb2b1d5d3616865370s:32:\"GqVduOGBPpDt2O1hpNOweFY0XDqB3MPp\";'
+    'PHPSESSID' => 't5ongvbfsjk4qimt7mjjjechm4'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+=======
+    '__returnUrl' => '/jmgtcc/backend/web/'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a185bbd92278feb60e39d22b1471ebc0ec59f83c2941b5cb2b1d5d3616865370s%3A32%3A%22GqVduOGBPpDt2O1hpNOweFY0XDqB3MPp%22%3B; PHPSESSID=t5ongvbfsjk4qimt7mjjjechm4'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57767'
+=======
+    'REMOTE_PORT' => '54934'
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
+<<<<<<< HEAD
     'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
     'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
     'PHP_SELF' => '/jmgtcc/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1427633002.47
     'REQUEST_TIME' => 1427633002
+=======
+    'REQUEST_URI' => '/jmgtcc/backend/web/'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427628842.229
+    'REQUEST_TIME' => 1427628842
+>>>>>>> 8f004eaeb7677b9ed15c3d6ddb68971b3b09b412
 ]
