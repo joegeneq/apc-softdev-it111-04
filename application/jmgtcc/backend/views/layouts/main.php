@@ -36,6 +36,7 @@ AppAsset::register($this);
                 ],
             ]);
             $menuItems = [
+            	['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Appointment', 'url' => ['/appointment/index']],
             	['label' => 'Travel & Tour', 'url' => ['/traveltourarrangement/index']],
            		['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/index']],
