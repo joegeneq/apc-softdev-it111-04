@@ -19,7 +19,7 @@ class TravelTourArrangementSearch extends TravelTourArrangement
     {
         return [
             [['id', 'number_of_pax', 'user_id'], 'integer'],
-            [['arrangement_code', 'place_of_origin', 'destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'hotel_name', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service', 'remarks', 'date_created', 'status'], 'safe'],
+            [['arrangement_code', 'place_of_origin', 'destination', 'departure_date', 'return_date', 'airline_name', 'flight_type', 'class_type', 'hotel_name', 'room_type', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service', 'remarks', 'date_created'], 'safe'],
         ];
     }
 
