@@ -40793,6 +40793,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427628468.84
     'REQUEST_TIME' => 1427628468
 ]
+<<<<<<< HEAD
 2015-03-29 15:29:45 [::1][-][-][error][yii\base\ErrorException:2048] exception 'yii\base\ErrorException' with message 'Declaration of frontend\controllers\TravelTourArrangementController::beforeAction() should be compatible with yii\base\Controller::beforeAction($action)' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php:18
 Stack trace:
 #0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php(18): yii\base\ErrorHandler->handleError(2048, 'Declaration of ...', 'C:\SOFTDEV\apc-...', 18, Array)
@@ -41429,10 +41430,42 @@ Stack trace:
 $_COOKIE = [
     '_csrf' => 'b7a65ec3a75c0e86df1b94594750e66c3b9eacbb165203ddf8921f40ecb69cd0s:32:\"jTr0lSFcepNfTxfv8jqY-kuc3Bcrm4Ws\";'
     'PHPSESSID' => '0aacuocbgtleuc0jiiva91k632'
+=======
+2015-03-29 14:42:41 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 14:42:39 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'V1FmWmhZMmgFAgAJKRVlX2cyMigEbVALFmksGyYDZAwIYiJvKw5hDw=='
+]
+
+$_COOKIE = [
+    '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
+    'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+    '__id' => 2
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SERVER = [
@@ -41444,6 +41477,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
@@ -41863,13 +41897,32 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => 'PHPSESSID=u364gtvj4nsdnimrsq6fgu7m41; _csrf=b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s%3A32%3A%22VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz%22%3B'
     'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -41880,6 +41933,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57001'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -41910,11 +41964,54 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'u364gtvj4nsdnimrsq6fgu7m41'
     '_csrf' => 'b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s:32:\"VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz\";'
+=======
+    'REMOTE_PORT' => '57759'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427632959.678
+    'REQUEST_TIME' => 1427632959
+]
+2015-03-29 14:42:44 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 14:42:43 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'VkJLcXJDWnUEES0iMw8NQmYhHwMedzgWF3oBMDwZDBEJcQ9EMRQJEg=='
+]
+
+$_COOKIE = [
+    '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
+    'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+=======
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+    '__id' => 2
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SERVER = [
@@ -41926,6 +42023,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
@@ -41934,13 +42032,32 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => 'PHPSESSID=u364gtvj4nsdnimrsq6fgu7m41; _csrf=b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s%3A32%3A%22VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz%22%3B'
     'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -41951,6 +42068,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57006'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -41973,11 +42091,54 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'u364gtvj4nsdnimrsq6fgu7m41'
     '_csrf' => 'b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s:32:\"VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz\";'
+=======
+    'REMOTE_PORT' => '57759'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427632963.187
+    'REQUEST_TIME' => 1427632963
+]
+2015-03-29 14:43:13 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 14:43:12 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'NDRqckRjYUZmZwwhBS82cQRXPgAoVwMldQwgMwo5NyJrBy5HBzQyIQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
+    'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+=======
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+    '__id' => 2
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SERVER = [
@@ -41989,6 +42150,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
@@ -41997,13 +42159,32 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => 'PHPSESSID=u364gtvj4nsdnimrsq6fgu7m41; _csrf=b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s%3A32%3A%22VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz%22%3B'
     'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -42014,6 +42195,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57016'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -42044,11 +42226,54 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'u364gtvj4nsdnimrsq6fgu7m41'
     '_csrf' => 'b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s:32:\"VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz\";'
+=======
+    'REMOTE_PORT' => '57767'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427632992.079
+    'REQUEST_TIME' => 1427632992
+]
+2015-03-29 14:43:15 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 14:43:14 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'aWZYRUlJLVM7NT4WCAV6ZFkFDDclfU8wKF4SBAcTezc2VRxwCh5.NA=='
+]
+
+$_COOKIE = [
+    '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
+    'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+=======
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+    '__id' => 2
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SERVER = [
@@ -42060,6 +42285,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
@@ -42068,13 +42294,32 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => 'PHPSESSID=u364gtvj4nsdnimrsq6fgu7m41; _csrf=b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s%3A32%3A%22VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz%22%3B'
     'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -42085,6 +42330,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57042'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -42115,11 +42361,54 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'u364gtvj4nsdnimrsq6fgu7m41'
     '_csrf' => 'b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s:32:\"VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz\";'
+=======
+    'REMOTE_PORT' => '57767'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427632994.428
+    'REQUEST_TIME' => 1427632994
+]
+2015-03-29 14:43:17 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-29 14:43:16 [::1][2][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'NC5XRWZlWHNmfTEWJykPRARNAzcKUToQdRYdBCg/DhdrHRNwJTILFA=='
+]
+
+$_COOKIE = [
+    '_csrf' => '71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s:32:\"RSfSALW70cTrl4bcA8JANZVd_3D5CWSg\";'
+    'PHPSESSID' => 'mclr602s1gk772hdej04v76p87'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+=======
+    '__returnUrl' => '/jmgtcc/frontend/web/index.php?r=site%2Fabout'
+    '__id' => 2
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
 
 $_SERVER = [
@@ -42131,6 +42420,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
@@ -42139,13 +42429,32 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => 'PHPSESSID=u364gtvj4nsdnimrsq6fgu7m41; _csrf=b2bdcd972e6d3bfb04323bdc95dbb8ef92947774eedf2b3bb2907644cedfcac3s%3A32%3A%22VtfN0iy1Z-sxVyTRDx4Z_dlEJ56weWGz%22%3B'
     'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+=======
+    'CONTENT_LENGTH' => '68'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=71a6a5f9ce99ede1729e294d1ccc4211f0db54b4356db20551dabd3313b752c8s%3A32%3A%22RSfSALW70cTrl4bcA8JANZVd_3D5CWSg%22%3B; PHPSESSID=mclr602s1gk772hdej04v76p87'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -42156,6 +42465,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '57049'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -42166,4 +42476,16 @@ $_SERVER = [
     'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1427638317.255
     'REQUEST_TIME' => 1427638317
+=======
+    'REMOTE_PORT' => '57767'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427632996.625
+    'REQUEST_TIME' => 1427632996
+>>>>>>> d0ffaa795d61f90a7d9fa6ae3e3a53959ed300c3
 ]
