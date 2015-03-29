@@ -8,7 +8,6 @@ use frontend\models\TravelTourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
 use common\models\User;
 
 /**
@@ -25,22 +24,23 @@ class TravelTourArrangementController extends Controller
                     'delete' => ['post'],
                 ],
             ],
-        ];
+         ];
     }
 
     /**
      * Lists all TravelTourArrangement models.
      * @return mixed
-     */
+     * 
+     */  
     public function actionIndex()
     {
-        $searchModel = new TravelTourArrangementSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+    	$searchModel = new TravelTourArrangementSearch();
+    	$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+    		
+    	return $this->render('index', [
+    			'searchModel' => $searchModel,
+    			'dataProvider' => $dataProvider,
+    	]);
     }
 
     /**
@@ -236,9 +236,19 @@ class TravelTourArrangementController extends Controller
             }
 
         } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        	
+        	return $this->render('create', [
+        			'model' => $model,
+        			]);
+        	
+        	/* if (Yii::$app->user->isGuest)
+        	 {
+        	 $this->redirect(Yii::$app->url('/site/login'));
+        	 }else {
+        	 return $this->render('create', [
+        	 'model' => $model,
+        	 ]);
+        	 } */
         }
     }
 
