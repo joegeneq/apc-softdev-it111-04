@@ -30,7 +30,7 @@ class TransportService extends \yii\db\ActiveRecord
             [['transport_type', 'transport_description'], 'required'],
             [['transport_description'], 'string'],
         	[['transport_type', 'transport_description'], 'unique', 'message' => 'Duplicate records'],
-            [['transport_type'], 'string', 'max' => 25]
+            [['transport_type'], 'string', 'max' => 25],
         ];
     }
 

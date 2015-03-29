@@ -28,9 +28,9 @@ class Time extends \yii\db\ActiveRecord
     {
         return [
             [['time', 'description'], 'required'],
-            [['time'], 'safe'],
         	[['time', 'description'], 'unique', 'message' => 'Duplicate records'],
-            [['description'], 'string', 'max' => 45]
+            [['description'], 'string', 'max' => 45],
+            [['time'], 'string', 'max'=>10],
         ];
     }
 

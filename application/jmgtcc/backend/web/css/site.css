@@ -150,7 +150,7 @@ a.desc:after {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+ /* position: fixed;*/
   right: 0;
   left: 0;
   z-index: 1030;
@@ -311,22 +311,59 @@ a.desc:after {
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ CALENDAR - APPOINTMENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ LIST - APPOINTMENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-
-.cal-appointment {
-  border: 2px solid red;
+.list-appointment {
    margin-top: 3%;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SIDE NAVIGATOR @@@@@@@22@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-
-.side-navigator {
-  border: 2px solid blue;
-  margin-top: 3%;
+.side-navigator{
+  margin-top: 13%;
+  border-radius: 15px;
+  background-color: #F9F8F6;  
 }
+
+.side-nav{
+  background: #A9DE91;
+  background-image: -webkit-linear-gradient(top, #A9DE91, #A9DE91);
+  background-image: -moz-linear-gradient(top, #A9DE91, #A9DE91);
+  background-image: -ms-linear-gradient(top, #A9DE91, #A9DE91);
+  background-image: -o-linear-gradient(top, #A9DE91, #A9DE91);
+  background-image: linear-gradient(to bottom, #A9DE91, #A9DE91);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  text-shadow: 1px 1px 20px #666666;
+  -webkit-box-shadow: 1px 2px 3px #666666;
+  -moz-box-shadow: 1px 2px 3px #666666;
+  box-shadow: 1px 2px 3px #666666;
+  font-family: Arial;
+  color: #000000;
+  font-size: 15px;
+  padding: 5px 40px 5px 20px;
+  text-decoration: none;
+
+  margin-left: 25px;
+  margin-bottom: 3px;
+  line-height: 20px;
+  width: 80%;
+  text-align: left;  
+}
+
+.side-nav:hover {
+  background: #3B8215;
+  background-image: -webkit-linear-gradient(top, #3B8215, #3B8215);
+  background-image: -moz-linear-gradient(top, #3B8215, #3B8215);
+  background-image: -ms-linear-gradient(top, #3B8215, #3B8215);
+  background-image: -o-linear-gradient(top, #3B8215, #3B8215);
+  background-image: linear-gradient(to bottom, #3B8215, #3B8215);
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
 
 /* END ADDED BY: AFPAPNA 02152015 */
 
@@ -589,3 +626,39 @@ fieldset[disabled] .btn-danger.active {
 }
 
 /* END ADDED BY: AFPAPNA 03242015 */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MAINTENANCE INDEX @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START ADDED BY: AFPAPNA 03292015 */
+
+.form-maintenance{
+  margin-left: 10%;
+}
+
+.submit-maintenance{
+  float: right;
+  margin-right: 20px;
+}
+
+.index-hdr {
+   margin-left: 5%;
+}
+
+.index-maintenance{
+  margin-left: 10%;
+  width: 80%;
+}
+
+.view-maintenance{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.maintenance-btn{
+  float: right;
+  margin-right: 15%;
+}
+
+
+/* END ADDED BY: AFPAPNA 03292015 */
