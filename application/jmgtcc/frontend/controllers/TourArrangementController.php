@@ -62,15 +62,54 @@ class TourArrangementController extends Controller
     {
         $model = new TourArrangement();
 
-        if ($model->load(Yii::$app->request->post())) {
-            $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
-            $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
-            $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
-            $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
+        $model->arrangement_code = $model->getArrangementCode($model->arrangement_code);
+
+        if ($model->load(Yii::$app->request->post())) {           
+            // TOUR TYPE
+            if ($model->inclusion_tour_type == null)
+            {
+                $model->inclusion_tour_type = 'All tour types available';
+            }
+            else
+            {
+                $model->inclusion_tour_type = implode(', ', $model->inclusion_tour_type);
+            }
+
+            // TRANSPORT SERVICE
+            if ($model->inclusion_transport_service == null)
+            {
+                $model->inclusion_transport_service = 'All transport services available';
+            }
+            else
+            {
+                $model->inclusion_transport_service = implode(', ', $model->inclusion_transport_service);
+            }
+
+            // FOOD DEALS
+            if ($model->inclusion_food_deals == null)
+            {
+                $model->inclusion_food_deals = 'All food deals available';
+            }
+            else
+            {
+                $model->inclusion_food_deals = implode(', ', $model->inclusion_food_deals);
+            }
+
+            // FREEBIES
+            if ($model->inclusion_freebies == null)
+            {
+                $model->inclusion_freebies = 'All freebies available';
+            }
+            else
+            {
+                $model->inclusion_freebies = implode(', ', $model->inclusion_freebies);
+            }
+
             if($model->save()) {
+                 // SEND EMAIL TO TRAVEL AGENT
                  Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                ->setTo('dummysender1@gmail.com')
+                ->setTo('roxanneluangco@gmail.com')
                 ->setSubject('JMGTCC CLIENT TOUR ARRANGEMENT' )
                 ->setHtmlBody("<br>
                 <div>
@@ -81,8 +120,22 @@ class TourArrangementController extends Controller
                         Mandaluyong City, Philippines
                 </p>     
                 <p style='font-family:arial; margin-left:5%;'>
-                    Listed below are the details of  ".$model->user_id."'s  Tours Arrangement:
-                </p>                
+                    Listed below are the details of a new Tours Arrangement:
+                </p> 
+                    <table style='margin-left:10%;font-family: arial;'>
+                        <tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Client Name:</b></td>
+                            <td>".yii::$app->user->identity->first_name." ".yii::$app->user->identity->last_name."</td>
+                        </tr>
+                        <tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Contact Number:</b></td>
+                            <td>".yii::$app->user->identity->contact_number."</td>
+                        </tr>
+                        <tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Email Address:</b></td>
+                            <td>".yii::$app->user->identity->email."</td>
+                        </tr>
+                    </table>                   
                 </div> 
                 <div style='width: 700px; margin-left:5%;'>
                 _______________________________________________________________________
@@ -90,7 +143,7 @@ class TourArrangementController extends Controller
                 <br>
                 <div style='width: 500px; margin-left:10%;'>    
                     <b style='font-size: 30px; font-family: arial; float: right; padding-right: 0px; padding-top: 15px;'>
-                    SAMPLE".$model->arrangement_code."</b>    
+                    ".$model->arrangement_code."</b>    
                     <br><br><br><br>
                     <div style='width: 435px; margin-left:30px; '>
                         
@@ -167,25 +220,21 @@ class TourArrangementController extends Controller
                     <li>Please confirm the travel arrangement of the client as soon as possible</li>
                     <br>
                     <li>For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                    <li>Any updates or revisions regarding travel and tour arrangements can be done through email negotiations. </li>
                 </ul>
 
             </div>
 
             <br><br>
-
-            <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
             <br><br>")
                 ->send();  
                 return $this->redirect(['view', 'id' => $model->id]);
             }
             
         } else {
-            $model->inclusion_freebies = explode(', ',$model->inclusion_freebies);
-            $model->inclusion_tour_type = explode(', ', $model->inclusion_tour_type);
-            $model->inclusion_transport_service = explode(', ', $model->inclusion_transport_service);
-            $model->inclusion_food_deals = explode(', ', $model->inclusion_food_deals);
+        
             return $this->render('create', [
-                'model' => $model,
+                    'model' => $model,
             ]);
         }
     }

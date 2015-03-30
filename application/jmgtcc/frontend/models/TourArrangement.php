@@ -40,7 +40,7 @@ class TourArrangement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['destination', 'arrival_date', 'return_date', 'number_of_pax', 'inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'inclusion_transport_service'], 'required'],
+            [['destination', 'arrival_date', 'return_date', 'number_of_pax'], 'required'],
             [['arrival_date', 'return_date', 'date_created'], 'safe'],
             [['number_of_pax', 'user_id'], 'integer'],
             [['inclusion_food_deals', 'inclusion_freebies', 'inclusion_tour_type', 'remarks'], 'string'],
@@ -50,6 +50,9 @@ class TourArrangement extends \yii\db\ActiveRecord
             [['room_type'], 'string', 'max' => 80],
             [['hotel_name'], 'default', 'value' => 'Any Hotel'],
             
+            [['hotel_name'], 'default', 'value' => 'Any Hotel'],
+            [['place_of_origin'], 'default', 'value'=>'Manila, Philippines'],
+
             [['user_id'], 'default', 'value' => yii::$app->user->identity->id],
         ];
     }
@@ -78,4 +81,30 @@ class TourArrangement extends \yii\db\ActiveRecord
             'user_id' => Yii::t('app', 'User ID'),
         ];
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    //Generate Arrangement Code
+    public static function getArrangementCode($data)
+    {
+        $connection = \Yii::$app->db;
+        $model = $connection
+            ->createCommand("SELECT CONCAT('TA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
+                                RIGHT(CONCAT('00', MONTH(NOW())), 2), 
+                                '-', 
+                                RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS arrangement_code 
+                                FROM  tour_arrangement
+                                WHERE YEAR(date_created) = YEAR(NOW())
+                            ");
+
+        $data = $model->queryScalar();
+        return $data;
+    }
+
 }

@@ -6,15 +6,17 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\TourArrangement */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Tour Arrangements'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->arrangement_code;
+$this->params['breadcrumbs'][] = ['label' => 'Travel Arrangements', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->arrangement_code];
 ?>
 <div class="tour-arrangement-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
+    <!--
     <p>
+       
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
@@ -24,11 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+    -->
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'arrangement_code',
             'place_of_origin',
             'destination',
@@ -42,8 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'inclusion_tour_type:ntext',
             'inclusion_transport_service',
             'remarks:ntext',
-            'date_created',
-            'user_id',
+            //'date_created',
+            //'user_id',
         ],
     ]) ?>
 
