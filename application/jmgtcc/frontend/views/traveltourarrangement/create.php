@@ -1,5 +1,6 @@
 <?php
 
+
 use yii\helpers\Html;
 use common\models\User;
 
@@ -19,12 +20,20 @@ if (Yii::$app->user->isGuest == false)
 
 <div class="travel-tour-arrangement-create">
 
-   
+	<?php 
+        if (Yii::$app->user->isGuest)
+        {
+            //return $this->goHome();
+            Yii::$app->response->redirect(['site/login']);
+        }
+        else
+        { ?>
+
     		<?=$this->render('_form', [
     				'model' => $model,
     		]) ?>
+            
+    <?php } ?>
 
-    
    
-
 </div>
