@@ -112,7 +112,7 @@ class TravelTourArrangementController extends Controller
                // SEND EMAIL TO TRAVEL AGENT
                 Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                    ->setTo('roxanneluangco@gmail.com')
+                    ->setTo('dummyreceiver1@gmail.com')
                     ->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
                     ->setHtmlBody("<br>
                          <div>
