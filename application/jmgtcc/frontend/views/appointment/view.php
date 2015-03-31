@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 
 $this->title = $model->appointment_code;
 
-if (Yii::$app->user->identity->username != null)
+if (Yii::$app->user->isGuest == false)
 {
     $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
     $this->params['breadcrumbs'][] = ['label' => $model->appointment_code];
@@ -18,7 +18,7 @@ if (Yii::$app->user->identity->username != null)
 <div class="appointment-view">
 
     <?php
-        if (Yii::$app->user->identity->username == null)
+        if (Yii::$app->user->isGuest == false)
         {
             print('<br><br>');
         }
