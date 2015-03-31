@@ -35,7 +35,9 @@ $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
                             <button class="side-nav">Tour Type</button></a>    
                     <br><a href="index.php?r=transportservice">
                             <button class="side-nav">Transport Service</button></a> 
-                    <br><br>     
+                    <br><a href="index.php?r=personnel">
+                            <button class="side-nav">Personnel</button></a> 
+                    <br><br>        
                 
                 </div>                
             </div>
