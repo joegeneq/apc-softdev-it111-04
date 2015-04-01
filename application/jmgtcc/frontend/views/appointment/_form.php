@@ -17,7 +17,7 @@ use backend\models\Time;
     <?php $form = ActiveForm::begin(); ?>
       
     <?php 
-        if (Yii::$app->user->identity->username == null)
+        if (Yii::$app->user->isGuest)
         {
             print('<br>');
         }

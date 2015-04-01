@@ -72,7 +72,11 @@ $this->title = 'JMGTCC';
         <br>
 
             <?php 
+<<<<<<< HEAD
                if (Yii::$app->user->isGuest)
+=======
+                if (Yii::$app->user->isGuest == false)
+>>>>>>> 3b7cf55710b566ed73c8d5a1c6810d3c732065b0
                 {
                     print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
                             <img class="servicesImg" title="Create a Travel Arrangement"

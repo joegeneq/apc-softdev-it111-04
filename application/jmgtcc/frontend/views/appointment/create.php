@@ -10,7 +10,7 @@ $this->title = Yii::t('app', 'Create {modelClass}', [
     'modelClass' => 'Appointment',
 ]);
 
-if (Yii::$app->user->identity->username != null)
+if (Yii::$app->user->isGuest == false)
 {
 	$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Appointments'), 'url' => ['index']];
 }

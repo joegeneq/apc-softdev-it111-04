@@ -1,5 +1,6 @@
 <?php
 
+
 use yii\helpers\Html;
 use common\models\User;
 
@@ -19,26 +20,20 @@ if (Yii::$app->user->isGuest == false)
 
 <div class="travel-tour-arrangement-create">
 
-    <?php
-	    /* $this->render('_form', [
-	        'model' => $model,
-	    ])  */
-    
-    	if (Yii::$app->user->isGuest)
-    	{
-    		print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
-                            <img style="margin-top:5%;" class="servicesImg" title="Create a Travel Arrangement"
-                            src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
-    		
-    	}
-    	else 
-    
-    	{ ?>
+	<?php 
+        if (Yii::$app->user->isGuest)
+        {
+            //return $this->goHome();
+            Yii::$app->response->redirect(['site/login']);
+        }
+        else
+        { ?>
+
     		<?=$this->render('_form', [
     				'model' => $model,
-    		])?>
-    	<?php } ?>
-    
-   
+    		]) ?>
+            
+    <?php } ?>
 
+   
 </div>

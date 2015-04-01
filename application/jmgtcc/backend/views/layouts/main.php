@@ -38,8 +38,8 @@ AppAsset::register($this);
             $menuItems = [
             	['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Appointment', 'url' => ['/appointment/index']],
-            	['label' => 'Travel & Tour', 'url' => ['/traveltourarrangement/index']],
-           		['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/index']],
+            	['label' => 'Travel & Tour', 'url' => ['/travel-tour-arrangement/index']],
+           		['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/index']],
             	['label' => 'Users', 'url' => ['/user/index']],
             	
             ];
