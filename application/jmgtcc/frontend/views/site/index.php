@@ -72,9 +72,9 @@ $this->title = 'JMGTCC';
         <br>
 
             <?php 
-                if (Yii::$app->user->identity->username != null)
+               if (Yii::$app->user->isGuest)
                 {
-                    print('<a href="/jmgtcc/frontend/web/index.php?r=travelarrangement%2Fcreate">
+                    print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
                             <img class="servicesImg" title="Create a Travel Arrangement"
                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
                 }
