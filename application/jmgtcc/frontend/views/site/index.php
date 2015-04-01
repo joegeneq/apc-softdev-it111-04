@@ -72,6 +72,7 @@ $this->title = 'JMGTCC';
         <br>
 
             <?php 
+<<<<<<< HEAD
 
                //if (Yii::$app->user->isGuest)
                 if (Yii::$app->user->isGuest == false)
@@ -81,6 +82,15 @@ $this->title = 'JMGTCC';
                             <img class="servicesImg" title="Create a Travel Arrangement"
                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
                 }
+=======
+                 if (Yii::$app->user->isGuest == false)
+                 {
+                      print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
+                             <img class="servicesImg" title="Create a Travel Arrangement"
+                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
+                 }
+
+>>>>>>> 02a0afa89a606801f47580938df7e5c5734e73b2
                 else
                 {
                     print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
