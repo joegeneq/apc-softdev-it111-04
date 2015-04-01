@@ -41,13 +41,13 @@ AppAsset::register($this);
                 ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],
             ];
             if (Yii::$app->user->isGuest) {
-            	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/traveltourarrangement/create']];
+            	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/travel-tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
                 $menuItems[] = ['label' => 'Sign up', 'url' => ['/site/signup']];
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
-            	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tourarrangement/create']];
-            	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/traveltourarrangement/create']];
+            	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/create']];
+            	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/travel-tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
                 $menuItems[] = [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
