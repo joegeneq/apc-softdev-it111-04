@@ -60,9 +60,10 @@ class AppointmentController extends Controller
         {
         	        	
         	$totalRecords = Appointment::find()
-        		 ->where('appointment_date > :fromDate and appointment_date < :toDate')
-        		 ->addParams([':fromDate' =>  $model->getFromDate()])
-        		 ->addParams([':toDate' => $model->getToDate()]) 
+        		 ->where('appointment_date >= :fromDate and appointment_date <= :toDate')
+        		 ->andWhere('appointment_date >= :fromDate', [':fromDate' => $model->getFromDate()])
+        		 ->andWhere('appointment_date <= :toDate', [':toDate' => $model->getToDate()])
+        		 ->andWhere("status = 'Confirmed'")
         		 ->count();
         	
         	$profit = $totalRecords * 1000;
