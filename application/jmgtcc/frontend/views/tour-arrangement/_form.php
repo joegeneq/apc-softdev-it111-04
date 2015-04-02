@@ -75,7 +75,7 @@ use backend\models\Airlines;
                                    'clientOptions' => [
                                    'autoclose' => true,
                                    'format' => 'yyyy-mm-dd',                            
-<<<<<<< HEAD
+
                                    'startDate' => ''
                                    ]])
                              ->label(false);?>
@@ -102,7 +102,7 @@ JS;
     $this -> registerJS($script);
 ?>
                      
-=======
+
                                    'startDate' => '+0d',
                                    'name' => 'returnDate'
                                   ]])
@@ -121,7 +121,7 @@ JS;
                 $this -> registerJS($script);
             ?>
             
->>>>>>> b8ba417aec6ea5fe7bb884eeca617ea0d25e9f53
+
 
             <br>
             <div class="arrangement-division"><b class="division-label">Accommodation</b></div>
