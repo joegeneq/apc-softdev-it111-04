@@ -58,14 +58,11 @@ class AppointmentController extends Controller
         
         if($model->load(Yii::$app->request->post()))
         {
-        	
-        	//Yii::$app->session->setFlash('success', 'Validation Successful');
-        	$fromDate = $_GET['fromDate'];
-        	$toDate = $_GET['toDate'];
+        	        	
         	$totalRecords = Appointment::find()
         		 ->where('appointment_date > :fromDate and appointment_date < :toDate')
-        		 ->addParams([':fromDate' => $fromDate])
-        		 ->addParams([':toDate' => $toDate]) 
+        		 ->addParams([':fromDate' =>  $model->getFromDate()])
+        		 ->addParams([':toDate' => $model->getToDate()]) 
         		 ->count();
         	
         	$profit = $totalRecords * 1000;
@@ -79,7 +76,7 @@ class AppointmentController extends Controller
                 <p style='font-family:arial; margin-left:5%;'>
                 <br><br>
                     Greetings from the JMGTCC Management. <br>
-                    Below are the details of your Visa Assistance Appointment Report from ".$fromDate." to ".$toDate.":
+                    Below are the details of your Visa Assistance Appointment Report from ".$model->getFromDate()." to ".$model->getToDate().":
                 </p>
                 <br>
         	
@@ -96,11 +93,11 @@ class AppointmentController extends Controller
                     <table style='font-family: arial'>
                         <tr>
                             <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>From</b></td>
-                            <td>".$fromDate."</td>
+                            <td>".$model->getFromDate()."</td>
                         </tr>
                     	<tr>
                             <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>To</b></td>
-                            <td>".$toDate."</td>
+                            <td>".$model->getToDate()."</td>
                         </tr>	
                     	<tr>
                             <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Number of Appointments</b></td>
@@ -121,7 +118,12 @@ class AppointmentController extends Controller
             ")
         	
         	->send();
-        	 return $this->redirect(['index', 'model' => $model]); 
+        	
+        	//Send message notif if email was sent  successfully
+        	Yii::$app->session->setFlash('success', 'Report successfully sent.');
+        	
+        	
+        	return $this->redirect(['index', 'model' => $model]); 
 	
         }
         else 

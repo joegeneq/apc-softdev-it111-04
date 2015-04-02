@@ -16,5 +16,15 @@ class AppointmentReport extends Model
 		
 		];
 	}
+	
+	public function getFromDate()
+	{
+		return $this->fromDate;
+	}
+	
+	public function getToDate()
+	{
+		return $this->toDate;
+	}
 }
 
