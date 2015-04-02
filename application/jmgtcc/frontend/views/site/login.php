@@ -23,8 +23,6 @@ $this->title = 'Login';
                         ->passwordInput() 
                     ?> 
 
-                <br>
-
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
                 <div style="color:#999;margin:1em 0">
@@ -34,7 +32,11 @@ $this->title = 'Login';
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
                         <?php ActiveForm::end(); ?>
-                <br>
+                
+                <div style="color:black;margin:1em 0">
+                    Don't have an account? <?= Html::a('SIGN UP HERE', ['site/signup']) ?>.
+                </div>
+                
 
             </div>
         </div>

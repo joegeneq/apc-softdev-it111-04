@@ -72,12 +72,23 @@ $this->title = 'JMGTCC';
         <br>
 
             <?php 
+
+
+               //if (Yii::$app->user->isGuest)
                 if (Yii::$app->user->isGuest == false)
+
                 {
                     print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
                             <img class="servicesImg" title="Create a Travel Arrangement"
                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
                 }
+
+                 if (Yii::$app->user->isGuest == false)
+                 {
+                      print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
+                             <img class="servicesImg" title="Create a Travel Arrangement"
+                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
+                 }
                 else
                 {
                     print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
@@ -107,11 +118,11 @@ $this->title = 'JMGTCC';
                     <br><br>
                     WE SPECIALIZE IN GROUP BOOKINGS INCLUSIVE OF COMPREHENSIVE TRAVEL ORIENTATION, AIRPORT ESCORT SERVICE AND FREE TRAVEL INSURANCE.
                     <br><br>
-                    WE ARE THE COUNTRY’S REPUTABLE “METRO MANILA VISA ASSISTANCE CENTER” HANDLING ALL VISA DOCUMENTATION AND PROCESSING 
+                    WE ARE THE COUNTRYâ€™S REPUTABLE â€œMETRO MANILA VISA ASSISTANCE CENTERâ€� HANDLING ALL VISA DOCUMENTATION AND PROCESSING 
                     REQUIREMENTS FOR YOUR CONVENIENCE, SERVING TOP CORPORATIONS, GOVERNMENT AGENCIES, SHOWBUSINESS PERSONALITIES AND THE 
                     BUSINESS COMMUNITY.
                     <br><br>
-                    WE ARE THE PHILIPPINES’ TRUSTED BOOKING PARTNER OF LAND ARRANGEMENT PACKAGES AROUND THE WORLD.
+                    WE ARE THE PHILIPPINESâ€™ TRUSTED BOOKING PARTNER OF LAND ARRANGEMENT PACKAGES AROUND THE WORLD.
                     <br><br>
                     VISIT US AND ENJOY THE COMFORTS OF OUR OFFICE ENVIRONMENT AND EXPERIENCED TRAVEL STAFF!
                 </p>
