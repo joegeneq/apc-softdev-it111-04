@@ -7,6 +7,7 @@ use yii\helpers\ArrayHelper;
 use dosamigos\datepicker\DatePicker;
 use backend\models\Time;
 
+
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Appointment */
 /* @var $form yii\widgets\ActiveForm */
@@ -112,7 +113,7 @@ use backend\models\Time;
                     <p class="form-label required-field">Appointment Date</p>
                  </div>
                 <div class="col-lg-6">                   
-                     <?= $form->field($model, 'appointment_date')
+                    <?= $form->field($model, 'appointment_date')
                             ->widget(
                                 DatePicker::className(), [
                                     'inline' => false, 
@@ -121,7 +122,8 @@ use backend\models\Time;
                                         'format' => 'yyyy-mm-dd',
                                         'daysOfWeekDisabled' => [0,6],
                                         'startDate' => '+1d'
-                                    ]])
+                                    ]],
+                                    ['name'=>'appointment_date'])
                             ->label(false);?>
                 </div>
             </div>
@@ -130,15 +132,67 @@ use backend\models\Time;
             <div class="row">
                 <div class="col-lg-3">
                     <p class="form-label required-field">Appointment Time</p>
-                 </div>
-                <div class="col-lg-2">                   
-                   <?= $form->field($model, 'appointment_time')->radioList(                        
-                        ArrayHelper::map(Time::find()->all(),'time','time')
-                        )
-                   ->label(false);
-                    ?>
+                </div>
+                <div class="col-lg-2" id="appointmentTime">  
+                    <?= $form->field($model, 'appointment_time')->radioList(  
+                        //['id'=>'appointment_time'],
+                            ArrayHelper::map(Time::find()  
+                                //->where(['id'=>'1'])                       
+                                ->all(),'time','time'))                        
+                            ->label(false);
+                    ?>     
                 </div>
             </div>
+
+<?php
+    $script = <<< JS
+         //ALL JAVASCRIPT CODES
+          $("input[name='appointment_date']").change(function(){
+              if($(this).val() == null)
+              {
+                $("#appointmentTime").hide();
+            }
+            //  } else {
+            //     $("#textBox_hotel").val('');
+            //     $("#textBox_hotel").hide(); 
+            // }
+      });        
+JS;
+    $this -> registerJS($script);
+?>
+
+        <script>
+            function showHint(str) {
+                if (str.length == 0 || str == null) { 
+                    //document.getElementById("appointmentTime").hide();
+                    //return;
+                    alert("111");
+                } else {
+                     var xmlhttp = new XMLHttpRequest();
+                     xmlhttp.onreadystatechange = function() {
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                             document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                        }
+                    }
+                    xmlhttp.open("GET", "gethint.php?q="+str, true);
+                    xmlhttp.send();
+                }
+            }
+        </script>
+
+         <script >
+            // $(document).ajaxStart(function () {
+            //     $("#results").children().remove();
+            //     $trans = $('#translations').val();
+            //     if ($trans == 'fil') {
+            //       var msg = '<h1>Mangyaring maghintay...</h1>';
+            //     } else {
+            //       var msg = '<h1>Please wait...</h1>';
+            //     };
+            //     $("#results").append(msg);
+            // });
+        </script>
+
             
             <!-- NOTES -->
             <div class="row">

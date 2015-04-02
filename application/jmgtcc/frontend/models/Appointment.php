@@ -89,6 +89,7 @@ class Appointment extends \yii\db\ActiveRecord
 
             [['appointment_code'], 'string', 'max' => 25]
         ];
+            
     }
 
     /**
@@ -138,7 +139,7 @@ class Appointment extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
         $model = $connection
-            ->createCommand("SELECT CONCAT('VA', RIGHT(CAST(YEAR(NOW()) AS CHAR(15)),2), 
+            ->createCommand("SELECT CONCAT('VA', RIGHT(CAST(YEAR(NOW()) AS CHAR(4)),2), 
                                 RIGHT(CONCAT('00', MONTH(NOW())), 2), 
                                 '-', 
                                 RIGHT( CONCAT('00000', COALESCE(MAX(id),0)+1 ) , 6)) AS appointment_code 
