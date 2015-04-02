@@ -8,7 +8,7 @@ use yii\grid\GridView;
 use backend\models\Appointment;
 use backend\models\AppointmentSearch;
 
-$this->title = 'JMGTCC Backend';
+$this->title = 'JMGTCC ADMIN';
 $searchModel = new AppointmentSearch();
 $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

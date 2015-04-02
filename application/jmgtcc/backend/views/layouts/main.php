@@ -26,17 +26,14 @@ AppAsset::register($this);
         <?php
             NavBar::begin([
                 
-                /* START: 02082015 AFPAPNA */
                 'brandLabel' => '<img src="images/logo.png">',
-                /* END: 02082015 AFPAPNA */
-
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
             $menuItems = [
-            	['label' => 'Home', 'url' => ['/site/index']],
+            	['label' => '<span class="glyphicon glyphicon-home"></span>', 'url' => ['/site/index']],
                 ['label' => 'Appointment', 'url' => ['/appointment/index']],
             	['label' => 'Travel & Tour', 'url' => ['/travel-tour-arrangement/index']],
            		['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/index']],
@@ -47,15 +44,20 @@ AppAsset::register($this);
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
+
                 $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-				
+                    'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' '.Yii::$app->user->identity->username,
+                    'items' => [
+                        ['label' => '<span class="glyphicon glyphicon-log-out" style="margin-right: 10px;"></span>'.'Log out', 
+                                'url' => ['/site/logout'],
+                                'linkOptions' => ['data-method' => 'post'], ],
+                            ],
+                        ];  
+
 				echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
+                'encodeLabels' => false,
             ]);
            
             }
