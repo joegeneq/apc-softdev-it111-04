@@ -1,5 +1,4 @@
-<script src="assets/1f536bbd/js/jquery-1.9.1.min.js"></script>
-<script src="assets/1f536bbd/js/jssor.slider.mini.js"></script>
+
 <script>
     jQuery(document).ready(function ($) {    
 

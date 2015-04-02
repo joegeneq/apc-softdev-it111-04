@@ -157,6 +157,19 @@ a.desc:after {
 
 }
 
+/*START ADDED BY: AFPAPNA 04022015*/
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #F9FF89;
+  background-color: transparent;
+}
+/*END ADDED BY: AFPAPNA 04022015*/
+
 .breadcrumb {
   padding: 25px 15px 13px;
   margin-bottom: 30px;

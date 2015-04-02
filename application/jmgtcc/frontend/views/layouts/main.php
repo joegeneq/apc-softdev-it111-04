@@ -27,37 +27,51 @@ AppAsset::register($this);
         <?php
             NavBar::begin([
 
-                /* START: 02082015 AFPAPNA */
                 'brandLabel' => '<img src="images/logo.png">',
-                /* END: 02082015 AFPAPNA */
-
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
+
             $menuItems = [
-                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => '<span class="glyphicon glyphicon-home"></span>', 'url' => ['/site/index']],
                 ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],
             ];
+
             if (Yii::$app->user->isGuest) {
             	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/travel-tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+
+                $menuItems[] = [
+                    'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' Account',
+                    'items' => [
+                        ['label' => '<span class="glyphicon glyphicon-log-in" style="margin-right: 10px;"></span>'.'Login', 
+                                'url' => ['/site/login'], ],
+                        ['label' => '<span style="margin-right: 25px;"></span>'.'Signup', 
+                                'url' => ['/site/signup'], ],
+                            ],
+                        ];
+
             } else {
             	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/travel-tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
+
                 $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-                 
+                    'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' '.Yii::$app->user->identity->username,
+                    'items' => [
+                        ['label' => '<span class="glyphicon glyphicon-log-out" style="margin-right: 10px;"></span>'.'Log out', 
+                                'url' => ['/site/logout'],
+                                'linkOptions' => ['data-method' => 'post'], ],
+                            ],
+                        ];                 
             }
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
+                'encodeLabels' => false,
             ]);
             NavBar::end();
         ?>
