@@ -74,7 +74,6 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'email_address')
                             ->textInput(['maxlength' => 45])
-                            ->input(email)
                             ->label(false) ?>
                 </div>
             </div>

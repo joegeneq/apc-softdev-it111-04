@@ -74,11 +74,23 @@ use backend\models\Airlines;
                                    'clientOptions' => [
                                    'autoclose' => true,
                                    'format' => 'yyyy-mm-dd',                            
-                                   'startDate' => '+0d'
+                                   'startDate' => '+0d',
+                                   'name' => 'returnDate'
                                   ]])
                              ->label(false);?>
                 </div>
             </div>
+            <?php
+                $script = <<< JS
+                     //ALL JAVASCRIPT CODES
+                      $("input[name='TourArrangement[return_Date]'").change(function(){
+                          alert();
+                      
+
+                  });        
+JS;
+                $this -> registerJS($script);
+            ?>
             
 
             <br>
