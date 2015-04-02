@@ -60,8 +60,8 @@ class AppointmentController extends Controller
         {
         	
         	//Yii::$app->session->setFlash('success', 'Validation Successful');
-        	$fromDate = $_POST['fromDate'];
-        	$toDate = $_POST['toDate'];
+        	$fromDate = $_GET['fromDate'];
+        	$toDate = $_GET['toDate'];
         	$totalRecords = Appointment::find()
         		 ->where('appointment_date > :fromDate and appointment_date < :toDate')
         		 ->addParams([':fromDate' => $fromDate])
