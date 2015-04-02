@@ -8,7 +8,7 @@ use yii\grid\GridView;
 use backend\models\Appointment;
 use backend\models\AppointmentSearch;
 
-$this->title = 'JMGTCC Backend';
+$this->title = 'JMGTCC ADMIN';
 $searchModel = new AppointmentSearch();
 $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -48,7 +48,7 @@ $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
                    
                      <?= GridView::widget([
        					 'dataProvider' => $dataProvider,
-       					 'filterModel' => $searchModel,
+       					 //'filterModel' => $searchModel,
         				 'columns' => [
             				['class' => 'yii\grid\SerialColumn'],
 

@@ -18,7 +18,7 @@ if (Yii::$app->user->isGuest == false)
 <div class="appointment-view">
 
     <?php
-        if (Yii::$app->user->isGuest == false)
+        if (Yii::$app->user->isGuest)
         {
             print('<br><br>');
         }

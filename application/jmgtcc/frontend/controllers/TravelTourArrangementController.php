@@ -9,6 +9,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\User;
+use frontend\models\Personnel;
+use yii\helpers\ArrayHelper;
 
 /**
  * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
@@ -112,7 +114,7 @@ class TravelTourArrangementController extends Controller
                // SEND EMAIL TO TRAVEL AGENT
                 Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-                    ->setTo('dummyreceiver1@gmail.com')
+                    ->setTo(ArrayHelper::map(Personnel::find()->all(), 'email', 'email'))
                     ->setSubject('JMGTCC CLIENT TRAVEL TOUR ARRANGEMENT ' )
                     ->setHtmlBody("<br>
                          <div>
