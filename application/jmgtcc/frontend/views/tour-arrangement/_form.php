@@ -70,10 +70,39 @@ use backend\models\Airlines;
                     <?= $form->field($model, 'return_date')
                              ->widget(
                                   DatePicker::className(), [
+                                   'id'=> 'myDate',
                                    'inline' => false, 
                                    'clientOptions' => [
                                    'autoclose' => true,
                                    'format' => 'yyyy-mm-dd',                            
+
+                                   'startDate' => ''
+                                   ]])
+                             ->label(false);?>
+                </div>
+            </div>
+           <?php
+    $script = <<< JS
+                    //ALL JAVASCRIPT CODES
+                    $("#tourarrangement-arrival_date").change(function(){
+                      var arrivalDate = $("input[name='TourArrangement[arrival_date]']").val();
+                      if (arrivalDate)  
+                       //alert(value);
+                       return value;
+                       
+                           
+                      });
+                        
+                        
+                      
+
+                         
+
+JS;
+    $this -> registerJS($script);
+?>
+                     
+
                                    'startDate' => '+0d',
                                    'name' => 'returnDate'
                                   ]])
@@ -92,6 +121,7 @@ JS;
                 $this -> registerJS($script);
             ?>
             
+
 
             <br>
             <div class="arrangement-division"><b class="division-label">Accommodation</b></div>

@@ -674,3 +674,27 @@ fieldset[disabled] .btn-danger.active {
 
 
 /* END ADDED BY: AFPAPNA 03292015 */
+
+h4.v-report {outline:none; }
+h4.v-report strong {line-height:30px;}
+h4.v-report:hover {text-decoration:none;} 
+h4.v-report span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:300px; line-height:16px;
+}
+h4.v-report:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+    
+/*CSS3 extras*/
+h4.v-report span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+
+
+
+

@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use backend\models\Appointment;
+use backend\models\AppointmentReport;
 use backend\models\AppointmentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -53,11 +54,88 @@ class AppointmentController extends Controller
     {
         $searchModel = new AppointmentSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        $model = new AppointmentReport();
+        
+        if($model->load(Yii::$app->request->post()))
+        {
+        	        	
+        	$totalRecords = Appointment::find()
+        		 ->where('appointment_date >= :fromDate and appointment_date <= :toDate')
+        		 ->andWhere('appointment_date >= :fromDate', [':fromDate' => $model->getFromDate()])
+        		 ->andWhere('appointment_date <= :toDate', [':toDate' => $model->getToDate()])
+        		 ->andWhere("status = 'Confirmed'")
+        		 ->count();
+        	
+        	$profit = $totalRecords * 1000;
+        	
+        	Yii::$app->mailer->compose()
+        	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+        	->setTo('dummyreceiver1@gmail.com')
+        	->setSubject('JMGTCC VISA APPOINTMENT REPORT' )
+        	->setHtmlBody("
+                <br>
+                <p style='font-family:arial; margin-left:5%;'>
+                <br><br>
+                    Greetings from the JMGTCC Management. <br>
+                    Below are the details of your Visa Assistance Appointment Report from ".$model->getFromDate()." to ".$model->getToDate().":
+                </p>
+                <br>
+        	
+                <div style='border: 1px solid black; width: 500px; margin-left:10%;'>
+                <div>
+                    <img style='padding-top: 10px; padding-left: 20px;' height='50' width='180'
+                    src='http://journeysglobaltours.com/wp-content/uploads/2012/11/main_logo.png' >
+                </div>
+                <p style='font-size: 11px; font-family: arial; padding-bottom: 8px; padding-top: 8px; padding-left: 20px;'>
+                        Upper Ground 12 Cityland Pioneer Condominium 128 Pioneer St., <br>
+                        Mandaluyong City, Philippines
+                </p>
+                <div style='width: 435px; margin-left:30px; '>
+                    <table style='font-family: arial'>
+                        <tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>From</b></td>
+                            <td>".$model->getFromDate()."</td>
+                        </tr>
+                    	<tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>To</b></td>
+                            <td>".$model->getToDate()."</td>
+                        </tr>	
+                    	<tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Number of Appointments</b></td>
+                            <td>".$totalRecords."</td>
+                        </tr>
+                        <tr>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Income</b></td>
+                            <td>".$profit."</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        	
+            <br><br>
+            <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
+            <br><br>
+        	
+            ")
+        	
+        	->send();
+        	
+        	//Send message notif if email was sent  successfully
+        	Yii::$app->session->setFlash('success', 'Report successfully sent.');
+        	
+        	
+        	return $this->redirect(['index', 'model' => $model]); 
+	
+        }
+        else 
+        {
+	        return $this->render('index', [
+	        			'searchModel' => $searchModel,
+	        			'dataProvider' => $dataProvider,
+	        			'model'=>$model
+	        	]);
+        }
+        
     }
 
     /**
