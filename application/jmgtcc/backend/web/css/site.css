@@ -671,9 +671,12 @@ fieldset[disabled] .btn-danger.active {
   float: right;
   margin-right: 15%;
 }
-
-
 /* END ADDED BY: AFPAPNA 03292015 */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ APPOINTMENT REPORT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START ADDED BY: ECHIDALGO 04022015 */
 
 h4.v-report {outline:none; }
 h4.v-report strong {line-height:30px;}
@@ -693,6 +696,21 @@ h4.v-report span
     border-radius:4px;
     box-shadow: 5px 5px 8px #CCC;
 }
+/* END ADDED BY: ECHIDALGO 04022015 */
+
+/* START ADDED BY: AFPAPNA 04032015 */
+.reportContent{
+  padding: 10px 10px 10px 10px;
+  background-color: #F9F8F6; 
+  border-radius: 10px;
+  width: 80%;
+}
+
+.reportSubmit{
+  float: right;
+  padding-right: 70px;
+}
+/* END ADDED BY: AFPAPNA 04032015 */
 
 
 

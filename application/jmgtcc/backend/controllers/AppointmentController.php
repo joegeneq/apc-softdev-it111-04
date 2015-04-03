@@ -70,7 +70,8 @@ class AppointmentController extends Controller
         	
         	Yii::$app->mailer->compose()
         	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-        	->setTo('dummyreceiver1@gmail.com')
+        	// ->setTo('dummyreceiver1@gmail.com')
+            ->setTo('biapapna@gmail.com')
         	->setSubject('JMGTCC VISA APPOINTMENT REPORT' )
         	->setHtmlBody("
                 <br>
