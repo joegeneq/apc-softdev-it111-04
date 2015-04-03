@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TourTypeSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Tour Types');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tour-type-index">

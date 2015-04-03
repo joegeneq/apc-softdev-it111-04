@@ -10,7 +10,7 @@ use dosamigos\datepicker\DatePicker;
 /* @var $searchModel backend\models\AppointmentSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Appointments');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
 
 ?>
 <div class="appointment-index">

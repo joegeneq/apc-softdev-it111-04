@@ -135,7 +135,7 @@ use backend\models\Time;
                 </div>
                 <div class="col-lg-2" id="appointmentTime">  
                     <?= $form->field($model, 'appointment_time')->radioList(  
-                        //['id'=>'appointment_time'],
+                        array(['id'=>'appointment_time']),
                             ArrayHelper::map(Time::find()  
                                 //->where(['id'=>'1'])                       
                                 ->all(),'time','time'))                        
@@ -150,7 +150,8 @@ use backend\models\Time;
           $("input[name='appointment_date']").change(function(){
               if($(this).val() == null)
               {
-                $("#appointmentTime").hide();
+                //$("#appointmentTime").hide();
+                alert("sss");
             }
             //  } else {
             //     $("#textBox_hotel").val('');

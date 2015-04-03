@@ -24,16 +24,16 @@ class AppointmentController extends Controller
         				'class' => AccessControl::className(),
         				'rules' => [
         						[
-        								'actions' => ['login', 'error'],
-        								'allow' => true,
+    								'actions' => ['login', 'error'],
+    								'allow' => true,
         						],
         						[
-        								'actions' => ['logout', 'index', 'create', 'update', 'delete', 'view'],
-        								'allow' => true,
-        								'roles' => ['@'],
-        								'matchCallback' => function ($rule, $action) {
-        									return User::isUserAdmin(Yii::$app->user->identity->username);
-        								}
+    								'actions' => ['logout', 'index', 'create', 'update', 'delete', 'view'],
+    								'allow' => true,
+    								'roles' => ['@'],
+    								'matchCallback' => function ($rule, $action) {
+    									return User::isUserAdmin(Yii::$app->user->identity->username);
+    								}
         						],
         						],
         				],
@@ -121,8 +121,7 @@ class AppointmentController extends Controller
         	->send();
         	
         	//Send message notif if email was sent  successfully
-        	Yii::$app->session->setFlash('success', 'Report successfully sent.');
-        	
+        	Yii::$app->session->setFlash('success', 'Report successfully sent.');       	
         	
         	return $this->redirect(['index', 'model' => $model]); 
 	

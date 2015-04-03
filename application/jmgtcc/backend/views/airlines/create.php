@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Airlines */
 
-$this->title = 'Airlines';
+$this->title = 'JMGTCC ADMIN';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Airlines'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

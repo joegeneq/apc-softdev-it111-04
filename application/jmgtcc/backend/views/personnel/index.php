@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\PersonnelSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Personnels');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="personnel-index">

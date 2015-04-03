@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TransportServiceSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Transport Services');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="transport-service-index">

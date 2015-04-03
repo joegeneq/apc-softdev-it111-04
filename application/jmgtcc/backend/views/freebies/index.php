@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\FreebiesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Freebies');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="freebies-index">
