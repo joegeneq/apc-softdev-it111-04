@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Personnels';
 ?>
 <div class="personnel-index">
 
@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
 
-                'id',
+                //'id',
                 'personnel_name',
                 'email:email',
 

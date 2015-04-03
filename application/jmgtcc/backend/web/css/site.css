@@ -671,6 +671,23 @@ fieldset[disabled] .btn-danger.active {
   float: right;
   margin-right: 15%;
 }
+
+.width-10{
+  width:10%;
+}
+
+.width-15{
+  width:15%;
+}
+
+.width-20{
+  width:20%;
+}
+
+.width-60{
+  width:60%;
+}
+
 /* END ADDED BY: AFPAPNA 03292015 */
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */

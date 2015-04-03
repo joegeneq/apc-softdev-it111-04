@@ -2,17 +2,18 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\TravelTourArrangementSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Travel & Tour Arrangements';
 ?>
 <div class="travel-tour-arrangement-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+   <h2> Travel & Tour Arrangements </h2>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
@@ -23,12 +24,45 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'arrangement_code',
             'place_of_origin',
             'destination',
-            'departure_date',
-            // 'return_date',
+
+            //'departure_date',
+
+            [
+                'attribute' => 'departure_date',
+                'value' => 'departure_date',
+                'options'=> ['class'=>'width-15'],
+                'format' => 'raw',
+                'filter' => DatePicker::widget([
+                    'model' => $searchModel,
+                    'attribute' => 'departure_date',
+                        'clientOptions' => [
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd',
+                        ]
+                ]),
+            ],
+
+            //'return_date',
+
+            [
+                'attribute' => 'return_date',
+                'value' => 'return_date',
+                'options'=> ['class'=>'width-15'],
+                'format' => 'raw',
+                'filter' => DatePicker::widget([
+                    'model' => $searchModel,
+                    'attribute' => 'return_date',
+                        'clientOptions' => [
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd',
+                        ]
+                ]),
+            ],
+
             // 'airline_name',
             // 'flight_type',
             // 'class_type',
@@ -43,7 +77,8 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'date_created',
             // 'user_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+            'template' => '{view} {delete}'],
         ],
     ]); ?>
 

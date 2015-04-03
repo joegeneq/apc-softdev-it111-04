@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Tour Types';
 ?>
 <div class="tour-type-index">
 
@@ -33,7 +33,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 //'id',
                 'tour_name',
-                'tour_description:ntext',
+                //'tour_description:ntext',
+
+                [
+                    'attribute' =>  'tour_description',
+                    'value' =>  'tour_description',
+                    'options'=> ['class'=>'width-60'],
+                    'filter' => false,
+                    
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],

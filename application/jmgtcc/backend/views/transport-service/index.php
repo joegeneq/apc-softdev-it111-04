@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Transport Services';
 ?>
 <div class="transport-service-index">
 
@@ -33,7 +33,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 //'id',
                 'transport_type',
-                'transport_description:ntext',
+                //'transport_description:ntext',
+
+                [
+                    'attribute' =>  'transport_description',
+                    'value' =>  'transport_description',
+                    'options'=> ['class'=>'width-60'],
+                    'filter' => false,                    
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],

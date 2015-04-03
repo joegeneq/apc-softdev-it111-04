@@ -84,12 +84,13 @@ use yii\widgets\DetailView;
                     {
                         print('
                                 <div class="col-lg-3">
-                                    <p class="form-label required-field">Payment:</p>
+                                    <p class="form-label"><b>Payment:</b></p>
                                  </div>
                                 <div class="col-lg-8">
                             '); ?>
 
-                        <?= $form->field($model, 'payment_rate')->textInput()
+                        <?= $form->field($model, 'payment_rate')
+                            ->textInput(['readonly'=>'true', 'value'=> 1000.00])
                             ->label(false) ?>
                         
 
@@ -104,7 +105,8 @@ use yii\widgets\DetailView;
                                  </div>
                                 <div class="col-lg-8">
                             '); ?>
-                        <?= $form->field($model, 'payment_rate')->textInput(['readonly'=>'true'])
+                        <?= $form->field($model, 'payment_rate')
+                            ->textInput(['readonly'=>'true'])
                             ->label(false)
                              ?>
                 <?php 
@@ -118,18 +120,17 @@ use yii\widgets\DetailView;
             <br>
 
             <div class="form-group">
-                    
                 
                 <div class="btn-right ">
 
                     <?php if (($model->status) != 'Confirmed') { ?>
                     <?= Html::submitButton($model->isNewRecord ? 
-                            Yii::t('app', 'Create') : Yii::t('app', 'Submit payment'), 
+                            Yii::t('app', 'Create') : Yii::t('app', 'Confirm Appointment'), 
                             ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-                    <?php } ?>    
-                    
+                    <?php } ?> 
+                    <?= Html::a('Cancel', ['/appointment/index'], 
+                            ['class' => 'btn btn-danger']) ?>         
                 </div> 
-       
 
             </div>
 

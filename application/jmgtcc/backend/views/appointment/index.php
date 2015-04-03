@@ -11,6 +11,7 @@ use dosamigos\datepicker\DatePicker;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
+$this->params['breadcrumbs'][] = 'Appointments';
 
 ?>
 
@@ -31,9 +32,7 @@ $this->title = Yii::t('app', 'JMGTCC ADMIN');
 </script>
 
 <div class="appointment-index">
-
-    <br>
-
+  
     <h2> Visa Assistance Appointments </h2>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -102,21 +101,15 @@ $this->title = Yii::t('app', 'JMGTCC ADMIN');
 						 		->label(false);?>
 					</div>
 
-					<div class="reportSubmit">		
-						<button class="btn btn-danger" onclick="hideContent()">Cancel</button>		
+					<div class="reportSubmit">								
 						<?= Html::submitButton('<span class="glyphicon glyphicon-envelope" 
 												style="font: arial;"></span>'.'  Submit report', ['class'=>'btn btn-success']);?> 
+						<button class="btn btn-danger" onclick="hideContent()">Cancel</button>	
 					</div>
 	    		</div>
-	    		
-
 			</div>	
-
-		<?php ActiveForm::end(); ?> 		 
-	
+		<?php ActiveForm::end(); ?> 
 	</div>
-       
-		
 
 
     <div class="body-content">
@@ -133,15 +126,30 @@ $this->title = Yii::t('app', 'JMGTCC ADMIN');
 				
 				            'appointment_code',
 				            'client_name',
-				            'appointment_date',
+
+				            [
+				            	'attribute' => 'appointment_date',
+				                'value' => 'appointment_date',
+				                'options'=> ['class'=>'width-20'],
+				                'format' => 'raw',
+				                'filter' => DatePicker::widget([
+				                    'model' => $searchModel,
+				                    'attribute' => 'appointment_date',
+				                        'clientOptions' => [
+				                            'autoclose' => true,
+				                            'format' => 'yyyy-mm-dd',
+				                        ]
+				                ]),
+				            ],
+
+				            //'appointment_date',
 				
 				            [
 				                'attribute'=>'appointment_time',
-				                'value'=>'time.description'
+				                'value'=>'time.time'
 				            ],
 				
-				            'status',
-				
+				            'status',			
 				
 				            [
 				            'class' => 'yii\grid\ActionColumn',

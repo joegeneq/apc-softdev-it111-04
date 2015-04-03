@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'JMGTCC ADMIN');
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Food Deals';
 ?>
 <div class="food-deals-index">
 
@@ -33,7 +33,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 //'id',
                 'food_deal_name',
-                'food_deal_description:ntext',
+                //'food_deal_description:ntext',
+
+                [
+                    'attribute' =>  'food_deal_description',
+                    'value' =>  'food_deal_description',
+                    'options'=> ['class'=>'width-60'],
+                    'filter' => false,                    
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],
