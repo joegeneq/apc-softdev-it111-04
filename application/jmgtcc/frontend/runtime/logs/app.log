@@ -49051,6 +49051,20 @@ $_SERVER = [
     'REQUEST_TIME' => 1427953632
 >>>>>>> b8ba417aec6ea5fe7bb884eeca617ea0d25e9f53
 ]
+<<<<<<< HEAD
+2015-04-02 13:36:32 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\tour-arrangement\_form.php:79
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-02 13:36:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'tour-arrangement/create'
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'cas3ae9v0hrvcfe4g69sjahn71'
+    '_csrf' => '3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s:32:\"oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ\";'
+=======
 2015-04-02 09:11:04 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$modeltry' (T_VARIABLE), expecting function (T_FUNCTION)' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\frontend\models\Appointment.php:33
 Stack trace:
 #0 [internal function]: yii\base\ErrorHandler->handleFatalError()
@@ -53086,6 +53100,7 @@ $_COOKIE = [
 $_SESSION = [
     '__flash' => []
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
 ]
 
 $_SERVER = [
@@ -53096,6 +53111,23 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=cas3ae9v0hrvcfe4g69sjahn71; _csrf=3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s%3A32%3A%22oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
@@ -53112,6 +53144,7 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -53122,6 +53155,31 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '50987'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427974585.729
+    'REQUEST_TIME' => 1427974585
+]
+2015-04-02 13:38:09 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\tour-arrangement\_form.php:79
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-02 13:38:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'tour-arrangement/create'
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'cas3ae9v0hrvcfe4g69sjahn71'
+    '_csrf' => '3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s:32:\"oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ\";'
+=======
     'REMOTE_PORT' => '51321'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -53149,6 +53207,7 @@ $_COOKIE = [
 $_SESSION = [
     '__flash' => []
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
 ]
 
 $_SERVER = [
@@ -53159,6 +53218,23 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=cas3ae9v0hrvcfe4g69sjahn71; _csrf=3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s%3A32%3A%22oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
@@ -53175,6 +53251,7 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -53185,6 +53262,31 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '50996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427974689.081
+    'REQUEST_TIME' => 1427974689
+]
+2015-04-02 14:00:42 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\views\tour-arrangement\_form.php:82
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-02 14:00:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'tour-arrangement/create'
+]
+
+$_COOKIE = [
+    '__utma' => '111872281.1351461568.1385873499.1392988635.1394979370.5'
+    'PHPSESSID' => 'cas3ae9v0hrvcfe4g69sjahn71'
+    '_csrf' => '3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s:32:\"oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ\";'
+=======
     'REMOTE_PORT' => '51787'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -53553,6 +53655,7 @@ $_SESSION = [
     '__flash' => []
     '__returnUrl' => '/jmgtcc/backend/web/index.php'
     '__id' => 2
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
 ]
 
 $_SERVER = [
@@ -53563,6 +53666,23 @@ $_SERVER = [
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__utma=111872281.1351461568.1385873499.1392988635.1394979370.5; PHPSESSID=cas3ae9v0hrvcfe4g69sjahn71; _csrf=3228355c4ab22af008b92a96554d76d241b1c148e2bb58b9b084d95e0548ee20s%3A32%3A%22oiC2hUxjIz8AX5JKKgjLXnhfT7ynh4SQ%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'CONTENT_LENGTH' => '66'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
@@ -53653,6 +53773,7 @@ $_SERVER = [
     'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -53663,6 +53784,18 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '51149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427976042.638
+    'REQUEST_TIME' => 1427976042
+=======
     'REMOTE_PORT' => '54325'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -53673,6 +53806,7 @@ $_SERVER = [
     'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1427994207.022
     'REQUEST_TIME' => 1427994207
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
 ]
 2015-04-02 19:16:00 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'htmlspecialchars() expects parameter 1 to be string, array given' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\helpers\BaseHtml.php:96
 Stack trace:
