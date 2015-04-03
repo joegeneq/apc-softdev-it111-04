@@ -74,11 +74,19 @@ use backend\models\Airlines;
                                    'inline' => false, 
                                    'clientOptions' => [
                                    'autoclose' => true,
+<<<<<<< HEAD
                                    'format' => 'yyyy-mm-dd', 
                                    'startDate' => ' $("input[name="TourArrangement[arrival_date]""]").val()'                          
 
                               ]])
                              ->label(false);?>  
+=======
+                                   'format' => 'yyyy-mm-dd',                            
+
+                                   'startDate' => ''
+                                   ]])
+                             ->label(false);?>
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
                 </div>
             </div>
           
@@ -109,6 +117,31 @@ use backend\models\Airlines;
 JS;
     $this -> registerJS($script);
 ?>
+<<<<<<< HEAD
+=======
+                     
+
+                                   'startDate' => '+0d',
+                                   'name' => 'returnDate'
+                                  ]])
+                             ->label(false);?>
+                </div>
+            </div>
+            <?php
+                $script = <<< JS
+                     //ALL JAVASCRIPT CODES
+                      $("input[name='TourArrangement[return_Date]'").change(function(){
+                          alert();
+                      
+
+                  });        
+JS;
+                $this -> registerJS($script);
+            ?>
+            
+
+
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
             <br>
             <div class="arrangement-division"><b class="division-label">Accommodation</b></div>
             <br>

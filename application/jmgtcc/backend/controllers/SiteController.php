@@ -7,6 +7,7 @@ use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use common\models\User;
+use backend\models\AppointmentReport;
 
 /**
  * Site controller
@@ -85,4 +86,7 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+    
+    
+   
 }
