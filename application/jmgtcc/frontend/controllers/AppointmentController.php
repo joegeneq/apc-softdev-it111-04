@@ -17,6 +17,10 @@ use yii\mail\BaseMailer;
  */
 class AppointmentController extends Controller
 {
+
+    public $checkQuery;
+    public $prevAppointmentCode;
+
     public function behaviors()
     {
         return [
@@ -68,11 +72,11 @@ class AppointmentController extends Controller
 
         if ($model->load(Yii::$app->request->post())) 
         {   
-            $model->appointment_code = $model->getAppointmentCode($model->appointment_code);
-                   
+            $model->appointment_code = $model->getAppointmentCode($model->appointment_code);     
+            $prevAppointmentCode = $model->getPreviousAppointmentCode($data);
+
             if ($model->save()) 
             { 
-
                 // Yii::$app->mailer->compose()
                 //     ->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
                 //     ->setTo($model->email_address)
@@ -149,7 +153,34 @@ class AppointmentController extends Controller
                 //     ")
                 // ->send();
 
-                return $this->redirect(['view', 'id' => $model->id]);
+               //  $permissionList = $_POST['SignupForm']['permissions'];
+               //  //foreach($permissionList as $value)
+               //  //{
+               //      $newPermission = new AuthAssignment;
+               //      $newPermission->user_id = $user->id;
+               // //     $newPermission->item_name = $value;
+               //      $newPermission->item_name = $this->permissions;
+               //      $newPermission->save();
+               //  //}
+
+                // $update = \Yii::app()->db->createCommand()
+                //     ->update('Appointment', 
+                //             ['status'=>'Cancelled'],
+                //             'id=:id', ['ORDER BY id DESC LIMIT 1'],                       
+                //             [':id'=>$post_id]
+                //     );
+
+                $checkQuery = $model->updateAppointmentStatus($prevAppointmentCode);
+
+                if ($checkQuery == true)
+                {
+                    Yii::$app->session->setFlash('appointmentNotif', 
+                        '  Your previous Visa Consultation Appointment with Appointment Code '
+                        .$prevAppointmentCode.' has been cancelled.');                    
+                }
+               
+               return $this->redirect(['view', 'id' => $model->id]);
+                
             }
 
         } else {
