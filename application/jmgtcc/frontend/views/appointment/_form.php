@@ -7,6 +7,7 @@ use yii\helpers\ArrayHelper;
 use dosamigos\datepicker\DatePicker;
 use backend\models\Time;
 
+
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Appointment */
 /* @var $form yii\widgets\ActiveForm */
@@ -37,7 +38,7 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'client_name')
                             ->textInput(['maxlength' => 60])
-                            ->label(false)
+                            ->label(false);
                     ?>
                 </div>
             </div>
@@ -50,7 +51,7 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                         <?= $form->field($model, 'city')
                                 ->textInput(['maxlength' => 45])
-                                ->label(false) ?>
+                                ->label(false); ?>
                 </div>
             </div>
             
@@ -62,7 +63,7 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'contact_number')
                             ->textInput(['maxlength' => 20])
-                            ->label(false) ?>
+                            ->label(false); ?>
                 </div>
             </div>
 
@@ -74,7 +75,7 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'email_address')
                             ->textInput(['maxlength' => 45])
-                            ->label(false) ?>
+                            ->label(false); ?>
                 </div>
             </div>
 
@@ -88,7 +89,7 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'country')
                             ->textInput(['maxlength' => 60])
-                            ->label(false)  ?>
+                            ->label(false);  ?>
                 </div>
             </div>
            
@@ -102,7 +103,7 @@ use backend\models\Time;
                             ->dropdownList([ 'Not specified' => ' - ',
                                             'Immigrant Visa' => 'Immigrant Visa',
                                             'Non-Immigrant Visa' => 'Non-Immigrant Visa'])
-                            ->label(false) ?>
+                            ->label(false); ?>
                 </div>
             </div>
 
@@ -112,7 +113,7 @@ use backend\models\Time;
                     <p class="form-label required-field">Appointment Date</p>
                  </div>
                 <div class="col-lg-6">                   
-                     <?= $form->field($model, 'appointment_date')
+                    <?= $form->field($model, 'appointment_date')
                             ->widget(
                                 DatePicker::className(), [
                                     'inline' => false, 
@@ -130,13 +131,14 @@ use backend\models\Time;
             <div class="row">
                 <div class="col-lg-3">
                     <p class="form-label required-field">Appointment Time</p>
-                 </div>
-                <div class="col-lg-2">                   
-                   <?= $form->field($model, 'appointment_time')->radioList(                        
-                        ArrayHelper::map(Time::find()->all(),'time','time')
-                        )
-                   ->label(false);
-                    ?>
+                </div>
+                <div class="col-lg-2" id="appointmentTime">  
+                    <?= $form->field($model, 'appointment_time')->radioList(  
+                            ArrayHelper::map(Time::find()  
+                                //->where(['id'=>'1'])                       
+                                ->all(),'time','time'))                        
+                            ->label(false);
+                    ?>     
                 </div>
             </div>
             
@@ -147,7 +149,7 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-6">                   
                     <?= $form->field($model, 'notes')->textarea(['rows' => 6])
-                            ->label(false) ?>
+                            ->label(false); ?>
                 </div>
             </div>
 

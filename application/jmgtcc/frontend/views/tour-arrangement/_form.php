@@ -74,21 +74,37 @@ use backend\models\Airlines;
                                    'inline' => false, 
                                    'clientOptions' => [
                                    'autoclose' => true,
+<<<<<<< HEAD
+                                   'format' => 'yyyy-mm-dd', 
+                                   'startDate' => ' $("input[name="TourArrangement[arrival_date]""]").val()'                          
+
+                              ]])
+                             ->label(false);?>  
+=======
                                    'format' => 'yyyy-mm-dd',                            
 
                                    'startDate' => ''
                                    ]])
                              ->label(false);?>
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
                 </div>
             </div>
+          
            <?php
     $script = <<< JS
                     //ALL JAVASCRIPT CODES
-                    $("#tourarrangement-arrival_date").change(function(){
+                    $("#tourarrangement-return_date").change(function (){
                       var arrivalDate = $("input[name='TourArrangement[arrival_date]']").val();
-                      if (arrivalDate)  
-                       //alert(value);
-                       return value;
+                      var returnDate = $("input[name='TourArrangement[return_date]']").val();
+                     
+                      if (Date.parse(arrivalDate) > Date.parse(returnDate)) {
+                        alert("Error");
+                      }
+                      else {
+                        alert("correct");
+                      }
+                      // alert(returnDate);
+                      //return arrivalDate;
                        
                            
                       });
@@ -101,6 +117,8 @@ use backend\models\Airlines;
 JS;
     $this -> registerJS($script);
 ?>
+<<<<<<< HEAD
+=======
                      
 
                                    'startDate' => '+0d',
@@ -123,6 +141,7 @@ JS;
             
 
 
+>>>>>>> 5f6b045da5d599b5261e53b6575273b9909cfd45
             <br>
             <div class="arrangement-division"><b class="division-label">Accommodation</b></div>
             <br>

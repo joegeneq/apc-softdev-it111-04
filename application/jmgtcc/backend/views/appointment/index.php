@@ -10,20 +10,112 @@ use dosamigos\datepicker\DatePicker;
 /* @var $searchModel backend\models\AppointmentSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Appointments');
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
+$this->params['breadcrumbs'][] = 'Appointments';
 
 ?>
+
+<script type="text/javascript">
+
+	function showContent()
+	{
+		document.getElementById('reportContent').style.display = 'block';
+		document.getElementById('reportBtn').style.display = 'none';
+	}
+
+	function hideContent()
+	{
+		document.getElementById('reportContent').style.display = 'none';
+		document.getElementById('reportBtn').style.display = 'block';
+	}
+
+</script>
+
 <div class="appointment-index">
-
-    <br>
-
+  
     <h2> Visa Assistance Appointments </h2>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <?php 
+	    if (Yii::$app->session->hasFlash('success'))
+	    {
+	    	echo Yii::$app->session->getFlash('success');
+	    }
+	?>
+
+	<br>
+
+	<div id="reportHdr">
+		<div class="row">
+			<div class="col-lg-3">
+				<h4> Send Visa Assistance Report </h4>
+			</div>
+			<div class="col-lg-3" id="reportBtn">
+				<button class="btn btn-success" onclick="showContent()">
+					<span class="glyphicon glyphicon-stats"></span> Generate report
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="reportContent" style="display: none">  
+
+		<br>
+
+		<?php $form = ActiveForm::begin(); ?>		
+
+			<div class="reportContent">
+
+				<p>Select the date range of the confirmed appointments that you want to send.</p>
+				<br>				
+
+    			<div class="row">
+					<div class="col-lg-1">
+						<p class="form-label required-field">From</p></div>
+					<div class="col-lg-5">
+							<?= 
+							 	$form->field($model, 'fromDate')
+							        ->widget(
+					                    DatePicker::className(), [
+					                    'inline' => false, 
+					                    'clientOptions' => [
+					                    'autoclose' => true,
+					                    'format' => 'yyyy-mm-dd',                               
+					                    ]])
+							        ->label(false); ?>
+					</div>
+				
+					<div class="col-lg-1">
+						<p class="form-label required-field">To</p></div>
+					<div class="col-lg-5">
+						<?=			 	
+						 	$form->field($model, 'toDate')
+						 		->widget(
+					 				DatePicker::className(), [
+					 				'inline' => false,
+					 				'clientOptions' => [
+					 						'autoclose' => true,
+					 						'format' => 'yyyy-mm-dd',
+					 				]])
+						 		->label(false);?>
+					</div>
+
+					<div class="reportSubmit">								
+						<?= Html::submitButton('<span class="glyphicon glyphicon-envelope" 
+												style="font: arial;"></span>'.'  Submit report', ['class'=>'btn btn-success']);?> 
+						<button class="btn btn-danger" onclick="hideContent()">Cancel</button>	
+					</div>
+	    		</div>
+			</div>	
+		<?php ActiveForm::end(); ?> 
+	</div>
+
 
     <div class="body-content">
 
         <div class="row">     
-	    	<div class="list-appointment col-lg-9">                    
+	    	<div class="list-appointment">                    
 	                             
 				    <?=
 				   		 GridView::widget([
@@ -34,15 +126,30 @@ $this->title = Yii::t('app', 'Appointments');
 				
 				            'appointment_code',
 				            'client_name',
-				            'appointment_date',
+
+				            [
+				            	'attribute' => 'appointment_date',
+				                'value' => 'appointment_date',
+				                'options'=> ['class'=>'width-20'],
+				                'format' => 'raw',
+				                'filter' => DatePicker::widget([
+				                    'model' => $searchModel,
+				                    'attribute' => 'appointment_date',
+				                        'clientOptions' => [
+				                            'autoclose' => true,
+				                            'format' => 'yyyy-mm-dd',
+				                        ]
+				                ]),
+				            ],
+
+				            //'appointment_date',
 				
 				            [
 				                'attribute'=>'appointment_time',
-				                'value'=>'time.description'
+				                'value'=>'time.time'
 				            ],
 				
-				            'status',
-				
+				            'status',			
 				
 				            [
 				            'class' => 'yii\grid\ActionColumn',
@@ -52,52 +159,9 @@ $this->title = Yii::t('app', 'Appointments');
 				        ],
 				    ]); ?>
 				    
-			</div>
-			<div class="col-lg-3">
-                <div class="side-navigator">
-                 <h4 class="v-report">
-                 <span>Select the date range of the confirmed appointments that you want to send.</span>
-                 Send Visa Assistance Report
-                 </h4>
-				    <br>
-				    <?php 
-				    	//Notification
-					    if (Yii::$app->session->hasFlash('success'))
-					    {
-					    	echo Yii::$app->session->getFlash('success');
-					    }
-				    
-				    ?>
-				    
-				    <?php $form = ActiveForm::begin(); ?>
-				    <?= 
-				     	//From Date
-				     	$form->field($model, 'fromDate')
-				             ->widget(
-				                        DatePicker::className(), [
-				                        'inline' => false, 
-				                        'clientOptions' => [
-				                        'autoclose' => true,
-				                        'format' => 'yyyy-mm-dd',                               
-				                        ]])
-				             ->label('FROM'); ?>
-				    <?=
-				     	//To Date
-				     	$form->field($model, 'toDate')
-				     		 ->widget(
-				     				DatePicker::className(), [
-				     				'inline' => false,
-				     				'clientOptions' => [
-				     						'autoclose' => true,
-				     						'format' => 'yyyy-mm-dd',
-				     				]])
-				     		  ->label('TO');?>
-				     
-				    <center><?= Html::submitButton('Send', ['class'=>'btn btn-success']);?></center> 
-				    <?php ActiveForm::end(); ?>     
-				</div>                
-        	</div>
+			</div>			
         </div>
+	</div>
 </div>
 
 

@@ -7,12 +7,12 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Users');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
+$this->params['breadcrumbs'][] = 'Users';
 ?>
 <div class="user-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h2> Registered Clients </h2>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -21,17 +21,25 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'username',
             'first_name',
             'last_name',
-            'gender',
+
+            //'gender',
+
+            [
+                'attribute' => 'gender',
+                'value' => 'gender',
+                'options'=> ['class'=>'width-10'],
+            ],
+
             // 'city',
             // 'contact_number',
             // 'auth_key',
             // 'password_hash',
             // 'password_reset_token',
-            // 'email:email',
+             'email:email',
             // 'status',
             // 'created_at',
             // 'updated_at',

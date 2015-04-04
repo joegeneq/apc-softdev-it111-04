@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\AirlinesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Airlines');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
+$this->params['breadcrumbs'][] = 'Airlines';
 ?>
 <div class="airlines-index">
 

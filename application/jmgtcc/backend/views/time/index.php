@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TimeSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Times');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'JMGTCC ADMIN');
+$this->params['breadcrumbs'][] = 'Appointment Time';
 ?>
 <div class="time-index">
 
@@ -33,7 +33,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 //'id',
                 'time',
-                'description',
+                //'description',
+
+                [
+                    'attribute' =>  'description',
+                    'value' =>  'description',
+                    'options'=> ['class'=>'width-60'],
+                    'filter' => false,                    
+                ],
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],
