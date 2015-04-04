@@ -58,21 +58,28 @@ class AppointmentController extends Controller
         
         if($model->load(Yii::$app->request->post()))
         {
-        	        	
-        	$totalRecords = Appointment::find()
-        		 ->where('appointment_date >= :fromDate and appointment_date <= :toDate')
-        		 ->andWhere('appointment_date >= :fromDate', [':fromDate' => $model->getFromDate()])
-        		 ->andWhere('appointment_date <= :toDate', [':toDate' => $model->getToDate()])
-        		 ->andWhere("status = 'Confirmed'")
-        		 ->count();
-        	
-        	$profit = $totalRecords * 1000;
-        	
-        	Yii::$app->mailer->compose()
-        	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-        	->setTo('dummyreceiver1@gmail.com')
-        	->setSubject('JMGTCC VISA APPOINTMENT REPORT' )
-        	->setHtmlBody("
+        	if( $model->getFromDate() > $model->getToDate() )
+        	{
+        		//Send message notif if email was sent  successfully
+        		Yii::$app->session->setFlash('notif', 'Error sending report. From date should be less than to date.');
+        		
+        	}
+        	else 
+        	{
+        		$totalRecords = Appointment::find()
+        		->where('appointment_date >= :fromDate and appointment_date <= :toDate')
+        		->andWhere('appointment_date >= :fromDate', [':fromDate' => $model->getFromDate()])
+        		->andWhere('appointment_date <= :toDate', [':toDate' => $model->getToDate()])
+        		->andWhere("status = 'Confirmed'")
+        		->count();
+        		 
+        		$profit = $totalRecords * 1000;
+        		 
+        		Yii::$app->mailer->compose()
+        		->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
+        		->setTo('dummyreceiver1@gmail.com')
+        		->setSubject('JMGTCC VISA APPOINTMENT REPORT' )
+        		->setHtmlBody("
                 <br>
                 <p style='font-family:arial; margin-left:5%;'>
                 <br><br>
@@ -80,7 +87,7 @@ class AppointmentController extends Controller
                     Below are the details of your Visa Assistance Appointment Report from ".$model->getFromDate()." to ".$model->getToDate().":
                 </p>
                 <br>
-        	
+     
                 <div style='border: 1px solid black; width: 500px; margin-left:10%;'>
                 <div>
                     <img style='padding-top: 10px; padding-left: 20px;' height='50' width='180'
@@ -99,7 +106,7 @@ class AppointmentController extends Controller
                     	<tr>
                             <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>To:</b></td>
                             <td>".$model->getToDate()."</td>
-                        </tr>	
+                        </tr>
                     	<tr>
                             <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Number of Appointments:</b></td>
                             <td>".$totalRecords."</td>
@@ -111,18 +118,21 @@ class AppointmentController extends Controller
                     </table>
                 </div>
             </div>
-        	
+     
             <br><br>
             <b style='font-family:arial; color:#3B8215'>Thank you for using the JMGTCC Travel Arrangement & Appointment System!</b>
             <br><br>
-        	
+     
             ")
-        	
+        		             
         	->send();
         	
         	//Send message notif if email was sent  successfully
-        	Yii::$app->session->setFlash('success', 'Report successfully sent.');       	
+        	Yii::$app->session->setFlash('notif', 'Report successfully sent.');
+        	}
         	
+        	
+        	      	
         	return $this->redirect(['index', 'model' => $model]); 
 	
         }
