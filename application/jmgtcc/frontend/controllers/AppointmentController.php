@@ -69,7 +69,7 @@ class AppointmentController extends Controller
         if ($model->load(Yii::$app->request->post())) 
         {   
             $model->appointment_code = $model->getAppointmentCode($model->appointment_code);
-            
+                   
             if ($model->save()) 
             { 
 
