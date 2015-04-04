@@ -81,7 +81,27 @@ use backend\models\Airlines;
                              ->label(false);?>  
                 </div>
             </div>
-  
+            
+            <?php
+              $script = <<< JS
+              //ALL JAVASCRIPT CODES
+              $("#tourarrangement-return_date").change(function(){
+                 var returnDate = $("input[name='TourArrangement[return_date]']").val();
+                var arrivalDate = $("input[name='TourArrangement[arrival_date]']").val();
+               
+                if (Date.parse(arrivalDate) > Date.parse(returnDate)) {
+                  //This should not be processed!
+                  alert("The return date MUST be after the selected arrival date ")
+                   $("#tourarrangement-return_date").val('');      
+                }  
+                else {
+                
+                }       
+              });
+JS;
+    $this -> registerJS($script);
+?>
+
             <br>
             <div class="arrangement-division"><b class="division-label">Accommodation</b></div>
             <br>
