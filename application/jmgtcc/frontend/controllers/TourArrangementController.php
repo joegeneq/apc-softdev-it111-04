@@ -8,7 +8,7 @@ use frontend\models\TourArrangementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use frontend\models\Personnel;
+use backend\models\Personnel;
 use yii\helpers\ArrayHelper;
 use yii\filters\AccessControl;
 
@@ -237,7 +237,6 @@ class TourArrangementController extends Controller
                 <ul style='font-family:arial'>
                     <li>Please confirm the travel arrangement of the client as soon as possible</li>
                     <br>
-                    <li>For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
                     <li>Any updates or revisions regarding travel and tour arrangements can be done through email negotiations. </li>
                 </ul>
 

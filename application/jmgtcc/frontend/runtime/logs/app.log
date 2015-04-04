@@ -55808,3 +55808,287 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428080405.743
     'REQUEST_TIME' => 1428080405
 ]
+2015-04-04 18:51:24 [::1][2][dndvrdlq837dmf6ijumjbvkek2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\models\Personnel' not found' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php:133
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-04 18:51:22 [::1][2][dndvrdlq837dmf6ijumjbvkek2][info][application] $_GET = [
+    'r' => 'travel-tour-arrangement/create'
+]
+
+$_POST = [
+    '_csrf' => 'ejN6bFczano/QQkJBXszHjB/Ky4vAzo0M10jNQ9cWE4efQgBFXtaIw=='
+    'TravelTourArrangement' => [
+        'place_of_origin' => 'Manila, Philippines'
+        'destination' => 'London'
+        'departure_date' => '2015-04-23'
+        'return_date' => '2015-04-24'
+        'airline_name' => 'Philippine Airlines'
+        'flight_type' => 'Round Trip Flight'
+        'class_type' => 'Business Class'
+        'number_of_pax' => '4'
+        'hotel_name' => ''
+        'room_type' => 'Triple'
+        'inclusion_tour_type' => [
+            0 => 'Adventure Tour'
+        ]
+        'inclusion_transport_service' => [
+            0 => 'Private Car with Driver'
+        ]
+        'inclusion_food_deals' => ''
+        'inclusion_freebies' => ''
+        'remarks' => 'Hello London!'
+    ]
+    'hotel_name' => 'Any Hotel'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes:32:\"ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y\";'
+    'PHPSESSID' => 'dndvrdlq837dmf6ijumjbvkek2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__expire' => 1428167182
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1017'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes%3A32%3A%22ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y%22%3B; PHPSESSID=dndvrdlq837dmf6ijumjbvkek2'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57375'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=travel-tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428166282.37
+    'REQUEST_TIME' => 1428166282
+]
+2015-04-04 18:53:55 [::1][2][dndvrdlq837dmf6ijumjbvkek2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\models\Personnel' not found' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TravelTourArrangementController.php:133
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-04 18:53:55 [::1][2][dndvrdlq837dmf6ijumjbvkek2][info][application] $_GET = [
+    'r' => 'travel-tour-arrangement/create'
+]
+
+$_POST = [
+    '_csrf' => 'ejN6bFczano/QQkJBXszHjB/Ky4vAzo0M10jNQ9cWE4efQgBFXtaIw=='
+    'TravelTourArrangement' => [
+        'place_of_origin' => 'Manila, Philippines'
+        'destination' => 'London'
+        'departure_date' => '2015-04-23'
+        'return_date' => '2015-04-24'
+        'airline_name' => 'Philippine Airlines'
+        'flight_type' => 'Round Trip Flight'
+        'class_type' => 'Business Class'
+        'number_of_pax' => '4'
+        'hotel_name' => ''
+        'room_type' => 'Triple'
+        'inclusion_tour_type' => [
+            0 => 'Adventure Tour'
+        ]
+        'inclusion_transport_service' => [
+            0 => 'Private Car with Driver'
+        ]
+        'inclusion_food_deals' => ''
+        'inclusion_freebies' => ''
+        'remarks' => 'Hello London!'
+    ]
+    'hotel_name' => 'Any Hotel'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes:32:\"ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y\";'
+    'PHPSESSID' => 'dndvrdlq837dmf6ijumjbvkek2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__expire' => 1428167335
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1017'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes%3A32%3A%22ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y%22%3B; PHPSESSID=dndvrdlq837dmf6ijumjbvkek2'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57425'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=travel-tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428166435.511
+    'REQUEST_TIME' => 1428166435
+]
+2015-04-04 19:05:32 [::1][2][dndvrdlq837dmf6ijumjbvkek2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\models\Personnel' not found' in C:\xannethei\apc-softdev-it111-04\application\jmgtcc\frontend\controllers\TourArrangementController.php:130
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-04 19:05:32 [::1][2][dndvrdlq837dmf6ijumjbvkek2][info][application] $_GET = [
+    'r' => 'tour-arrangement/create'
+]
+
+$_POST = [
+    '_csrf' => 'SkpzTVcuU04POAAoBWYKKgAGIg8vHgMAAyQqFA9BYXouBAEgFWZjFw=='
+    'TourArrangement' => [
+        'place_of_origin' => 'Manila, Philippines'
+        'destination' => 'Incheon, Korea'
+        'arrival_date' => '2015-04-24'
+        'return_date' => '2015-04-30'
+        'hotel_name' => 'Infinite7 Hotel'
+        'room_type' => 'Twin Double'
+        'number_of_pax' => '4'
+        'inclusion_tour_type' => [
+            0 => 'Adventure Tour'
+            1 => 'City Tour'
+        ]
+        'inclusion_transport_service' => [
+            0 => 'Private Car with Driver'
+        ]
+        'inclusion_food_deals' => [
+            0 => 'Breakfast Buffet'
+            1 => 'Lunch Buffet'
+            2 => 'Dinner Buffet'
+        ]
+        'inclusion_freebies' => ''
+        'remarks' => 'Korea Tour with Concert Pass'
+        'user_id' => ''
+        'date_created' => ''
+        'arrangement_code' => 'TA1504-000001'
+    ]
+    'hotel_name' => 'textBox'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes:32:\"ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y\";'
+    'PHPSESSID' => 'dndvrdlq837dmf6ijumjbvkek2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__expire' => 1428168032
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1160'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=tour-arrangement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f6fa2d7b5bfa8c04b9acbc88ace63aa657423d55f40c305a3104605ef3b718aes%3A32%3A%22ErseRHYdJLQBx0PNInYYXo24dNrmBH0Y%22%3B; PHPSESSID=dndvrdlq837dmf6ijumjbvkek2'
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\windows\\system32\\windowspowershell\\v1.0\\;c:\\program files\\lenovo\\bluetooth software\\;c:\\program files\\lenovo\\bluetooth software\\syswow64;c:\\program files (x86)\\microsoft sql server\\90\\tools\\binn\\;c:\\program files\\java\\jdk1.6.0_27\\bin\\;c:\\program files (x86)\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\tools\\binn\\;c:\\program files\\microsoft sql server\\100\\dts\\binn\\;c:\\xampp\\htdocs\\yii\\framework;c:\\program files (x86);C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/frontend/web/index.php'
+    'REMOTE_PORT' => '57563'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=tour-arrangement%2Fcreate'
+    'REQUEST_URI' => '/jmgtcc/frontend/web/index.php?r=tour-arrangement%2Fcreate'
+    'SCRIPT_NAME' => '/jmgtcc/frontend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428167132.549
+    'REQUEST_TIME' => 1428167132
+]
