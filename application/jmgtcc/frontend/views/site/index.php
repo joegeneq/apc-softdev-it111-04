@@ -72,27 +72,19 @@ $this->title = 'JMGTCC';
 
             <?php 
 
-
-               //if (Yii::$app->user->isGuest)
-                if (Yii::$app->user->isGuest == false)
-
-                {
-                    print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
-                            <img class="servicesImg" title="Create a Travel Arrangement"
-                            src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
-                }
-
-                 if (Yii::$app->user->isGuest == false)
+                if (Yii::$app->user->isGuest)
                  {
-                      print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
-                             <img class="servicesImg" title="Create a Travel Arrangement"
-                             src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
+                    print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
+                            <img class="servicesImg" title="Create a Travel Arrangement"
+                            src="images/customised-travel-arrangements-journeys.jpg" /></a>');
+
+                      
                  }
                 else
                 {
-                    print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
-                            <img class="servicesImg" title="Create a Travel Arrangement"
-                            src="images/customised-travel-arrangements-journeys.jpg" /></a>  ');
+                    print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
+                             <img class="servicesImg" title="Create a Travel Arrangement"
+                             src="images/customised-travel-arrangements-journeys.jpg" /></a>');
                 }
             ?>
 
