@@ -6,10 +6,10 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use backend\models\Appointment;
-use backend\models\AppointmentSearch;
+use backend\models\AppointmentIndex;
 
 $this->title = 'JMGTCC ADMIN';
-$searchModel = new AppointmentSearch();
+$searchModel = new AppointmentIndex();
 $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
 ?>
