@@ -22,6 +22,16 @@ if (Yii::$app->user->isGuest == false)
         {
             print('<br><br>');
         }
+        else
+        {
+            if (Yii::$app->session->hasFlash('appointmentNotif'))
+            {
+                print('<div class="alert alert-success">
+                        <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>'
+                        .Yii::$app->session->getFlash('appointmentNotif').
+                        '</div>');
+            }
+        }
     ?>
 
     <div class="row">
