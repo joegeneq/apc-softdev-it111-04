@@ -17,7 +17,7 @@ return [
             'enableAutoLogin' => false,
 			'identityCookie' => [
 			'name' => '_frontendUser', 
-			'path'=>'/advanced/frontend/web' 
+			'path'=>'/advanced/frontend/' 
 			]
         ],
         'log' => [

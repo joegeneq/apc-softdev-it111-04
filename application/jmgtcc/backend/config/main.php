@@ -19,7 +19,7 @@ return [
             'enableAutoLogin' => false,
 			'identityCookie' => [
 			'name' => '_backendUser', 
-			'path'=>'/advanced/backend/web' 
+			'path'=>'/advanced/backend/' 
 			]
         ],
         'log' => [
