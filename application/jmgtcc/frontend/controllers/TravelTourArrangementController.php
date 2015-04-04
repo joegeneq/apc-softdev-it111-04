@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use common\models\User;
 use frontend\models\Personnel;
 use yii\helpers\ArrayHelper;
+use yii\filters\AccessControl;
 
 /**
  * TravelTourArrangementController implements the CRUD actions for TravelTourArrangement model.
@@ -20,6 +21,21 @@ class TravelTourArrangementController extends Controller
     public function behaviors()
     {
         return [
+        	'access' => [
+        		'class' => AccessControl::className(),
+        		'rules' => [
+        						[
+        								'actions' => ['login', 'error'],
+        								'allow' => true,
+        						],
+        						[
+        								'actions' => ['logout', 'index', 'create', 'view'],
+        								'allow' => true,
+        								'roles' => ['@'],
+        								
+        						],
+        					],
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

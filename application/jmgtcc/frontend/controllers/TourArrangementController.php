@@ -10,6 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\models\Personnel;
 use yii\helpers\ArrayHelper;
+use yii\filters\AccessControl;
 
 /**
  * TourArrangementController implements the CRUD actions for TourArrangement model.
@@ -18,7 +19,22 @@ class TourArrangementController extends Controller
 {
     public function behaviors()
     {
-        return [	
+        return [
+        	'access' => [
+        		'class' => AccessControl::className(),
+        		'rules' => [
+        						[
+        								'actions' => ['login', 'error'],
+        								'allow' => true,
+        						],
+        						[
+        								'actions' => ['logout', 'index', 'create', 'view'],
+        								'allow' => true,
+        								'roles' => ['@'],
+        		
+        						],
+        				],
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

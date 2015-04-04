@@ -37,9 +37,9 @@ $this->params['breadcrumbs'][] = 'Appointments';
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?php 
-	    if (Yii::$app->session->hasFlash('success'))
+	    if (Yii::$app->session->hasFlash('notif'))
 	    {
-	    	echo Yii::$app->session->getFlash('success');
+	    	echo Yii::$app->session->getFlash('notif');
 	    }
 	?>
 
