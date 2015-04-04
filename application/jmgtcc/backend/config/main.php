@@ -16,7 +16,7 @@ return [
 	
         'user' => [
             'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
 			'identityCookie' => [
 			'name' => '_backendUser', 
 			'path'=>'/advanced/backend/web' 

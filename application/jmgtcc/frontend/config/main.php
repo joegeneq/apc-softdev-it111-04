@@ -14,10 +14,10 @@ return [
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
 			'identityCookie' => [
 			'name' => '_frontendUser', 
-			'path'=>'/advanced/frontend' 
+			'path'=>'/advanced/frontend/web' 
 			]
         ],
         'log' => [
@@ -47,4 +47,5 @@ return [
     	],
     ],
     'params' => $params,
+	
 ];
