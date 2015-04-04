@@ -42,7 +42,8 @@ class AppointmentSearch extends Appointment
      */
     public function search($params)
     {
-        $query = Appointment::find();
+        //$query = Appointment::find();
+        $query = Appointment::find()->where(['user_id'=>Yii::$app->user->identity->id]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

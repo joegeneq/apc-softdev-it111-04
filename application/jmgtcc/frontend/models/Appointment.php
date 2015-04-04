@@ -30,6 +30,7 @@ use Yii;
  */
 class Appointment extends \yii\db\ActiveRecord
 {
+
     /**
      * @inheritdoc
      */
@@ -84,7 +85,7 @@ class Appointment extends \yii\db\ActiveRecord
             [['payment_rate'], 'number'],
             [['notes'], 'string'],
 
-            [['user_id'], 'integer'],
+            //[['user_id'], 'integer'],
             [['user_id'], 'default', 'value' => yii::$app->user->identity->id],            
 
             [['appointment_code'], 'string', 'max' => 25]
@@ -126,14 +127,6 @@ class Appointment extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getAppointmentHistories()
-    {
-        return $this->hasMany(AppointmentHistory::className(), ['appointment_id' => 'id']);
-    }
-
     //Generate Appointment Code
     public static function getAppointmentCode($data)
     {
@@ -146,6 +139,49 @@ class Appointment extends \yii\db\ActiveRecord
                                 FROM appointment
                                 WHERE YEAR(date_created) = YEAR(NOW())
                             ");
+
+        $data = $model->queryScalar();
+        return $data;
+    }
+
+    //Update Appointment Status
+    public static function updateAppointmentStatus($prevAppointmentCode)
+    {
+
+
+        $connection = \Yii::$app->db;
+                $model = $connection
+                    ->createCommand("UPDATE Appointment
+                                        SET status = 'Cancelled'
+                                        WHERE user_id = ".yii::$app->user->identity->id."
+                                         AND appointment_code = '".$prevAppointmentCode."'
+                                         ORDER BY id DESC
+                                        LIMIT 1
+                                    ");
+
+        $userID = yii::$app->user->identity->id;        
+        $affected_rows = $model->execute();
+
+        if ($affected_rows > 0)
+        {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    //Get Previous Appointment Code
+    public static function getPreviousAppointmentCode($data)
+    {
+        $connection = \Yii::$app->db;
+                $model = $connection
+                    ->createCommand("SELECT appointment_code
+                                        FROM Appointment
+                                        WHERE user_id = ".yii::$app->user->identity->id."
+                                        ORDER BY id DESC
+                                        LIMIT 1
+                                    ");
 
         $data = $model->queryScalar();
         return $data;
