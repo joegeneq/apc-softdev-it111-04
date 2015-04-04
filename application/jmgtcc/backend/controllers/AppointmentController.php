@@ -70,8 +70,7 @@ class AppointmentController extends Controller
         	
         	Yii::$app->mailer->compose()
         	->setFrom([\Yii::$app->params['supportEmail'] => 'JMGTCC'])
-        	// ->setTo('dummyreceiver1@gmail.com')
-            ->setTo('biapapna@gmail.com')
+        	->setTo('dummyreceiver1@gmail.com')
         	->setSubject('JMGTCC VISA APPOINTMENT REPORT' )
         	->setHtmlBody("
                 <br>
@@ -94,20 +93,20 @@ class AppointmentController extends Controller
                 <div style='width: 435px; margin-left:30px; '>
                     <table style='font-family: arial'>
                         <tr>
-                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>From</b></td>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>From:</b></td>
                             <td>".$model->getFromDate()."</td>
                         </tr>
                     	<tr>
-                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>To</b></td>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>To:</b></td>
                             <td>".$model->getToDate()."</td>
                         </tr>	
                     	<tr>
-                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Number of Appointments</b></td>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Number of Appointments:</b></td>
                             <td>".$totalRecords."</td>
                         </tr>
                         <tr>
-                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total Income</b></td>
-                            <td>".$profit."</td>
+                            <td width='200px' style='padding-bottom: 5px; padding-top: 5px;'><b>Total:</b></td>
+                            <td>Php ".$profit."</td>
                         </tr>
                     </table>
                 </div>
