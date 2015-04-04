@@ -39,7 +39,10 @@ $this->params['breadcrumbs'][] = 'Appointments';
     <?php 
 	    if (Yii::$app->session->hasFlash('notif'))
 	    {
-	    	echo Yii::$app->session->getFlash('notif');
+	    	print('<div class="alert alert-success">
+                        <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>'
+                        .Yii::$app->session->getFlash('notif').
+                        '</div>');
 	    }
 	?>
 
