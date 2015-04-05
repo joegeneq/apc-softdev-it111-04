@@ -222,7 +222,16 @@ use backend\models\Time;
     </div>    
 
      <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
-     <?= Html::activeHiddenInput($model, 'client_username') ?>    
+
+     <?php 
+        if (Yii::$app->user->isGuest)
+        {
+            echo Html::activeHiddenInput($model, 'client_username');                  
+        } else {        
+            echo Html::activeHiddenInput($model, 'client_username')
+                    ->textInput(['value'=>yii::$app->user->identity->username]);
+        }?>
+              
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
      <?= Html::activeHiddenInput($model, 'status') ?> 
