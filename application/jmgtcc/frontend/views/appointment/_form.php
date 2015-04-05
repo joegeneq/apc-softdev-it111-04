@@ -38,16 +38,16 @@ use backend\models\Time;
                 <div class="col-lg-6">                   
                     <?php 
 
+                        $firstname = yii::$app->user->identity->first_name;
+                        $lastname = yii::$app->user->identity->last_name;
+                        $completename = $firstname.' '.$lastname;
+
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'client_name')
                                     ->textInput(['maxlength' => 60])
                                     ->label(false);                    
-                        } else {        
-
-                            $firstname = yii::$app->user->identity->first_name;
-                            $lastname = yii::$app->user->identity->last_name;
-                            $completename = $firstname.' '.$lastname;
+                        } else {                        
                             echo $form->field($model, 'client_name')
                                 ->textInput(
                                     ['value'=>$completename,
@@ -63,16 +63,16 @@ use backend\models\Time;
                     <p class="form-label required-field">City</p>
                 </div>
                 <div class="col-lg-6">    
-                    <?php                         
+                    <?php 
+
+                        $city = yii::$app->user->identity->city;
 
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'city')
                                     ->textInput(['maxlength' => 45])
                                     ->label(false);                  
-                        } else {       
-                        
-                            $city = yii::$app->user->identity->city;
+                        } else {                        
                             echo $form->field($model, 'city')
                                 ->textInput(
                                     ['value'=>$city,
@@ -90,14 +90,14 @@ use backend\models\Time;
                 <div class="col-lg-6">  
                     <?php 
 
+                        $contactnumber = yii::$app->user->identity->contact_number;
+
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'contact_number')
                                     ->textInput(['maxlength' => 20])
                                     ->label(false);                  
-                        } else {       
-
-                            $contactnumber = yii::$app->user->identity->contact_number;                 
+                        } else {                        
                             echo $form->field($model, 'contact_number')
                                 ->textInput(
                                     ['value'=>$contactnumber,
@@ -113,16 +113,16 @@ use backend\models\Time;
                     <p class="form-label required-field">Email Address</p>
                  </div>
                 <div class="col-lg-6">   
-                    <?php                         
+                    <?php 
+
+                        $email = yii::$app->user->identity->email;
 
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'email_address')
                                     ->textInput(['maxlength' => 45])
                                     ->label(false);                  
-                        } else {  
-                            
-                            $email = yii::$app->user->identity->email;                      
+                        } else {                        
                             echo $form->field($model, 'email_address')
                                 ->textInput(
                                     ['value'=>$email,
@@ -222,16 +222,7 @@ use backend\models\Time;
     </div>    
 
      <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
-
-     <?php 
-        if (Yii::$app->user->isGuest)
-        {
-            echo Html::activeHiddenInput($model, 'client_username');                  
-        } else {        
-            echo Html::activeHiddenInput($model, 'client_username',
-                    ['value'=>yii::$app->user->identity->username]);
-        }?>
-
+     <?= Html::activeHiddenInput($model, 'client_username') ?>    
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
      <?= Html::activeHiddenInput($model, 'status') ?> 
