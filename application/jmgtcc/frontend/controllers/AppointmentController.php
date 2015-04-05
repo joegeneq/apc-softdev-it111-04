@@ -72,9 +72,14 @@ class AppointmentController extends Controller
 
         if ($model->load(Yii::$app->request->post())) 
         {   
-            $model->appointment_code = $model->getAppointmentCode($model->appointment_code);     
-            $prevAppointmentCode = $model->getPreviousAppointmentCode($model->appointment_code);
+            if (Yii::$app->user->isGuest) {
+                $prevAppointmentCode = $model->getPreviousAppointmentCodeForGuest($model->client_name, $model->contact_number, $model->email_address);
+            } else {
+                $prevAppointmentCode = $model->getPreviousAppointmentCode($model->appointment_code);
+            }
 
+            $model->appointment_code = $model->getAppointmentCode($model->appointment_code);     
+            
             if ($model->save()) 
             { 
                 // Yii::$app->mailer->compose()
@@ -170,14 +175,21 @@ class AppointmentController extends Controller
                 //             [':id'=>$post_id]
                 //     );
 
-                $checkQuery = $model->updateAppointmentStatus($prevAppointmentCode);
-
-                if ($checkQuery == true)
+                if ($prevAppointmentCode != null)
                 {
-                    Yii::$app->session->setFlash('appointmentNotif', 
-                        '  Your previous Visa Consultation Appointment with Appointment Code '
-                        .$prevAppointmentCode.' has been cancelled.');                    
-                }
+                    if (Yii::$app->user->isGuest) {
+                        $checkQuery = $model->updateAppointmentStatusForGuest($prevAppointmentCode);
+                    } else {
+                        $checkQuery = $model->updateAppointmentStatus($prevAppointmentCode);
+                    }
+                    
+                    if ($checkQuery == true)
+                    {
+                        Yii::$app->session->setFlash('appointmentNotif', 
+                            '  Your previous Visa Consultation Appointment with Appointment Code '
+                            .$prevAppointmentCode.' has been cancelled.');                    
+                    }
+                }          
                
                return $this->redirect(['view', 'id' => $model->id]);
                 

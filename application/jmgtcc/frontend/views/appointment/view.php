@@ -21,6 +21,14 @@ if (Yii::$app->user->isGuest == false)
         if (Yii::$app->user->isGuest)
         {
             print('<br><br>');
+            
+            if (Yii::$app->session->hasFlash('appointmentNotif'))
+            {
+                print('<div class="alert alert-success">
+                        <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>'
+                        .Yii::$app->session->getFlash('appointmentNotif').
+                        '</div>');
+            }
         }
         else
         {
@@ -71,6 +79,19 @@ if (Yii::$app->user->isGuest == false)
 
         <div class="col-lg-6">
             <div class="va-main">
+
+                <?php 
+
+                    if ($model->status == 'Cancelled')
+                    {
+                        print('
+                                <div class="alert alert-warning">
+                                    <span class="glyphicon glyphicon-remove" style="font:arial; margin: 0 30px 0 30px"></span>
+                                    This Appointment has been cancelled.
+                                </div>
+                            '); 
+                    } ?>
+
                 <div class="policy-hdr">Important Reminders:</div>
                 <hr class="carved">
                 <br>
