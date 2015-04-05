@@ -228,10 +228,10 @@ use backend\models\Time;
         {
             echo Html::activeHiddenInput($model, 'client_username');                  
         } else {        
-            echo Html::activeHiddenInput($model, 'client_username')
-                    ->textInput(['value'=>yii::$app->user->identity->username]);
+            echo Html::activeHiddenInput($model, 'client_username',
+                    ['value'=>yii::$app->user->identity->username]);
         }?>
-              
+
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
      <?= Html::activeHiddenInput($model, 'date_created') ?> 
      <?= Html::activeHiddenInput($model, 'status') ?> 

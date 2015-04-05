@@ -146,8 +146,6 @@ class Appointment extends \yii\db\ActiveRecord
     //Update Appointment Status
     public static function updateAppointmentStatus($prevAppointmentCode)
     {
-
-
         $connection = \Yii::$app->db;
                 $model = $connection
                     ->createCommand("UPDATE Appointment
@@ -158,7 +156,7 @@ class Appointment extends \yii\db\ActiveRecord
                                         LIMIT 1
                                     ");
 
-        $userID = yii::$app->user->identity->id;        
+        //$userID = yii::$app->user->identity->id;        
         $affected_rows = $model->execute();
 
         if ($affected_rows > 0)
@@ -167,7 +165,28 @@ class Appointment extends \yii\db\ActiveRecord
         } else {
             return false;
         }
+    }
 
+    //Update Appointment Status For Guest
+    public static function updateAppointmentStatusForGuest($prevAppointmentCode)
+    {
+        $connection = \Yii::$app->db;
+                $model = $connection
+                    ->createCommand("UPDATE Appointment
+                                        SET status = 'Cancelled'
+                                        WHERE appointment_code = '".$prevAppointmentCode."'
+                                         ORDER BY id DESC
+                                        LIMIT 1
+                                    ");
+      
+        $affected_rows = $model->execute();
+
+        if ($affected_rows > 0)
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     //Get Previous Appointment Code
@@ -184,6 +203,24 @@ class Appointment extends \yii\db\ActiveRecord
 
         $data = $model->queryScalar();
         return $data;
+    }
+
+    //Get Previous Appointment Code For Guest
+    public static function getPreviousAppointmentCodeForGuest($client_name, $contact_number, $email_address)
+    {
+        $connection = \Yii::$app->db;
+                $model = $connection
+                    ->createCommand("SELECT appointment_code 
+                                        FROM Appointment 
+                                        WHERE client_name='".$client_name."' 
+                                        AND contact_number='".$contact_number."' 
+                                        AND email_address='".$email_address."' 
+                                        ORDER BY id DESC 
+                                        LIMIT 1
+                                    ");
+
+        $data = $model->queryScalar();        
+        return $data;               
     }
 
 }
