@@ -20,7 +20,11 @@ class AppointmentController extends Controller
 
     public $checkQuery;
     public $prevAppointmentCode;
+<<<<<<< HEAD
     public $data;
+=======
+    //public $data;
+>>>>>>> 469bbc1b1aa6368c9867fd6ead09c1decab74637
 
     public function behaviors()
     {
@@ -69,12 +73,12 @@ class AppointmentController extends Controller
     public function actionCreate()
     {
         $model = new Appointment();
-        $model->appointment_code = $model->getAppointmentCode($model->appointment_code);
+        //$model->appointment_code = $model->getAppointmentCode($model->appointment_code);
 
         if ($model->load(Yii::$app->request->post())) 
         {   
             $model->appointment_code = $model->getAppointmentCode($model->appointment_code);     
-            $prevAppointmentCode = $model->getPreviousAppointmentCode($data);
+            $prevAppointmentCode = $model->getPreviousAppointmentCode($model->appointment_code);
 
             if ($model->save()) 
             { 
