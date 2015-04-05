@@ -221,6 +221,7 @@ use backend\models\Time;
 
     </div>    
 
+<<<<<<< HEAD
      <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
      <?= Html::activeHiddenInput($model, 'client_username') ?>    
      <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
@@ -228,6 +229,28 @@ use backend\models\Time;
      <?= Html::activeHiddenInput($model, 'status') ?> 
      <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
      <?= Html::activeHiddenInput($model, 'user_id') ?>  
+=======
+      
+
+    <?php 
+        if (Yii::$app->user->isGuest)
+        {
+            echo Html::activeHiddenInput($model, 'client_username'); 
+            echo Html::activeHiddenInput($model, 'user_id');               
+        } else {        
+            echo Html::activeHiddenInput($model, 'client_username',
+                    ['value'=>yii::$app->user->identity->username]);
+            echo Html::activeHiddenInput($model, 'user_id',
+                    ['value'=>yii::$app->user->identity->id]);
+        }?>
+
+    <?= Html::activeHiddenInput($model, 'appointment_code') ?>
+    <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
+    <?= Html::activeHiddenInput($model, 'date_created') ?> 
+    <?= Html::activeHiddenInput($model, 'status') ?> 
+    <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
+       
+>>>>>>> 294d3f1f62f4990fd2650e1fb01559c137f17e6f
 
     <?php ActiveForm::end(); ?>
 

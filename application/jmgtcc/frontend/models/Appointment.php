@@ -85,7 +85,7 @@ class Appointment extends \yii\db\ActiveRecord
             [['notes'], 'string'],
 
             //[['user_id'], 'integer'],
-            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],            
+            //[['user_id'], 'default', 'value' => yii::$app->user->identity->id],    
 
             [['appointment_code'], 'string', 'max' => 25]
         ];
@@ -152,6 +152,7 @@ class Appointment extends \yii\db\ActiveRecord
                                         SET status = 'Cancelled'
                                         WHERE user_id = ".yii::$app->user->identity->id."
                                          AND appointment_code = '".$prevAppointmentCode."'
+                                         AND status != 'Confirmed'
                                          ORDER BY id DESC
                                         LIMIT 1
                                     ");
@@ -175,13 +176,14 @@ class Appointment extends \yii\db\ActiveRecord
                     ->createCommand("UPDATE Appointment
                                         SET status = 'Cancelled'
                                         WHERE appointment_code = '".$prevAppointmentCode."'
+                                         AND status != 'Confirmed'
                                          ORDER BY id DESC
                                         LIMIT 1
                                     ");
       
         $affected_rows = $model->execute();
 
-        if ($affected_rows > 0)
+        if ($affected_rows >= 0)
         {
             return true;
         } else {
