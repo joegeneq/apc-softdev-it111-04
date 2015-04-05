@@ -20,6 +20,7 @@ class AppointmentController extends Controller
 
     public $checkQuery;
     public $prevAppointmentCode;
+    public $data;
 
     public function behaviors()
     {
