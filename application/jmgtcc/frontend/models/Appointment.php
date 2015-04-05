@@ -30,7 +30,6 @@ use Yii;
  */
 class Appointment extends \yii\db\ActiveRecord
 {
-
     /**
      * @inheritdoc
      */

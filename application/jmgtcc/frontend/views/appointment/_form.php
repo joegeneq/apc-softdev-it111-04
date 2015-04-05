@@ -36,10 +36,24 @@ use backend\models\Time;
                     <p class="form-label required-field">Complete Name</p>
                  </div>
                 <div class="col-lg-6">                   
-                    <?= $form->field($model, 'client_name')
-                            ->textInput(['maxlength' => 60])
-                            ->label(false);
-                    ?>
+                    <?php 
+
+                        $firstname = yii::$app->user->identity->first_name;
+                        $lastname = yii::$app->user->identity->last_name;
+                        $completename = $firstname.' '.$lastname;
+
+                        if (Yii::$app->user->isGuest)
+                        {
+                            echo $form->field($model, 'client_name')
+                                    ->textInput(['maxlength' => 60])
+                                    ->label(false);                    
+                        } else {                        
+                            echo $form->field($model, 'client_name')
+                                ->textInput(
+                                    ['value'=>$completename,
+                                     'readonly'=>'true'])
+                                ->label(false);                    
+                        }?>
                 </div>
             </div>
 
@@ -48,10 +62,23 @@ use backend\models\Time;
                 <div class="col-lg-3">
                     <p class="form-label required-field">City</p>
                 </div>
-                <div class="col-lg-6">                   
-                        <?= $form->field($model, 'city')
-                                ->textInput(['maxlength' => 45])
-                                ->label(false); ?>
+                <div class="col-lg-6">    
+                    <?php 
+
+                        $city = yii::$app->user->identity->city;
+
+                        if (Yii::$app->user->isGuest)
+                        {
+                            echo $form->field($model, 'city')
+                                    ->textInput(['maxlength' => 45])
+                                    ->label(false);                  
+                        } else {                        
+                            echo $form->field($model, 'city')
+                                ->textInput(
+                                    ['value'=>$city,
+                                     'readonly'=>'true'])
+                                ->label(false);                    
+                        }?>
                 </div>
             </div>
             
@@ -60,10 +87,23 @@ use backend\models\Time;
                 <div class="col-lg-3">
                     <p class="form-label required-field">Contact Number</p>
                  </div>
-                <div class="col-lg-6">                   
-                    <?= $form->field($model, 'contact_number')
-                            ->textInput(['maxlength' => 20])
-                            ->label(false); ?>
+                <div class="col-lg-6">  
+                    <?php 
+
+                        $contactnumber = yii::$app->user->identity->contact_number;
+
+                        if (Yii::$app->user->isGuest)
+                        {
+                            echo $form->field($model, 'contact_number')
+                                    ->textInput(['maxlength' => 20])
+                                    ->label(false);                  
+                        } else {                        
+                            echo $form->field($model, 'contact_number')
+                                ->textInput(
+                                    ['value'=>$contactnumber,
+                                     'readonly'=>'true'])
+                                ->label(false);                    
+                        }?>                 
                 </div>
             </div>
 
@@ -72,14 +112,29 @@ use backend\models\Time;
                 <div class="col-lg-3">
                     <p class="form-label required-field">Email Address</p>
                  </div>
-                <div class="col-lg-6">                   
-                    <?= $form->field($model, 'email_address')
-                            ->textInput(['maxlength' => 45])
-                            ->label(false); ?>
+                <div class="col-lg-6">   
+                    <?php 
+
+                        $email = yii::$app->user->identity->email;
+
+                        if (Yii::$app->user->isGuest)
+                        {
+                            echo $form->field($model, 'email_address')
+                                    ->textInput(['maxlength' => 45])
+                                    ->label(false);                  
+                        } else {                        
+                            echo $form->field($model, 'email_address')
+                                ->textInput(
+                                    ['value'=>$email,
+                                     'readonly'=>'true'])
+                                ->label(false);                    
+                        }?> 
                 </div>
             </div>
 
-            <hr class="faded">
+            <br>
+            <div class="arrangement-division"><b class="division-label">Visa Description</b></div>
+            <br>
 
             <!-- COUNTRY -->
             <div class="row">
