@@ -34,35 +34,62 @@ use yii\widgets\DetailView;
          <div class="col-lg-6">
              <?php $form = ActiveForm::begin(); ?>  
 
+             <?php 
+                if (($model->status) == 'Cancelled')
+                {
+                    print('
+                        <div class="alert alert-warning">
+                            <span class="glyphicon glyphicon-remove" style="font:arial; margin: 0 30px 0 30px"></span>
+                            This Appointment is cancelled.
+                        </div>
+                    '); 
+                } else if (($model->status) == 'Confirmed')
+                {
+                     print('
+                        <div class="alert alert-success">
+                            <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>
+                            This Appointment is Confirmed.
+                        </div>
+                    '); 
+                }
+               ?>
+
             <div class="row">
                 <div class="col-lg-3">
                     <p class="form-label"><b>Status:</b></p>
                 </div>
 
                 <?php 
-                    if (($model->status) == 'Confirmed') 
-                    { 
-                        print('<div class="col-lg-4">' . $model->status . '</div>');
+                    if (($model->status) == '') 
+                    {
+                        print('<div class="col-lg-4"> - </div>');
                     }
                     else
                     {
-                        print('<div class="col-lg-4"> - </div>');
+                        print('<div class="col-lg-4">'. $model->status . '</div>');
                     }
                 ?>
                 
             </div>
 
             <div class="row">
-                <div class="col-lg-3">
-                    <p class="form-label"><b>Confirmed by:</b></p>
-                 </div>
+                
+                <?php
+                    if (($model->status) != 'Cancelled')
+                    {
+                        print('
+                            <div class="col-lg-3">
+                                <p class="form-label"><b>Confirmed by:</b></p>
+                             </div>     
+                            ');
+                    } ?>                
 
-                 <?php 
+                <?php 
                     if (($model->status) == 'Confirmed') 
                     { 
                         print('<div class="col-lg-3">' . $model->confirmed_by . '</div>'); //Session
                     }
-                    else
+                    else if (($model->status) == '') 
                     {
                         print('<div class="col-lg-3"> - </div>');
                     }
@@ -79,7 +106,7 @@ use yii\widgets\DetailView;
             <div class="row">
 
                 <?php
-                    if (($model->status) != 'Confirmed') 
+                    if (($model->status) == '') 
                     {
                         print('
                                 <div class="col-lg-3">
@@ -87,7 +114,7 @@ use yii\widgets\DetailView;
                                  </div>
                                 <div class="col-lg-8"> - </div>');
                     }     
-                    else
+                    else if (($model->status) == 'Confirmed') 
                     {
                         print('
                                 <div class="col-lg-3">
@@ -113,7 +140,7 @@ use yii\widgets\DetailView;
                 
                 <div class="btn-right ">
 
-                    <?php if (($model->status) != 'Confirmed') { ?>
+                    <?php if (($model->status) != 'Confirmed' &&  ($model->status) != 'Cancelled') { ?>
                     <?= Html::a('Set payment', ['update', 'id' => $model->id, 
                                 'id' => $model->id], 
                                 ['class' => 'btn btn-primary']) ?>

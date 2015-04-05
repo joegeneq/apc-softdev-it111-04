@@ -221,22 +221,26 @@ use backend\models\Time;
 
     </div>    
 
-     <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
+      
 
-     <?php 
+    <?php 
         if (Yii::$app->user->isGuest)
         {
-            echo Html::activeHiddenInput($model, 'client_username');                  
+            echo Html::activeHiddenInput($model, 'client_username'); 
+            echo Html::activeHiddenInput($model, 'user_id');               
         } else {        
             echo Html::activeHiddenInput($model, 'client_username',
                     ['value'=>yii::$app->user->identity->username]);
+            echo Html::activeHiddenInput($model, 'user_id',
+                    ['value'=>yii::$app->user->identity->id]);
         }?>
 
-     <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
-     <?= Html::activeHiddenInput($model, 'date_created') ?> 
-     <?= Html::activeHiddenInput($model, 'status') ?> 
-     <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
-     <?= Html::activeHiddenInput($model, 'user_id') ?>  
+    <?= Html::activeHiddenInput($model, 'appointment_code') ?>
+    <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
+    <?= Html::activeHiddenInput($model, 'date_created') ?> 
+    <?= Html::activeHiddenInput($model, 'status') ?> 
+    <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
+       
 
     <?php ActiveForm::end(); ?>
 
