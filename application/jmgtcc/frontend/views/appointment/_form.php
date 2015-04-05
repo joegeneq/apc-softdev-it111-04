@@ -221,17 +221,6 @@ use backend\models\Time;
 
     </div>    
 
-<<<<<<< HEAD
-     <?= Html::activeHiddenInput($model, 'appointment_code') ?> 
-     <?= Html::activeHiddenInput($model, 'client_username') ?>    
-     <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
-     <?= Html::activeHiddenInput($model, 'date_created') ?> 
-     <?= Html::activeHiddenInput($model, 'status') ?> 
-     <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
-     <?= Html::activeHiddenInput($model, 'user_id') ?>  
-=======
-      
-
     <?php 
         if (Yii::$app->user->isGuest)
         {
@@ -249,8 +238,6 @@ use backend\models\Time;
     <?= Html::activeHiddenInput($model, 'date_created') ?> 
     <?= Html::activeHiddenInput($model, 'status') ?> 
     <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
-       
->>>>>>> 294d3f1f62f4990fd2650e1fb01559c137f17e6f
 
     <?php ActiveForm::end(); ?>
 
