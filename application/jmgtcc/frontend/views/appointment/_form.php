@@ -37,17 +37,15 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-6">                   
                     <?php 
-
-                        $firstname = yii::$app->user->identity->first_name;
-                        $lastname = yii::$app->user->identity->last_name;
-                        $completename = $firstname.' '.$lastname;
-
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'client_name')
                                     ->textInput(['maxlength' => 60])
                                     ->label(false);                    
-                        } else {                        
+                        } else {  
+                            $firstname = yii::$app->user->identity->first_name;
+                            $lastname = yii::$app->user->identity->last_name;
+                            $completename = $firstname.' '.$lastname;                      
                             echo $form->field($model, 'client_name')
                                 ->textInput(
                                     ['value'=>$completename,
@@ -64,15 +62,13 @@ use backend\models\Time;
                 </div>
                 <div class="col-lg-6">    
                     <?php 
-
-                        $city = yii::$app->user->identity->city;
-
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'city')
                                     ->textInput(['maxlength' => 45])
                                     ->label(false);                  
-                        } else {                        
+                        } else {    
+                            $city = yii::$app->user->identity->city;                    
                             echo $form->field($model, 'city')
                                 ->textInput(
                                     ['value'=>$city,
@@ -89,15 +85,13 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-6">  
                     <?php 
-
-                        $contactnumber = yii::$app->user->identity->contact_number;
-
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'contact_number')
                                     ->textInput(['maxlength' => 20])
                                     ->label(false);                  
-                        } else {                        
+                        } else {  
+                            $contactnumber = yii::$app->user->identity->contact_number;                      
                             echo $form->field($model, 'contact_number')
                                 ->textInput(
                                     ['value'=>$contactnumber,
@@ -114,15 +108,13 @@ use backend\models\Time;
                  </div>
                 <div class="col-lg-6">   
                     <?php 
-
-                        $email = yii::$app->user->identity->email;
-
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'email_address')
                                     ->textInput(['maxlength' => 45])
                                     ->label(false);                  
-                        } else {                        
+                        } else {   
+                            $email = yii::$app->user->identity->email;                     
                             echo $form->field($model, 'email_address')
                                 ->textInput(
                                     ['value'=>$email,
