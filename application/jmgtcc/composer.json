@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "~2.0",
         "2amigos/yii2-date-picker-widget": "*",
-        "swiftmailer/swiftmailer": "~5.4"
+        "swiftmailer/swiftmailer": "~5.4",
+        "joni-jones/yii2-wschat": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -33,7 +34,7 @@
     "extra": {
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
+            "bower-asset-library": "vendor/bower" 
         }
     }
 }
