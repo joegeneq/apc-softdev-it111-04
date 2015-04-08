@@ -77,8 +77,7 @@ $this->params['breadcrumbs'][] = 'Travel & Tour Arrangements';
             // 'date_created',
             // 'user_id',
 
-            ['class' => 'yii\grid\ActionColumn',
-            'template' => '{view} {delete}'],
+            ['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
         ],
     ]); ?>
 
