@@ -48,7 +48,7 @@ use yii\widgets\DetailView;
                     print('
                         <div class="alert alert-success">
                             <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>
-                            This Appointment is Confirmed. No further action is allowed.
+                            This Appointment has been served. No further action is allowed.
                         </div>
                     ');
                 }
@@ -75,11 +75,11 @@ use yii\widgets\DetailView;
             <div class="row">
 
                  <?php 
-                    if (($model->status) == 'Confirmed') 
+                    if (($model->status) == 'Served') 
                     {   
                         print('
                             <div class="col-lg-3">
-                                <p class="form-label"><b>Confirmed by:</b></p>
+                                <p class="form-label"><b>Approved by:</b></p>
                              </div>
                              <div class="col-lg-3">' . $model->confirmed_by . '</div>'); 
                     }
@@ -87,7 +87,7 @@ use yii\widgets\DetailView;
                     {
                         print('
                             <div class="col-lg-3">
-                                <p class="form-label"><b>Confirmed by:</b></p>
+                                <p class="form-label"><b>Approved by:</b></p>
                              </div>
                             <div class="col-lg-3"> - </div>');
 
@@ -133,7 +133,7 @@ use yii\widgets\DetailView;
 
                     <?php if (($model->status) == '') { ?>
                     <?= Html::submitButton($model->isNewRecord ? 
-                            Yii::t('app', 'Create') : Yii::t('app', 'Confirm Appointment'), 
+                            Yii::t('app', 'Create') : Yii::t('app', 'Approve Appointment'), 
                             ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
                     <?php } ?> 
                     <?= Html::a('Cancel', ['/appointment/index'], 
