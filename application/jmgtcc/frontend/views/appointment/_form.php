@@ -200,7 +200,12 @@ JS;
                 <div class="col-lg-2" id="appointmentTime">  
                     <?= $form->field($model, 'appointment_time')->radioList(  
                             ArrayHelper::map(Time::find()  
-                                ->where(['id'=>'1'])                       
+                                //->where(['id'=>'1']) 
+                                ->where("WHERE NOT EXISTS
+                                (SELECT b.appointment_time
+                                 FROM appointment AS b
+                                 WHERE a.time = b.appointment_time 
+                                 AND b.appointment_date = '2015-3-20'")                        
                                 ->all(),'time','time'))                        
                             ->label(false);
 
