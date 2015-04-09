@@ -85,7 +85,8 @@ class Appointment extends \yii\db\ActiveRecord
             [['notes'], 'string'],
 
             //[['user_id'], 'integer'],
-            [['user_id'], 'default', 'value' => yii::$app->user->identity->id],    
+            //[['user_id'], 'default', 'value' => yii::$app->user->identity->id],
+            [['user_id'], 'default', 'value' => null],    
 
             [['appointment_code'], 'string', 'max' => 25]
         ];

@@ -25,8 +25,9 @@ use backend\models\Airlines;
 
       <h3>Create a Tour Arrangement</h3>
            <p>Please fill out the following fields for a customized tour arrangement:</p>
-
-        <br><br>
+            <br>
+            <div class="arrangement-division"><b class="division-label">Travel Details</b></div>
+            <br>
             <div class="row">
                 <!-- PLACE OF ORIGIN -->
                 <div class="col-lg-2">
@@ -259,6 +260,10 @@ JS;
                     <?= Html::submitButton($model->isNewRecord ? 
                     Yii::t('app', 'Submit Arrangement') : Yii::t('app', 'Update'), 
                     ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                  
+                    <?php echo Html::a('Cancel', ['/tour-arrangement/index'], 
+                                    ['class' => 'btn btn-danger']); ?>
+
                 </div>                
             </div>
 

@@ -157,17 +157,7 @@ class AppointmentController extends Controller
 
                     ")
                 ->send();
-
-                /* $permissionList = $_POST['SignupForm']['permissions'];
-                //foreach($permissionList as $value)
-                //{
-                    $newPermission = new AuthAssignment;
-                    $newPermission->user_id = $user->id;
-               //     $newPermission->item_name = $value;
-                    $newPermission->item_name = $this->permissions;
-                    $newPermission->save();
-                //}
-
+               
                 $update = \Yii::app()->db->createCommand()
                     ->update('Appointment', 
                             ['status'=>'Cancelled'],
@@ -189,7 +179,7 @@ class AppointmentController extends Controller
                             '  Your previous Visa Consultation Appointment with Appointment Code '
                             .$prevAppointmentCode.' has been cancelled.');                    
                     }
-                }           */
+                }           
                
                return $this->redirect(['view', 'id' => $model->id]);
                 

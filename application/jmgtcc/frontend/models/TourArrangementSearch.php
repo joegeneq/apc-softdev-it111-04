@@ -44,10 +44,11 @@ class TourArrangementSearch extends TourArrangement
      */
     public function search($params)
     {
-        $query = TourArrangement::find();
+        $query = TourArrangement::find()->where(['user_id'=>Yii::$app->user->identity->id]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['arrangement_code'=>SORT_DESC]]
         ]);
 
         $this->load($params);

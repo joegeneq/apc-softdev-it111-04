@@ -41,10 +41,11 @@ class TravelTourArrangementSearch extends TravelTourArrangement
      */
     public function search($params)
     {
-        $query = TravelTourArrangement::find();
+        $query = TravelTourArrangement::find()->where(['user_id'=>Yii::$app->user->identity->id]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['arrangement_code'=>SORT_DESC]]
         ]);
 
         $this->load($params);
