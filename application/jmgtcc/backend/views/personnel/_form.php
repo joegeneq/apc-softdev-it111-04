@@ -27,11 +27,11 @@ use yii\widgets\ActiveForm;
 
 		<div class="row">
 	        <div class="col-lg-3">
-	            <p class="form-label required-field">JMGTCC Email</p>
+	            <p class="form-label required-field">JMGTCC Gmail Address</p>
 	         </div>
 	        <div class="col-lg-6">                   
 	              <?= $form->field($model, 'email')
-	              	->textInput(['maxlength' => 45])
+	              	->textInput(['maxlength' => 45, 'pattern' => '[^]*@gmail\.com$'])
 			    	->label(false) ?>
 
 			  	<div class="form-group">

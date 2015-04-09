@@ -104,21 +104,21 @@ use backend\models\Time;
             <!-- EMAIL ADDRESS -->
             <div class="row">
                 <div class="col-lg-3">
-                    <p class="form-label required-field">Email Address</p>
+                    <p class="form-label required-field">Gmail Address:</p>
                  </div>
                 <div class="col-lg-6">   
                     <?php 
                         if (Yii::$app->user->isGuest)
                         {
                             echo $form->field($model, 'email_address')
-                                    ->textInput(['maxlength' => 45])
+                                    ->textInput(['maxlength' => 45, 'pattern' => '[^]*@gmail\.com$'])
                                     ->label(false);                  
                         } else {   
                             $email = yii::$app->user->identity->email;                     
                             echo $form->field($model, 'email_address')
                                 ->textInput(
                                     ['value'=>$email,
-                                     'readonly'=>'true'])
+                                     'readonly'=>'true', 'pattern' => '[^]*@gmail\.com$'])
                                 ->label(false);                    
                         }?> 
                 </div>
