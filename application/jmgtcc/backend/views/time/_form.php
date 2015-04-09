@@ -39,6 +39,9 @@ use yii\widgets\ActiveForm;
 			        	<?= Html::submitButton($model->isNewRecord ? 
 			        		Yii::t('app', 'Create') : Yii::t('app', 'Update'), 
 			        		['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+			        
+			        	<?php echo Html::a('Cancel', ['/time/index'], 
+                                    ['class' => 'btn btn-danger']); ?>
 			        </div>
 			    </div>
 
