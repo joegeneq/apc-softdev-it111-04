@@ -43,12 +43,12 @@ use yii\widgets\DetailView;
                             This Appointment is cancelled.
                         </div>
                     '); 
-                } else if (($model->status) == 'Confirmed')
+                } else if (($model->status) == 'Served')
                 {
                      print('
                         <div class="alert alert-success">
                             <span class="glyphicon glyphicon-ok" style="font:arial; margin: 0 30px 0 30px"></span>
-                            This Appointment is Confirmed.
+                            This Appointment has been served.
                         </div>
                     '); 
                 }
@@ -79,13 +79,13 @@ use yii\widgets\DetailView;
                     {
                         print('
                             <div class="col-lg-3">
-                                <p class="form-label"><b>Confirmed by:</b></p>
+                                <p class="form-label"><b>Approved by:</b></p>
                              </div>     
                             ');
                     } ?>                
 
                 <?php 
-                    if (($model->status) == 'Confirmed') 
+                    if (($model->status) == 'Served') 
                     { 
                         print('<div class="col-lg-3">' . $model->confirmed_by . '</div>'); //Session
                     }
@@ -114,11 +114,11 @@ use yii\widgets\DetailView;
                                  </div>
                                 <div class="col-lg-8"> - </div>');
                     }     
-                    else if (($model->status) == 'Confirmed') 
+                    else if (($model->status) == 'Served') 
                     {
                         print('
                                 <div class="col-lg-3">
-                                    <p class="form-label">Payment:</p>
+                                    <p class="form-label"><b>Payment:</b></p>
                                  </div>
                                 <div class="col-lg-8">
                             '); ?>
@@ -140,7 +140,7 @@ use yii\widgets\DetailView;
                 
                 <div class="btn-right ">
 
-                    <?php if (($model->status) != 'Confirmed' &&  ($model->status) != 'Cancelled') { ?>
+                    <?php if (($model->status) != 'Served' &&  ($model->status) != 'Cancelled') { ?>
                     <?= Html::a('Set payment', ['update', 'id' => $model->id, 
                                 'id' => $model->id], 
                                 ['class' => 'btn btn-primary']) ?>

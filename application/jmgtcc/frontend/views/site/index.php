@@ -34,6 +34,10 @@ $this->title = 'JMGTCC';
     <div class="jumbotron">
             
         <center>
+
+
+            <br>
+
             <div id="slideMain">           
                 <div class="slideDiv" u="slides">
                     <div><img class="slideImg" u="image" src="images/Slide/Hotel-Accommodation.jpeg" /></div>

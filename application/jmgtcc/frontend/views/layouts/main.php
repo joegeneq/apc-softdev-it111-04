@@ -41,7 +41,7 @@ AppAsset::register($this);
 
             if (Yii::$app->user->isGuest) {
             	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/travel-tour-arrangement/create']];
-            	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
+            	$menuItems[] = ['label' => 'Contact Us', 'url' => ['/site/about']];
 
                 $menuItems[] = [
                     'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' Account',

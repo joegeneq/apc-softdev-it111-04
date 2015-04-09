@@ -84,7 +84,7 @@ $this->title = 'Sign up';
                 <div class="col-lg-5">
                     <?= $form->field($model, 'email')
                             ->input('email')
-                            ->textinput(['placeholder'=>'Email']) 
+                            ->textinput(['placeholder'=>'Gmail Address', 'pattern' => '[^]*@gmail\.com$']) 
                             ->label(false) ?> 
                 </div>     
             </div>  

@@ -8,10 +8,10 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'Travel Arrangements');
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="travel-tour-arrangement-index">
 
+    <br>
     <h3>My Travel and Tour Arrangements</h3>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 

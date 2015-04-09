@@ -800,12 +800,33 @@ li.policy-details{
 
 .arr-main {
   border: 1px solid black;
-  padding: 0px 20px 20px 20px;
+  padding: 0 1.5% 0 1.5%;
+  width: 100%; 
 }
 
 .arr-hdr {
-  /*border: 1px solid red;*/
-  padding: 0px 10px 10px 10px;
+  padding: 0px 2% 1% 2%;
+}
+
+.arr-img {
+  height: 50px;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+.arr-hdr-label {
+  font-size: 30px;
+  float: right;
+  padding-right: 20px;
+  padding-top: 8px;
+}
+
+.arr-hdr-address {
+  font-size: 11px;
+  float: left;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 20px;
 }
 
 .arr-content {

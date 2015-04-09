@@ -255,7 +255,9 @@ class TravelTourArrangementController extends Controller
                          </div>
                          <br><br>
                          <br><br>")
-                    ->send(); 
+                    ->send();
+                    Yii::$app->session->setFlash('travel-notif', 'Your request has been sent to our Travel Agent. 
+                        Your Travel Quote will be sent to your email shortly. Thank you!');
                     return $this->redirect(['view', 'id' => $model->id]);
             }
 

@@ -260,6 +260,10 @@ JS;
                     <?= Html::submitButton($model->isNewRecord ? 
                     Yii::t('app', 'Submit Arrangement') : Yii::t('app', 'Update'), 
                     ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                  
+                    <?php echo Html::a('Cancel', ['/tour-arrangement/index'], 
+                                    ['class' => 'btn btn-danger']); ?>
+
                 </div>                
             </div>
 
