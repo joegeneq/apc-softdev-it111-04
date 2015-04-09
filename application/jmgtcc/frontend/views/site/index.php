@@ -96,7 +96,7 @@ $this->title = 'JMGTCC';
     </div>
 
     <div class="body-content">
-
+		
         <div class="row">
             
             <div class="col-lg-9">

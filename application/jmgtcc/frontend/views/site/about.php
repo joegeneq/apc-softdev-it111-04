@@ -1,14 +1,15 @@
 <?php
 use yii\helpers\Html;
+use common\models\User;
 
 /* @var $this yii\web\View */
-$this->title = 'About';
+$this->title = 'SUPPORT TEAM';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>This is the About page. You may modify the following file to customize its content:</p>
-
-    <code><?= __FILE__ ?></code>
+    <p>Choose from the list of operators below to chat with the support team privately.</p>
+    <a href="https://purechat.me/crqfrs">John Doe</a>
+    
+   
 </div>

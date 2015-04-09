@@ -38,8 +38,8 @@ return [
            	'transport' => [
             'class' => 'Swift_SmtpTransport',
             'host' => 'smtp.gmail.com',  
-            'username' => 'dummysender1@gmail.com',
-            'password' => '//dummy12',
+            'username' => 'jmgtcctas@gmail.com',
+            'password' => 'sysadtas00',
             'port' => '587', 
             'encryption' => 'tls', 
         ],

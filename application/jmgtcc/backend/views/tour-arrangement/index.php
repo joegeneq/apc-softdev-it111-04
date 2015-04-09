@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = 'Tour Arrangements';
             // 'user_id',
 
             ['class' => 'yii\grid\ActionColumn',
-            'template' => '{view} {delete}'],
+            'template' => '{view}'],
         ],
     ]); ?>
 
