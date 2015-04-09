@@ -34,8 +34,6 @@ $this->title = 'JMGTCC';
     <div class="jumbotron">
             
         <center>
-
-
             <br>
 
             <div id="slideMain">           
