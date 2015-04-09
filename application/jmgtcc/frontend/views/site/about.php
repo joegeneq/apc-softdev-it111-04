@@ -8,8 +8,24 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
-    <p>Choose from the list of operators below to chat with the support team privately.</p>
-    <a href="https://purechat.me/crqfrs">John Doe</a>
+    <p>Click one of the list of operators below to chat with the support team privately.</p>
+    <table >
+    <tr>
+    	  <td style="width: 300px; background-color: #FFF8C6; border: none;"><a href="https://purechat.me/johndoe" style="color: black;" ><img alt="" src="images/Alien.svg"> John Doe</a></td>
+   		  <td style="width: 30px;"></td>
+   		  <td style="width: 300px;background-color: #FFF8C6; border: none;"><a href="https://purechat.me/erikahidalgo" style="color: black;" ><img alt="" src="images/Batman.svg"> Erika Hidalgo</a></td>
+    </tr>
+    <tr style="height:10px;"></tr>
+    <tr>
+    	  <td style="width: 300px; background-color: #FFF8C6; border: none;"><a href="https://purechat.me/RoxanneLuangco" style="color: black;" ><img alt="" src="images/Furby.svg"> Roxanne Luangco</a></td>
+   		  <td style="width: 30px;"></td>
+   		  <td style="width: 300px;background-color: #FFF8C6; border: none;"><a href="https://purechat.me/ariannebia" style="color: black;" ><img alt="" src="images/Candy.svg"> Arianne Papna</a></td>
+    </tr>
+    <tr style="height:10px;"></tr>
+    <tr>
+    	 <td style="width: 300px;background-color: #FFF8C6; border: none;"><a href="https://purechat.me/jmgtccsupport" style="color: black;" ><img alt="" src="images/Captain-Shield.svg"> JMGTCC-Help Desk</a></td>
+    </tr>
     
+    </table>
    
 </div>
