@@ -208,6 +208,16 @@ use backend\models\Time;
                     <?= Html::submitButton($model->isNewRecord ? 
                         Yii::t('app', 'Set an Appointment') : Yii::t('app', 'Update'), 
                         ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                    
+                    <?php 
+                        if (Yii::$app->user->isGuest) {                        
+                            echo Html::a('Cancel', ['/site/index'], 
+                                    ['class' => 'btn btn-danger']);      
+                        } else { 
+                            echo Html::a('Cancel', ['/appointment/index'], 
+                                    ['class' => 'btn btn-danger']);
+                        } ?>
+
                 </div>                
             </div>
 
