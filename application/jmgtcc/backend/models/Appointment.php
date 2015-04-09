@@ -57,7 +57,7 @@ class Appointment extends \yii\db\ActiveRecord
             [['contact_number', 'status'], 'string', 'max' => 20],
             [['visa_type'], 'string', 'max' => 30],
 
-            [['status'], 'default', 'value'=>'Confirmed'],
+            [['status'], 'default', 'value'=>'Served'],
             [['payment_rate'], 'required'],
             [['payment_rate'], 'number', 'min'=>1],
 
