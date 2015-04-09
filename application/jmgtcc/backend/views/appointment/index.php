@@ -156,7 +156,7 @@ $this->params['breadcrumbs'][] = 'Appointments';
 				
 				            [
 				            'class' => 'yii\grid\ActionColumn',
-				            'template' => '{view} {update} {delete}',
+				            'template' => '{view} {update}',
 				
 				            ],
 				        ],

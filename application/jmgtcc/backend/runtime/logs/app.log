@@ -40958,6 +40958,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428476504.633
     'REQUEST_TIME' => 1428476504
 ]
+<<<<<<< HEAD
 2015-04-09 08:20:04 [::1][3][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "https://www.purechat.com".' in C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php:461
 Stack trace:
 #0 C:\SOFTDEV\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('https://www.pur...', Array)
@@ -40977,13 +40978,39 @@ Stack trace:
 $_COOKIE = [
     '_csrf' => '1c960673e25c9ecf24b391f9c3aeada3bfe22bc996729bd7f6e5b6f4dd899d59s:32:\"Zr-EJyFaTVh9s8F3nAsmsHpX0WEGH-x9\";'
     'PHPSESSID' => 'oms2sve6mlnlmhmct3qtfp6416'
+=======
+2015-04-09 08:20:02 [::1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\apc-softdev\apc-softdev-it111-04\application\jmgtcc\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-04-09 08:20:01 [::1][2][-][info][application] $_COOKIE = [
+    '_identity' => '36781a8d98521cbb7063e0fd19be6f25e434ebd0cd7008a1698f21509a25440es:46:\"[2,\"6aGejgtcu4vKWDkyMdjpzKxE_WrDVjDX\",2592000]\";'
+    '_csrf' => 'b1b3ddf0b8c2dbc1a86047dfe3f3eb55efaad79b26a60ffd8ab7716c23bdf8d3s:32:\"JIXu2WtDY5BcufWrhRAXGxMdsXogN6Uq\";'
+    'PHPSESSID' => 'k888jq5737bp3nh26nbertem45'
+>>>>>>> c1e6b906c9054c1b83975dd7cc61721670337a1e
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/jmgtcc/backend/web/'
     '__id' => 3
     '__expire' => 1428561305
+=======
+    '__returnUrl' => '/jmgtcc/backend/web/index.php'
+    '__id' => 2
+    '__expire' => 1428561302
+>>>>>>> c1e6b906c9054c1b83975dd7cc61721670337a1e
 ]
 
 $_SERVER = [
@@ -40995,6 +41022,7 @@ $_SERVER = [
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
     'HTTP_REFERER' => 'http://localhost/jmgtcc/backend/web/'
@@ -41002,13 +41030,29 @@ $_SERVER = [
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
     'HTTP_COOKIE' => '_csrf=1c960673e25c9ecf24b391f9c3aeada3bfe22bc996729bd7f6e5b6f4dd899d59s%3A32%3A%22Zr-EJyFaTVh9s8F3nAsmsHpX0WEGH-x9%22%3B; PHPSESSID=oms2sve6mlnlmhmct3qtfp6416'
     'PATH' => 'C:\\Program Files\\Java\\jre7;'
+=======
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/jmgtcc/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=36781a8d98521cbb7063e0fd19be6f25e434ebd0cd7008a1698f21509a25440es%3A46%3A%22%5B2%2C%226aGejgtcu4vKWDkyMdjpzKxE_WrDVjDX%22%2C2592000%5D%22%3B; _csrf=b1b3ddf0b8c2dbc1a86047dfe3f3eb55efaad79b26a60ffd8ab7716c23bdf8d3s%3A32%3A%22JIXu2WtDY5BcufWrhRAXGxMdsXogN6Uq%22%3B; PHPSESSID=k888jq5737bp3nh26nbertem45'
+    'PATH' => 'C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php; ;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Java\\jre1.7.0\\bin; C:\\Program Files (x86)\\Java\\jre1.7.0\\bin'
+>>>>>>> c1e6b906c9054c1b83975dd7cc61721670337a1e
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+<<<<<<< HEAD
     'SERVER_SIGNATURE' => '<address>Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4'
+=======
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+>>>>>>> c1e6b906c9054c1b83975dd7cc61721670337a1e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
@@ -41019,6 +41063,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jmgtcc/backend/web/index.php'
+<<<<<<< HEAD
     'REMOTE_PORT' => '60081'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -41029,4 +41074,16 @@ $_SERVER = [
     'PHP_SELF' => '/jmgtcc/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1428560404.223
     'REQUEST_TIME' => 1428560404
+=======
+    'REMOTE_PORT' => '53803'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/jmgtcc/backend/web/index.php'
+    'SCRIPT_NAME' => '/jmgtcc/backend/web/index.php'
+    'PHP_SELF' => '/jmgtcc/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428560401.408
+    'REQUEST_TIME' => 1428560401
+>>>>>>> c1e6b906c9054c1b83975dd7cc61721670337a1e
 ]
