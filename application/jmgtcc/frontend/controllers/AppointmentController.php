@@ -92,7 +92,7 @@ class AppointmentController extends Controller
                             Hello, ".$model->client_name."!
                         <br><br>
                             Greetings from the JMGTCC Management. <br>
-                            Below are the details of your Visa Assistance Appointment schedule:
+                            Below are the details of your Visa Consultation Appointment schedule:
                         </p>
                         <br>
 
@@ -157,13 +157,6 @@ class AppointmentController extends Controller
 
                     ")
                 ->send();
-               
-                $update = \Yii::app()->db->createCommand()
-                    ->update('Appointment', 
-                            ['status'=>'Cancelled'],
-                            'id=:id', ['ORDER BY id DESC LIMIT 1'],                       
-                            [':id'=>$post_id]
-                    );
 
                 if ($prevAppointmentCode != null)
                 {
