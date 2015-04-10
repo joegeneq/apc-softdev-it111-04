@@ -170,27 +170,9 @@ use backend\models\Time;
                                         'daysOfWeekDisabled' => [0,6],
                                         'startDate' => '+1d'
                                     ]])
-                            ->label(false)
-                            ;?>
+                            ->label(false);?>
                 </div>
             </div>
-
-         <?php
-              $script = <<< JS
-              //ALL JAVASCRIPT CODES
-              $("#appointment-appointment_date").change(function(){
-
-                    var appointmentDate = $("input[name='Appointment[appointment_date]']").val();
-                    if (appointmentDate != '')
-                    {
-                        alert(appointmentDate);
-                    }
-                     
-              });
-             
-JS;
-    $this -> registerJS($script);
-?>
 
             <!-- APPOINTMENT TIME -->
             <div class="row">
@@ -200,20 +182,9 @@ JS;
                 <div class="col-lg-2" id="appointmentTime">  
                     <?= $form->field($model, 'appointment_time')->radioList(  
                             ArrayHelper::map(Time::find()  
-                                ->where(['id'=>'1'])                       
+                                //->where(['id'=>'1'])                       
                                 ->all(),'time','time'))                        
                             ->label(false);
-
-                    /*
-                        SELECT a.time
-                        FROM time AS a
-                        WHERE NOT EXISTS
-                                (SELECT b.appointment_time
-                                 FROM appointment AS b
-                                 WHERE a.time = b.appointment_time 
-                                 AND b.appointment_date = '2015-3-20')    
-                    */
-
                     ?>     
                 </div>
             </div>
