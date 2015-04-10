@@ -169,7 +169,7 @@ use backend\models\Time;
                                         'format' => 'yyyy-mm-dd',
                                         'daysOfWeekDisabled' => [0,6],
                                         'startDate' => '+1d'
-                                    ]])
+                                    ]], ['onchange'=>'alert("123")'])
                             ->label(false);?>
                 </div>
             </div>

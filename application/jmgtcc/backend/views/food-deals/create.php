@@ -8,7 +8,6 @@ use yii\helpers\Html;
 
 $this->title = 'JMGTCC ADMIN;'
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Food Deals'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="food-deals-create">
 
