@@ -19,6 +19,7 @@ class SignupForm extends Model
     public $email;
     public $password;
     public $confirmpassword;
+	public $verifyCode;
 
     /**
      * @inheritdoc
@@ -45,6 +46,8 @@ class SignupForm extends Model
             ['password', 'string', 'min' => 6],
         	['contact_number', 'integer'],
         	['confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>"Passwords don't match. Try again."],
+			
+			['verifyCode', 'captcha'],
         ];
     }
 
@@ -53,6 +56,15 @@ class SignupForm extends Model
      *
      * @return User|null the saved model or null if saving fails
      */
+	 
+	  public function attributeLabels()
+    {
+        return [
+            'verifyCode' => 'Verification Code',
+        ];
+    }
+	 
+	 
     public function signup()
     {
         if ($this->validate()) {
