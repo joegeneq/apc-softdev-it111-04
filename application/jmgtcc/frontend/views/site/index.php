@@ -110,14 +110,14 @@ $this->title = 'JMGTCC';
                     Journeys & More Global Tours and Consultancy Company (JMGTC) is a Philippine travel bureau engaged in the 
                     wholesale distribution of local and international package tours: hotels, transfers, city tours, theme park 
                     tickets and customized travel arrangement. It is the Hong Kong General Sales Agent (GSA) in the Philippines.
-                    <br><br>
+                    <br><br><hr class="faded"><br>
                     WE SPECIALIZE IN GROUP BOOKINGS INCLUSIVE OF COMPREHENSIVE TRAVEL ORIENTATION, AIRPORT ESCORT SERVICE AND FREE TRAVEL INSURANCE.
                     <br><br>
-                    WE ARE THE COUNTRYâ€™S REPUTABLE â€œMETRO MANILA VISA ASSISTANCE CENTERâ€� HANDLING ALL VISA DOCUMENTATION AND PROCESSING 
+                    WE ARE THE COUNTRY'S REPUTABLE METRO MANILA VISA ASSISTANCE CENTER HANDLING ALL VISA DOCUMENTATION AND PROCESSING 
                     REQUIREMENTS FOR YOUR CONVENIENCE, SERVING TOP CORPORATIONS, GOVERNMENT AGENCIES, SHOWBUSINESS PERSONALITIES AND THE 
                     BUSINESS COMMUNITY.
                     <br><br>
-                    WE ARE THE PHILIPPINESâ€™ TRUSTED BOOKING PARTNER OF LAND ARRANGEMENT PACKAGES AROUND THE WORLD.
+                    WE ARE THE PHILIPPINES' TRUSTED BOOKING PARTNER OF LAND ARRANGEMENT PACKAGES AROUND THE WORLD.
                     <br><br>
                     VISIT US AND ENJOY THE COMFORTS OF OUR OFFICE ENVIRONMENT AND EXPERIENCED TRAVEL STAFF!
                 </p>
