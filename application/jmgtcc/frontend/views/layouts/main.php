@@ -56,7 +56,7 @@ AppAsset::register($this);
             } else {
             	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/travel-tour-arrangement/create']];
-            	$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
+            	//$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
 
                 $menuItems[] = [
                     'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' '.Yii::$app->user->identity->username,
