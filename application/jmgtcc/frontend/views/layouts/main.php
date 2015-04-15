@@ -37,12 +37,12 @@ AppAsset::register($this);
             $menuItems = [
                 ['label' => '<span class="glyphicon glyphicon-home"></span>', 'url' => ['/site/index']],
                 ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],
+            	['label' => 'Contact Us', 'url' => ['/site/about']],
             ];
 
             if (Yii::$app->user->isGuest) {
             	$menuItems[] = ['label' => 'Travel Arrangement', 'url' => ['/travel-tour-arrangement/create']];
-            	$menuItems[] = ['label' => 'Contact Us', 'url' => ['/site/about']];
-
+            	
                 $menuItems[] = [
                     'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' Account',
                     'items' => [
@@ -56,8 +56,7 @@ AppAsset::register($this);
             } else {
             	$menuItems[] = ['label' => 'Tour Arrangement', 'url' => ['/tour-arrangement/create']];
             	$menuItems[] = ['label' => 'Travel and Tour', 'url' => ['/travel-tour-arrangement/create']];
-            	//$menuItems[] = ['label' => 'Help & Support', 'url' => ['/site/about']];
-
+            	
                 $menuItems[] = [
                     'label' => '<span class="glyphicon glyphicon-user" font="arial"></span>'.' '.Yii::$app->user->identity->username,
                     'items' => [
