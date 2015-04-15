@@ -149,7 +149,7 @@ class Appointment extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
                 $model = $connection
-                    ->createCommand("UPDATE Appointment
+                    ->createCommand("UPDATE appointment
                                         SET status = 'Cancelled'
                                         WHERE user_id = ".yii::$app->user->identity->id."
                                          AND appointment_code = '".$prevAppointmentCode."'
@@ -174,7 +174,7 @@ class Appointment extends \yii\db\ActiveRecord
     {
         $connection = \Yii::$app->db;
                 $model = $connection
-                    ->createCommand("UPDATE Appointment
+                    ->createCommand("UPDATE appointment
                                         SET status = 'Cancelled'
                                         WHERE appointment_code = '".$prevAppointmentCode."'
                                          AND status != 'Served'
@@ -198,7 +198,7 @@ class Appointment extends \yii\db\ActiveRecord
         $connection = \Yii::$app->db;
                 $model = $connection
                     ->createCommand("SELECT appointment_code
-                                        FROM Appointment
+                                        FROM appointment
                                         WHERE user_id = ".yii::$app->user->identity->id."
                                         ORDER BY id DESC
                                         LIMIT 1
@@ -214,7 +214,7 @@ class Appointment extends \yii\db\ActiveRecord
         $connection = \Yii::$app->db;
                 $model = $connection
                     ->createCommand("SELECT appointment_code 
-                                        FROM Appointment 
+                                        FROM appointment 
                                         WHERE client_name='".$client_name."' 
                                         AND contact_number='".$contact_number."' 
                                         AND email_address='".$email_address."' 
