@@ -28,7 +28,7 @@ $this->title = Yii::t('app', 'Tour Arrangements');
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'arrangement_code',
             'place_of_origin',
             'destination',
