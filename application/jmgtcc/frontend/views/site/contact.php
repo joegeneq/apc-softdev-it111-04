@@ -4,12 +4,18 @@ use common\models\User;
 
 /* @var $this yii\web\View */
 $this->title = 'SUPPORT TEAM';
-$this->params['breadcrumbs'][] = 'Technical Support Team';
+// $this->params['breadcrumbs'][] = 'Technical Support Team';
 ?>
 
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
-    <p>Click one of the list of operators below to chat with the support team privately.</p>
+<div class="site-contact">
+
+  <div class="form-container-main">
+
+    <br>
+      <h3>Technical Support Team</h3>
+      <p>Click one of the list of operators below to chat with the support team privately.</p>
+      <br>
+   
     <table >
     <tr>
           <td style="width: 300px; background-color: #FFF8C6; border: none;"><a href="https://purechat.me/johndoe" style="color: black;" ><img alt="" src="images/Alien.svg"> John Doe</a></td>
@@ -28,5 +34,6 @@ $this->params['breadcrumbs'][] = 'Technical Support Team';
     </tr>
     
     </table>
+  </div>
    
 </div>
