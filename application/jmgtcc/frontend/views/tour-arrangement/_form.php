@@ -169,76 +169,75 @@ JS;
 
             <!-- INCLUSION -->    
 
-             <br>
-            <div class="arrangement-division"><b class="division-label">Tour and Transport</b></div>
-        
+            <br>
+            <div class="arrangement-division"><b class="division-label">Tour and Transport</b>
+            </div>
             <div class="row">            
                 <!-- TOUR TYPE INCLUSION-->            
                 <div class="col-lg-5">
                     <p class="form-label">What types of tour would you like to have? </p>
-                </div>
-                <div class="col-lg-6">
-                    <p class="form-label">What kind of transport services would you like to take? </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row">
-                <!-- TOUR NAME -->          
-                <div class="col-lg-5"> 
-                  <div class="tour-content">
-                    <?= $form->field($model, 'inclusion_tour_type')
-                             ->checkboxList(ArrayHelper::map(TourType::find()->all(), 'tour_name', 'tour_name'))
-                             ->label(false)
-                               ?>
-                  </div>
-                </div>
-
-                <!-- TRANSPORT SERVICES -->
-                <div class="col-lg-5"> 
-                  <div class="transpo-content">                          
-                    <?= $form->field($model, 'inclusion_transport_service')
-                             ->checkboxList(ArrayHelper::map(TransportService::find()->all(), 'transport_type', 'transport_type'))
-                             ->label(false)
-                              ?>
-                  </div>
-                </div>            
-            </div>
-      
-            <br>
-            <div class="arrangement-division"><b class="division-label">Inclusion</b></div>
-
-    <!-- INCLUSION -->
-            <div class="row">
-              <div class="col-lg-5">
-                <p class="form-label">What kind of food package would you like to avail?</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="form-label">Additional deals: </p>
-              </div>
-            </div>
-
-            <br>
-
-            <div class="row">            
-                <div class="col-lg-5"> 
-                    <div class="food-content">
-                        <?= $form->field($model, 'inclusion_food_deals')
-                                 ->checkboxList(ArrayHelper::map(FoodDeals::find()->all(), 'food_deal_name', 'food_deal_name'))
-                                 ->label(false) ?>
+                    <div class="row">
+                      <!-- TOUR NAME -->          
+                      <div class="col-lg-5"> 
+                        <div class="tour-content">
+                          <?= $form->field($model, 'inclusion_tour_type')
+                                   ->checkboxList(ArrayHelper::map(TourType::find()->all(), 'tour_name', 'tour_name'))
+                                   ->label(false)
+                                     ?>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-lg-5"> 
-                  <div class="freebies-content">                          
-                    <?= $form->field($model, 'inclusion_freebies')
-                             ->checkboxList(ArrayHelper::map(Freebies::find()->all(), 'freebies_name', 'freebies_name'))
-                             ->label(false) ?>
-                </div>
                   </div>
-              </div>            
-        
-
+                  
+                <div class="col-lg-6">
+                  <p class="form-label">What kind of transport services would you like to take? </p>
+                  <div class="row">
+                    <!-- TRANSPORT SERVICES -->
+                    <div class="col-lg-5"> 
+                      <div class="transpo-content">                          
+                        <?= $form->field($model, 'inclusion_transport_service')
+                                 ->checkboxList(ArrayHelper::map(TransportService::find()->all(), 'transport_type', 'transport_type'))
+                                 ->label(false)
+                                  ?>
+                      </div>
+                    </div>            
+                  </div>
+                </div>
+            </div>
+            <br>
+             <!-- INCLUSION -->
+            <div class="arrangement-division"><b class="division-label">Inclusion</b>
+            </div>
+            <div class="row">            
+                <!-- TOUR TYPE INCLUSION-->            
+                <div class="col-lg-5">
+                    <p class="form-label">What kind of food package would you like to avail? </p>
+                    <div class="row">
+                      <!-- FOOD DEALS -->          
+                      <div class="col-lg-5"> 
+                         <div class="food-content">
+                            <?= $form->field($model, 'inclusion_food_deals')
+                                     ->checkboxList(ArrayHelper::map(FoodDeals::find()->all(), 'food_deal_name', 'food_deal_name'))
+                                     ->label(false) ?>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div class="col-lg-6">
+                  <p class="form-label">Additional deals: </p>
+                  <div class="row">
+                    <!-- FREEBIES -->
+                    <div class="col-lg-5"> 
+                      <div class="freebies-content">                          
+                        <?= $form->field($model, 'inclusion_freebies')
+                                 ->checkboxList(ArrayHelper::map(Freebies::find()->all(), 'freebies_name', 'freebies_name'))
+                                 ->label(false) ?>
+                      </div>
+                    </div>            
+                  </div>
+                </div>
+            </div>
             <br>
             <div class="arrangement-division"><b class="division-label">Others</b></div>
             <br>
