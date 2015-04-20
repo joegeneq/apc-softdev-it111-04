@@ -150,7 +150,7 @@ class AppointmentController extends Controller
                             <li>Please take note of the <b>Appointment Reference Number</b> and you <b>Appointment Date & Time</b>.</li>
                             <li>Clients without the necessary references will not be entertained.</li>
                         <br>
-                            <li>For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                            <li>For questions or concerns, you may email <i>inquiry@journeysglobaltours.com</i> or set a live session with our technical Support Team.</li>
                         </ul>
 
                     </div>
