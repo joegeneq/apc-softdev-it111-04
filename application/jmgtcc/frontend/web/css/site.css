@@ -1,13 +1,11 @@
-CSS
-
 html,
 body {
     height: 100%;  
 }
 
-body div .container .content {
+/*body div .container .content {
   min-height: 472px;
-}
+}*/
 
 .wrap {
     min-height: 100%;

@@ -97,7 +97,7 @@ $this->title = 'Sign up';
                 <div class="col-lg-5">
                     <div class="btn-right" style="padding-right:0%">
                         <?= Html::submitButton('Create Account', 
-                            ['class' => 'btn btn-primary', 
+                            ['class' => 'btn btn-success', 
                                 'name' => 'signup-button']) ?>
                     </div>
                 </div>     

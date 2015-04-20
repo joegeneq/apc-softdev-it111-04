@@ -11,6 +11,8 @@ $this->title = 'Login';
 <div class="site-login">
 
      <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+
+     <br><br>
        
     <div class="login-form-main">
        <div class="login-form">
@@ -29,7 +31,7 @@ $this->title = 'Login';
                     If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
                 </div>
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-success', 'name' => 'login-button']) ?>
                 </div>
                         <?php ActiveForm::end(); ?>
                 
