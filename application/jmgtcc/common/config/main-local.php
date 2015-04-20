@@ -4,8 +4,8 @@ return [
         'db' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=jmgtcc_brs',
-            'username' => 'root',
-            'password' => '',
+            'username' => 'jmgtcc_brs',
+            'password' => 'jmgtcc_brs',
             'charset' => 'utf8',
         ],
     	'user' => [
