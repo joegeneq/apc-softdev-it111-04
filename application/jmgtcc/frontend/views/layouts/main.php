@@ -37,7 +37,7 @@ AppAsset::register($this);
             $menuItems = [
                 ['label' => '<span class="glyphicon glyphicon-home"></span>', 'url' => ['/site/index']],
                 ['label' => 'Visa Assistance', 'url' => ['/appointment/create']],
-            	['label' => 'Contact Us', 'url' => ['/site/about']],
+            	['label' => 'Contact Us', 'url' => ['/site/contact']],
             ];
 
             if (Yii::$app->user->isGuest) {
