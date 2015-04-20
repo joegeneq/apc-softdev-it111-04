@@ -3,7 +3,6 @@
 namespace backend\models;
 
 use Yii;
-
 /**
  * This is the model class for table "appointment".
  *
@@ -110,6 +109,6 @@ class Appointment extends \yii\db\ActiveRecord
 
      public function getTime()
     {
-        return $this->hasOne(time::className(), ['time' => 'appointment_time']);
+        return $this->hasOne(Time::className(), ['time' => 'appointment_time']);
     }
 }
