@@ -77,26 +77,23 @@ AppAsset::register($this);
         ?>
 
         <div class="container">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= Alert::widget() ?>
-            <?= $content ?>
+            <div class="content">
+                <?= Breadcrumbs::widget([
+                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                ]) ?>
+                <?= Alert::widget() ?>
+                <?= $content ?>
+            </div>
         </div>
     </div>
-
-    <!--
-    <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '9d1c0a1b-c485-4144-a893-dfb1acd3e338', f: true });done = true;}};})();</script>
-    -->
     
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; Journeys & More Global Tours and Consultation Co. <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
+    <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '9d1c0a1b-c485-4144-a893-dfb1acd3e338', f: true });done = true;}};})();</script>
+    
+    <?php $this->endBody() ?>   
 
-    <?php $this->endBody() ?>
 </body>
+
+    <?php include('footer.php'); ?>
+
 </html>
 <?php $this->endPage() ?>

@@ -271,6 +271,9 @@ JS;
     <?= Html::activeHiddenInput($model, 'date_created') ?>   
     <?= Html::activeHiddenInput($model, 'arrangement_code') ?>   
 
+    <br>
+
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

@@ -4,7 +4,7 @@ use common\models\User;
 
 /* @var $this yii\web\View */
 $this->title = 'SUPPORT TEAM';
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = 'Technical Support Team';
 ?>
 
 <div class="site-about">

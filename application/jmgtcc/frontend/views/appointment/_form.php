@@ -220,8 +220,7 @@ use backend\models\Time;
 
                 </div>                
             </div>
-
-    </div>    
+        </div>    
 
     <?php 
         if (Yii::$app->user->isGuest)
@@ -239,7 +238,9 @@ use backend\models\Time;
     <?= Html::activeHiddenInput($model, 'payment_rate') ?> 
     <?= Html::activeHiddenInput($model, 'date_created') ?> 
     <?= Html::activeHiddenInput($model, 'status') ?> 
-    <?= Html::activeHiddenInput($model, 'confirmed_by') ?>     
+    <?= Html::activeHiddenInput($model, 'confirmed_by') ?>   
+
+    <br>  
 
     <?php ActiveForm::end(); ?>
 
