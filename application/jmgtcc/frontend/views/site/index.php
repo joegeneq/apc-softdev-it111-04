@@ -38,10 +38,9 @@ $this->title = 'JMGTCC';
 
             <div id="slideMain">           
                 <div class="slideDiv" u="slides">
-                    <div><img class="slideImg" u="image" src="images/Slide/Hotel-Accommodation.jpeg" /></div>
+                    <div><img class="slideImg" u="image" src="images/Slide/Hotel-Breakfast-Accomodation.jpeg" /></div>
                     <div><img class="slideImg" u="image" src="images/Slide/City-Tour.jpg" /></div>
                     <div><img class="slideImg" u="image" src="images/Slide/Street-Market-Shopping.jpg" /></div>
-                    <div><img class="slideImg" u="image" src="images/Slide/Museum-Tours.jpg" /></div>
                     <div><img class="slideImg" u="image" src="images/Slide/Historical-Places.jpg" /></div>
                     <div><img class="slideImg" u="image" src="images/Slide/Amusement-Park.jpg" /></div>
                     <div><img class="slideImg" u="image" src="images/Slide/Beaches-Summer-Tours.jpg" /></div>
