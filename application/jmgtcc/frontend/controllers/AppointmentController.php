@@ -28,8 +28,13 @@ class AppointmentController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
+					'captcha' => [
+							'class' => 'yii\captcha\CaptchaAction',
+							'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+					],
                 ],
             ],
+			
         ];
     }
 
@@ -179,6 +184,8 @@ class AppointmentController extends Controller
             }
 
         } else {
+		
+			
             return $this->render('create', [
                 'model' => $model,
             ]);

@@ -33,6 +33,9 @@ class Appointment extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+	 
+	public $verifyCode;
+	
     public static function tableName()
     {
         return 'appointment';
@@ -88,7 +91,12 @@ class Appointment extends \yii\db\ActiveRecord
             //[['user_id'], 'default', 'value' => yii::$app->user->identity->id],
             [['user_id'], 'default', 'value' => null],    
 
-            [['appointment_code'], 'string', 'max' => 25]
+            [['appointment_code'], 'string', 'max' => 25],
+			
+			   
+			['verifyCode', 'captcha'],
+			[['verifyCode'], 'default', 'value' => null], 
+
         ];
             
     }
@@ -116,6 +124,7 @@ class Appointment extends \yii\db\ActiveRecord
             'confirmed_by' => Yii::t('app', 'Confirmed By'),
             'notes' => Yii::t('app', 'Notes'),
             'user_id' => Yii::t('app', 'User ID'),
+			//'verifyCode' => Yii::t('app', 'Verification Code'),
         ];
     }
 

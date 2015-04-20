@@ -6,6 +6,7 @@ use yii\helpers\ArrayHelper;
 
 use dosamigos\datepicker\DatePicker;
 use backend\models\Time;
+use yii\captcha\Captcha;
 
 
 /* @var $this yii\web\View */
@@ -200,6 +201,17 @@ use backend\models\Time;
                 </div>
             </div>
 
+			<!-- CAPTCHA -->
+			 <div class="row">
+				 <div class="col-lg-3">
+                    <p class="form-label">Verification Code</p>
+                 </div>
+			 <div class="col-lg-6">   
+				<?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+							'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+							]) ->label(false);?>
+			 </div>
+            </div>
             <br>
 
             <!-- SUBMIT BUTTON -->
@@ -225,8 +237,11 @@ use backend\models\Time;
     <?php 
         if (Yii::$app->user->isGuest)
         {
+			
             echo Html::activeHiddenInput($model, 'client_username'); 
-            echo Html::activeHiddenInput($model, 'user_id');               
+            echo Html::activeHiddenInput($model, 'user_id');  
+
+				
         } else {        
             echo Html::activeHiddenInput($model, 'client_username',
                     ['value'=>yii::$app->user->identity->username]);
