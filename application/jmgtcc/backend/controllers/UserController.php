@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\User;
+use common\models\User;
 use backend\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -19,19 +19,22 @@ class UserController extends Controller
     {
         return [
         		'access' => [
-        			'class' => AccessControl::className(),
-        			'rules' => [
+        				'class' => AccessControl::className(),
+        				'rules' => [
         						[
-        								'actions' => ['login', 'error'],
-        								'allow' => true,
+    								'actions' => ['login', 'error'],
+    								'allow' => true,
         						],
         						[
-        								'actions' => ['logout', 'index', 'view'],
-        								'allow' => true,
-        								'roles' => ['@'],
+    								'actions' => ['logout', 'index', 'view'],
+    								'allow' => true,
+    								'roles' => ['@'],
+    								'matchCallback' => function ($rule, $action) {
+    									return User::isUserAdmin(Yii::$app->user->identity->username);
+    								}
         						],
-        			],
-        	],
+        						],
+        				],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
