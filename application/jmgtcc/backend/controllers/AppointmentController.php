@@ -28,7 +28,7 @@ class AppointmentController extends Controller
     								'allow' => true,
         						],
         						[
-    								'actions' => ['logout', 'index', 'view'],
+    								'actions' => ['logout', 'index', 'view', 'update'],
     								'allow' => true,
     								'roles' => ['@'],
     								'matchCallback' => function ($rule, $action) {

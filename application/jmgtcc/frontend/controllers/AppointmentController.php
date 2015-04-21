@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use common\models\User;
 
 use yii\mail\BaseMailer;
+use yii\filters\AccessControl;
 
 /**
  * AppointmentController implements the CRUD actions for Appointment model.
@@ -24,6 +25,21 @@ class AppointmentController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                            [
+                                'actions' => ['create', 'view', 'index'],
+                                'allow' => true,
+                            ],
+                            [
+                                'actions' => ['update'],
+                                'allow' => false,
+                                'roles' => ['@'],
+            
+                            ],
+                        ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
