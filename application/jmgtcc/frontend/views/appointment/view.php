@@ -102,7 +102,7 @@ if (Yii::$app->user->isGuest == false)
                     <li class="policy-details">Please print this page or the document attached on the email.</li>
                     <li class="policy-details">Clients without the printed appointment form will not be entertained.</li>
                 <br>
-                    <li class="policy-details">For questions or concerns, you may email --- or set a live session with our technical Support Team.</li>
+                    <li class="policy-details">For questions or concerns, you may email <i>inquiry@journeysglobaltours.com</i> or set a live session with our technical Support Team.</li>
                 </ul>
 
                 <br>
