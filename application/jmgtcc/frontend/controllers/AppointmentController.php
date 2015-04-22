@@ -33,10 +33,14 @@ class AppointmentController extends Controller
                                 'allow' => true,
                             ],
                             [
-                                'actions' => ['update', 'index'],
-                                'allow' => false,
+                                'actions' => ['index'],
+                                'allow' => true,
                                 'roles' => ['@'],
-            
+                            ],
+                            [
+                                'actions' => ['update'],
+                                'allow' => false,
+                                'roles' => ['@'],            
                             ],
                         ],
             ],
