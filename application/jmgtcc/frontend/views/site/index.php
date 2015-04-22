@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Html;
+?>
+
 <script src="javascript/jquery-1.9.1.min.js"></script>
 <script src="javascript/jssor.slider.mini.js"></script>
 
@@ -73,28 +77,9 @@ $this->title = 'JMGTCC';
 
         <br>
 
-            <?php 
-
-                if (Yii::$app->user->isGuest)
-                 {
-                    print('<a href="/jmgtcc/frontend/web/index.php?r=site%2Flogin">
-                            <img class="servicesImg" title="Create a Travel Arrangement"
-                            src="images/customised-travel-arrangements-journeys.jpg" /></a>');
-
-                      
-                 }
-                else
-                {
-                    print('<a href="/jmgtcc/frontend/web/index.php?r=travel-tour-arrangement%2Fcreate">
-                             <img class="servicesImg" title="Create a Travel Arrangement"
-                             src="images/customised-travel-arrangements-journeys.jpg" /></a>');
-                }
-            ?>
-
+        <img class="servicesImg-mid" src="images/customised-travel-arrangements-journeys.jpg" />
         <img class="servicesImg-mid" src="images/Philippine-tour-packages-journeys.jpg" />
-        <a href="/jmgtcc/frontend/web/index.php?r=appointment%2Fcreate" title="Create an Appointment">
-            <img class="servicesImg" src="images/Visa-assistance-sevices-journeys-home.jpg" />
-        </a>
+        <img class="servicesImg-mid" src="images/Visa-assistance-sevices-journeys-home.jpg" />    
 
     </div>
 

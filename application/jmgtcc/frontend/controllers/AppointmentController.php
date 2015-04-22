@@ -29,11 +29,11 @@ class AppointmentController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                             [
-                                'actions' => ['create', 'view', 'index'],
+                                'actions' => ['create', 'view'],
                                 'allow' => true,
                             ],
                             [
-                                'actions' => ['update'],
+                                'actions' => ['update', 'index'],
                                 'allow' => false,
                                 'roles' => ['@'],
             
