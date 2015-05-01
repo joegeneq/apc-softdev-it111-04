@@ -159,7 +159,7 @@ class TravelTourArrangementController extends Controller
                         <div>
                             <img style='padding-top: 10px; padding-left: 80px;' height='50' width='180'
                             src='http://journeysglobaltours.com/wp-content/uploads/2012/11/main_logo.png' >
-                            <b style='font-size: 30px; font-family: arial; float: right; padding-right: 50px; padding-top: 70px;'>
+                            <b style='font-size: 30px; font-family: arial; float: right; padding-right: 50px; padding-top: 15px;'>
                                 ".$model->arrangement_code."</b>
                         </div>       
                         <p style='font-size: 11px; font-family: arial; padding-bottom: 8px; padding-top: 8px; padding-left: 70px;'>
