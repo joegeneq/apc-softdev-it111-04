@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\FoodDeals */
 
-$this->title = 'JMGTCC ADMIN;'
+$this->title = 'JMGTCC ADMIN';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Food Deals'), 'url' => ['index']];
 ?>
 <div class="food-deals-create">
