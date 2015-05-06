@@ -41,7 +41,7 @@ return [
     						'class' => 'Swift_SmtpTransport',
     						'host' => 'smtp.gmail.com',
     						'username' => 'jmgtcctas@gmail.com',
-    						'password' => 'sysadtas00',
+    						'password' => 'support00',
     						'port' => '587',
     						'encryption' => 'tls',
     					],
